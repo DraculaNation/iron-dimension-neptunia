@@ -1,0 +1,19 @@
+state={
+	id=5
+	name="STATE_5"
+	
+	history={
+		owner = LOW
+		add_core_of = LOW
+		victory_points = {
+			12 5 
+		}
+	}
+	
+	provinces={
+		12 44 60 155 157 182 193 214 280 297 301 331 473 477 682 731 780 828 830 1053 1115 1179 1185 1197 1206 
+	}
+	manpower=20000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

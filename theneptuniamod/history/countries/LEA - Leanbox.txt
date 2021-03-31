@@ -1,0 +1,24 @@
+﻿capital = 4
+set_convoys = 50
+
+set_politics = {
+	ruling_party = neutrality
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+set_popularities = {
+	democratic = 30
+	neutrality = 70
+}
+
+create_country_leader = {
+	name = "Vert"
+	desc = "POLITICS_VERT_DESC"
+	picture = "Portrait_Leanbox_Vert.dds"
+	expire = "1965.1.1"
+	ideology = despotism
+	traits = {
+		vert_leader_trait
+	}
+}

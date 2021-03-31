@@ -1,0 +1,18 @@
+
+state={
+	id=31
+	name="STATE_31"
+
+	history={
+		owner = LOW
+		add_core_of = LOW
+
+	}
+
+	provinces={
+		36 49 113 153 266 298 364 427 485 557 661 728 747 766 791 941 1094 1161 1163 1164 1167 1168 1169 1172 1175 1210 
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+}

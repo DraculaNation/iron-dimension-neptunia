@@ -1,0 +1,14 @@
+state={
+	id=28
+	name="STATE_28"
+	provinces={
+		8 51 459 555 653 1171 1186 1214 
+	}
+	manpower=1000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	history={
+		owner = LOW
+		add_core_of = LOW
+	}
+}

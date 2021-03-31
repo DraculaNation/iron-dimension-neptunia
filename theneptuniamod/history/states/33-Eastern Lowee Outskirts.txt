@@ -1,0 +1,14 @@
+state={
+	id=33
+	name="STATE_33"
+	provinces={
+		14 495 618 651 663 854 949 970 1020 1150 1234 1242 1246 1248 1251 1254 1257 1260 1265 1268 
+	}
+	manpower=1000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	history={
+		owner = LOW
+		add_core_of = LOW
+	}
+}

@@ -1,0 +1,14 @@
+state={
+	id=32
+	name="STATE_32"
+	provinces={
+		15 362 377 480 686 1095 
+	}
+	manpower=1000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	history={
+		owner = PLA
+		add_core_of = PLA
+	}
+}

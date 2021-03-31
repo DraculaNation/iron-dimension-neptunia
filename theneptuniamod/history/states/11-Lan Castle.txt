@@ -1,0 +1,14 @@
+state={
+	id=11
+	name="STATE_11"
+	provinces={
+		79 105 268 283 349 437 868 1045 1311 1320 1321 
+	}
+	manpower=1000
+	state_category=rural
+	buildings_max_level_factor=1.000
+	history={
+		owner = PLA
+		add_core_of = PLA
+	}
+}

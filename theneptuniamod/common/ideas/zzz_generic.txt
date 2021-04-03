@@ -94,6 +94,7 @@ ideas = {
 				scout_plane_equipment = {
 					instant = yes
 					build_cost_ic = -0.10	
+				}
 			}		
 		}
 	}
@@ -243,7 +244,22 @@ ideas = {
 			}
 
 			allowed_civil_war = {
-			
+				OR = {
+					AND = {
+						tag = GER
+						has_government = fascism
+						SOV = {
+							has_government = communism
+						}
+					}
+					AND = {
+						tag = SOV
+						has_government = communism
+						GER = {
+							has_government = fascism
+						}
+					}
+				}
 			}
 
 			removal_cost = -1
@@ -997,7 +1013,7 @@ ideas = {
 			
 			modifier = {
 				resistance_growth_on_our_occupied_states = 0.1 
-				resistance_damage_to_garrison_on_our_occupied_states = 0.25
+				resistance_damage_to_garrison_on_our_occupied_states = 0.25 
 			}
 		}	
 		MTG_naval_treaty_adherent = {
@@ -1087,14 +1103,16 @@ ideas = {
 		generic_communist_revolutionary = {
 			
 			allowed = {
-				
 			}
 
 			available = {
-				
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
 			}
 			
-			traits = { }
+			traits = { communist_revolutionary }
 	
 			on_add = {
 				#country_event = political.1
@@ -1114,16 +1132,20 @@ ideas = {
 		generic_democratic_reformer = {
 			
 			allowed = {
-				
-				
 			}
 			
 			available = {
-				
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}
+				if = {
+					limit = { has_dlc = "La Resistance" }	
+				}
 			}
 
 			
-			traits = { }
+			traits = { democratic_reformer }
 	
 			on_add = {
 				#country_event = political.13
@@ -1143,14 +1165,16 @@ ideas = {
 		generic_fascist_demagogue = {
 			
 			allowed = {
-
 			}
 			
 			available = {
-							
+				if = {
+					limit = { has_dlc = "Man the Guns" }	
+					NOT = { has_autonomy_state = autonomy_supervised_state }
+				}				
 			}
 			
-			traits = {  }
+			traits = { fascist_demagogue }
 	
 			on_add = {
 				#country_event = political.7
@@ -1166,11 +1190,10 @@ ideas = {
 				factor = 0
 			}
 		}
+
 		generic_head_of_intelligence = {
 			allowed = { 
 				has_dlc = "La Resistance"
-				# china gets a special one via focus
-
 			}
 			visible = {
 				OR = {
@@ -1202,6 +1225,7 @@ ideas = {
 				}
 			}
 
+		}
 	}
 		
 	
@@ -1216,7 +1240,6 @@ ideas = {
 			picture = generic_tank_manufacturer_1
 			
 			allowed = {
-				
 			}
 			
 			cost = 150
@@ -1226,7 +1249,7 @@ ideas = {
 				armor = 0.15
 			}
 			
-			traits = { }
+			traits = { tank_manufacturer }
 		}
 	}
 	
@@ -1239,7 +1262,6 @@ ideas = {
 			picture = generic_naval_manufacturer_1
 
 			allowed = {
-				
 			}
 			
 			cost = 150
@@ -1249,7 +1271,7 @@ ideas = {
 				naval_equipment = 0.15
 			}
 			
-			traits = { }
+			traits = { naval_manufacturer }
 		}
 	}
 
@@ -1262,7 +1284,6 @@ ideas = {
 			picture = generic_air_manufacturer_1
 
 			allowed = {
-			
 			}
 			
 			cost = 150
@@ -1272,7 +1293,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { }
+			traits = { light_aircraft_manufacturer }
 		}
 		
 		generic_medium_aircraft_manufacturer = {
@@ -1280,7 +1301,6 @@ ideas = {
 			picture = generic_air_manufacturer_3
 
 			allowed = {
-				
 			}
 			
 			cost = 150
@@ -1290,7 +1310,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { }
+			traits = { medium_aircraft_manufacturer }
 		}
 		
 		generic_heavy_aircraft_manufacturer = {
@@ -1298,7 +1318,6 @@ ideas = {
 			picture = generic_air_manufacturer_2
 			
 			allowed = {
-				
 			}
 			
 			cost = 150
@@ -1308,7 +1327,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = {  }
+			traits = { heavy_aircraft_manufacturer }
 		}
 		
 		generic_naval_aircraft_manufacturer = {
@@ -1316,7 +1335,6 @@ ideas = {
 			picture = generic_naval_manufacturer_2
 
 			allowed = {
-				
 			}
 			
 			cost = 150
@@ -1326,7 +1344,7 @@ ideas = {
 				air_equipment = 0.15
 			}
 			
-			traits = { }
+			traits = { naval_aircraft_manufacturer }
 		}
 	}
 
@@ -1337,7 +1355,6 @@ ideas = {
 			picture = generic_industrial_concern_1
 
 			allowed = {
-			
 			}
 			
 			cost = 150
@@ -1347,7 +1364,7 @@ ideas = {
 				industry = 0.15
 			}
 			
-			traits = { }
+			traits = { industrial_concern }
 		}
 
 		generic_electronics_concern = {
@@ -1355,7 +1372,6 @@ ideas = {
 			picture = generic_electronics_concern_1
 
 			allowed = {
-				
 			}
 			
 			cost = 150
@@ -1365,7 +1381,7 @@ ideas = {
 				electronics = 0.15
 			}
 			
-			traits = { }
+			traits = { electronics_concern }
 		}
 	}
 
@@ -1378,7 +1394,6 @@ ideas = {
 			picture = generic_motorized_equipment_manufacturer_3
 
 			allowed = {
-				
 			}
 			
 			cost = 150
@@ -1388,7 +1403,7 @@ ideas = {
 				motorized_equipment = 0.15
 			}
 			
-			traits = { }
+			traits = { motorized_equipment_manufacturer }
 		}
 		
 		generic_infantry_equipment_manufacturer = {
@@ -1396,7 +1411,9 @@ ideas = {
 			picture = generic_infantry_equipment_manufacturer_2
 
 			allowed = {
-				
+				NOT = {
+					has_available_idea_with_traits = { idea = infantry_equipment_manufacturer limit = 1 }
+				}
 			}
 			
 			cost = 150
@@ -1406,7 +1423,7 @@ ideas = {
 				infantry_weapons = 0.15
 			}
 			
-			traits = { }
+			traits = { infantry_equipment_manufacturer }
 		}
 		
 		generic_artillery_manufacturer = {
@@ -1414,7 +1431,9 @@ ideas = {
 			picture = generic_artillery_manufacturer_2
 
 			allowed = {
-				
+				NOT = {
+					has_available_idea_with_traits = { idea = artillery_manufacturer limit = 1 }
+				}
 			}
 			
 			cost = 150
@@ -1424,7 +1443,7 @@ ideas = {
 				artillery = 0.15
 			}
 			
-			traits = { }
+			traits = { artillery_manufacturer }
 		}
 	}
 
@@ -1433,28 +1452,25 @@ ideas = {
 		generic_captain_of_industry = {
 
 			allowed = {
-				
 			}
 			
-			traits = {  }
+			traits = { captain_of_industry }
 		}
 		
 		generic_fortification_engineer = {
 
 			allowed = {
-				
 			}
 			
-			traits = {  }
+			traits = { fortification_engineer }
 		}
 
 		generic_war_industrialist = {
 
 			allowed = {
-				
 			}
 			
-			traits = {  }
+			traits = { war_industrialist }
 		}
 	}
 
@@ -1463,19 +1479,17 @@ ideas = {
 		generic_army_chief_off = {
 			
 			allowed = {
-				
 			}
 			
-			traits = { }
+			traits = { army_chief_offensive_1 }
 		}
 
 		generic_army_chief_def = {
 			
 			allowed = {
-				
 			}
 			
-			traits = {  }
+			traits = { army_chief_defensive_1 }
 		}
 	}
 
@@ -1484,19 +1498,17 @@ ideas = {
 		generic_navy_chief_decisive_bat = {
 			
 			allowed = {
-				
 			}
 			
-			traits = {  }
+			traits = { navy_chief_decisive_battle_2 }
 		}
 
 		generic_navy_anti_submarine = {
 			
 			allowed = {
-				
 			}
 			
-			traits = {  }
+			traits = { navy_anti_submarine_2 }
 		}
 	}
 
@@ -1505,100 +1517,98 @@ ideas = {
 		generic_air_close_air_sup = {
 			
 			allowed = {
-				
 			}
 			
-			traits = {  }
+			traits = { air_close_air_support_2 }
 		}
 	
 		generic_air_chief_all_weather = {
 			
 			allowed = {
-				
 			}
 			
-			traits = {  }			
+			traits = { air_chief_all_weather_2 }			
 		}
 	}
 
 	high_command = {
 
 		generic_army_art = {
+			ledger = army
 			
 			allowed = {
-				
 			}
 			
-			traits = { }			
+			traits = { army_artillery_1 }			
 		}
 		
 		generic_army_log = {
+			ledger = army
 
 			allowed = {
-				
 			}
 			
-			traits = {  }			
+			traits = { army_logistics_2 }			
 		}
 
 		generic_navy_fleet_log = {
+			ledger = navy
 
 			allowed = {
-				
 			}
 			
-			traits = { }			
+			traits = { navy_fleet_logistics_1 }			
 		}
 
 		generic_air_air_combat_trainer = {
+			ledger = air
 
 			allowed = {
-				
 			}
 			
-			traits = { }			
+			traits = { air_air_combat_training_2 }			
 		}
 	}
 
 	theorist = {
 
 		generic_military_theorist = {
+			ledger = army
 			
 			allowed = {
-				
 			}
 			
 			research_bonus = {
 				land_doctrine = 0.10
 			}
 			
-			traits = {  }
+			traits = { military_theorist }
 		}
 	
 		generic_naval_theorist = {
+			ledger = navy
 			
 			allowed = {
-				
 			}
 			
 			research_bonus = {
 				naval_doctrine = 0.10
 			}
 			
-			traits = { }
+			traits = { naval_theorist }
 		}
 
 		generic_air_warfare_theorist = {
+			ledger = air
 			
 			allowed = {
-				
 			}
 			
 			research_bonus = {
 				air_doctrine = 0.10
 			}
 			
-			traits = { }
+			traits = { air_warfare_theorist }
 		}
 
 	}

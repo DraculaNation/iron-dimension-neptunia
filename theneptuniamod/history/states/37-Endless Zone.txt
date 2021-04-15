@@ -1,0 +1,14 @@
+state={
+	id=37
+	name="STATE_37"
+	provinces={
+		11 16 34 47 56 66 68 81 103 258 337 339 384 444 463 479 594 648 670 807 827 857 977 1043 1284 1289 1296 1299 1308 1313 1324 1330 1332 1338 1339 
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	history={
+		owner = LAS
+		add_core_of = LAS
+	}
+}

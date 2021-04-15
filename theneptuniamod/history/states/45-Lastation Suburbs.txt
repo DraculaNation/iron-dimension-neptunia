@@ -1,0 +1,14 @@
+state={
+	id=45
+	name="STATE_45"
+	provinces={
+		76 330 487 496 587 622 665 863 1041 1364 1376 
+	}
+	manpower=1000
+	buildings_max_level_factor=1.000
+	state_category=rural
+	history={
+		owner = LAS
+		add_core_of = LAS
+	}
+}

@@ -4,11 +4,19 @@ state={
 	provinces={
 		79 105 268 283 349 437 868 1045 1311 1320 1321 
 	}
-	manpower=1000
-	state_category=rural
+	manpower=581229
+	state_category=large_city
 	buildings_max_level_factor=1.000
 	history={
 		owner = PLA
 		add_core_of = PLA
+		buildings = {
+			infrastructure = 8
+			arms_factory = 3
+			industrial_complex = 2
+		}
+		victory_points = {
+			437 17 
+		}
 	}
 }

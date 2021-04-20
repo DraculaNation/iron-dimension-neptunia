@@ -6,12 +6,19 @@ state={
 	history={
 		owner = PLA
 		add_core_of = PLA
+		buildings = {
+			infrastructure = 3
+			air_base = 5
+		}
+		victory_points = {
+			363 3
+		}
 	}
 
 	provinces={
 		20 102 178 183 213 278 356 363 378 380 433 482 507 568 620 771 836 856 867 1111 1128 1326 1331 1345 1348 1359 1361 1378 1387 1788 
 	}
-	manpower=1000
+	manpower=163091
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }

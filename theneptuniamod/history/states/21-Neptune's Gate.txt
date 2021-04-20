@@ -4,11 +4,10 @@ state={
 	provinces={
 		5 98 150 170 177 192 207 341 374 439 452 455 597 751 965 1351 1363 1367 1396 1454 1512 
 	}
-	manpower=1000
-	state_category=rural
+	manpower=10462
+	state_category=enclave
 	buildings_max_level_factor=1.000
 	history={
 		owner = PLA
-		add_core_of = PLA
 	}
 }

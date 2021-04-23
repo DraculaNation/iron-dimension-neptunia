@@ -17,4 +17,7 @@ state={
 			508 7 
 		}
 	}
+	resources={
+		oil = 18
+	}
 }

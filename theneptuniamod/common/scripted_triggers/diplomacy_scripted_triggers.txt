@@ -597,15 +597,6 @@ DIPLOMACY_SEND_VOLUNTEERS_ENABLE_TRIGGER = {
 		limit = {
 			has_game_rule = {
 				rule = allow_volunteers
-				option = FREE
-			}
-		}
-		always = yes
-	}
-	if = {
-		limit = {
-			has_game_rule = {
-				rule = allow_volunteers
 				option = LIMITED
 			}
 		}

@@ -19,4 +19,8 @@ state={
 			720 6 
 		}
 	}
+	resources={
+		aluminium = 5
+		steel = 12
+	}
 }

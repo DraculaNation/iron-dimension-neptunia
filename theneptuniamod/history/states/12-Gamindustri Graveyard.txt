@@ -17,4 +17,9 @@ state={
 			infrastructure = 0
 		}
 	}
+	resources={
+		aluminium = 5
+		tungsten = 5
+		steel = 10
+	}
 }

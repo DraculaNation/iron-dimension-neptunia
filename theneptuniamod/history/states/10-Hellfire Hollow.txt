@@ -8,8 +8,8 @@ state={
 	state_category=rural
 	buildings_max_level_factor=1.000
 	history={
-		owner = PLA
-		add_core_of = PLA
+		owner = LEA
+		add_core_of = LEA
 		buildings = {
 			infrastructure = 3
 			arms_factory = 0
@@ -19,5 +19,8 @@ state={
 		victory_points = {
 			783 4 
 		}
+	}
+	resources={
+		rubber = 12
 	}
 }

@@ -14,4 +14,7 @@ state={
 			infrastructure = 1
 		}
 	}
+	resources={
+		steel = 11
+	}
 }

@@ -6,13 +6,20 @@ state={
 	history={
 		owner = LOW
 		add_core_of = LOW
-
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+		}
+		victory_points = {
+			549 8
+		}
 	}
 
 	provinces={
 		57 147 195 236 282 385 425 468 490 549 683 719 833 880 1068 1124 1263 1274 1277 1283 1288 1291 1301 1302 1786 1787 1792 1794 
 	}
-	manpower=1000
+	manpower=911318
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 }

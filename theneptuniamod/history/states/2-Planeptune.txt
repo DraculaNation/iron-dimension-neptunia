@@ -7,13 +7,19 @@ state={
 		owner = PLA
 		add_core_of = PLA
 		victory_points = {
-			293 40
+			293 50
 		}
 		buildings = {
 			infrastructure = 10
 			arms_factory = 4
 			industrial_complex = 3
 			air_base = 10
+			840 = {
+				naval_base = 2
+			}
+			1529 = {
+				naval_base = 1
+			}
 		}
 	}
 

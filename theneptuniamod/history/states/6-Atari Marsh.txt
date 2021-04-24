@@ -5,13 +5,16 @@ state={
 		owner = LOW
 		add_core_of = LOW
 		victory_points = {
-			3 5 
+			345 11
+		}
+		buildings = {
+			infrastructure = 3
 		}
 	}
 	provinces={
 		3 64 67 114 133 174 181 239 275 325 345 348 351 395 400 405 456 469 502 553 588 592 615 631 633 655 691 709 723 782 829 861 944 956 979 985 1018 1048 1207 1212 1225 1233 1235 1243 1249 1250 1256 1267 1270 1273 1279 1280 1285 1286 1287 1292 1293 1295 1303 
 	}
-	manpower=10000
+	manpower=1988213
 	buildings_max_level_factor=1.000
-	state_category=town
+	state_category=rural
 }

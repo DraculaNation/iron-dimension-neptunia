@@ -4,11 +4,18 @@ state={
 	provinces={
 		8 51 459 555 653 1171 1186 1214 
 	}
-	manpower=1000
-	state_category=rural
+	manpower=638220
+	state_category=town
 	buildings_max_level_factor=1.000
 	history={
 		owner = LOW
 		add_core_of = LOW
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+		}
+		victory_points = {
+			459 8
+		}
 	}
 }

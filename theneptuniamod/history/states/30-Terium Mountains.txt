@@ -4,11 +4,17 @@ state={
 	provinces={
 		48 88 281 317 426 429 554 687 890 1036 1156 1160 1191 
 	}
-	manpower=1000
-	state_category=rural
+	manpower=212884
+	state_category=pastoral
 	buildings_max_level_factor=1.000
 	history={
 		owner = LOW
 		add_core_of = LOW
+		victory_points = {
+			890 3
+		}
+		buildings = {
+			infrastructure = 1
+		}
 	}
 }

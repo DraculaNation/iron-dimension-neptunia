@@ -17,4 +17,8 @@ state={
 			infrastructure = 1
 		}
 	}
+	resources={
+		chromium = 11
+		tungsten = 7
+	}
 }

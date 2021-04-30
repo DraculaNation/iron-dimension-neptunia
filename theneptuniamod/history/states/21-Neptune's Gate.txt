@@ -9,5 +9,6 @@ state={
 	buildings_max_level_factor=1.000
 	history={
 		owner = PLA
+		remove_core_of = PLA
 	}
 }

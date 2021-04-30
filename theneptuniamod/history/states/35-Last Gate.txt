@@ -9,6 +9,6 @@ state={
 	state_category=rural
 	history={
 		owner = LAS
-		add_core_of = LAS
+		remove_core_of = LAS
 	}
 }

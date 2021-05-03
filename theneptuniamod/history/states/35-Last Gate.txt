@@ -4,9 +4,9 @@ state={
 	provinces={
 		80 85 107 109 135 144 172 260 265 326 328 368 392 486 512 556 660 729 1129 1304 1333 1389 1487 
 	}
-	manpower=1000
+	manpower=21443
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=enclave
 	history={
 		owner = LAS
 		remove_core_of = LAS

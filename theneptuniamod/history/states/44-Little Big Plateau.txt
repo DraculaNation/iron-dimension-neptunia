@@ -4,11 +4,16 @@ state={
 	provinces={
 		7 97 289 335 505 515 692 726 727 733 775 805 816 875 913 1038 1127 1469 1493 1509 1510 1513 1519 1532 
 	}
-	manpower=1000
+	manpower=474300
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	history={
 		owner = LAS
 		add_core_of = LAS
+		buildings = {
+			infrastructure = 4
+			arms_factory = 1
+			air_base = 3
+		}
 	}
 }

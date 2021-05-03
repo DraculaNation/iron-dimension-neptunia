@@ -4,11 +4,15 @@ state={
 	provinces={
 		148 511 539 570 591 754 774 879 1317 1318 1322 1328 
 	}
-	manpower=1000
+	manpower=445257
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=town
 	history={
 		owner = LAS
 		add_core_of = LAS
+		buildings = {
+			infrastructure = 6
+			industrial_complex = 1
+		}
 	}
 }

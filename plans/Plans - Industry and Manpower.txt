@@ -1,0 +1,43 @@
+Manpower
+1. Lowee - 13 mil
+2. Lastation - 11 mil
+3. Leanbox - 10 mil
+4. Planeptune - 8 mil
+
+Industry
+1. Lastation - 15 civ, 15 mil 
+2. Planeptune - 14 civ, 11 mil
+3. Leanbox - 13 civ, 12 mil
+4. Lowee - 13 civ, 8 mil (mountains 1 mil, add western lowee 1 mil)
+
+Navy
+1. Leanbox - 10 dockyards
+2. Lastation - 7 dockyards
+3. Planeptune - 4 dockyards
+4. Lowee - 2 dockyards
+
+
+Lastation States
+Lastation - 3,5 mil ; 3 civ ; 4 mtr ; 9 infra
+Rebeat Resort - 3 dockyards ; 2 mil ; 4 civ ; 1 mtr ; 8 infra
+Saburai - 2 dockyards ; 1 mil ; 2 civ ; 2 mtr ; 6 infra
+Midcompany - 1 dockyard ; 500k ; 2 civ ; 2 mtr ; 5 infra
+Endless Zone - 1 mil ; 600k ; 2 civ ; 1 mtr ; 7 infra
+Endless Marsh -  350k ; 3 infra
+Lastfus Plains - 600k ; 1 civ ; 6 infra 
+Little Big Plateau - 450k ; 1 mtr ; 4 infra
+Suspicious Factory - 700k ; 1 civ ; 1 mtr ; 7 infra
+Last Gate - 20k ; 0 infra
+Snake Island - 1 dockyard ; 300 k ; 3 mtr ; 5 infra
+
+
+Leanbox States
+Leanbox
+Rocky Beaches
+West Coast
+Stella Mines
+Trinity Marsh
+Underverse
+Gapain Field
+Hirool Field
+Hellfire Hollow - 200k ; 1 civ

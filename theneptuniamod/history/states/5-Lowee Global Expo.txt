@@ -21,7 +21,7 @@ state={
 	provinces={
 		12 44 60 155 157 182 193 214 280 297 301 331 473 477 682 731 780 828 830 1053 1115 1179 1185 1197 1206 
 	}
-	manpower=1948109
+	manpower=2148109
 	buildings_max_level_factor=1.000
 	state_category=large_city
 	resources={

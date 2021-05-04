@@ -16,4 +16,8 @@ state={
 			air_base = 3
 		}
 	}
+	resources={
+		aluminium = 4
+		chromium = 8
+	}
 }

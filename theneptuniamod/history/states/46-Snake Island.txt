@@ -15,5 +15,12 @@ state={
 			arms_factory = 3
 			dockyard = 1
 		}
+		victory_points = {
+			179 11 
+		}
+	}
+	resources={
+		aluminium = 8
+		tungsten = 6
 	}
 }

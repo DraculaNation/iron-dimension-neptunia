@@ -4,11 +4,31 @@ state={
 	provinces={
 		37 91 104 110 168 186 202 204 229 316 323 329 367 399 462 464 498 566 708 744 778 789 793 846 851 938 1016 1108 1146 1728 1731 1739 1742 1751 1752 1754 1756 1759 1761 1764 1766 1767 1769 
 	}
-	manpower=1000
+	manpower=716822
 	buildings_max_level_factor=1.000
-	state_category=rural
+	state_category=large_town
 	history={
 		owner = LEA
 		add_core_of = LEA
+		victory_points = {
+			708 11
+		}
+		buildings = {
+			infrastructure = 5
+			industrial_complex = 1
+			arms_factory = 1
+			dockyard = 2
+			air_base = 6
+			464 = {
+				naval_base = 3
+			}
+			1769 = {
+				naval_base = 2
+			}
+		}
+	}
+	resources={
+		steel = 20
+		rubber = 4
 	}
 }

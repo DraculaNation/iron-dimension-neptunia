@@ -14,5 +14,11 @@ state={
 			infrastructure = 6
 			industrial_complex = 1
 		}
+		victory_points = {
+			570 8 
+		}
+	}
+	resources={
+		aluminium = 11
 	}
 }

@@ -1,0 +1,63 @@
+ideas = {
+	country = {
+	
+		PLA_legacy_of_the_eden_war_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				add_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier }
+			}
+		}
+
+		PLA_imbalanced_administration_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				add_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier }
+			}
+		}
+		
+		PLA_technological_powerhouse_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				research_speed_factor = 0.05
+				production_speed_buildings_factor = 0.05
+			}
+		}
+
+		PLA_stagnant_birthrates_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				monthly_population = -0.8
+				recruitable_population_factor = -0.5	
+			}
+		}
+
+	}
+}

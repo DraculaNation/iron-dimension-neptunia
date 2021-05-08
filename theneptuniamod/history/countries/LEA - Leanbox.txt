@@ -2,14 +2,13 @@
 set_convoys = 50
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = cpu_rule
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	democratic = 30
-	neutrality = 70
+	cpu_rule = 100
 }
 
 create_country_leader = {
@@ -17,7 +16,7 @@ create_country_leader = {
 	desc = "POLITICS_VERT_DESC"
 	picture = "Portrait_Leanbox_Vert.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = cpu_rule_subtype
 	traits = {
 		vert_leader_trait
 	}

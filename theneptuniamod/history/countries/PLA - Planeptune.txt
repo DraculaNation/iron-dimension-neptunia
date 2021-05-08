@@ -2,22 +2,61 @@
 set_convoys = 50
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = cpu_rule
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
 	communism = 25
-	neutrality = 75
+	cpu_rule = 75
 }
+
+### Setting variables for public unrest
+set_variable = {
+	var = PLA_public_unrest_percent
+	value = 50
+}
+set_variable = {
+	var = PLA_public_unrest_effect
+	value = PLA_public_unrest_percent
+}
+multiply_variable = {
+	var = PLA_public_unrest_effect
+	value = -0.002
+}
+
+## Setting variables for Histoire's discontent
+set_variable = {
+	var = PLA_histoire_discontent_percent
+	value = 0
+}
+set_variable = {
+	var = PLA_histoire_discontent_effect
+	value = PLA_histoire_discontent_percent
+}
+multiply_variable = {
+	var = PLA_histoire_discontent_effect
+	value = -0.0025
+}
+
+
+add_ideas = {
+		PLA_technological_powerhouse_idea
+		PLA_stagnant_birthrates_idea
+		PLA_legacy_of_the_eden_war_idea
+		PLA_imbalanced_administration_idea
+}
+
+add_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier }
+add_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier }
 
 create_country_leader = {
 	name = "Neptune"
 	desc = "POLITICS_NEPTUNE_DESC"
 	picture = "Portrait_Planeptune_Neptune.dds"
 	expire = "1965.1.1"
-	ideology = despotism
+	ideology = cpu_rule_subtype
 	traits = {
 		neptune_leader_trait
 	}

@@ -8,7 +8,15 @@ bookmarks = {
 		default = yes
 		
 		"PLA"={
-			history = "OTHER_GATHERING_STORM_DESC"
+			history = "PLANEPTUNE_GATHERING_STORM_DESC"
+			ideology = cpu_rule
+			ideas = {
+				PLA_technological_powerhouse_idea
+				PLA_stagnant_birthrates_idea
+				PLA_legacy_of_the_eden_war_idea
+			}
+			#focuses = {
+			#}
 		}
 		"LOW"={
 			history = "OTHER_GATHERING_STORM_DESC"

@@ -1,6 +1,6 @@
-TST = {
-	color = rgb { 50 50 50 }
-	color_ui = rgb { 50 50 50 }
+GAI = {
+	color = rgb { 19 212 208 }
+	color_ui = rgb { 22 140 138 }
 }
 
 LOW = {

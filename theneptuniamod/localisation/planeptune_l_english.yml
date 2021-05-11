@@ -43,8 +43,8 @@
  PLA_technological_powerhouse_idea_desc:0 "Planeptune has always been the center of technology in Gamindustri. Towering skyscrapers and bullet trains dot the city landscape while its parks are green and its air is clear. Planeptune's technological might is something all of the other nations dream of achieving. Innovation has a name, and its name is Planeptune!"
  PLA_stagnant_birthrates_idea:0 "Stagnant Birthrates"
  PLA_stagnant_birthrates_idea_desc:0 "Technological progress doesn't come without a cost. The citizens of Planeptune are either too busy with work or too enamoured with fictional women to find a real mate. Even though Planeptune uses robots as its frontline soldiers, it puts a strain on its industry, and fresh recruits are needed for the upcoming war."
- PLA_legacy_of_the_eden_war_idea:0 "Legacy of the Eden War"
- PLA_legacy_of_the_eden_war_idea_desc:0 "The Eden Rebellion has scarred Planeptune's citizens deeply. Memories of brother fighting brother, landmines going off in Planeptune's beautiful nature, and windows getting broken due to gunfire are some of the few reasons why the citizens of Planeptune are not looking forward to the upcoming war with Lowee, Leanbox and Lastation."
- PLA_imbalanced_administration_idea:0 "Imbalanced Administration"
- PLA_imbalanced_administration_idea_desc:0 "Planeptune might seem like a stable nation, but behind the scenes Histoire does the bulk of the work while Neptune spends her days playing video games and eating pudding. This has taken a toll on Histoire's mental health, affecting how she manages the nation."
+ PLA_public_unrest_dynamic_modifier:0 "Legacy of the Eden War"
+ PLA_public_unrest_dynamic_modifier_desc:0 "The Eden Rebellion has scarred Planeptune's citizens deeply. Memories of brother fighting brother, landmines going off in Planeptune's beautiful nature, and windows getting broken due to gunfire are some of the few reasons why the citizens of Planeptune are not looking forward to the upcoming war with Lowee, Leanbox and Lastation."
+ PLA_histoire_discontent_dynamic_modifier:0 "Imbalanced Administration"
+ PLA_histoire_discontent_dynamic_modifier_desc:0 "Planeptune might seem like a stable nation, but behind the scenes Histoire does the bulk of the work while Neptune spends her days playing video games and eating pudding. This has taken a toll on Histoire's mental health, affecting how she manages the nation."
  

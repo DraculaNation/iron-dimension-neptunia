@@ -13,7 +13,6 @@ bookmarks = {
 			ideas = {
 				PLA_technological_powerhouse_idea
 				PLA_stagnant_birthrates_idea
-				PLA_legacy_of_the_eden_war_idea
 			}
 			#focuses = {
 			#}

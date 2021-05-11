@@ -1,0 +1,141 @@
+ideas = {
+	country = {
+		
+		LAS_overindustrialization_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				production_speed_buildings_factor = -0.80
+				consumer_goods_factor = 0.15
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.25
+			}
+		}
+		
+		LAS_widespread_pollution_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				local_resources_factor = -0.33
+				army_core_defence_factor = -0.33
+				supply_consumption_factor = 0.25
+			}
+		}
+
+		LAS_vulnerable_security_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				encryption_factor = -0.9
+				decryption_factor = -0.9
+				stability_weekly = -0.01
+				political_power_gain = -0.3
+			}
+		}
+		
+		LAS_delicate_transportation_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				industry_free_repair_factor = -0.5
+				army_speed_factor = -0.33
+				war_support = -0.25
+				stability_factor = -0.1
+			}
+		}
+
+		LAS_overindustrialization_solved_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.10
+				production_factory_start_efficiency_factor = 0.15
+				production_factory_max_efficiency_factor = 0.25
+			}
+		}
+		
+		LAS_avenir_influence_low_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+				industrial_capacity_factory = 0.7
+				army_attack_factor = 0.03
+				army_defence_factor = 0.03
+			}
+		}
+		
+		LAS_avenir_influence_medium_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.1
+				industrial_capacity_factory = 0.15
+				equipment_capture_factor = -0.3
+				army_attack_factor = 0.06
+				army_defence_factor = 0.06
+			}
+		}
+		
+		LAS_avenir_influence_high_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = 0.35
+				equipment_capture_factor = -0.6
+				army_attack_factor = 0.1
+				army_defence_factor = 0.1
+			}
+		}
+
+	}
+}

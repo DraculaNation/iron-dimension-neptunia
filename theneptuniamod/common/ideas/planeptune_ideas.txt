@@ -1,33 +1,5 @@
 ideas = {
 	country = {
-	
-		PLA_legacy_of_the_eden_war_idea = {
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = FRA_scw_intervention_nationalists_focus
-			
-			modifier = {
-				add_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier }
-			}
-		}
-
-		PLA_imbalanced_administration_idea = {
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = FRA_scw_intervention_nationalists_focus
-			
-			modifier = {
-				add_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier }
-			}
-		}
 		
 		PLA_technological_powerhouse_idea = {
 			allowed = {

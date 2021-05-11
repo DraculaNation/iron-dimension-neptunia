@@ -1,14 +1,19 @@
+
+
 PLA_public_unrest_dynamic_modifier = {
+	icon = FRA_scw_intervention_nationalists_focus
 	enable = { always = yes }
 
     war_support_factor = PLA_public_unrest_effect
 	army_org_factor = PLA_public_unrest_effect
 	breakthrough_factor = PLA_public_unrest_effect
+	
 }
 
 PLA_histoire_discontent_dynamic_modifier = {
+	icon = FRA_scw_intervention_nationalists_focus
 	enable = { always = yes }
-
+	
     stability_factor = PLA_histoire_discontent_effect
 	political_power_gain = PLA_histoire_discontent_effect
 }

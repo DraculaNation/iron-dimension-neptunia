@@ -2,6 +2,9 @@
 state={
 	id=11
 	name="STATE_11"
+	history={
+		owner = PLA
+	}
 	provinces={
 		2450 3155 4452 
 	}

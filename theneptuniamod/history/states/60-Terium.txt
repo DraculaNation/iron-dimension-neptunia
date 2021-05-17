@@ -1,0 +1,14 @@
+state={
+	id=60
+	name="STATE_60"
+	
+	history={
+		owner = LOW
+	}
+	
+	provinces={
+		53 154 164 310 862 1198 1336 1422 1661 1717 1853 2128 2204 2611 2745 2751 3047 3193 3194 3195 3196 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

@@ -1,0 +1,15 @@
+
+state={
+	id=57
+	name="STATE_57"
+	
+	history={
+		owner = LOW
+	}
+	
+	provinces={
+		71 93 692 815 1345 1790 2081 2138 2217 2393 2418 2626 2767 3216 3221 3228 3246 3261 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

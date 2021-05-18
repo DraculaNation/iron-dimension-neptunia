@@ -1,0 +1,14 @@
+state={
+	id=81
+	name="STATE_81"
+	
+	history={
+		owner = LEA
+	}
+	
+	provinces={
+		219 259 294 367 372 857 1256 1356 1364 1490 1667 1725 1986 2025 2088 2219 2294 2645 2863 4443 4453 4456 4457 4459 4465 4476 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

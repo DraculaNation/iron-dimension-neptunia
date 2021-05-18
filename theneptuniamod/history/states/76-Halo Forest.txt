@@ -1,0 +1,14 @@
+state={
+	id=76
+	name="STATE_76"
+	
+	history={
+		owner = LEA
+	}
+	
+	provinces={
+		201 262 356 491 523 786 855 934 961 1088 1115 1303 2326 2839 2896 4468 4474 4479 4486 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

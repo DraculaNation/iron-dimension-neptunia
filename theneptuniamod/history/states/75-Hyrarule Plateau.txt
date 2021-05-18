@@ -1,0 +1,15 @@
+
+state={
+	id=75
+	name="STATE_75"
+	
+	history={
+		owner = LEA
+	}
+	
+	provinces={
+		19 24 29 147 151 188 403 619 741 803 1045 1243 1370 1501 1612 1813 2066 2271 2588 2678 2709 2808 3156 4484 4485 4492 4495 4500 4502 
+	}
+	manpower=0
+	buildings_max_level_factor=1.000
+}

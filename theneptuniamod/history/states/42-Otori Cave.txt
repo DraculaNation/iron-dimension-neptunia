@@ -3,10 +3,25 @@ state={
 	name="STATE_42"
 	history={
 		owner = PLA
+		add_core_of = PLA
+		victory_points = { 3150 17 }
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			arms_factory = 3
+			air_base = 2
+		}
 	}
 	provinces={
 		22 177 263 510 550 612 737 772 867 975 991 1014 1347 1400 1609 1653 1774 1840 1876 1943 2000 2096 2110 2209 2290 2382 2486 2627 2694 2900 3091 3129 3150 3180 3675 3679 3734 3758 3763 3795 3804 3818 
 	}
-	manpower=0
+	manpower=908031
 	buildings_max_level_factor=1.000
+	state_category = large_town
+	resources = {
+		chromium = 8
+		steel = 12
+		tungsten = 4
+		
+	}
 }

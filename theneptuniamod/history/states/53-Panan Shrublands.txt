@@ -3,10 +3,20 @@ state={
 	name="STATE_53"
 	history={
 		owner = PLA
+		add_core_of = PLA
+		buildings = {
+			infrastructure = 5
+			arms_factory = 1
+			industrial_complex = 2
+		}
 	}
 	provinces={
 		68 315 334 373 411 722 733 822 907 914 971 1006 1020 1057 1117 1224 1394 1528 1551 1560 1602 1633 1641 1801 1810 1817 2038 2260 2278 2560 2620 2787 2905 3006 4251 4284 4300 4308 4319 4320 4338 4357 4375 4376 4379 4387 4398 4408 
 	}
-	manpower=0
+	manpower=378811
 	buildings_max_level_factor=1.000
+	state_category = large_town
+	resources = {
+		rubber = 3
+	}
 }

@@ -4,10 +4,24 @@ state={
 	name="STATE_5"
 	history={
 		owner = PLA
+		add_core_of = PLA
+		buildings = {
+			infrastructure = 3
+			2948 = {
+				naval_base = 2
+			}
+			2990 = {
+				naval_base = 1
+			}
+		}
 	}
 	provinces={
 		1157 1760 1949 2948 2990 
 	}
-	manpower=0
+	manpower=50165
 	buildings_max_level_factor=1.000
+	resources={
+		aluminium = 12
+	}
+	state_category = small_island
 }

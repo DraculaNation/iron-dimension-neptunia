@@ -4,10 +4,26 @@ state={
 	name="STATE_51"
 	history={
 		owner = PLA
+		add_core_of = PLA
+		victory_points = { 216 60 }
+		buildings = {
+			infrastructure = 10
+			industrial_complex = 4
+			arms_factory = 4
+			dockyard = 3
+			air_base = 10
+			1947 = {
+				naval_base = 6
+			}
+			4064 = {
+				naval_base = 10
+			}
+		}
 	}
 	provinces={
 		216 427 452 518 640 745 775 776 801 845 849 900 950 1322 1499 1537 1581 1644 1691 1706 1707 1867 1941 1947 1995 2053 2272 2277 2376 2387 2706 2783 2898 3002 3095 3110 3115 3162 3164 3837 3916 3917 3918 3922 3925 3930 3953 3966 3974 3989 3990 3998 4000 4011 4045 4055 4064 4070 
 	}
 	manpower=6431021
 	buildings_max_level_factor=1.000
+	state_category = megalopolis
 }

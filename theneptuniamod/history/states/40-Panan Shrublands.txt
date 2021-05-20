@@ -4,10 +4,18 @@ state={
 	name="STATE_40"
 	history={
 		owner = PLA
+		add_core_of = PLA
+		victory_points = { 591 16 }
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 2
+			air_base = 1
+		}
 	}
 	provinces={
 		115 126 354 485 493 591 674 893 966 1171 1177 1548 1654 1944 1982 2054 2101 2506 2773 2857 2861 4124 4149 4155 4156 4169 4187 4192 4195 4230 
 	}
-	manpower=0
+	manpower=774882
 	buildings_max_level_factor=1.000
+	state_category = large_town
 }

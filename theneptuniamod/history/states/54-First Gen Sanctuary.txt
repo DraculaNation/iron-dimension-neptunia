@@ -3,10 +3,20 @@ state={
 	name="STATE_54"
 	history={
 		owner = PLA
+		add_core_of = PLA
+		victory_points = { 4057 6 }
+		buildings = {
+			infrastructure = 2
+			arms_factory = 1
+		}
 	}
 	provinces={
 		112 245 732 967 1029 1063 1208 1245 1557 1573 1752 1864 2113 2136 2231 2368 2384 2485 2502 2674 2792 2795 2980 4003 4024 4033 4057 4061 4079 4080 4084 4100 4102 4112 
 	}
-	manpower=0
+	manpower=147041
 	buildings_max_level_factor=1.000
+	state_category = rural
+	resources = {
+		aluminium = 4
+	}
 }

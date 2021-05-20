@@ -4,10 +4,25 @@ state={
 	name="STATE_20"
 	history={
 		owner = PLA
+		add_core_of = PLA
+		victory_points = { 2171 19 }
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 3
+			arms_factory = 1
+			air_base = 2
+			3945 = {
+				naval_base = 4
+			}
+			3145 = {
+				naval_base = 5
+			}
+		}
 	}
 	provinces={
 		129 312 383 526 561 593 596 607 771 879 989 1104 1109 1119 1242 1319 1366 1523 1610 1678 1699 1906 2171 2256 2267 2330 2331 2429 2442 2483 2541 2552 2558 2619 2762 2852 2854 2872 2912 2938 3026 3048 3066 3111 3125 3135 3145 3937 3945 3962 3973 3980 3994 4013 4017 4027 4031 4032 4036 4043 4047 4048 4049 4063 4073 4086 4089 4091 4095 4115 4137 4139 4141 4150 4159 
 	}
-	manpower=0
+	manpower=2211189
 	buildings_max_level_factor=1.000
+	state_category = large_city
 }

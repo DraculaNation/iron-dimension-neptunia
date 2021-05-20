@@ -1,8 +1,8 @@
-version="0.1"
+version="1.10"
 tags={
 	"Map"
 }
-name="Neptunia Map"
+name="v2"
 replace_path="events"
 replace_path="map/strategicregions"
 replace_path="map/supplyareas"

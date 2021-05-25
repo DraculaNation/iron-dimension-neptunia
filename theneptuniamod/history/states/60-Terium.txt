@@ -4,6 +4,7 @@ state={
 	
 	history={
 		owner = LOW
+		victory_points = { 310 33 }
 	}
 	
 	provinces={

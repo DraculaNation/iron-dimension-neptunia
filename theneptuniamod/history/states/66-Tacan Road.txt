@@ -4,6 +4,7 @@ state={
 	
 	history={
 		owner = LAS
+		victory_points = { 2032 16 }
 	}
 	
 	provinces={

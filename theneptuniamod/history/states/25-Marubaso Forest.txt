@@ -5,7 +5,7 @@ state={
 
 	history={
 		owner = LEA
-
+		victory_points = { 1835 16 }
 	}
 
 	provinces={

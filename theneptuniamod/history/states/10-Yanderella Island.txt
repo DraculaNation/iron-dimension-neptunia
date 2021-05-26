@@ -3,10 +3,20 @@ state={
 	name="STATE_10"
 	history={
 		owner = LAS
+		buildings = {
+			infrastructure = 2
+			4129 = {
+				naval_base = 4
+			}
+		}
 	}
 	provinces={
 		594 712 816 1879 1930 2447 4127 4129 4136 4152 4172 
 	}
-	manpower=0
+	manpower=48018
+	state_category = small_island
 	buildings_max_level_factor=1.000
+	resources={
+		steel = 6
+	}
 }

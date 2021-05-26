@@ -6,11 +6,18 @@ state={
 	history={
 		owner = LEA
 		victory_points = { 2118 9 }
+		buildings = {
+			infrastructure = 1
+		}
 	}
 
 	provinces={
 		4 104 274 420 537 728 918 1031 1039 1048 1105 1130 1386 1460 1629 1779 1804 1928 1956 2033 2118 2201 2243 2405 2437 2487 2632 2692 2705 2818 2819 2870 2952 3082 3097 3134 4306 4309 4313 4321 4331 4356 4365 4368 4372 4386 4399 4403 4410 4411 4422 4429 4434 
 	}
-	manpower=0
+	manpower=107002
+	state_category = rural
 	buildings_max_level_factor=1.000
+	resources={
+		oil = 33
+	}
 }

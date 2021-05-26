@@ -3,11 +3,27 @@ state={
 	name="STATE_2"
 	history={
 		owner = LOW
+		buildings = {
+			infrastructure = 3
+			industrial_complex = 1
+			dockyard = 1
+			1470 = {
+				naval_base = 6
+			}
+			3208 = {
+				naval_base = 3
+			}
+			air_base = 1
+		}
 		victory_points = { 431 6 }
 	}
 	provinces={
 		78 108 161 193 393 431 720 743 840 973 1013 1121 1188 1213 1335 1470 1542 2226 2473 2572 2790 2976 3119 3197 3198 3199 3200 3202 3203 3208 
 	}
-	manpower=0
+	manpower=721103
+	state_category = town
 	buildings_max_level_factor=1.000
+	resources = {
+		aluminium = 33
+	}
 }

@@ -5,10 +5,21 @@ state={
 	history={
 		owner = LOW
 		victory_points = { 2662 40 }
+		buildings = {
+			infrastructure = 10
+			arms_factory = 3
+			dockyard = 2
+			industrial_complex = 1
+			air_base = 10
+			47 = {
+				naval_base = 10
+			}
+		}
 	}
 	provinces={
 		47 157 174 194 441 473 507 686 806 1044 1183 1248 1556 1718 1808 1970 2131 2264 2281 2361 2571 2662 2752 2771 3015 3154 3219 3226 3233 3240 3262 3269 
 	}
-	manpower=7333000
+	manpower=3156621
+	state_category = large_city
 	buildings_max_level_factor=1.000
 }

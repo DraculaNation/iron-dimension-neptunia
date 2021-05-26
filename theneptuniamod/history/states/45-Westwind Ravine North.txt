@@ -5,12 +5,15 @@ state={
 
 	history={
 		owner = LOW
-
+		buildings = {
+			infrastructure = 1
+		}
 	}
 
 	provinces={
 		7 169 209 230 299 536 578 584 647 726 768 931 958 1201 1341 1434 1443 1538 1647 1689 1744 1834 1856 2023 2140 2398 2404 2507 2536 2570 2599 2660 2715 2729 2774 2797 2858 2925 3179 3187 3348 3390 3403 3412 3413 3429 3431 3461 
 	}
-	manpower=0
+	manpower=26811
+	state_category = enclave
 	buildings_max_level_factor=1.000
 }

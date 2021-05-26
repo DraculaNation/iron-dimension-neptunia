@@ -6,11 +6,19 @@ state={
 	history={
 		owner = LAS
 		victory_points = { 1614 9 }
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 1
+		}
 	}
 	
 	provinces={
 		172 275 279 668 716 721 892 921 963 1337 1464 1614 1679 1692 1740 1763 1783 1977 2058 2527 2654 2658 2934 2966 3130 3489 3502 3514 3522 3523 3549 3555 3558 3572 3596 3627 14788 14789 14830 
 	}
-	manpower=0
+	manpower=336911
+	state_category = rural
 	buildings_max_level_factor=1.000
+	resources={
+		chromium = 40
+	}
 }

@@ -3,10 +3,17 @@ state={
 	name="STATE_4"
 	history={
 		owner = LOW
+		buildings = {
+			infrastructure = 0
+			4525 = {
+				naval_base = 2
+			}
+		}
 	}
 	provinces={
 		4525 
 	}
-	manpower=0
+	manpower=982
+	state_category = tiny_island
 	buildings_max_level_factor=1.000
 }

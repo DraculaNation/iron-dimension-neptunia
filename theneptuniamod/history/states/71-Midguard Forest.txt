@@ -4,11 +4,19 @@ state={
 	
 	history={
 		owner = LAS
+		buildings = {
+			infrastructure = 2
+		}
 	}
 	
 	provinces={
 		51 69 135 380 409 428 492 595 611 658 697 1037 1223 1228 1289 1437 1438 1546 1632 1749 1758 1841 1868 1917 2068 2109 2134 2141 2249 2317 2401 2501 2514 2862 2886 2939 3997 3999 4019 4026 4034 4039 4050 4067 4068 4074 4076 4078 4087 4090 4099 4104 4117 4118 4120 4128 
 	}
-	manpower=0
+	manpower=14221
+	state_category = rural
 	buildings_max_level_factor=1.000
+	resources={
+		tungsten = 26
+		aluminium = 21
+	}
 }

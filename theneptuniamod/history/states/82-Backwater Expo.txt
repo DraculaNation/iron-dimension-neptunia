@@ -4,11 +4,21 @@ state={
 
 	history={
 		owner = LOW
+		buildings = {
+			infrastructure = 2
+			industrial_complex = 2
+			arms_factory = 2
+			air_base = 1
+		}
 	}
 	
 	provinces={
 		15 72 74 212 415 544 710 787 863 903 965 996 1225 1237 1320 1378 1390 1494 1671 2214 2255 2319 2394 2444 2470 2494 2557 2573 2676 2687 2716 2830 3151 3248 3250 3251 3253 3260 3267 3272 3273 3276 3280 3291 3293 
 	}
-	manpower=0
+	manpower=955563
+	state_category = large_town
 	buildings_max_level_factor=1.000
+	resources = {
+		tungsten = 18
+	}
 }

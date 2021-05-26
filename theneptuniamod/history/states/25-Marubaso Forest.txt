@@ -6,11 +6,27 @@ state={
 	history={
 		owner = LEA
 		victory_points = { 1835 16 }
+		buildings = {
+			infrastructure = 7
+			arms_factory = 4
+			dockyard = 1
+			979 = {
+				naval_base = 6
+			}
+			819 = {
+				naval_base = 4
+			}
+		}
 	}
 
 	provinces={
 		31 298 343 350 389 439 444 546 603 683 797 819 850 948 969 979 1179 1209 1302 1368 1435 1651 1800 1835 2123 2222 2371 2577 2616 2682 2915 2927 3017 3169 4393 4404 4417 4442 4446 4448 4449 4451 4461 4464 4471 
 	}
-	manpower=0
+	manpower=1361414
+	state_category = large_city
 	buildings_max_level_factor=1.000
+	resources={
+		oil = 11
+		steel = 13
+	}
 }

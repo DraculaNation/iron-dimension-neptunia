@@ -6,11 +6,16 @@ state={
 	history={
 		owner = LAS
 		victory_points = { 3041 17 }
+		buildings = {
+			infrastructure = 1
+			arms_factory = 1
+		}
 	}
 	
 	provinces={
 		149 220 273 329 416 553 673 727 897 1329 1402 1851 1983 1991 2341 3041 3331 3352 3365 3375 3382 3394 3414 3422 3425 3432 3455 3459 
 	}
-	manpower=0
+	manpower=84112
+	state_category = pastoral
 	buildings_max_level_factor=1.000
 }

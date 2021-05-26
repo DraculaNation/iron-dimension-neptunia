@@ -6,11 +6,21 @@ state={
 	history={
 		owner = LOW
 		victory_points = { 281 16 }
+		buildings = {
+			infrastructure = 7
+			industrial_complex = 1
+			dockyard = 2
+			air_base = 3
+		}
 	}
 
 	provinces={
 		5 36 118 227 281 349 445 525 605 901 1058 1207 1244 1294 1369 1377 1473 1552 1847 1998 2016 2238 2478 2701 2977 2986 3212 3213 3214 3220 3231 3234 
 	}
-	manpower=0
+	manpower=1039961
+	state_category = city
 	buildings_max_level_factor=1.000
+	resources = {
+		tungsten = 6
+	}
 }

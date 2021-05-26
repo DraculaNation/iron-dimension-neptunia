@@ -5,11 +5,21 @@ state={
 	history={
 		owner = LAS
 		victory_points = { 4094 21 }
+		buildings = {
+			infrastructure = 9
+			industrial_complex = 2
+			dockyard = 5
+			3011 = {
+				naval_base = 7
+			}
+			air_base = 6
+		}
 	}
 	
 	provinces={
 		39 144 328 336 602 614 999 1024 1571 1576 1696 1805 1812 1885 1889 2013 2291 2360 2369 2396 2535 2940 2982 3011 3021 3136 3148 4065 4072 4092 4094 4116 4122 4134 4135 4142 4146 4160 4168 
 	}
-	manpower=0
+	manpower=1341552
+	state_category = large_city
 	buildings_max_level_factor=1.000
 }

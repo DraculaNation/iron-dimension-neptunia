@@ -4,10 +4,17 @@ state={
 	history={
 		owner = LOW
 		victory_points = { 2755 8 }
+		buildings = {
+			infrastructure = 1
+		}
 	}
 	provinces={
 		55 200 295 538 555 734 1127 1168 1480 1605 2056 2353 2610 2755 2826 3142 3205 3207 3211 3215 3222 
 	}
-	manpower=0
+	manpower=52181
+	state_category = pastoral
 	buildings_max_level_factor=1.000
+	resources = {
+		steel = 13
+	}
 }

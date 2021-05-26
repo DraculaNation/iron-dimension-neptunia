@@ -3,10 +3,25 @@ state={
 	name="STATE_13"
 	history={
 		owner = LEA
+		buildings = {
+			infrastructure = 1
+			dockyard = 1
+			1532 = {
+				naval_base = 6
+			}
+			3086 = {
+				naval_base = 5
+			}
+			air_base = 4
+		}
 	}
 	provinces={
 		802 1125 1532 1811 2524 2957 3083 3086 4527 4528 4529 4530 4531 4532 4533 14795
 	}
-	manpower=0
+	manpower=215307
+	state_category = rural
 	buildings_max_level_factor=1.000
+	resources={
+		rubber = 3
+	}
 }

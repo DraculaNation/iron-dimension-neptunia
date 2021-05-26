@@ -4,10 +4,33 @@ state={
 	name="STATE_12"
 	history={
 		owner = LEA
+		buildings = {
+			infrastructure = 3
+			arms_factory = 1
+			industrial_complex = 1
+			dockyard = 1
+			2724 = {
+				naval_base = 2
+			}
+			1722 = {
+				naval_base = 1
+			}
+			1974 = {
+				naval_base = 6
+			}
+			559 = {
+				naval_base = 4
+			}
+		}
 	}
 	provinces={
 		16 20 223 318 364 446 450 514 559 601 621 681 696 798 832 859 1264 1301 1420 1431 1543 1591 1694 1722 1796 1857 1948 1974 2263 2367 2420 2484 2543 2575 2578 2608 2650 2659 2669 2680 2724 2811 2834 2921 3003 3019 3171 4481 4491 4494 4498 4501 4510 4511 4516 4518 4534 
 	}
-	manpower=0
+	manpower=433801
+	state_category = town
 	buildings_max_level_factor=1.000
+	resources={
+		rubber = 7
+		tungsten = 8
+	}
 }

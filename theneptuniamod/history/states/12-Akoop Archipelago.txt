@@ -4,6 +4,7 @@ state={
 	name="STATE_12"
 	history={
 		owner = LEA
+		add_core_of = LEA
 		buildings = {
 			infrastructure = 3
 			arms_factory = 1

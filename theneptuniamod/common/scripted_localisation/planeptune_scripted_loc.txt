@@ -1,0 +1,14 @@
+defined_text = {
+	name = PLA_public_unrest_loc
+	text = {
+		trigger = {
+			check_variable = { PLA_public_unrest_effect > 0 }
+		}
+		localization_key = PLA_public_unrest_negative_loc
+	}
+	text = {
+		trigger = {
+			check_variable = { PLA_public_unrest_effect = 0 }
+		}
+		localization_key = PLA_public_unrest_neutral_loc
+}

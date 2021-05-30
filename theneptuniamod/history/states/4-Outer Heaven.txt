@@ -3,6 +3,7 @@ state={
 	name="STATE_4"
 	history={
 		owner = LOW
+		add_core_of = LOW
 		buildings = {
 			infrastructure = 0
 			4525 = {

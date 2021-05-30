@@ -3,6 +3,7 @@ state={
 	name="STATE_13"
 	history={
 		owner = LEA
+		add_core_of = LEA
 		buildings = {
 			infrastructure = 1
 			dockyard = 1

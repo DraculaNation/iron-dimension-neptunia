@@ -1,0 +1,44 @@
+on_action = {
+	on_startup = {
+		effect = {
+		#SET VARIABLES 
+			set_variable = {
+			var = PLA_shares_factor
+			value = 10
+			}
+			set_variable = {
+			var = LAS_shares_factor
+			value = 35
+			}
+			set_variable = {
+			var = LEA_shares_factor
+			value = 35
+			}
+			set_variable = {
+			var = LOW_shares_factor 
+			value = 20
+			}
+		#CLAMP VARIABLES
+			clamp_variable = {
+			var = PLA_shares_factor
+			min = 0
+			max = 100
+			}
+			clamp_variable = {
+			var = LAS_shares_factor
+			min = 0
+			max = 100
+			}
+			clamp_variable = {
+			var = LEA_shares_factor
+			min = 0
+			max = 100 
+			}
+			clamp_variable = {
+			var = LOW_shares_factor
+			min = 0 
+			max = 100
+			}
+		}
+	}
+}

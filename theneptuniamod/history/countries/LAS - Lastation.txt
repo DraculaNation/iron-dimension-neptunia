@@ -8,8 +8,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	fascism = 30
-	cpu_rule = 70
+	cpu_rule = 100
 }
 
 create_country_leader = {

@@ -7,9 +7,11 @@ set_politics = {
 	election_frequency = 48
 	elections_allowed = no
 }
+
 set_popularities = {
-	communism = 25
-	cpu_rule = 75
+	alternate_cpu_rule = 20
+	cpu_rule = 30
+	military_junta = 50
 }
 
 ### Setting variables for public unrest
@@ -25,6 +27,10 @@ multiply_variable = {
 	var = PLA_public_unrest_effect
 	value = -0.004
 }
+add_to_variable = {
+	var = PLA_public_unrest_effect
+	value = -0.05
+}
 
 ## Setting variables for Histoire's discontent
 set_variable = {
@@ -39,11 +45,17 @@ multiply_variable = {
 	var = PLA_histoire_discontent_effect
 	value = -0.004
 }
+add_to_variable = {
+	var = PLA_histoire_discontent_effect
+	value = -0.02
+}
 
 
 add_ideas = {
 		PLA_technological_powerhouse_idea
 		PLA_stagnant_birthrates_idea
+		PLA_public_unrest_idea
+		PLA_histoire_discontent_idea
 }
 
 add_dynamic_modifier = {
@@ -54,6 +66,10 @@ add_dynamic_modifier = {
 	modifier = PLA_public_unrest_dynamic_modifier
 	scope = PLA
 }
+
+
+## Leaders
+
 create_country_leader = {
 	name = "Neptune"
 	desc = "POLITICS_NEPTUNE_DESC"
@@ -63,4 +79,113 @@ create_country_leader = {
 	traits = {
 		neptune_leader_trait
 	}
+}
+
+create_country_leader = {
+	name = "Nepgear"
+	desc = "POLITICS_NEPGEAR_DESC"
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = alternate_cpu_rule_subtype
+	traits = {
+		nepgear_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "B-Sha"
+	desc = "POLITICS_BSHA_DESC"
+	picture = "Portrait_Planeptune_Bsha.dds"
+	expire = "1965.1.1"
+	ideology = military_junta_subtype
+	traits = {
+		bsha_leader_trait
+		bsha_other_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "Unknown"
+	desc = ""
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = chauvinism_subtype
+	traits = {
+		evil_nepgear_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "Nature"
+	desc = ""
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = anarchy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "CFW Judge"
+	desc = ""
+	picture = "Portrait_Planeptune_CFW_Judge.dds"
+	expire = "1965.1.1"
+	ideology = kleptocracy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Histoire"
+	desc = "POLITICS_HISTOIRE_DESC"
+	picture = "Portrait_Planeptune_Histoire.dds"
+	expire = "1965.1.1"
+	ideology = maternal_autocracy_subtype
+	traits = {
+		histoire_leader_trait
+	}
+}
+
+create_field_marshal = { 
+	name = "B-Sha"
+	gfx = Portrait_Planeptune_Bsha
+	traits = { politically_connected }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}
+
+create_corps_commander = {
+		name = "Ryuka"
+		gfx = Portrait_Planeptune_Ryuka
+		traits = { harsh_leader }
+		skill = 3
+		attack_skill = 3
+		defense_skill = 2
+		planning_skill = 1
+		logistics_skill = 3
+}
+
+create_corps_commander = {
+		name = "Blossom Aisen"
+		gfx = Portrait_Planeptune_Blossom_Aisen
+		traits = { organizer }
+		skill = 2
+		attack_skill = 1
+		defense_skill = 3
+		planning_skill = 4
+		logistics_skill = 3
+}
+
+create_corps_commander = {
+		name = "Tsunemi"
+		gfx = Portrait_Planeptune_Tsunemi
+		traits = { infantry_officer }
+		skill = 2
+		attack_skill = 2
+		defense_skill = 1
+		planning_skill = 4
+		logistics_skill = 4
 }

@@ -3,6 +3,7 @@ state={
 	name="STATE_6"
 	history={
 		owner = LAS
+		add_core_of = LAS
 		victory_points = { 2492 16 }
 		buildings = {
 			infrastructure = 4

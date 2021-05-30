@@ -32,6 +32,8 @@ leader_traits = {
 		}
 	}
 	
+	## PLANEPTUNE ##
+	
 	neptune_leader_trait = {
 		random = no
 		consumer_goods_factor = 0.1
@@ -124,7 +126,8 @@ leader_traits = {
 	
 	bsha_other_leader_trait = {
 		random = no
-		consumer_goods_factor = -0.1
+		consumer_goods_factor = 0.05
+		stability_factor = 0.025
 		
 		ai_will_do = {
 			factor = 1

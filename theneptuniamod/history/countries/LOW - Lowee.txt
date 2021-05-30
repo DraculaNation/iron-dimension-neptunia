@@ -8,7 +8,7 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	communism = 30
+	military_junta = 30
 	cpu_rule = 70
 }
 

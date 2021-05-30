@@ -22,13 +22,13 @@
  POLITICS_NEPTUNE_IMPROVED_DESC:0 "Due to various circumstances that forced Neptune to act on her own instead of being pushed by Histoire, she has proven herself to be a competent and understanding leader. She enjoys her popularity with the people of Planeptune who appreciate her for her effort and leadeership skills. It even earned her a fan club, with people imitating her fashion sense and her behavior. Things are looking great for Planeptune, thanks to the CPU finally fulfilling her responsibilities."
  POLITICS_NEPGEAR_DESC:0 "Nepgear is often known as Neptune's nerdy sister who has a penchant for robots and technology. Unlike Neptune, she is more reasonable and collected - often being mistaken for being older. In contrast to Neptune's tendency to muck around, Nepgear's diligence makes her a nigh-perfect ruler of Planeptune. As Neptune has been deemed unfit to rule Planeptune, Nepgear has taken the burden on her back and will lead her people through the last war between the consoles - offering promises of great living standards and a lengthy period of peace after the war."
  POLITICS_NEPGEAR_EVIL_DESC:0 "Peace in Gamindustri has never been an option. Every nation but Planeptune needs to be eliminated in the name of peace, prosperity and progress. Coronation as the CPU of Gamindustri is imminent."
- POLITICS_HISTOIRE_DESC:0 "Histoire has has enough. No more forcing the Neps to do their bare minimum. No more controlling Planeptune from the shadows, bearing all the burden but reaping none of the awards. No more strainiing her vocal chords by reprimanding Neptune in the only way that would make her heard. A new age has come, and Planeptune has outgrown its need for a do-nothing CPU. This is the age of Histoire's rule over Planeptune. Seizing total control and working hard, Histoire will usher Planeptune into an age of prosperity and peace."
+ POLITICS_HISTOIRE_DESC:0 "Histoire has had enough. No more forcing the Neps to do their bare minimum. No more controlling Planeptune from the shadows, bearing all the burden but reaping none of the rewards. No more strainiing her vocal chords by reprimanding Neptune in the only way that would make her heard. A new age has come, and Planeptune has outgrown its need for a do-nothing CPU. This is the age of Histoire's rule over Planeptune. Seizing total control and working hard, Histoire will usher Planeptune into an age of prosperity and peace."
  POLITICS_PURPLE_HEART_DESC:0 "Unlike in her regular form, Purple Heart is serious, calm, and collected. A perfect leader... for the duration of her transformation. Purple Heart is gifted with prowess and skill in combat, usually hunting monsters or fighting in the frontlines. However, if the unfortunate happens and Purple Heart is defeated during a battle, a huge amount of shares will be lost."
  POLITICS_PURPLE_SISTER_DESC:0 "Just like Purple Heart, Purple Sister is skilled in combat and is often seen at the frontlines or exterminating monsters. Unlike Neptune, however, Purple Sister's personality doesn't change drastically - instead, it pretty much remains the same."
  POLITICS_BSHA_DESC:0 "It is a public secret that B-Sha is actually Presto Mask, the hero of Planeptune. After catching the most successful criminal ever - the neglectful Neptune - Presto Mask made way for B-Sha's rule. Much like Neptune, B-Sha is childish and can often  be found slacking away and being pushed by Histoire... with the added troubles of being very reluctant to fight monsters. It seems that a revolution brought little change to Planeptune in terms of its administration, except for B-Sha's promises of peace no matter the cost."
  
  #Traits
- neptune_leader_trait:0 "Lazy"
+ neptune_leader_trait:0 "Unfelt Presence"
  improved_neptune_leader_trait:0 "Rising Star of Planeptune"
  purple_heart_leader_trait:0 "Lady Purple Heart"
  nepgear_leader_trait:0 "The Purple Tinkerer"
@@ -36,15 +36,25 @@
  purple_sister_leader_trait:0 "Purple Sister"
  histoire_leader_trait:0 "The Lil' Dictator"
  bsha_leader_trait:0 "Afraid of Monsters"
- bsha_other_leader_trait:0 "Crime Fighter"
+ bsha_other_leader_trait:0 "Mercenary Cop"
  
  #Ideas
  PLA_technological_powerhouse_idea:0 "Technological Powerhouse"
  PLA_technological_powerhouse_idea_desc:0 "Planeptune has always been the center of technology in Gamindustri. Towering skyscrapers and bullet trains dot the city landscape while its parks are green and its air is clear. Planeptune's technological might is something all of the other nations dream of achieving. Innovation has a name, and its name is Planeptune!"
  PLA_stagnant_birthrates_idea:0 "Stagnant Birthrates"
  PLA_stagnant_birthrates_idea_desc:0 "Technological progress doesn't come without a cost. The citizens of Planeptune are either too busy with work or too enamoured with fictional women to find a real mate. Even though Planeptune uses robots as its frontline soldiers, it puts a strain on its industry, and fresh recruits are needed for the upcoming war."
- PLA_public_unrest_dynamic_modifier:0 "Legacy of the Eden War"
- PLA_public_unrest_dynamic_modifier_desc:0 "The Eden Rebellion has scarred Planeptune's citizens deeply. Memories of brother fighting brother, landmines going off in Planeptune's beautiful nature, and windows getting broken due to gunfire are some of the few reasons why the citizens of Planeptune are not looking forward to the upcoming war with Lowee, Leanbox and Lastation."
- PLA_histoire_discontent_dynamic_modifier:0 "Imbalanced Administration"
- PLA_histoire_discontent_dynamic_modifier_desc:0 "Planeptune might seem like a stable nation, but behind the scenes Histoire does the bulk of the work while Neptune spends her days playing video games and eating pudding. This has taken a toll on Histoire's mental health, affecting how she manages the nation."
+ PLA_public_unrest_idea:0 "Disgruntled Populace"
+ PLA_public_unrest_idea_desc:0 "§WWar Support:§! [?PLA_public_unrest_effect|%R]\n§WArmy Organization:§! [?PLA_public_unrest_effect|%R]\n§WArmy Breakthrough:§! [?PLA_public_unrest_effect|%R]\n\nOutside of the city of Planeptune, it is not too uncommon to be attacked by monsters - whether by a relatively harmless dogoo or a deadly mech. With Planeptune's guards underequipped and inexperienced, monster attacks are sadly an everyday occurence in Planeptune due to its capital's proximity to the Gamindustri Graveyard.\nIn a time of need, the people of Planeptune feel abandoned by their goddess, whom they haven't seen for years. If no action is taken, the people might take matters into their own hands. Will Lady Purple Heart be able to win back her people? Or will Planeptune fall to chaos?"
+ PLA_histoire_discontent_idea:0 "Imbalanced Administration"
+ PLA_histoire_discontent_idea_desc:0 "§WStability:§! [?PLA_histoire_discontent_effect|%R]\n§WDaily Political Power Gain:§! [?PLA_histoire_discontent_effect|R]\n\nPlaneptune might seem like a stable nation, but behind the scenes Histoire does the bulk of the work while Neptune spends her days playing video games and lazying around. Cracks have begun to show in Histoire's usually flawless ways of handling situation, and outbursts are getting more common. Planeptune's stability depends on Histoire's state of mind - if something goes wrong with her, Planeptune will become an anarchy masquerading as a nation with a CPU."
  
+ #Dynamic Modifiers
+ PLA_public_unrest_dynamic_modifier:0 "Disgruntled Populace"
+ PLA_histoire_discontent_dynamic_modifier:0 "Imbalanced Administration"
+ 
+ #Scripted Loc
+ 
+ #Tooltips
+ PLA_public_unrest_increase_small_tt:0 "§RThis will cause a bit of public unrest.§!"
+ PLA_public_unrest_increase_medium_tt:0 "§RThis will cause some public unrest!§!"
+ PLA_public_unrest_increase_big_tt:0 "§RThis will cause significant public unrest!§!"

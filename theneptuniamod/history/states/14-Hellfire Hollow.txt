@@ -5,6 +5,7 @@ state={
 
 	history={
 		owner = LEA
+		add_core_of = LEA
 		victory_points = { 4522 3 }
 		buildings = {
 			infrastructure = 4

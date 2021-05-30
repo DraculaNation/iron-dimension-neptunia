@@ -3,6 +3,7 @@ state={
 	name="STATE_10"
 	history={
 		owner = LAS
+		add_core_of = LAS
 		buildings = {
 			infrastructure = 2
 			4129 = {

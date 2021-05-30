@@ -1,7 +1,43 @@
 ﻿l_english:
  
+ anarchy:0 "Anarchy"
+ anarchy_noun: "Anarchy"
+ anarchy_desc:0 "Anarchy"
+ anarchy_subtype:0 "Anarchy"
+ anarchy_subtype_desc:0 "Some nations have no rulers in Gamindustri."
+ 
+ kleptocracy:0 "Kleptocracy"
+ kleptocracy_noun: "Kleptocracy"
+ kleptocracy_desc:0 "Kleptocrat"
+ kleptocracy_subtype:0 "Kleptocracy"
+ kleptocracy_subtype_desc:0 "Kleptocracy is a government where wealth is concentrated to a single person or a group. Oftentimes, this group is the ASIC - Arfoire Syndicate of International Crime."
+ 
+ maternal_autocracy:0 "Maternal Autocrat"
+ maternal_autocracy_noun: "Autocracy"
+ maternal_autocracy_desc:0 "Autocrat"
+ maternal_autocracy_subtype:0 "Maternal Autocrat"
+ maternal_autocracy_subtype_desc:0 "Sometimes a nation doesn't have to be ruled by a CPU or someone affiliated with ASIC. Some governments are ruled by an autocratic ruler with a cult of personality around them."
+ 
+ military_junta:0 "Military Junta"
+ military_junta_noun: "Junta"
+ military_junta_desc:0 "Military"
+ military_junta_subtype:0 "Military Junta"
+ military_junta_subtype_desc:0 "Each of the CPUs have a former rival that they entrust military matters to, with all of them being members of the Gold Third. These rivals are usually friendly towards their CPUs, but sometimes a rift might be caused between the military and its CPU. Members of the Gold Third are usually very competent rulers."
+ 
+ alternate_cpu_rule:0 "Alternate CPU Rule"
+ alternate_cpu_rule_noun:0 "Alternate CPU Rule"
+ alternate_cpu_rule_desc:0 "Alternate CPU Rule"
+ alternate_cpu_rule_subtype:0 "Alternate CPU Rule"
+ alternate_cpu_rule_subtype_desc:0 "CPU rule is a type of administration with a Console Patron Unit as its central figure. CPUs are dependent on their people's faith. Oftentimes, CPUs can enter an improved form called the HDD form, which comes with increased combat abilities. Most CPUs have ruled over their nations for decades, entrenching their people's faith."
+ 
  cpu_rule:0 "CPU Rule"
  cpu_rule_noun:0 "CPU Rule"
  cpu_rule_desc:0 "CPU Rule"
  cpu_rule_subtype:0 "CPU Rule"
  cpu_rule_subtype_desc:0 "CPU rule is a type of administration with a Console Patron Unit as its central figure. CPUs are dependent on their people's faith. Oftentimes, CPUs can enter an improved form called the HDD form, which comes with increased combat abilities. Most CPUs have ruled over their nations for decades, entrenching their people's faith."
+ 
+ chauvinism:0 "Chauvinism"
+ chauvinism_noun:0 "Chauvinism"
+ chauvinism_desc:0 "Chauvinist"
+ chauvinism_subtype:0 "Chauvinism"
+ chauvinism_subtype_desc:0 "There exist very few people who are devoted to their nation in such an extreme way. On one hand, Chauvinism can encompass absolute devotion to a goddess and her nation while seeking to destroy all of the other goddesses or make them subservient. Other chauvinists put their nation above their goddess and everything else."

@@ -1,0 +1,99 @@
+default = {
+
+	political = {
+		cpu_rule = {
+			male = {
+				"gfx/leaders/Generic/Portrait_CPU_Generic1.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic2.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic3.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic4.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic5.dds"
+			}
+			female = {
+				"gfx/leaders/Generic/Portrait_CPU_Generic1.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic2.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic3.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic4.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic5.dds"
+			}
+		}
+		
+		alternate_CPU_rule = {
+			male = {
+				"gfx/leaders/Generic/Portrait_CPU_Generic1.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic2.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic3.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic4.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic5.dds"
+			}
+			female = {
+				"gfx/leaders/Generic/Portrait_CPU_Generic1.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic2.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic3.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic4.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic5.dds"
+			}
+		}
+		
+		military_junta = {
+			male = {
+				"gfx/leaders/Generic/Portrait_CPU_Generic1.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic2.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic3.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic4.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic5.dds"
+			}
+			female = {
+				"gfx/leaders/Generic/Portrait_CPU_Generic1.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic2.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic3.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic4.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic5.dds"
+			}
+		}
+		
+		maternal_autocracy = {
+			male = {
+				"gfx/leaders/Generic/Portrait_CPU_Generic1.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic2.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic3.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic4.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic5.dds"
+			}
+			female = {
+				"gfx/leaders/Generic/Portrait_CPU_Generic1.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic2.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic3.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic4.dds"
+				"gfx/leaders/Generic/Portrait_CPU_Generic5.dds"
+			}
+		}
+		
+		kleptocracy = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Everything_Generic1.dds"
+			}
+			female = {
+				"gfx/leaders/Generic/Portrait_Everything_Generic1.dds"
+			}
+		}
+		
+		chauvinism = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Everything_Generic1.dds"
+			}
+			female = {
+				"gfx/leaders/Generic/Portrait_Everything_Generic1.dds"
+			}
+		}
+		
+		anarchy = {
+			male = {
+				"gfx/leaders/GAI/Portrait_Gaia_Nature.dds"
+			}
+						male = {
+				"gfx/leaders/GAI/Portrait_Gaia_Nature.dds"
+			}
+		}
+	}
+}

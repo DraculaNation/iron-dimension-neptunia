@@ -2,13 +2,13 @@
 set_convoys = 50
 
 set_politics = {
-	ruling_party = neutrality
+	ruling_party = anarchy
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 set_popularities = {
-	neutrality = 100
+	anarchy = 100
 }
 
 create_country_leader = {
@@ -16,7 +16,7 @@ create_country_leader = {
 	desc = "POLITICS_NATURE_DESC"
 	picture = "Portrait_Gaia_Nature.dds"
 	expire = "1965.1.1"
-	ideology = centrism
+	ideology = anarchy_subtype
 	traits = {
 	}
 }

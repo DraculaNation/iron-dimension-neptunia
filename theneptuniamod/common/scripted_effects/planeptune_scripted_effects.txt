@@ -1,0 +1,74 @@
+#Reload Public Unrest - should always incur a 5% penalty
+PLA_reload_public_unrest = {
+
+	clamp_variable = {
+		var = PLA_public_unrest_percent
+		min = 0
+		max = 100
+	}
+	set_variable = {
+		var = PLA_public_unrest_effect
+		value = PLA_public_unrest_percent
+	}
+	multiply_variable = {
+		var = PLA_public_unrest_effect
+		value = -0.004
+	}
+	add_to_variable = {
+		var = PLA_public_unrest_effect
+		value = -0.05
+	}
+	
+}
+
+###HOW FLEXIBLE OR RIGID SHOULD THIS BE? HEAVY WIP, I NEED TO TALK TO WEEBLY AND KAISER ABOUT THIS
+
+PLA_increase_public_unrest_small = {
+	custom_effect_tooltip = PLA_public_unrest_increase_small_tt
+	add_to_variable = {
+		var = PLA_public_unrest_percent
+		value = 2
+	}
+	PLA_reload_public_unrest = yes
+}
+
+PLA_increase_public_unrest_medium = {
+	custom_effect_tooltip = PLA_public_unrest_increase_medium_tt
+	add_to_variable = {
+		var = PLA_public_unrest_percent
+		value = 5
+	}
+	PLA_reload_public_unrest = yes
+}
+
+PLA_increase_public_unrest_big = {
+	custom_effect_tooltip = PLA_public_unrest_increase_big_tt
+	add_to_variable = {
+		var = PLA_public_unrest_percent
+		value = 10
+	}
+	PLA_reload_public_unrest = yes
+}
+
+#Reload Histoire's Discontent - should always incut a penalty
+PLA_reload_histoire_discontent = {
+
+	clamp_variable = {
+		var = PLA_histoire_discontent_percent
+		min = 0
+		max = 100
+	}
+	set_variable = {
+		var = PLA_histoire_discontent_effect
+		value = PLA_histoire_discontent_percent
+	}
+	multiply_variable = {
+		var = PLA_histoire_discontent_effect
+		value = -0.0038
+	}
+	add_to_variable = {
+		var = PLA_histoire_discontent_effect
+		value = -0.02
+	}
+	
+}

@@ -1,0 +1,63 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_scripted_gui_window_background"
+		textureFile = "/gfx/interface/scripted_gui_background.dds"
+	}
+	spriteType = {
+		name = "GFX_close_button"
+		textureFile = "/gfx/interface/close_button.dds"
+	}
+	spriteType = {
+		name = "GFX_open_button"
+		textureFile = "/gfx/interface/open_ui.dds"
+	}
+	progressbartype = {
+		name = "GFX_planeptune_shares"
+		textureFile1 = "/gfx/interface/planeptune_progress_bar_long.dds"
+		textureFile2 = "/gfx/interface/planeptune_progress_bar_long_bg.dds"
+		color = { 128 128 128 }
+		colortwo = { 153 0 153 }
+		size = {
+			x = 212 
+			y = 19
+		}
+		effectFile = "/gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_lastation_shares"
+		textureFile1 = "/gfx/interface/planeptune_progress_bar_long.dds"
+		textureFile2 = "/gfx/interface/planeptune_progress_bar_long_bg.dds"
+		color = { 128 128 128 }
+		colortwo = { 153 0 153 }
+		size = {
+			x = 212 
+			y = 19
+		}
+		effectFile = "/gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_lowee_shares"
+		textureFile1 = "/gfx/interface/planeptune_progress_bar_long.dds"
+		textureFile2 = "/gfx/interface/planeptune_progress_bar_long_bg.dds"
+		color = { 128 128 128 }
+		colortwo = { 153 0 153 }
+		size = {
+			x = 212 
+			y = 19
+		}
+		effectFile = "/gfx/FX/progress.lua"
+	}
+	progressbartype = {
+		name = "GFX_leanbox_shares"
+		textureFile1 = "/gfx/interface/planeptune_progress_bar_long.dds"
+		textureFile2 = "/gfx/interface/planeptune_progress_bar_long_bg.dds"
+		color = { 128 128 128 }
+		colortwo = { 153 0 153 }
+		size = {
+			x = 212 
+			y = 19
+		}
+		effectFile = "/gfx/FX/progress.lua"
+	}
+}

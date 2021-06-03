@@ -562,7 +562,7 @@ guiTypes = {
 			
 			buttonType = {
 				name = "mapmode_button_2"
-				position = { x=564 y=81 }	
+				position = { x=564 y=80 }	
 				quadTextureSprite ="GFX_mapmode_buttons_deselected_big"
 				#shortcut = "w"
 				clicksound = naval_mapmode

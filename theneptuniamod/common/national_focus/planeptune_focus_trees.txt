@@ -1,0 +1,698 @@
+##Dummy Focus Tree - Beginning
+
+shared_focus = {
+    id = PLA_land_of_the_purple_progress
+    icon = GFX_goal_anschluss
+    x = 15
+    y = 0
+    cost = 2
+    
+    ai_will_do = {
+        factor = 1
+    }
+    available = {
+    }
+    bypass = {
+    }
+    
+    completion_reward = {
+		add_political_power = 50
+		country_event = {
+			id = planeptune.1
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_ratify_the_friendship_treaty
+    icon = GFX_goal_generic_national_unity
+    relative_position_id = PLA_land_of_the_purple_progress
+	x = 0
+    y = 1
+    cost = 1
+	
+	prerequisite = {
+        focus = PLA_land_of_the_purple_progress
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		every_country = {
+			limit = {
+				OR = {
+					tag = LAS
+					tag = LEA
+					tag = LOW
+				}
+			}
+			country_event = {
+				id = planeptune.2
+				days = 2
+			}
+		}
+    }
+}
+
+##Dummy Focus Tree - the rest 
+
+shared_focus = {
+    id = PLA_contractors_from_leanbox
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_ratify_the_friendship_treaty
+	x = -2
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_ratify_the_friendship_treaty
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+		NOT = { has_country_flag = PLA_friendship_treaty_failed }
+	}
+	
+    available = {
+		has_country_flag = friendship_treaty_ratified_flag
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 2
+			category = infantry_weapons
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_workers_from_lowee
+    icon = GFX_goal_generic_production
+    relative_position_id = PLA_ratify_the_friendship_treaty
+	x = 0
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_ratify_the_friendship_treaty
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+		NOT = { has_country_flag = PLA_friendship_treaty_failed }
+	}
+	
+    available = {
+		has_country_flag = friendship_treaty_ratified_flag
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		add_manpower = 500000
+    }
+}
+
+shared_focus = {
+    id = PLA_corporations_from_lastation
+    icon = GFX_focus_mex_privatisation
+    relative_position_id = PLA_ratify_the_friendship_treaty
+	x = 2
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_ratify_the_friendship_treaty
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+		NOT = { has_country_flag = PLA_friendship_treaty_failed }
+	}
+	
+    available = {
+		has_country_flag = friendship_treaty_ratified_flag
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 2
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 2
+				instant_build = yes
+			}
+		}
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 2
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_addressing_the_shares_problem
+    icon = GFX_goal_generic_positive_trade_relations
+    relative_position_id = PLA_workers_from_lowee
+	x = 0
+    y = 1
+    cost = 10
+	
+	prerequisite = {
+        focus = PLA_contractors_from_leanbox
+    }
+	prerequisite = {
+        focus = PLA_workers_from_lowee
+    }
+	prerequisite = {
+        focus = PLA_corporations_from_lastation
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+		NOT = { has_country_flag = PLA_friendship_treaty_failed }
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		custom_effect_tooltip  = shares_decrease_lowee_small_tt
+    }
+}
+
+shared_focus = {
+    id = PLA_ease_histys_workload
+    icon = GFX_goal_generic_forceful_treaty
+    relative_position_id = PLA_addressing_the_shares_problem
+	x = -1
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_addressing_the_shares_problem
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_histoire_discontent_decrease_big_tt
+    }
+}
+
+shared_focus = {
+    id = PLA_learn_from_the_pro
+    icon = GFX_goal_generic_improve_relations
+    relative_position_id = PLA_ease_histys_workload
+	x = 0
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_ease_histys_workload
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		LAS = {
+			country_event = {
+				id = planeptune.999
+			}
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_share_workload_with_nepgear
+    icon = GFX_goal_generic_neutrality_focus
+    relative_position_id = PLA_learn_from_the_pro
+	x = 0
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_learn_from_the_pro
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		remove_ideas = { PLA_histoire_discontent_idea }
+    }
+}
+
+shared_focus = {
+    id = PLA_pr_stunts
+    icon = GFX_goal_generic_propaganda
+    relative_position_id = PLA_addressing_the_shares_problem
+	x = 1
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_addressing_the_shares_problem
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_public_unrest_decrease_big_tt
+		add_political_power = 100
+    }
+}
+
+shared_focus = {
+    id = PLA_keep_planeptune_safe
+    icon = GFX_focus_generic_self_management
+    relative_position_id = PLA_pr_stunts
+	x = 0
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_pr_stunts
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_neptune_can_transform_tt
+    }
+}
+
+shared_focus = {
+    id = PLA_take_care_of_the_birthrates
+    icon = GFX_focus_generic_manpower
+    relative_position_id = PLA_keep_planeptune_safe
+	x = 0
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_keep_planeptune_safe
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		remove_ideas = { PLA_stagnant_birthrates_idea }
+    }
+}
+
+shared_focus = {
+    id = PLA_planeptune_rising
+    icon = GFX_focus_generic_monarchy_2
+    relative_position_id = PLA_share_workload_with_nepgear
+	x = 1
+    y = 1
+    cost = 10
+	
+	prerequisite = {
+        focus = PLA_take_care_of_the_birthrates
+    }
+	prerequisite = {
+        focus = PLA_share_workload_with_nepgear
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		add_stability = 0.1
+		add_war_support = 0.1
+    }
+}
+
+shared_focus = {
+    id = PLA_paying_back_the_debt
+    icon = GFX_focus_generic_treaty
+    relative_position_id = PLA_planeptune_rising
+	x = -1
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_planeptune_rising
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_just_good_business
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		LOW = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+		LEA = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+		LAS = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_shares_for_everyone
+    icon = GFX_goal_generic_trade
+    relative_position_id = PLA_paying_back_the_debt
+	x = 0
+    y = 1
+    cost = 5
+	
+	prerequisite = {
+        focus = PLA_paying_back_the_debt
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_shares_for_everyone_tt
+    }
+}
+
+shared_focus = {
+    id = PLA_just_good_business
+    icon = GFX_goal_generic_occupy_start_war
+    relative_position_id = PLA_planeptune_rising
+	x = 1
+    y = 1
+    cost = 10
+	
+	prerequisite = {
+        focus = PLA_planeptune_rising
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_paying_back_the_debt
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		add_popularity = {
+			ideology = chauvinism
+			popularity = 0.33
+		}
+		declare_war_on = {
+			target = LOW
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = LAS
+			type = annex_everything
+		}
+		declare_war_on = {
+			target = LEA
+			type = annex_everything
+		}
+    }
+}
+
+##Focus tree - fallout
+
+shared_focus = {
+    id = PLA_neptune_gets_depressed
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_ratify_the_friendship_treaty
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_ratify_the_friendship_treaty
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+		has_country_flag = PLA_friendship_treaty_failed
+	}
+	
+    available = {
+		has_country_flag = PLA_friendship_treaty_failed
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		country_event = {
+			id = planeptune.8
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_initial_consequences_angry_people
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_neptune_gets_depressed
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_neptune_gets_depressed
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		country_event = {
+			id = planeptune.9
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_depression_nap
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_initial_consequences_angry_people
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_initial_consequences_angry_people
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		country_event = {
+			id = planeptune.10
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_remilitarization_of_erethisan
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_initial_consequences_angry_people
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_initial_consequences_angry_people
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		country_event = {
+			id = planeptune.11
+		}
+    }
+}
+
+##Initial Focus Tree
+
+focus_tree = {
+    id = PLA_initial_tree
+    country = {
+        factor = 0
+        modifier = {
+            add = 10
+            tag = PLA
+        }
+    }
+	
+	initial_show_position = { focus = PLA_land_of_the_purple_progress }
+	continuous_focus_position = {
+		x = -50 y = 2400
+	}
+
+	shared_focus = PLA_land_of_the_purple_progress
+	
+}

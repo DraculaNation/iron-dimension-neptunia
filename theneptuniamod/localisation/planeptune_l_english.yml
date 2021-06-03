@@ -15,14 +15,14 @@
  PLA_complete_ADJ:0 "Gamindustri"
  
  #Menu Description
- PLANEPTUNE_GATHERING_STORM_DESC:0 "Planeptune is in chaos and their CPU is fooling around. No one was prepared for the devastation caused by a war with a rebellious nation - Eden. Eventually, the rebellion was crushed but at a great price. Not learning anything from the rebellion, Neptune does nothing but being content with her status as a CPU, feasting on huge supplies of pudding and Nep Bull, and browsing N-chan; she sits in her Basilicom and plays the ruler, giving ear to people's worries and then dismissing them, as if on her own volition instead of being forced by the oracle. Risiinig discontent from the citizens as well as well as Histoire's own doubts cast a shadow over Neptune's future as a CPU. Will Planeptune be ready for the next console war, or will it collapse under the weight of its own problems?"
+ PLANEPTUNE_GATHERING_STORM_DESC:0 "Planeptune is in chaos and their CPU is fooling around. No one was prepared for the devastation caused by a war with a rebellious nation - Eden. Eventually, the rebellion was crushed but at a great price. Not learning anything from the rebellion, Neptune does nothing but being content with her status as a CPU, feasting on huge supplies of pudding and Nep Bull, and browsing N-chan; she sits in her Basilicom and plays the ruler, giving ear to people's worries and then dismissing them, as if on her own volition instead of being forced by the oracle. Rising discontent from the citizens as well as well as Histoire's own doubts cast a shadow over Neptune's future as a CPU. Will Planeptune be ready for the next console war, or will it collapse under the weight of its own problems?"
  
  #Character Descriptions
  POLITICS_NEPTUNE_DESC:0 "Neptune is the charismatic and friendly CPU of Planeptune. Along with being a CPU, she is famous for her love of video games and pudding... as well as a hatred for eggplants. When it comes to her rule over Planeptune, she is constantly lazying around - playing video games, eating snacks, and browsing N-chan. She is so removed from political affairs that the citizens rarely recognize her in her regular form. However, she does have a say in the politics of Planeptune, though only when Histoire forces her - usually met with quite a lot of resistance from Neptune herself. As such, Neptune is a very negligent leader, at least for now."
  POLITICS_NEPTUNE_IMPROVED_DESC:0 "Due to various circumstances that forced Neptune to act on her own instead of being pushed by Histoire, she has proven herself to be a competent and understanding leader. She enjoys her popularity with the people of Planeptune who appreciate her for her effort and leadeership skills. It even earned her a fan club, with people imitating her fashion sense and her behavior. Things are looking great for Planeptune, thanks to the CPU finally fulfilling her responsibilities."
  POLITICS_NEPGEAR_DESC:0 "Nepgear is often known as Neptune's nerdy sister who has a penchant for robots and technology. Unlike Neptune, she is more reasonable and collected - often being mistaken for being older. In contrast to Neptune's tendency to muck around, Nepgear's diligence makes her a nigh-perfect ruler of Planeptune. As Neptune has been deemed unfit to rule Planeptune, Nepgear has taken the burden on her back and will lead her people through the last war between the consoles - offering promises of great living standards and a lengthy period of peace after the war."
  POLITICS_NEPGEAR_EVIL_DESC:0 "Peace in Gamindustri has never been an option. Every nation but Planeptune needs to be eliminated in the name of peace, prosperity and progress. Coronation as the CPU of Gamindustri is imminent."
- POLITICS_HISTOIRE_DESC:0 "Histoire has had enough. No more forcing the Neps to do their bare minimum. No more controlling Planeptune from the shadows, bearing all the burden but reaping none of the rewards. No more strainiing her vocal chords by reprimanding Neptune in the only way that would make her heard. A new age has come, and Planeptune has outgrown its need for a do-nothing CPU. This is the age of Histoire's rule over Planeptune. Seizing total control and working hard, Histoire will usher Planeptune into an age of prosperity and peace."
+ POLITICS_HISTOIRE_DESC:0 "Histoire has had enough. No more forcing the Neps to do their bare minimum. No more controlling Planeptune from the shadows, bearing all the burden but reaping none of the rewards. No more straining her vocal chords by reprimanding Neptune in the only way that would make her heard. A new age has come, and Planeptune has outgrown its need for a do-nothing CPU. This is the age of Histoire's rule over Planeptune. Seizing total control and working hard, Histoire will usher Planeptune into an age of prosperity and peace."
  POLITICS_PURPLE_HEART_DESC:0 "Unlike in her regular form, Purple Heart is serious, calm, and collected. A perfect leader... for the duration of her transformation. Purple Heart is gifted with prowess and skill in combat, usually hunting monsters or fighting in the frontlines. However, if the unfortunate happens and Purple Heart is defeated during a battle, a huge amount of shares will be lost."
  POLITICS_PURPLE_SISTER_DESC:0 "Just like Purple Heart, Purple Sister is skilled in combat and is often seen at the frontlines or exterminating monsters. Unlike Neptune, however, Purple Sister's personality doesn't change drastically - instead, it pretty much remains the same."
  POLITICS_BSHA_DESC:0 "It is a public secret that B-Sha is actually Presto Mask, the hero of Planeptune. After catching the most successful criminal ever - the neglectful Neptune - Presto Mask made way for B-Sha's rule. Much like Neptune, B-Sha is childish and can often  be found slacking away and being pushed by Histoire... with the added troubles of being very reluctant to fight monsters. It seems that a revolution brought little change to Planeptune in terms of its administration, except for B-Sha's promises of peace no matter the cost."
@@ -44,9 +44,9 @@
  PLA_stagnant_birthrates_idea:0 "Stagnant Birthrates"
  PLA_stagnant_birthrates_idea_desc:0 "Technological progress doesn't come without a cost. The citizens of Planeptune are either too busy with work or too enamoured with fictional women to find a real mate. Even though Planeptune uses robots as its frontline soldiers, it puts a strain on its industry, and fresh recruits are needed for the upcoming war."
  PLA_public_unrest_idea:0 "Disgruntled Populace"
- PLA_public_unrest_idea_desc:0 "§WWar Support:§! [?PLA_public_unrest_effect|%R]\n§WArmy Organization:§! [?PLA_public_unrest_effect|%R]\n§WArmy Breakthrough:§! [?PLA_public_unrest_effect|%R]\n\nOutside of the city of Planeptune, it is not too uncommon to be attacked by monsters - whether by a relatively harmless dogoo or a deadly mech. With Planeptune's guards underequipped and inexperienced, monster attacks are sadly an everyday occurence in Planeptune due to its capital's proximity to the Gamindustri Graveyard.\nIn a time of need, the people of Planeptune feel abandoned by their goddess, whom they haven't seen for years. If no action is taken, the people might take matters into their own hands. Will Lady Purple Heart be able to win back her people? Or will Planeptune fall to chaos?"
+ PLA_public_unrest_idea_desc:0 "§WWar Support:§! [?PLA_public_unrest_effect|%+0]\n§WArmy Organization:§! [?PLA_public_unrest_effect|%+0]\n§WArmy Breakthrough:§! [?PLA_public_unrest_effect|%+0]\n\nOutside of the city of Planeptune, it is not too uncommon to be attacked by monsters - whether by a relatively harmless dogoo or a deadly mech. With Planeptune's guards underequipped and inexperienced, monster attacks are sadly an everyday occurence in Planeptune due to its capital's proximity to the Gamindustri Graveyard.\nIn a time of need, the people of Planeptune feel abandoned by their goddess, whom they haven't seen for years. If no action is taken, the people might take matters into their own hands. Will Lady Purple Heart be able to win back her people? Or will Planeptune fall to chaos?"
  PLA_histoire_discontent_idea:0 "Imbalanced Administration"
- PLA_histoire_discontent_idea_desc:0 "§WStability:§! [?PLA_histoire_discontent_effect|%R]\n§WDaily Political Power Gain:§! [?PLA_histoire_discontent_effect|R]\n\nPlaneptune might seem like a stable nation, but behind the scenes Histoire does the bulk of the work while Neptune spends her days playing video games and lazying around. Cracks have begun to show in Histoire's usually flawless ways of handling situation, and outbursts are getting more common. Planeptune's stability depends on Histoire's state of mind - if something goes wrong with her, Planeptune will become an anarchy masquerading as a nation with a CPU."
+ PLA_histoire_discontent_idea_desc:0 "§WStability:§! [?PLA_histoire_discontent_effect|%+0]\n§WDaily Political Power Gain:§! [?PLA_histoire_discontent_effect_pp|+2]\n\nPlaneptune might seem like a stable nation, but behind the scenes Histoire does the bulk of the work while Neptune spends her days playing video games and lazying around. Cracks have begun to show in Histoire's usually flawless ways of handling situation, and outbursts are getting more common. Planeptune's stability depends on Histoire's state of mind - if something goes wrong with her, Planeptune will become an anarchy masquerading as a nation with a CPU."
  
  #Dynamic Modifiers
  PLA_public_unrest_dynamic_modifier:0 "Disgruntled Populace"
@@ -54,7 +54,102 @@
  
  #Scripted Loc
  
+ #Country flags
+ friendship_treaty_ratified_flag:0 "The Friendship Treaty has been ratified."
+ PLA_friendship_treaty_failed:0 "The Friendship Treaty has failed!"
+ 
  #Tooltips
  PLA_public_unrest_increase_small_tt:0 "§RThis will cause a bit of public unrest.§!"
  PLA_public_unrest_increase_medium_tt:0 "§RThis will cause some public unrest!§!"
  PLA_public_unrest_increase_big_tt:0 "§RThis will cause significant public unrest!§!"
+
+ PLA_public_unrest_decrease_small_tt:0 "§GThis will calm down the public.§!"
+ PLA_public_unrest_decrease_medium_tt:0 "§GThis will satisfy the public.§!"
+ PLA_public_unrest_decrease_big_tt:0 "§GThis will make the public happy!§!"
+
+ PLA_histoire_discontent_increase_small_tt:0 "§RThis will cause Histoire to get a little angry.§!"
+ PLA_histoire_discontent_increase_medium_tt:0 "§RThis will cause Histoire to get angry!§!"
+ PLA_histoire_discontent_increase_big_tt:0 "§RThis will cause Histoire to get really angry!§!"
+ 
+ PLA_histoire_discontent_decrease_small_tt:0 "§GThis will calm Histoire down.§!"
+ PLA_histoire_discontent_decrease_medium_tt:0 "§GThis will satisfy Histoire.§!"
+ PLA_histoire_discontent_decrease_big_tt:0 "§GThis will make Histoire happy!§!"
+
+ PLA_attend_the_friendship_treaty_tt:0 "§GWe will sign the friendship treaty in Planeptune!§!"
+ PLA_ratify_the_friendship_treaty_tt:0 "§GThe celebration will begin and the friendship treaty will be signed!§!"
+ PLA_friendship_treaty_failed_tt:0 "§RThe Friendship Treaty's ratification was a failure!§!"
+ 
+ PLA_neptune_can_transform_tt:0 "§GNeptune can now access her HDD form!§!"
+ PLA_shares_for_everyone_tt:0 "§GWe will be able to gain shares without taking them from other nations!§!"
+ 
+ #Decisions
+ PLA_ticking:0 "Neptune is tryinig to handle the pressure..."
+ 
+ #Focuses
+ PLA_land_of_the_purple_progress:0 "Land of the Purple Progess"
+ PLA_land_of_the_purple_progress_desc:0 "Shine Bright"
+ PLA_ratify_the_friendship_treaty:0 "Ratify the Friendship Treaty"
+ PLA_ratify_the_friendship_treaty_desc:0 "noire has no friends lol"
+ 
+ PLA_contractors_from_leanbox:0 "Contractors from Leanbox"
+ PLA_contractors_from_leanbox_desc:0 "While Planeptune might be lacking a good army to protect its citizens from monster, our friends in the south can help. They will show us how to make decent equipment for our army and will help us with research."
+ PLA_workers_from_lowee:0 "Workers from Lowee"
+ PLA_workers_from_lowee_desc:0 "Since Lowee is the most populous country in Gamindustri, we can persuade Blanc to enter a contract with us which would settle a large amount of Lowee immigrants into our nation. This will mitigate our manpower problem a little."
+ PLA_corporations_from_lastation:0 "Corporations from Lastation"
+ PLA_corporations_from_lastation_desc:0 "Lastation is quite famous for corporate influence in their politics. We will invite some of the companies to set up their industrial complexes in Planeptune. No longer will we solely rely on Zolge co."
+ PLA_addressing_the_shares_problem:0 "Addressing the Shares Problem"
+ PLA_addressing_the_shares_problem_desc:0 "Our shares have been at a steady decline for a while. It is time we work on strengthening our people's faith."
+ PLA_ease_histys_workload:0 "Ease Histy's Workload"
+ PLA_ease_histys_workload_desc:0 "For the most of Neptune's time as a CPU, Histoire has taken the most difficult administrative duties while Neptune was lazying around. To help both Histoire and Planeptune, we need to ease her workload."
+ PLA_learn_from_the_pro:0 "Learn from the Pro"
+ PLA_learn_from_the_pro_desc:0 "Noire has a very complicated relationship with Neptune, but no one can deny that she works hard for her people and nation. We will send Neptune to Lastation so she would learn how to be a better goddess."
+ PLA_share_workload_with_nepgear:0 "Share Workload with Nepgear"
+ PLA_share_workload_with_nepgear_desc:0 "By consolidating the roles and duties that both the CPU and the CPU candidate have, we will balance the workload so our administration is balanced. No longer will Histy bear the biggest burden!"
+ PLA_pr_stunts:0 "PR Stunts"
+ PLA_pr_stunts_desc:0 "There is no denying that we need to win back our people's faith. We can ask Compa and IF to accompany us in a mission to hunt monsters and help the people of Planeptune."
+ PLA_keep_planeptune_safe:0 "Keep Planeptune Safe"
+ PLA_keep_planeptune_safe_desc:0 "To keep the citizens of Planeptune happy and safe, Neptune needs to enter her HDD form - something she seldom does."
+ PLA_take_care_of_the_birthrates:0 "Take Care of Birthrates"
+ PLA_take_care_of_the_birthrates_desc:0 "Paying the price of being a technological powerhouse, Planeptune has stagnant birthrates. If we need to make the birthrates soar again, we need to implement necessary reforms in Planeptune's healthcare system."
+ PLA_planeptune_rising:0 "Planeptune Rising"
+ PLA_planeptune_rising_desc:0 "Planeptune has fought hard to eliminate most the challanges that plagued the nation. It is time to enjoy peace and stability for a bit."
+ PLA_paying_back_the_debt:0 "Paying Back the Debt"
+ PLA_paying_back_the_debt_desc:0 "There is no denying that the other nations and the friendship treaty are what helped Planeptune turn into a stable nation. We need to reward the other nations in return so our friendship is not one-sided."
+ PLA_shares_for_everyone:0 "Shares for Everyone!"
+ PLA_shares_for_everyone_desc:0 "Planeptune will enter into another agreement with the nations - which would reform the Shares system and enable nations to earn shares without taking away shares from other nations."
+ PLA_just_good_business:0 "Just Good Business"
+ PLA_just_good_business_desc:0 "As the nation of the protagonist, Planeptune has to rise above every other nation! We will unite Gamindustri under our boot!"
+ 
+ PLA_neptune_gets_depressed:0 "neptune gets depressed"
+ PLA_neptune_gets_depressed_desc:0 "sad"
+ PLA_neptune_gets_depressed:0 "neptune gets depressed"
+ PLA_neptune_gets_depressed_desc:0 "sad"
+ 
+ #Events
+ planeptune.1.t:0 "A Day in the Life of Nep"
+ planeptune.1.d:0 "‘Why do you have to always choose cheap characters, sis? Can’t you choose a fun character this time?’ Neptune whined as her sister giggled. ‘You’re just a scrub who doesn’t want to lose! Come on, let me choose a character for you!’ Neptune tried to grab Nepgear’s joystick, forcing both of the sisters out of the comfortable sitting position. Just as Neptune was about to reach the joystick, Nepgear gently yanked the cable, disconnecting it from the console. She got up and started running, with Neptune soon following after. ‘You’re telling me I can’t handle losing? Just look at yourself!’ Nepgear said in between her chuckles. Suddenly, the cord conveniently tangled around Nepgear’s legs and she fell down, causing Neptune to also trip over her.\n\n‘If only you would put as much effort into being a goddess as you do being angry at video games,’ Histoire’s airy voice resonated throughout Neptune’s thick skull as she raised her head. Instead of feeling remorse, Neptune only felt frustration. ‘Damn it Histy! You ruined a sisterly moment. I need to show the player that I’m the protagonist, and that Nepgear is my sweet but shy sister!’ Neptune groaned, scratching the back of her head as she looked at Histoire. ‘Enough meta comments. There has been a monster attack in Erethisan that might need--’ ‘Can’t you send Falcom again?’ Neptune interrupted, causing Histoire to display a mean grimace. ‘Take a look at yourself, Neptune! Our shares have been in a decline for a long time now and I know who’s responsible!’ Histoire tried to emit a piercing gaze into Neptune as she looked to the side. ‘I’m telling you, Histy, I told B-sha not to extort money from people, but I guess--’ ‘Enough of this, Neptune!’ Histoire snapped. A few pages have materialized in her arms. ‘You will start immediately! Reading a couple of pages is the least of your worries. After this, you will hear what the people of LAN Castle have to say about the recent invasion of Horsebirds.’"
+ planeptune.1.a:0 "‘Seriously, Histy?’ Neptune groaned."
+ 
+ planeptune.2.t:0 "Neptune invites us to ratify the Friendship Treaty!"
+ 
+ planeptune.3.t:0 "The ceremony may begin!"
+ 
+ planeptune.4.t:0 "blanc is flat lol"
+ 
+ planeptune.5.t:0 "nep sleeping"
+ 
+ planeptune.6.t:0 "vert tries to kidnap nepgear"
+ 
+ planeptune.7.t:0 "noire has no friends"
+ 
+ planeptune.8.t:0 "Neptune feels like crap"
+ planeptune.8.d:0 "She becomes depressive and slightly irritates Histoire"
+ planeptune.8.a:0 "Sad time"
+ 
+ planeptune.12.a:0 "Yell at Histoire"
+ planeptune.12.b:0 "Do it half-heartedly"
+ planeptune.12.c:0 "Ask Histoire for help"
+ 
+ planeptune.999.t:0 "A visit from Neptune...?"
+ planeptune.999.d:0 "You're not supposed to see this!"
+ planeptune.999.a:0 "I am a cheater."

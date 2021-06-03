@@ -475,7 +475,7 @@ army = {
 		available = 
 		{
 			has_dlc = "Waking the Tiger"
-			has_government = military_junta
+			has_government = fascism
 		}
 	}
 	icon = {
@@ -484,7 +484,7 @@ army = {
 		available = 
 		{
 			has_dlc = "Waking the Tiger"
-			has_government = military_junta
+			has_government = communism
 		}
 	}
 	icon = {

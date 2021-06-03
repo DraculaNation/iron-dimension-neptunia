@@ -1,0 +1,470 @@
+﻿add_namespace = planeptune
+
+country_event = { #Land of the Purple Progress
+	id = planeptune.999
+	title = planeptune.999.t
+	desc = planeptune.999.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.999.a
+		ai_chance = { factor = 100 }
+		add_political_power = -100
+	}
+	
+}
+
+country_event = { #Land of the Purple Progress
+	id = planeptune.1
+	title = planeptune.1.t
+	desc = planeptune.1.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.1.a
+		ai_chance = { factor = 100 }
+	}
+	
+}
+
+country_event = { #Invitation to the Friendship Treaty
+	id = planeptune.2
+	title = planeptune.2.t
+	desc = planeptune.2.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.2.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = PLA_attend_the_friendship_treaty_tt
+		hidden_effect = {
+			if = {
+				limit = { tag = LAS }
+				PLA = { set_country_flag = PLA_lastation_ready_flag }
+			}
+			if = {
+				limit = { tag = LEA  }
+				PLA = { set_country_flag = PLA_leanbox_ready_flag }
+			}
+			if = {
+				limit = { tag = LOW }
+				PLA = { set_country_flag = PLA_lowee_ready_flag }
+			}
+			PLA = {
+				if = {
+					limit = {
+						has_country_flag = PLA_lastation_ready_flag
+						has_country_flag = PLA_lowee_ready_flag
+						has_country_flag = PLA_leanbox_ready_flag
+					}
+					country_event = {
+						id = planeptune.3
+						days = 1
+					}
+				}
+			}
+		}
+	}
+	
+}
+
+country_event = { #Friendship Treaty Commences
+	id = planeptune.3
+	title = planeptune.3.t
+	desc = planeptune.3.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.3.a
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = PLA_ratify_the_friendship_treaty_tt
+		hidden_effect = {
+			random_list = {
+				25 = {
+					every_country = {
+						news_event = {
+							id = gamindustri.1
+							days = 4
+						}
+					}
+					country_event = {
+						id = planeptune.4 #Blanc called flat
+						days = 1
+					}
+					LAS = {
+						country_event = {
+							id = planeptune.4 #Blanc called flat
+							days = 1
+						}
+					}
+					LEA = {
+						country_event = {
+							id = planeptune.4 #Blanc called flat
+							days = 1
+						}
+					}
+					LOW = {
+						country_event = {
+							id = planeptune.4 #Blanc called flat
+							days = 1
+						}
+					}
+				}
+				25 = {
+					every_country = {
+						news_event = {
+							id = gamindustri.2
+							days = 4
+							}
+					}
+					country_event = {
+						id = planeptune.5 #Neptune falls asleep
+						days = 1
+					}
+					LAS = {
+						country_event = {
+							id = planeptune.5 #Neptune falls asleep
+							days = 1
+						}
+					}
+					LEA = {
+						country_event = {
+							id = planeptune.5 #Neptune falls asleep
+							days = 1
+						}
+					}
+					LOW = {
+						country_event = {
+							id = planeptune.5 #Neptune falls asleep
+							days = 1
+						}
+					}
+				}
+				25 = {
+					every_country = {
+						news_event = {
+							id = gamindustri.3
+							days = 4
+							}
+					}
+					country_event = {
+						id = planeptune.6 #Vert tries to kidnap Nepgear
+						days = 1
+					}
+					LAS = {
+						country_event = {
+							id = planeptune.6 #Vert tries to kidnap Nepgear
+							days = 1
+						}
+					}
+					LEA = {
+						country_event = {
+							id = planeptune.6 #Vert tries to kidnap Nepgear
+							days = 1
+						}
+					}
+					LOW = {
+						country_event = {
+							id = planeptune.6 #Vert tries to kidnap Nepgear
+							days = 1
+						}
+					}
+				}
+				25 = {
+					every_country = {
+						news_event = {
+							id = gamindustri.4
+							days = 4
+							}
+					}
+					country_event = {
+						id = planeptune.7 #Noire flips out
+						days = 1
+					}
+					LAS = {
+						country_event = {
+							id = planeptune.7 #Noire flips out
+							days = 1
+						}
+					}
+					LEA = {
+						country_event = {
+							id = planeptune.7 #Noire flips out
+							days = 1
+						}
+					}
+					LOW = {
+						country_event = {
+							id = planeptune.7 #Noire flips out
+							days = 1
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Blanc gets called flat
+	id = planeptune.4
+	title = planeptune.4.t
+	desc = planeptune.4.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.4.a
+		ai_chance = { factor = 100 }
+		trigger = { NOT = { tag = LOW } }
+		custom_effect_tooltip = PLA_friendship_treaty_failed_tt
+		hidden_effect = {
+			set_country_flag = PLA_friendship_treaty_failed
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	option = {
+		name = planeptune.4.b
+		ai_chance = { factor = 100 }
+		trigger = { tag = LOW } #Lowee's unique response
+		custom_effect_tooltip = PLA_friendship_treaty_failed_tt
+		hidden_effect = {
+			set_country_flag = PLA_friendship_treaty_failed
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = { #Neptune not present
+	id = planeptune.5
+	title = planeptune.5.t
+	desc = planeptune.5.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.5.a
+		ai_chance = { factor = 100 }
+		trigger = { NOT = { tag = PLA } }
+		custom_effect_tooltip = PLA_friendship_treaty_failed_tt
+		hidden_effect = {
+			set_country_flag = PLA_friendship_treaty_failed
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	option = {
+		name = planeptune.5.b
+		ai_chance = { factor = 100 }
+		trigger = { tag = PLA } #Planeptune's unique response
+		custom_effect_tooltip = PLA_friendship_treaty_failed_tt
+		hidden_effect = {
+			set_country_flag = PLA_friendship_treaty_failed
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = { #Vert tries to kidnap Nepgear
+	id = planeptune.6
+	title = planeptune.6.t
+	desc = planeptune.6.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.6.a
+		ai_chance = { factor = 100 }
+		trigger = { NOT = { tag = LEA } }
+		custom_effect_tooltip = PLA_friendship_treaty_failed_tt
+		hidden_effect = {
+			set_country_flag = PLA_friendship_treaty_failed
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	option = {
+		name = planeptune.6.b
+		ai_chance = { factor = 100 }
+		trigger = { tag = LEA } #Leanbox's unique response
+		custom_effect_tooltip = PLA_friendship_treaty_failed_tt
+		hidden_effect = {
+			set_country_flag = PLA_friendship_treaty_failed
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = { #Noire gets calling out for having no friends
+	id = planeptune.7
+	title = planeptune.7.t
+	desc = planeptune.7.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.7.a
+		ai_chance = { factor = 100 }
+		trigger = { NOT = { tag = LAS } }
+		custom_effect_tooltip = PLA_friendship_treaty_failed_tt
+		hidden_effect = {
+			set_country_flag = PLA_friendship_treaty_failed
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	option = {
+		name = planeptune.7.b
+		ai_chance = { factor = 100 }
+		trigger = { tag = LAS } #Leanbox's unique response
+		custom_effect_tooltip = PLA_friendship_treaty_failed_tt
+		hidden_effect = {
+			set_country_flag = PLA_friendship_treaty_failed
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+####################################
+## DEALING WITH THE PUBLIC UPROAR ##
+####################################
+
+country_event = { #Neptune realizes that stuff is fucked up
+	id = planeptune.8
+	title = planeptune.8.t
+	desc = planeptune.8.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.8.a
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = { #People are angry and don't want to enlist
+	id = planeptune.9
+	title = planeptune.9.t
+	desc = planeptune.9.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.9.a
+		ai_chance = { factor = 100 }
+		PLA_increase_public_unrest_medium = yes
+	}
+}
+
+country_event = { #Neptune's depression nap
+	id = planeptune.10
+	title = planeptune.10.t
+	desc = planeptune.10.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.10.a
+		ai_chance = { factor = 100 }
+		PLA_increase_histoire_discontent_small = yes
+	}
+}
+
+country_event = { #Nep remilitarizes Erethisan
+	id = planeptune.11
+	title = planeptune.11.t
+	desc = planeptune.11.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.11.a #Sudden remilitarization
+		ai_chance = { factor = 100 }
+		add_threat = 5
+		PLA_increase_public_unrest_big = yes
+		PLA_increase_histoire_discontent_small = yes
+		7 = { set_demilitarized_zone = no }
+		18 = { set_demilitarized_zone = no }
+		hidden_effect = {
+			set_country_flag = PLA_dealing_with_unrest_start
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+	
+	option = {
+		name = planeptune.11.b #Gradual remilitarization - fake monster attack
+		ai_chance = { factor = 100 }
+		PLA_increase_public_unrest_medium = yes
+		PLA_increase_histoire_discontent_medium = yes
+		hidden_effect = {
+			country_event = {
+				id = planeptune.13 #Remilitarization finished
+				days = 30
+			}
+			set_country_flag = PLA_dealing_with_unrest_start
+			mark_focus_tree_layout_dirty = yes
+		}
+	}
+}
+
+country_event = { #Timed event where Neptune either makes Histy mad, makes the populace mad, or makes both a little mad
+	id = planeptune.12
+	title = planeptune.12.t
+	desc = planeptune.12.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.12.a #Make population mad
+		ai_chance = { factor = 100 }
+		PLA_increase_public_unrest_medium = yes
+	}
+	
+	option = {
+		name = planeptune.12.b #Make Histy mad
+		ai_chance = { factor = 100 }
+		PLA_increase_histoire_discontent_medium = yes
+	}
+	
+		option = {
+		name = planeptune.12.b #Make both mad
+		ai_chance = { factor = 100 }
+		PLA_increase_public_unrest_small = yes
+		PLA_increase_histoire_discontent_small = yes
+	}
+}
+
+country_event = { #Remilitarization Finished
+	id = planeptune.13
+	title = planeptune.13.t
+	desc = planeptune.13.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.13.a #Finito
+		ai_chance = { factor = 100 }
+		add_stability = 0.02
+		add_threat = 3
+		7 = { set_demilitarized_zone = no }
+		18 = { set_demilitarized_zone = no }
+	}
+}

@@ -9,15 +9,18 @@ set_politics = {
 }
 
 set_popularities = {
-	alternate_cpu_rule = 20
-	cpu_rule = 30
-	military_junta = 50
+	alternate_cpu_rule = 10
+	cpu_rule = 25
+	maternal_autocracy = 50
+	military_junta = 15
 }
+
+set_stability = 0.25
 
 ### Setting variables for public unrest
 set_variable = {
 	var = PLA_public_unrest_percent
-	value = 50
+	value = 25
 }
 set_variable = {
 	var = PLA_public_unrest_effect
@@ -26,10 +29,6 @@ set_variable = {
 multiply_variable = {
 	var = PLA_public_unrest_effect
 	value = -0.004
-}
-add_to_variable = {
-	var = PLA_public_unrest_effect
-	value = -0.05
 }
 
 ## Setting variables for Histoire's discontent
@@ -45,11 +44,18 @@ multiply_variable = {
 	var = PLA_histoire_discontent_effect
 	value = -0.004
 }
-add_to_variable = {
-	var = PLA_histoire_discontent_effect
-	value = -0.02
+set_variable = {
+	var = PLA_histoire_discontent_effect_pp
+	value = PLA_histoire_discontent_percent
+}
+multiply_variable = {
+	var = PLA_histoire_discontent_effect_pp
+	value = -0.01
 }
 
+#Demilitarize Erethisan
+7 = { set_demilitarized_zone = yes }
+18 = { set_demilitarized_zone = yes }
 
 add_ideas = {
 		PLA_technological_powerhouse_idea

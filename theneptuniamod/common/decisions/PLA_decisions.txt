@@ -1,0 +1,13 @@
+PLA_unrest_category = {
+	PLA_ticking = {
+		activation = { has_country_flag = PLA_dealing_with_unrest_start }
+		available = {
+			NOT = { has_country_flag = PLA_not_lazy_anymore }
+		}
+		is_good = no
+		days_mission_timeout = 30
+		timeout_effect = {
+			country_event = { id = planeptune.12 }
+		}
+	}
+}

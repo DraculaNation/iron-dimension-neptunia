@@ -1,0 +1,31 @@
+﻿l_english:
+ 
+ #Tooltips
+ 
+ shares_increase_planeptune_small_tt:0 "§BPlaneptune's§! §gshares will§! §Grise§! §ga little!§!"
+ shares_increase_planeptune_medium_tt:0 "§BPlaneptune's§! §gshares will§! §Grise!§!"
+ shares_increase_planeptune_high_tt:0 "§BPlaneptune's§! §gshares will§! §Grise§! §ggreatly!§!"
+ shares_decrease_planeptune_small_tt:0 "§BPlaneptune's§! §gshares will§! §Rfall§! §ga little!§!"
+ shares_decrease_planeptune_medium_tt:0 "§BPlaneptune's§! §gshares will§! §Rfall!§!"
+ shares_decrease_planeptune_high_tt:0 "§BPlaneptune's§! §gshares will§! §Rfall§! §ggreatly!§!"
+ 
+ shares_increase_lowee_small_tt:0 "§WLowee's§! §gshares will§! §Grise§! §ga little!§!"
+ shares_increase_lowee_medium_tt:0 "§WLowee's§! §gshares will§! §Grise!§!"
+ shares_increase_lowee_high_tt:0 "§WLowee's§! §gshares will§! §Grise§! §ggreatly!§!"
+ shares_decrease_lowee_small_tt:0 "§WLowee's§! §gshares will§! §Rfall§! §ga little!§!"
+ shares_decrease_lowee_medium_tt:0 "§WLowee's§! §gshares will§! §Rfall!§!"
+ shares_decrease_lowee_high_tt:0 "§WLowee's§! §gshares will§! §Rfall§! §ggreatly!§!"
+ 
+ shares_increase_leanbox_small_tt:0 "§GLeanbox's§! §gshares will§! §Grise§! §ga little!§!"
+ shares_increase_leanbox_medium_tt:0 "§GLeanbox's§! §gshares will§! §Grise!§!"
+ shares_increase_leanbox_high_tt:0 "§GLeanbox's§! §gshares will§! §Grise§! §ggreatly!§!"
+ shares_decrease_leanbox_small_tt:0 "§GLeanbox's§! §gshares will§! §Rfall§! §ga little!§!"
+ shares_decrease_leanbox_medium_tt:0 "§GLeanbox's§! §gshares will§! §Rfall!§!"
+ shares_decrease_leanbox_high_tt:0 "§GLeanbox's§! §gshares will§! §Rfall§! §ggreatly!§!"
+ 
+ shares_increase_lastation_small_tt:0 "§bLastation's§! §gshares will§! §Grise§! §ga little!§!"
+ shares_increase_lastation_medium_tt:0 "§bLastation's§! §gshares will§! §Grise!§!"
+ shares_increase_lastation_high_tt:0 "§bLastation's§! §gshares will§! §Grise§! §ggreatly!§!"
+ shares_decrease_lastation_small_tt:0 "§bLastation's§! §gshares will§! §Rfall§! §ga little!§!"
+ shares_decrease_lastation_medium_tt:0 "§bLastation's§! §gshares will§! §Rfall!§!"
+ shares_decrease_lastation_high_tt:0 "§bLastation's§! §gshares will§! §Rfall§! §ggreatly!§!"

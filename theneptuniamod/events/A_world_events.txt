@@ -1,0 +1,86 @@
+﻿add_namespace = gamindustri
+
+
+news_event = { #Friendship Treaty Fails - blanc
+	id = gamindustri.1
+	title = gamindustri.1.t
+	desc = gamindustri.1.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gamindustri.1.a
+		trigger = { NOT = { tag = LOW } } #Lowee's unique response
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = gamindustri.1.b
+		trigger = { tag = LOW } #Lowee's unique response
+		ai_chance = { factor = 100 }
+	}
+}
+
+news_event = { #Friendship Treaty Fails - nep
+	id = gamindustri.2
+	title = gamindustri.2.t
+	desc = gamindustri.2.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gamindustri.2.a
+		trigger = { NOT = { tag = PLA } }
+		ai_chance = { factor = 100 }
+	}
+	
+	option = {
+		name = gamindustri.2.b
+		trigger = { tag = PLA }
+		ai_chance = { factor = 100 }
+	}	
+}
+
+news_event = { #Friendship Treaty Fails - vert
+	id = gamindustri.3
+	title = gamindustri.3.t
+	desc = gamindustri.3.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gamindustri.3.a
+		trigger = { NOT = { tag = LEA } }
+		ai_chance = { factor = 100 }
+	}	
+	
+	option = {
+		name = gamindustri.3.b
+		trigger = { tag = LEA }
+		ai_chance = { factor = 100 }
+	}	
+}
+
+news_event = { #Friendship Treaty Fails - noire
+	id = gamindustri.4
+	title = gamindustri.4.t
+	desc = gamindustri.4.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = gamindustri.4.a
+		trigger = { NOT = { tag = LAS } }
+		ai_chance = { factor = 100 }
+	}	
+	
+	option = {
+		name = gamindustri.4.b
+		trigger = { tag = LAS }
+		ai_chance = { factor = 100 }
+	}
+}

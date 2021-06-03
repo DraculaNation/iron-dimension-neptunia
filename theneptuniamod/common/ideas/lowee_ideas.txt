@@ -1,0 +1,117 @@
+ideas = {
+	country = {
+		
+		LOW_divided_industry_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				production_speed_infrastructure_factor = -0.8
+				local_resources_factor = 0.15
+			}
+		}
+		
+		LOW_divided_industry_embraced_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				production_speed_infrastructure_factor = -0.8
+				local_resources_factor = 0.33
+				production_speed_arms_factory_factor = 0.3
+				production_speed_industrial_complex_factor = 0.3
+				production_speed_dockyard_factor = 0.3
+			}
+		}
+		
+		LOW_rapid_inidustrialization_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				production_speed_infrastructure_factor = 0.5
+			}
+		}
+		
+		LOW_censored_media_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				political_power_gain = 0.2
+				research_speed_factor = -0.08
+				trade_opinion_factor = -0.15
+			}
+		}
+		
+		LOW_the_great_firewall_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				political_power_gain = 0.5
+				research_speed_factor = -0.08
+				trade_opinion_factor = -0.15
+				army_core_defence_factor = 0.1
+			}
+		}
+		
+		LOW_unsure_loyalties_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				conscription_factor = -0.1
+				stability_factor = -0.05
+				political_power_factor = -0.1
+			}
+		}
+		
+		LOW_looming_conspiracies_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			modifier = {
+				conscription_factor = -0.33
+				stability_factor = -0.15
+				political_power_factor = -0.33
+			}
+		}
+
+	}
+}

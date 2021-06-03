@@ -1,0 +1,12 @@
+PLA_unrest_category = {
+	icon = generic_prospect_for_resources
+	available = {
+		tag = PLA
+		has_country_flag = PLA_dealing_with_unrest_start
+		NOT = {
+			has_country_flag = PLA_collapse_unrest
+			has_country_flag = PLA_collapse_histoire
+		}
+	}
+	visible_when_empty = yes
+}

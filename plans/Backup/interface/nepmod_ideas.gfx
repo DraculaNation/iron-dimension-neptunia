@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_idea_PLA_falling_birthrates"
+		textureFile = "gfx/interface/ideas/PLA_falling_birthrates.tga"
+	}
+
+}

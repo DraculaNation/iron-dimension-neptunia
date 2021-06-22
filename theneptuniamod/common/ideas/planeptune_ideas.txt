@@ -23,7 +23,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = PLA_falling_birthrates
 			
 			modifier = {
 				monthly_population = -0.8

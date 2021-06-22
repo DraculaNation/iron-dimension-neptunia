@@ -17,10 +17,12 @@ set_popularities = {
 
 set_stability = 0.25
 
+load_oob = "PLA_1936"
+
 ### Setting variables for public unrest
 set_variable = {
 	var = PLA_public_unrest_percent
-	value = 25
+	value = 20
 }
 set_variable = {
 	var = PLA_public_unrest_effect
@@ -72,6 +74,7 @@ add_dynamic_modifier = {
 	modifier = PLA_public_unrest_dynamic_modifier
 	scope = PLA
 }
+
 
 
 ## Leaders
@@ -154,8 +157,9 @@ create_country_leader = {
 
 create_field_marshal = { 
 	name = "B-Sha"
-	gfx = Portrait_Planeptune_Bsha
+	picture = "Portrait_Planeptune_Bsha.dds"
 	traits = { politically_connected }
+	id = 6901
 	skill = 2
 	attack_skill = 3
 	defense_skill = 2
@@ -165,7 +169,7 @@ create_field_marshal = {
 
 create_corps_commander = {
 		name = "Ryuka"
-		gfx = Portrait_Planeptune_Ryuka
+		picture = "Portrait_Planeptune_Ryuka.dds"
 		traits = { harsh_leader }
 		skill = 3
 		attack_skill = 3
@@ -176,7 +180,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 		name = "Blossom Aisen"
-		gfx = Portrait_Planeptune_Blossom_Aisen
+		picture = "Portrait_Planeptune_Blossom_Aisen.dds"
 		traits = { organizer }
 		skill = 2
 		attack_skill = 1
@@ -187,7 +191,7 @@ create_corps_commander = {
 
 create_corps_commander = {
 		name = "Tsunemi"
-		gfx = Portrait_Planeptune_Tsunemi
+		picture = "Portrait_Planeptune_Tsunemi.dds"
 		traits = { infantry_officer }
 		skill = 2
 		attack_skill = 2

@@ -53,6 +53,19 @@
  PLA_histoire_discontent_dynamic_modifier:0 "Imbalanced Administration"
  
  #Scripted Loc
+ PLA_public_unrest_low_sl:0 "§GPublic unrest is at a manageable level.§!" #0-10 public unrest
+ PLA_public_unrest_medium_sl:0 "§YPublic unrest is at an elevated level.§!" #11-20 public unrest
+ PLA_public_unrest_high_sl:0 "§RPublic unrest is at a high level!§!" #21-30 public unrest
+ PLA_public_unrest_really_high_sl:0 "§RPublic unrest is at a very high level!§!" #31-40 public unrest
+ PLA_public_unrest_really_really_high_sl:0 "§RPublic unrest is reaching critical levels!!!§!" #41-50 public unrest
+ PLA_public_unrest_messed_up_sl:0 "§RPublic unrest is widespread! Planeptune is doomed!§!" #>50 public unrest
+ 
+ PLA_histoire_discontent_low_sl:0 "§GHistoire is currently satisfied.§!" #0-10 histoire discontent
+ PLA_histoire_discontent_medium_sl:0 "§YPHistoire is irritated...§!" #11-20 histoire discontent
+ PLA_histoire_discontent_high_sl:0 "§RHistoire is disgruntled!§!" #21-30 histoire discontent
+ PLA_histoire_discontent_really_high_sl:0 "§RHistoire is angry!!§!" #31-40 histoire discontent
+ PLA_histoire_discontent_really_really_high_sl:0 "§RHistoire is reaching her breaking point!!!§!" #41-50 histoire discontent
+ PLA_histoire_discontent_messed_up_sl:0 "§RHistoire is on a strike! Planeptune is in chaos!§!" #>50 histoire discontent
  
  #Country flags
  friendship_treaty_ratified_flag:0 "The Friendship Treaty has been ratified."
@@ -82,8 +95,46 @@
  PLA_neptune_can_transform_tt:0 "§GNeptune can now access her HDD form!§!"
  PLA_shares_for_everyone_tt:0 "§GWe will be able to gain shares without taking them from other nations!§!"
  
+ PLA_organize_monster_raids_tt:0 "§GSome of the manpower will be returned!§!"
+ PLA_chauvinist_sway_tt:0 "§gOur grip on Planeptune will tighten!§!"
+ PLA_censorship_tt:0 "§gThe population will calm down and learn to live with tighter censorship.§!"
+ PLA_haneda_speech_tt:0 "§YThe public will be more sensitive, and will expect Neptune to fulfill her promise.§!"
+ PLA_public_unrest_finish_tt:0 "Public Unrest is at a manageable level."
+ 
  #Decisions
- PLA_ticking:0 "Neptune is tryinig to handle the pressure..."
+ 
+ PLA_unrest_category:0 "The Planeptune Predicament"
+ PLA_unrest_category_desc:0 "Playing games, eating pudding, and sometimes beating Nepgear at fighting games; Neptune's life seems to be a game. However, an astute analyst might notice that Neptune is sitting below a Sword of Damocles as she gracefully evades her responsibilities.\n\nOn one hand, there is the issue of Planeptune's §Rdisgruntled populace§! which is reflected in Planeptune's falling shares. Planeptune's citizens, at least those living outside of Planeptune, frequently become a snack for wandering monsters, especially considering Planeptune's proximity to Gamindustri Graveyard. If not taken care of, violent clashes between the authority and the population will erupt.\n\nOn the other hand, the administration itself suffers from inefficient management. In order to make up for Neptune's lack of work, Histoire takes care of important tasks. Lately, she has begun showing cracks in her collected demeanor, and has been getting §Rangrier by the moment§!.\n\nIf Planeptune is to survive as a stable nation with a CPU on its head, great care should be taken while handling both of these issues. If they are left to fester, Neptune might lose her position as a CPU!\n\n[PLA_public_unrest_status_loc]\n\n[PLA_histoire_discontent_status_loc]"
+ 
+ PLA_ticking:0 "Neptune is handling the pressure"
+ 
+ PLA_public_unrest_effigy:0 "Show/Hide Public Unrest Decisions"
+ PLA_appeal_to_the_public:0 "Appeal to the Public"
+ PLA_organize_monster_raids:0 "Scout Monster Dens"
+ PLA_form_monster_hunter_militias:0 "Organize Monster Raids"
+ PLA_fortify_a_city:0 "Fortify A Settlement"
+ PLA_fight_dogoos_in_person:0 "Fight Dogoos in Person"
+ PLA_hold_a_military_parade:0 "Hold a Military Parade"
+ PLA_propaganda_drive:0 "Start a Propaganda Campaign"
+ PLA_censorship_drive:0 "Introduce §gCensorship§!"
+ PLA_astroturf_support:0 "§gAstroturf§! Support"
+ PLA_the_haneda_speech:0 "Make the §PHaneda§! Speech"
+ PLA_win_the_publics_hearts:0 "Win the Public's Hearts"
+ PLA_win_the_publics_hearts_mission:0 "Win the Public's Hearts"
+ PLA_purge_bsha:0 "Purge B-Sha"
+ 
+ PLA_histoire_discontent_effigy:0 "Show/Hide Histoire Discontent Decisions"
+ 
+ 
+ #Decision Costs
+ PLA_organize_monster_raids_decision_cost:0 "£manpower_texticon §Y200§!"
+ PLA_organize_monster_raids_decision_cost_blocked:0 "£manpower_texticon §R200§!"
+ PLA_form_monster_hunter_militias_decision_cost:0 "£command_power §Y20§! £pol_power §Y25§!"
+ PLA_form_monster_hunter_militias_decision_cost_blocked:0 "£command_power §R20§! £pol_power §R25§!"
+ PLA_fortify_a_city_decision_cost:0 "£civ_factory §Y5§!"
+ PLA_fortify_a_city_decision_cost_blocked:0 "£civ_factory §R5§!"
+ PLA_hold_a_military_parade_decision_cost:0 "£army_experience §Y10§! £command_power §Y10§!"
+ PLA_hold_a_military_parade_decision_cost_blocked:0 "£army_experience §R10§! £command_power §R10§!"
  
  #Focuses
  PLA_land_of_the_purple_progress:0 "Land of the Purple Progess"
@@ -146,7 +197,9 @@
  planeptune.8.d:0 "She becomes depressive and slightly irritates Histoire"
  planeptune.8.a:0 "Sad time"
  
- planeptune.12.a:0 "Yell at Histoire"
+ planeptune.12.t:0 "Neptune is being yelled at by Histoire!!"
+ planeptune.12.d:0 "Oh no! What would she do?! She needs to do an administrative task."
+ planeptune.12.a:0 "Yell back at Histoire"
  planeptune.12.b:0 "Do it half-heartedly"
  planeptune.12.c:0 "Ask Histoire for help"
  

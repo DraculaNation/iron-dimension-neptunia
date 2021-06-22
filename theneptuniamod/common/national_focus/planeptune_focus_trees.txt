@@ -577,6 +577,7 @@ shared_focus = {
 		country_event = {
 			id = planeptune.8
 		}
+		hidden_effect = { set_country_flag = PLA_dealing_with_unrest_start }
     }
 }
 
@@ -638,6 +639,7 @@ shared_focus = {
     }
     
     completion_reward = {
+		hidden_effect = { activate_mission = PLA_ticking }
 		country_event = {
 			id = planeptune.10
 		}

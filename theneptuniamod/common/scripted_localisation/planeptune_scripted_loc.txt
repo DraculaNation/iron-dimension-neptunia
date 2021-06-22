@@ -1,14 +1,103 @@
 defined_text = {
-	name = PLA_public_unrest_loc
+	name = PLA_public_unrest_status_loc
 	text = {
 		trigger = {
-			check_variable = { PLA_public_unrest_effect > 0 }
+			check_variable = { PLA_public_unrest_percent < 11 }
 		}
-		localization_key = PLA_public_unrest_negative_loc
+		localization_key = PLA_public_unrest_low_sl
 	}
 	text = {
 		trigger = {
-			check_variable = { PLA_public_unrest_effect = 0 }
+			AND = {
+				check_variable = { PLA_public_unrest_percent < 21 }
+				check_variable = { PLA_public_unrest_percent > 10 }
+			}
 		}
-		localization_key = PLA_public_unrest_neutral_loc
+		localization_key = PLA_public_unrest_medium_sl
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { PLA_public_unrest_percent < 31 }
+				check_variable = { PLA_public_unrest_percent > 20 }
+			}
+		}
+		localization_key = PLA_public_unrest_high_sl
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { PLA_public_unrest_percent < 41 }
+				check_variable = { PLA_public_unrest_percent > 30 }
+			}
+		}
+		localization_key = PLA_public_unrest_really_high_sl
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { PLA_public_unrest_percent < 51 }
+				check_variable = { PLA_public_unrest_percent > 40 }
+			}
+		}
+		localization_key = PLA_public_unrest_really_really_high_sl
+	}
+	text = {
+		trigger = {
+				check_variable = { PLA_public_unrest_percent > 50 }
+		}
+		localization_key = PLA_public_unrest_messed_up_sl
+	}
+}
+
+defined_text = {
+	name = PLA_histoire_discontent_status_loc
+	text = {
+		trigger = {
+			check_variable = { PLA_histoire_discontent_percent < 11 }
+		}
+		localization_key = PLA_histoire_discontent_low_sl
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { PLA_histoire_discontent_percent < 21 }
+				check_variable = { PLA_histoire_discontent_percent > 10 }
+			}
+		}
+		localization_key = PLA_histoire_discontent_medium_sl
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { PLA_histoire_discontent_percent < 31 }
+				check_variable = { PLA_histoire_discontent_percent > 20 }
+			}
+		}
+		localization_key = PLA_histoire_discontent_high_sl
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { PLA_histoire_discontent_percent < 41 }
+				check_variable = { PLA_histoire_discontent_percent > 30 }
+			}
+		}
+		localization_key = PLA_histoire_discontent_really_high_sl
+	}
+	text = {
+		trigger = {
+			AND = {
+				check_variable = { PLA_histoire_discontent_percent < 51 }
+				check_variable = { PLA_histoire_discontent_percent > 40 }
+			}
+		}
+		localization_key = PLA_histoire_discontent_really_really_high_sl
+	}
+	text = {
+		trigger = {
+				check_variable = { PLA_histoire_discontent_percent > 50 }
+		}
+		localization_key = PLA_histoire_discontent_messed_up_sl
+	}
 }

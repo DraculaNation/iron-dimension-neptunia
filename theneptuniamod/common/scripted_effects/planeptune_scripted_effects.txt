@@ -1,4 +1,4 @@
-#Reload Public Unrest - should always incur a 5% penalty
+#Reload Public Unrest
 PLA_reload_public_unrest = {
 
 	clamp_variable = {
@@ -25,6 +25,15 @@ PLA_increase_public_unrest_small = {
 		var = PLA_public_unrest_percent
 		value = 5
 	}
+	if = {
+		limit = {
+			has_country_flag = PLA_public_sensitive
+		}
+		add_to_variable = {
+			var = PLA_public_unrest_percent
+			value = 5
+		}
+	}
 	PLA_reload_public_unrest = yes
 }
 
@@ -34,6 +43,15 @@ PLA_increase_public_unrest_medium = {
 		var = PLA_public_unrest_percent
 		value = 10
 	}
+	if = {
+		limit = {
+			has_country_flag = PLA_public_sensitive
+		}
+		add_to_variable = {
+			var = PLA_public_unrest_percent
+			value = 5
+		}
+	}
 	PLA_reload_public_unrest = yes
 }
 
@@ -42,6 +60,15 @@ PLA_increase_public_unrest_big = {
 	add_to_variable = {
 		var = PLA_public_unrest_percent
 		value = 15
+	}
+	if = {
+		limit = {
+			has_country_flag = PLA_public_sensitive
+		}
+		add_to_variable = {
+			var = PLA_public_unrest_percent
+			value = 5
+		}
 	}
 	PLA_reload_public_unrest = yes
 }
@@ -108,6 +135,15 @@ PLA_increase_histoire_discontent_small = {
 		var = PLA_histoire_discontent_percent
 		value = 5
 	}
+	if = {
+		limit = {
+			has_country_flag = PLA_histoire_sensitive
+		}
+		add_to_variable = {
+			var = PLA_histoire_discontent_percent
+			value = 5
+		}
+	}
 	PLA_reload_histoire_discontent = yes
 }
 
@@ -117,6 +153,15 @@ PLA_increase_histoire_discontent_medium = {
 		var = PLA_histoire_discontent_percent
 		value = 10
 	}
+	if = {
+		limit = {
+			has_country_flag = PLA_histoire_sensitive
+		}
+		add_to_variable = {
+			var = PLA_histoire_discontent_percent
+			value = 5
+		}
+	}
 	PLA_reload_histoire_discontent = yes
 }
 
@@ -125,6 +170,15 @@ PLA_increase_histoire_discontent_big = {
 	add_to_variable = {
 		var = PLA_histoire_discontent_percent
 		value = 15
+	}
+	if = {
+		limit = {
+			has_country_flag = PLA_histoire_sensitive
+		}
+		add_to_variable = {
+			var = PLA_histoire_discontent_percent
+			value = 5
+		}
 	}
 	PLA_reload_histoire_discontent = yes
 }

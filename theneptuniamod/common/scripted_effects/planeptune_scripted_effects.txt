@@ -201,7 +201,7 @@ PLA_decrease_histoire_discontent_medium = {
 	PLA_reload_histoire_discontent = yes
 }
 
-PLA_decrease_histoire_discontent_medium = {
+PLA_decrease_histoire_discontent_big = {
 	custom_effect_tooltip = PLA_histoire_discontent_decrease_big_tt
 	add_to_variable = {
 		var = PLA_histoire_discontent_percent

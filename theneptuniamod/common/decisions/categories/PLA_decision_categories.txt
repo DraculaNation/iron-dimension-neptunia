@@ -1,5 +1,5 @@
 PLA_unrest_category = {
-	icon = generic_prospect_for_resources
+	icon = power_struggle
 	available = {
 
 		hidden_trigger = {

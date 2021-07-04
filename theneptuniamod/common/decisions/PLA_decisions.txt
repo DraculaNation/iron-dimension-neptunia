@@ -39,6 +39,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 
@@ -56,7 +57,7 @@ PLA_unrest_category = {
 	}
 	
 	PLA_appeal_to_the_public = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_generic_nationalism
 	
 		allowed = {
 			tag = PLA
@@ -70,6 +71,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -104,7 +106,7 @@ PLA_unrest_category = {
 	}
 
 	PLA_organize_monster_raids = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_generic_nationalism
 	
 		allowed = {
 			tag = PLA
@@ -120,6 +122,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -184,7 +187,7 @@ PLA_unrest_category = {
 	}
 	
 	PLA_form_monster_hunter_militias = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_generic_nationalism
 	
 		allowed = {
 			tag = PLA
@@ -203,6 +206,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -245,7 +249,7 @@ PLA_unrest_category = {
 	}
 
 	PLA_fortify_a_city = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_generic_nationalism
 	
 		allowed = {
 			tag = PLA
@@ -263,6 +267,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -328,7 +333,7 @@ PLA_unrest_category = {
 	}
 
 	PLA_fight_dogoos_in_person = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_generic_nationalism
 	
 		allowed = {
 			tag = PLA
@@ -343,6 +348,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -363,17 +369,17 @@ PLA_unrest_category = {
 		
 		remove_effect = {
 			PLA_decrease_public_unrest_big = yes
+			#Give an event where Neptune and co. fight Dogoos
 		}
 		
 		modifier = {
 			stability_factor = -0.25
 			political_power_factor = -0.25
-			#Give an event where Neptune and co. fight Dogoos
 		}
 	}
 
 	PLA_hold_a_military_parade = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_generic_political_rally
 	
 		allowed = {
 			tag = PLA
@@ -392,6 +398,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -421,7 +428,7 @@ PLA_unrest_category = {
 	}
 
 	PLA_propaganda_drive = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_generic_political_rally
 	
 		allowed = {
 			tag = PLA
@@ -434,6 +441,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -468,7 +476,7 @@ PLA_unrest_category = {
 	}
 
 	PLA_censorship_drive = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_oppression
 	
 		allowed = {
 			tag = PLA
@@ -481,6 +489,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -517,7 +526,7 @@ PLA_unrest_category = {
 	}
 	
 	PLA_astroturf_support = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_oppression
 	
 		allowed = {
 			tag = PLA
@@ -530,6 +539,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -543,7 +553,6 @@ PLA_unrest_category = {
 		days_re_enable = 84
 		
 		complete_effect = {
-			
 			custom_effect_tooltip = PLA_chauvinist_sway_tt
 			#INSERT THE ACTUAL MECHANIC LATER
 			add_popularity = {
@@ -558,7 +567,7 @@ PLA_unrest_category = {
 	}
 
 	PLA_the_haneda_speech = {
-		icon = GFX_decision_generic_civil_support
+		icon = GFX_decision_generic_speech
 	
 		allowed = {
 			tag = PLA
@@ -573,6 +582,7 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 		
@@ -597,11 +607,13 @@ PLA_unrest_category = {
 	##PLA_public_unrest_dealt_with -> Goes AFTER you dealt with public unrest, and hides all the public unrest decisions
 	
 	PLA_win_the_publics_hearts = {
+		icon = GFX_decision_generic_military
 		visible = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_mission_in_progress }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 
@@ -611,6 +623,7 @@ PLA_unrest_category = {
 				check_variable = { PLA_public_unrest_percent < 11 }
 			}
 			NOT = { has_country_flag = PLA_public_mission_in_progress }
+			chauvinism < 0.11
 		}
 
 		cost = 70
@@ -627,6 +640,7 @@ PLA_unrest_category = {
 	}
 
 	PLA_win_the_publics_hearts_mission = {
+		icon = GFX_decision_generic_military
 		allowed = {
 			always = no
 		}
@@ -663,11 +677,13 @@ PLA_unrest_category = {
 	}
 	
 	PLA_purge_bsha = {
+		icon = GFX_decision_generic_break_treaty
 		visible = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_mission_in_progress }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
 		}
 
@@ -677,6 +693,7 @@ PLA_unrest_category = {
 				check_variable = { PLA_public_unrest_percent < 26 }
 			}
 			NOT = { has_country_flag = PLA_public_mission_in_progress }
+			chauvinism > 0.1
 		}
 
 		cost = 50
@@ -689,10 +706,12 @@ PLA_unrest_category = {
 		complete_effect = {
 			activate_mission = PLA_purge_bsha_mission
 			set_country_flag = PLA_public_mission_in_progress
+			custom_effect_tooltip = PLA_fail_if_failed_tt
 		}
 	}
 
 	PLA_purge_bsha_mission = {
+		icon = GFX_decision_generic_break_treaty
 		allowed = {
 			always = no
 		}
@@ -715,6 +734,7 @@ PLA_unrest_category = {
 
 		complete_effect = {
 			clr_country_flag = PLA_public_mission_in_progress
+			custom_effect_tooltip = PLA_fail_if_failed_tt
 		}
 		timeout_effect = {
 			set_country_flag = PLA_public_unrest_dealt_with
@@ -755,6 +775,661 @@ PLA_unrest_category = {
 
 		complete_effect = {
 				
+		}
+	}
+
+	PLA_do_administration_tasks = {
+		icon = GFX_decision_pla_histoire
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 20
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 30
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		
+		cost = 30
+		fire_only_once = no
+		days_re_enable = 63
+		days_remove = 14
+		
+		
+		complete_effect = {
+			PLA_decrease_histoire_discontent_small = yes
+		}
+		
+		modifier = {
+			political_power_gain = -0.25
+			stability_factor = -0.10
+		}
+	}
+
+	PLA_burden_other_figureheads = {
+		icon = GFX_decision_pla_histoire
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		
+		cost = 50
+		fire_only_once = no
+		days_re_enable = 35
+		
+		
+		complete_effect = {
+			PLA_decrease_histoire_discontent_small = yes
+		}
+	}
+
+	PLA_offer_concessions_in_cookies = {
+		icon = GFX_decision_pla_histoire
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 5
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		
+		custom_cost_text = PLA_offer_concessions_in_cookies_decision_cost
+		custom_cost_trigger = {
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 35
+		days_remove = 14
+		
+		remove_effect = {
+			PLA_decrease_histoire_discontent_small = yes
+		}
+		
+		modifier = {
+			civilian_factory_use = 1
+			consumer_goods_factor = 0.2
+		}
+	}
+
+	PLA_organize_histy_appreciation_day = {
+		icon = GFX_decision_pla_histoire
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 15
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 35
+		
+		complete_effect = {
+			PLA_decrease_histoire_discontent_small = yes
+			PLA_increase_public_unrest_small = yes
+		}
+	}
+
+	PLA_make_expensive_gifts = {
+		icon = GFX_decision_pla_histoire
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 15
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 35
+		days_remove = 14
+		
+		remove_effect = {
+			PLA_decrease_histoire_discontent_medium = yes
+		}
+		
+		modifier = {
+			industrial_capacity_factory = -0.25
+		}
+	}
+	
+	PLA_pressure_histoire_for_help = {
+		icon = GFX_decision_generic_political_discourse
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 25
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 10
+					compare = less_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				has_political_power > 50
+			}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 42
+		
+		complete_effect = {
+			PLA_increase_histoire_discontent_small = yes
+			add_political_power = 30
+		}
+	}
+
+	PLA_ask_histoire_to_fix_things = {
+		icon = GFX_decision_generic_political_discourse
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 2
+			modifier = {
+				factor = 25
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 10
+					compare = less_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				has_stability > 0.5
+			}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 42
+		days_remove = 28
+		
+		complete_effect = {
+			PLA_increase_histoire_discontent_medium = yes
+		}
+		
+		modifier = {
+			stability_weekly = 0.02
+		}
+	}
+	
+	PLA_snap_at_histoire = {
+		icon = GFX_decision_generic_civil_support
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 15
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 84
+		
+		complete_effect = {
+			PLA_decrease_histoire_discontent_medium = yes
+			custom_effect_tooltip = PLA_chauvinist_sway_tt
+			#INSERT THE ACTUAL MECHANIC LATER
+			add_popularity = {
+				ideology = chauvinism
+				popularity = 0.05
+			}
+		}
+	}
+	
+	PLA_threaten_histoire_with_replacement = {
+		icon = GFX_decision_generic_civil_support
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 5
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 15
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = PLA_histoire_discontent_percent
+					value = 0
+					compare = less_than_or_equals
+				}
+			}
+		}
+		
+		cost = 0
+		fire_only_once = no
+		days_re_enable = 84
+		
+		complete_effect = {
+			add_stability = -0.025
+			add_war_support = -0.025
+			PLA_decrease_histoire_discontent_big = yes
+			custom_effect_tooltip = PLA_chauvinist_sway_tt
+			#INSERT THE ACTUAL MECHANIC LATER
+			#Insert Event
+			add_popularity = {
+				ideology = chauvinism
+				popularity = 0.05
+			}
+		}
+	}
+
+	PLA_make_a_heartfelt_promise = {
+		icon = GFX_decision_generic_speech
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+		}
+		
+		cost = 0
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+		
+		fire_only_once = yes
+		
+		complete_effect = {
+			PLA_decrease_histoire_discontent_big = yes
+			custom_effect_tooltip = PLA_histoire_promise_tt
+			hidden_effect = {
+				PLA_decrease_histoire_discontent_small = yes
+				set_country_flag = PLA_histoire_sensitive
+			}
+			#Get an event
+		}
+	}
+
+	##PLA_histoire_mission_in_progress -> Should be on WHILE you're dealing with the mission (so you can't take the other mission)
+	##PLA_histoire_discontent_dealt_with -> Goes AFTER you dealt with public unrest, and hides all the public unrest decisions
+	
+	PLA_negotiate_with_histoire = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+				NOT = { has_country_flag = PLA_histoire_mission_in_progress }
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLA_histoire_discontent_finish_tt
+				check_variable = { PLA_histoire_discontent_percent < 11 }
+			}
+			NOT = { has_country_flag = PLA_histoire_mission_in_progress }
+			chauvinism < 0.11
+		}
+
+		cost = 70
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			activate_mission = PLA_negotiate_with_histoire_mission
+			set_country_flag = PLA_histoire_mission_in_progress
+		}
+	}
+
+	PLA_negotiate_with_histoire_mission = {
+		icon = GFX_decision_hol_exchange_intelligence_data
+		allowed = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLA_histoire_discontent_finish_tt
+				check_variable = { PLA_histoire_discontent_percent > 10 }
+			}
+		}
+
+		cancel_if_not_visible = yes
+		is_good = yes
+
+		days_mission_timeout = 126
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			clr_country_flag = PLA_histoire_mission_in_progress
+		}
+		timeout_effect = {
+			set_country_flag = PLA_histoire_discontent_dealt_with
+			remove_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier } 
+			hidden_effect = {
+				remove_ideas = {
+					PLA_histoire_discontent_idea
+				}
+			}
+			###EVENT PLACEHOLDER
+		}
+	}
+
+	PLA_force_histoire_to_work = {
+		icon = GFX_decision_generic_brainwash
+		visible = {
+
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
+				NOT = { has_country_flag = PLA_histoire_mission_in_progress }
+			}
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLA_histoire_discontent_finish_alternate_tt
+				check_variable = { PLA_histoire_discontent_percent < 26 }
+			}
+			chauvinism > 0.1
+			NOT = { has_country_flag = PLA_histoire_mission_in_progress }
+		}
+
+		cost = 50
+		fire_only_once = no
+
+		ai_will_do = {
+			factor = 0
+		}
+
+		complete_effect = {
+			activate_mission = PLA_force_histoire_to_work_mission
+			set_country_flag = PLA_histoire_mission_in_progress
+			custom_effect_tooltip = PLA_fail_if_failed_tt
+		}
+	}
+
+	PLA_force_histoire_to_work_mission = {
+		icon = GFX_decision_generic_brainwash
+		allowed = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLA_histoire_discontent_finish_alternate_tt
+				check_variable = { PLA_public_unrest_percent > 25 }
+			}
+		}
+
+		cancel_if_not_visible = yes
+		is_good = yes
+
+		days_mission_timeout = 126
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			clr_country_flag = PLA_histoire_mission_in_progress
+			custom_effect_tooltip = PLA_fail_if_failed_tt
+		}
+		timeout_effect = {
+			set_country_flag = PLA_histoire_discontent_dealt_with
+			add_political_power = -100
+			add_popularity = {
+				ideology = chauvinism
+				popularity = 0.20
+			}
+			remove_ideas = { PLA_histoire_discontent_idea }
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier }
+			}
+			###EVENT PLACEHOLDER
 		}
 	}
 

@@ -402,6 +402,7 @@ country_event = { #Nep remilitarizes Erethisan
 		7 = { set_demilitarized_zone = no }
 		18 = { set_demilitarized_zone = no }
 		hidden_effect = {
+			set_country_flag = PLA_rest_of_focus_tree
 			mark_focus_tree_layout_dirty = yes
 		}
 	}
@@ -416,6 +417,7 @@ country_event = { #Nep remilitarizes Erethisan
 				id = planeptune.13 #Remilitarization finished
 				days = 30
 			}
+			set_country_flag = PLA_rest_of_focus_tree
 			mark_focus_tree_layout_dirty = yes
 		}
 	}

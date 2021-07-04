@@ -44,9 +44,9 @@
  PLA_stagnant_birthrates_idea:0 "Stagnant Birthrates"
  PLA_stagnant_birthrates_idea_desc:0 "Technological progress doesn't come without a cost. The citizens of Planeptune are either too busy with work or too enamoured with fictional women to find a real mate. Even though Planeptune uses robots as its frontline soldiers, it puts a strain on its industry, and fresh recruits are needed for the upcoming war."
  PLA_public_unrest_idea:0 "Disgruntled Populace"
- PLA_public_unrest_idea_desc:0 "§WWar Support:§! [?PLA_public_unrest_effect|%+0]\n§WArmy Organization:§! [?PLA_public_unrest_effect|%+0]\n§WArmy Breakthrough:§! [?PLA_public_unrest_effect|%+0]\n\nOutside of the city of Planeptune, it is not too uncommon to be attacked by monsters - whether by a relatively harmless dogoo or a deadly mech. With Planeptune's guards underequipped and inexperienced, monster attacks are sadly an everyday occurence in Planeptune due to its capital's proximity to the Gamindustri Graveyard.\nIn a time of need, the people of Planeptune feel abandoned by their goddess, whom they haven't seen for years. If no action is taken, the people might take matters into their own hands. Will Lady Purple Heart be able to win back her people? Or will Planeptune fall to chaos?"
+ PLA_public_unrest_idea_desc:0 "§WWar Support:§! [?PLA_public_unrest_effect|%+2]\n§WArmy Organization:§! [?PLA_public_unrest_effect|%+2]\n§WArmy Breakthrough:§! [?PLA_public_unrest_effect|%+2]\n\nOutside of the city of Planeptune, it is not too uncommon to be attacked by monsters - whether by a relatively harmless dogoo or a deadly mech. With Planeptune's guards underequipped and inexperienced, monster attacks are sadly an everyday occurence in Planeptune due to its capital's proximity to the Gamindustri Graveyard.\nIn a time of need, the people of Planeptune feel abandoned by their goddess, whom they haven't seen for years. If no action is taken, the people might take matters into their own hands. Will Lady Purple Heart be able to win back her people? Or will Planeptune fall to chaos?"
  PLA_histoire_discontent_idea:0 "Imbalanced Administration"
- PLA_histoire_discontent_idea_desc:0 "§WStability:§! [?PLA_histoire_discontent_effect|%+0]\n§WDaily Political Power Gain:§! [?PLA_histoire_discontent_effect_pp|+2]\n\nPlaneptune might seem like a stable nation, but behind the scenes Histoire does the bulk of the work while Neptune spends her days playing video games and lazying around. Cracks have begun to show in Histoire's usually flawless ways of handling situation, and outbursts are getting more common. Planeptune's stability depends on Histoire's state of mind - if something goes wrong with her, Planeptune will become an anarchy masquerading as a nation with a CPU."
+ PLA_histoire_discontent_idea_desc:0 "§WStability:§! [?PLA_histoire_discontent_effect|%+2]\n§WDaily Political Power Gain:§! [?PLA_histoire_discontent_effect_pp|+2]\n\nPlaneptune might seem like a stable nation, but behind the scenes Histoire does the bulk of the work while Neptune spends her days playing video games and lazying around. Cracks have begun to show in Histoire's usually flawless ways of handling situation, and outbursts are getting more common. Planeptune's stability depends on Histoire's state of mind - if something goes wrong with her, Planeptune will become an anarchy masquerading as a nation with a CPU."
  
  #Dynamic Modifiers
  PLA_public_unrest_dynamic_modifier:0 "Disgruntled Populace"
@@ -70,6 +70,8 @@
  #Country flags
  friendship_treaty_ratified_flag:0 "The Friendship Treaty has been ratified."
  PLA_friendship_treaty_failed:0 "The Friendship Treaty has failed!"
+ PLA_public_mission_in_progress:0 "Currently dealing with public discontent."
+ PLA_histoire_mission_in_progress:0 "Currently dealing with administration issues."
  
  #Tooltips
  PLA_public_unrest_increase_small_tt:0 "§RThis will cause a bit of public unrest.§!"
@@ -100,6 +102,16 @@
  PLA_censorship_tt:0 "§gThe population will calm down and learn to live with tighter censorship.§!"
  PLA_haneda_speech_tt:0 "§YThe public will be more sensitive, and will expect Neptune to fulfill her promise.§!"
  PLA_public_unrest_finish_tt:0 "Public Unrest is at a manageable level."
+ PLA_public_unrest_finish_alternate_tt:0 "Public Unrest is at a low enough level."
+ PLA_fail_if_failed_tt:0 "§RFailing this mission will spell our doom!§!"
+ PLA_histoire_promise_tt:0 "§YHistoire will be more sensitive, and will expect Neptune to fulfill her promise.§!"
+ PLA_histoire_discontent_finish_tt:0 "Histoire is currently content."
+ PLA_histoire_discontent_finish_alternate_tt:0 "Histoire is not angry."
+ 
+ PLA_execute_a_census_tt:0 "§GWe will make several polls and censuses to determine the cause of falling birthrates.§!"
+ PLA_finding_the_culprit_tt:0 "§GWe will analyze the data we have collected and plan out our approach.§!"
+ PLA_unlock_new_histoire_method_tt:0 "§GWe will unlock a new method to deal with our imbalanced administration!§!"
+ PLA_unlock_new_public_method_tt:0 "§GWe will unlock a new method to deal with our citizens' concerns!§!"
  
  #Decisions
  
@@ -122,9 +134,22 @@
  PLA_win_the_publics_hearts:0 "Win the Public's Hearts"
  PLA_win_the_publics_hearts_mission:0 "Win the Public's Hearts"
  PLA_purge_bsha:0 "Purge B-Sha"
+ PLA_purge_bsha_mission:0 "Purge B-Sha"
  
  PLA_histoire_discontent_effigy:0 "Show/Hide Histoire Discontent Decisions"
- 
+ PLA_do_administration_tasks:0 "Do Administration Tasks"
+ PLA_burden_other_figureheads:0 "Burden Other Figureheads"
+ PLA_offer_concessions_in_cookies:0 "Offer Concessions in Cookies"
+ PLA_organize_histy_appreciation_day:0 "Organize Histy Appreciation Day"
+ PLA_make_expensive_gifts:0 "Make Expensive Gifts"
+ PLA_pressure_histoire_for_help:0 "Pressure Histoire for Help"
+ PLA_ask_histoire_to_fix_things:0 "Ask Histoire to Fix Things"
+ PLA_snap_at_histoire:0 "§gSnap§! At Histoire"
+ PLA_threaten_histoire_with_replacement:0 "§gThreaten§! Histoire"
+ PLA_make_a_heartfelt_promise:0 "Make a §PHeartfelt§! Promise"
+ PLA_negotiate_with_histoire:0 "Negotiate With Histoire"
+ PLA_negotiate_with_histoire_mission:0 "Negotiate With Histoire"
+ PLA_force_histoire_to_work:0 "Force Histoire to Work"
  
  #Decision Costs
  PLA_organize_monster_raids_decision_cost:0 "£manpower_texticon §Y200§!"
@@ -135,6 +160,8 @@
  PLA_fortify_a_city_decision_cost_blocked:0 "£civ_factory §R5§!"
  PLA_hold_a_military_parade_decision_cost:0 "£army_experience §Y10§! £command_power §Y10§!"
  PLA_hold_a_military_parade_decision_cost_blocked:0 "£army_experience §R10§! £command_power §R10§!"
+ PLA_offer_concessions_in_cookies_decision_cost:0 "£civ_factory §Y1§! £civ_factory_output §Y20%§"
+ PLA_offer_concessions_in_cookies_decision_cost_blocked:0 "£civ_factory §R1§! £civ_factory_output §R20%§"
  
  #Focuses
  PLA_land_of_the_purple_progress:0 "Land of the Purple Progess"

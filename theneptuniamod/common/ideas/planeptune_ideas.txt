@@ -8,7 +8,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = PLA_technological_powerhouse
 			
 			modifier = {
 				research_speed_factor = 0.05
@@ -38,7 +38,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = PLA_public_unrest_idea
 			
 			modifier = {
 			}
@@ -51,7 +51,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = PLA_histoire_discontent_idea
 			
 			modifier = {
 			}

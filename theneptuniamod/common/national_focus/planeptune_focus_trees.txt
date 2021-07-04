@@ -2,7 +2,7 @@
 
 shared_focus = {
     id = PLA_land_of_the_purple_progress
-    icon = GFX_goal_anschluss
+    icon = GFX_goal_land_of_purple_progress
     x = 15
     y = 0
     cost = 2
@@ -677,6 +677,170 @@ shared_focus = {
 		}
     }
 }
+
+### BEGINNING OF THE BRANCHES
+
+shared_focus = {
+    id = PLA_execute_a_census
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_remilitarization_of_erethisan
+	x = -6
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_remilitarization_of_erethisan
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+		has_country_flag = PLA_rest_of_focus_tree
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_execute_a_census_tt
+		#Maybe add an event where Histoire and Neptune discuss various approaches
+    }
+}
+
+shared_focus = {
+    id = PLA_role_of_the_oracle
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_remilitarization_of_erethisan
+	x = -2
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_remilitarization_of_erethisan
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+		has_country_flag = PLA_rest_of_focus_tree
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_new_histoire_method_tt
+		#Maybe add an event
+    }
+}
+
+shared_focus = {
+    id = PLA_waking_up_the_public
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_remilitarization_of_erethisan
+	x = 2
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_remilitarization_of_erethisan
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+		has_country_flag = PLA_rest_of_focus_tree
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_new_public_method_tt
+		#Maybe add an event
+    }
+}
+
+shared_focus = {
+    id = PLA_auxiliary_help_placeholder
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_remilitarization_of_erethisan
+	x = 6
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_remilitarization_of_erethisan
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+		has_country_flag = PLA_rest_of_focus_tree
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_new_public_method_tt
+		#Maybe add an event
+    }
+}
+
+##Birthrates
+
+shared_focus = {
+    id = PLA_finding_the_culprit
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_execute_a_census
+	x = 0
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_execute_a_census
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_finding_the_culprit_tt
+		#Maybe add an event where Histoire and Neptune discuss various approaches
+    }
+}
+
 
 ##Initial Focus Tree
 

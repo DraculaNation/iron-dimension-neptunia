@@ -8,11 +8,15 @@ PLA_unrest_category = {
 			hidden_trigger = {
 				has_country_flag = PLA_dealing_with_unrest_start
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_ticker_disabled }
 			}
 		}
 		
 		available = {
 			has_country_flag = PLA_not_lazy_anymore
+			hidden_effect = {
+				NOT = { has_country_flag = PLA_ticker_disabled }
+			}
 		}
 		
 		allowed = {
@@ -124,6 +128,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
+			has_completed_focus = PLA_waking_up_the_public
 		}
 		
 		custom_cost_trigger = {
@@ -165,7 +170,7 @@ PLA_unrest_category = {
 		}
 		
 		remove_effect = {
-			PLA_decrease_public_unrest_small = yes
+			PLA_decrease_public_unrest_medium = yes
 			custom_effect_tooltip = PLA_organize_monster_raids_tt
 			hidden_effect = {
 				random_list = {
@@ -208,6 +213,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
+			has_completed_focus = PLA_self_reliance
 		}
 		
 		ai_will_do = {
@@ -269,6 +275,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
+			has_completed_focus = PLA_monster_fortifications_project
 		}
 		
 		ai_will_do = {
@@ -350,6 +357,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
+			has_completed_focus = PLA_direct_action
 		}
 		
 		ai_will_do = {
@@ -400,6 +408,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
+			has_completed_focus = PLA_sway_the_people
 		}
 		
 		ai_will_do = {
@@ -443,6 +452,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
+			has_completed_focus = PLA_sway_the_people
 		}
 		
 		ai_will_do = {
@@ -491,6 +501,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
+			has_completed_focus = PLA_nepgears_methods
 		}
 		
 		ai_will_do = {
@@ -541,6 +552,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
+			has_completed_focus = PLA_nepgears_methods
 		}
 		
 		ai_will_do = {
@@ -584,6 +596,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
 			}
+			has_completed_focus = PLA_a_nations_duty
 		}
 		
 		ai_will_do = {
@@ -624,6 +637,7 @@ PLA_unrest_category = {
 			}
 			NOT = { has_country_flag = PLA_public_mission_in_progress }
 			chauvinism < 0.11
+			has_completed_focus = PLA_stabilize_neptunes_image
 		}
 
 		cost = 70
@@ -694,6 +708,7 @@ PLA_unrest_category = {
 			}
 			NOT = { has_country_flag = PLA_public_mission_in_progress }
 			chauvinism > 0.1
+			has_completed_focus = PLA_stabilize_neptunes_image
 		}
 
 		cost = 50
@@ -850,6 +865,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
 			}
+			has_completed_focus = PLA_role_of_the_oracle
 		}
 		
 		ai_will_do = {
@@ -899,6 +915,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
 			}
+			has_completed_focus = PLA_bribery_in_cookies
 		}
 		
 		ai_will_do = {
@@ -957,6 +974,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
 			}
+			has_completed_focus = PLA_direct_flattery
 		}
 		
 		ai_will_do = {
@@ -1006,6 +1024,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
 			}
+			has_completed_focus = PLA_a_gift_for_histy
 		}
 		
 		ai_will_do = {
@@ -1059,6 +1078,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
 			}
+			has_completed_focus = PLA_we_need_you_histy
 		}
 		
 		ai_will_do = {
@@ -1104,6 +1124,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
 			}
+			has_completed_focus = PLA_we_need_you_histy
 		}
 		
 		ai_will_do = {
@@ -1153,6 +1174,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
 			}
+			has_completed_focus = PLA_nepgears_methods
 		}
 		
 		ai_will_do = {
@@ -1207,6 +1229,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
 			}
+			has_completed_focus = PLA_nepgears_methods
 		}
 		
 		ai_will_do = {
@@ -1265,6 +1288,7 @@ PLA_unrest_category = {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
 				NOT = { has_country_flag = PLA_histoire_discontent_dealt_with }
 			}
+			has_completed_focus = PLA_a_heartfelt_promise
 		}
 		
 		ai_will_do = {
@@ -1305,6 +1329,7 @@ PLA_unrest_category = {
 			}
 			NOT = { has_country_flag = PLA_histoire_mission_in_progress }
 			chauvinism < 0.11
+			has_completed_focus = PLA_no_more_lazy_nep
 		}
 
 		cost = 70
@@ -1376,6 +1401,7 @@ PLA_unrest_category = {
 			}
 			chauvinism > 0.1
 			NOT = { has_country_flag = PLA_histoire_mission_in_progress }
+			has_completed_focus = PLA_no_more_lazy_nep
 		}
 
 		cost = 50

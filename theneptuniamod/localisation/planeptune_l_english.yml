@@ -104,14 +104,23 @@
  PLA_public_unrest_finish_tt:0 "Public Unrest is at a manageable level."
  PLA_public_unrest_finish_alternate_tt:0 "Public Unrest is at a low enough level."
  PLA_fail_if_failed_tt:0 "§RFailing this mission will spell our doom!§!"
- PLA_histoire_promise_tt:0 "§YHistoire will be more sensitive, and will expect Neptune to fulfill her promise.§!"
+ PLA_histoire_promise_tt:0 "§PHistoire will be more sensitive, and will expect Neptune to fulfill her promise.§!"
  PLA_histoire_discontent_finish_tt:0 "Histoire is currently content."
  PLA_histoire_discontent_finish_alternate_tt:0 "Histoire is not angry."
  
  PLA_execute_a_census_tt:0 "§GWe will make several polls and censuses to determine the cause of falling birthrates.§!"
  PLA_finding_the_culprit_tt:0 "§GWe will analyze the data we have collected and plan out our approach.§!"
+ 
  PLA_unlock_new_histoire_method_tt:0 "§GWe will unlock a new method to deal with our imbalanced administration!§!"
  PLA_unlock_new_public_method_tt:0 "§GWe will unlock a new method to deal with our citizens' concerns!§!"
+ PLA_unlock_harsh_methods_tt:0 "§gWe will unlock several harsh ways to deal with our situation.§!"
+ PLA_unlock_histoire_promise_tt:0 "§PNeptune can make a huge promise to Histoire.§!"
+ PLA_unlock_haneda_speech_tt:0 "§PNeptune can make a grandiose speech in Haneda.§!"
+ PLA_unlock_histoire_favors_tt:0 "§GNeptune can now ask Histoire for favors!§!"
+ PLA_unlock_more_public_methods_tt:0 "§GThere will be more ways to deal with public unrest!§!"
+ PLA_get_a_grip_tt:0 "§GNeptune will learn to deal with the pressure!§!"
+ PLA_no_more_lazy_nep_tt:0 "§PNeptune can make a deal with Histoire...§! §gor force her to keep working.§!"
+ PLA_stabilize_neptunes_image_tt:0 "§PNeptune can try to win the hearts and minds of the people,§! §gno matter what it takes.§!"
  
  #Decisions
  

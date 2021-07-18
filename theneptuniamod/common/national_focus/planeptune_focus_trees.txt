@@ -841,6 +841,1072 @@ shared_focus = {
     }
 }
 
+shared_focus = {
+    id = PLA_education_reform
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_finding_the_culprit
+	x = -1
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_finding_the_culprit
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_advertisement_campaign
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_advertisement_campaign
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_finding_the_culprit
+	x = 1
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_finding_the_culprit
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_education_reform
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_planning_the_campaign
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_education_reform
+	x = 1
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_education_reform
+		focus = PLA_advertisement_campaign
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_parental_leave_for_men
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_planning_the_campaign
+	x = -3
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_planning_the_campaign
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_ban_contraceptives
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_ban_contraceptives
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_planning_the_campaign
+	x = -1
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_planning_the_campaign
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_parental_leave_for_men
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_increase_welfare_budget
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_parental_leave_for_men
+	x = 1
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_parental_leave_for_men
+		focus = PLA_ban_contraceptives
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_state_mandated_sweetheart
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_improve_healthcare
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_planning_the_campaign
+	x = 1
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_planning_the_campaign
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_panty_vending_machines
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_panty_vending_machines
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_planning_the_campaign
+	x = 3
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_planning_the_campaign
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_improve_healthcare
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_state_mandated_sweetheart
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_improve_healthcare
+	x = 1
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_improve_healthcare
+		focus = PLA_panty_vending_machines
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_increase_welfare_budget
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_pregnancy_benefits
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_increase_welfare_budget
+	x = 1
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_increase_welfare_budget
+		focus = PLA_state_mandated_sweetheart
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_ban_lewd_anime
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_ban_lewd_anime
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_increase_welfare_budget
+	x = 3
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_increase_welfare_budget
+		focus = PLA_state_mandated_sweetheart
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_pregnancy_benefits
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_invest_in_orphanages
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_pregnancy_benefits
+	x = 0
+    y = 2
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_pregnancy_benefits
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_media_review_commission
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_media_review_commission
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_ban_lewd_anime
+	x = 0
+    y = 2
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_ban_lewd_anime
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_invest_in_orphanages
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_subsidies_for_huge_families
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_increase_welfare_budget
+	x = 0
+    y = 2
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_increase_welfare_budget
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_legalize_harems
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_legalize_harems
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_state_mandated_sweetheart
+	x = 0
+    y = 2
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_state_mandated_sweetheart
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_subsidies_for_huge_families
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+shared_focus = {
+    id = PLA_mending_the_lack_of_manpower
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_invest_in_orphanages
+	x = 1
+    y = 1
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_subsidies_for_huge_families
+		focus = PLA_legalize_harems
+    }
+	
+	prerequisite = {
+        focus = PLA_invest_in_orphanages
+		focus = PLA_media_review_commission
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+    }
+}
+
+##PLANEPTUNE PREDICAMENT
+
+shared_focus = {
+    id = PLA_bribery_in_cookies
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_role_of_the_oracle
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_role_of_the_oracle
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_new_histoire_method_tt
+		#Event?
+    }
+}
+
+shared_focus = {
+    id = PLA_self_reliance
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_waking_up_the_public
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_waking_up_the_public
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_new_public_method_tt
+		#Event?
+    }
+}
+
+shared_focus = {
+    id = PLA_nepgears_methods
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_bribery_in_cookies
+	x = 2
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_bribery_in_cookies
+    }
+	
+	prerequisite = {
+        focus = PLA_self_reliance
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_harsh_methods_tt
+		#Event?
+    }
+}
+
+shared_focus = {
+    id = PLA_pay_lip_service
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_nepgears_methods
+	x = 0
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_nepgears_methods
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#In the event:
+		#PLA_decrease_public_unrest_small = yes
+		#PLA_decrease_histoire_discontent_small = yes
+		#Event?
+    }
+}
+
+shared_focus = {
+    id = PLA_use_hard_drive_divinity
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_pay_lip_service
+	x = 0
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_pay_lip_service
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#Event
+		#Tooltip on the event - PLA_neptune_can_transform_tt
+    }
+}
+
+shared_focus = {
+    id = PLA_a_heartfelt_promise
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_bribery_in_cookies
+	x = 0
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_bribery_in_cookies
+    }
+	
+	prerequisite = {
+        focus = PLA_self_reliance
+    }
+    
+	mutually_exclusive = {
+		focus = PLA_a_nations_duty
+	}
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_histoire_promise_tt
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_a_nations_duty
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_self_reliance
+	x = 0
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_bribery_in_cookies
+    }
+	
+	prerequisite = {
+        focus = PLA_self_reliance
+    }
+    
+	mutually_exclusive = {
+		focus = PLA_a_heartfelt_promise
+	}
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_haneda_speech_tt
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_sway_the_people
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_a_heartfelt_promise
+	x = 0
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_a_heartfelt_promise
+    }
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_more_public_methods_tt
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_we_need_you_histy
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_a_nations_duty
+	x = 0
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_a_nations_duty
+    }
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_histoire_favors_tt
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_direct_flattery
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_sway_the_people
+	x = 0
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_sway_the_people
+		focus = PLA_we_need_you_histy
+    }
+	
+	prerequisite = {
+		focus = PLA_use_hard_drive_divinity
+	}
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_new_histoire_method_tt
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_monster_fortifications_project
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_we_need_you_histy
+	x = 0
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_sway_the_people
+		focus = PLA_we_need_you_histy
+    }
+	
+	prerequisite = {
+		focus = PLA_use_hard_drive_divinity
+	}
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_new_public_method_tt
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_get_a_grip
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_use_hard_drive_divinity
+	x = 0
+    y = 3
+    cost = 3
+	
+	prerequisite = {
+        focus = PLA_sway_the_people
+		focus = PLA_we_need_you_histy
+    }
+	
+	prerequisite = {
+		focus = PLA_use_hard_drive_divinity
+	}
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_get_a_grip_tt
+		set_country_flag = PLA_ticker_disabled
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_a_gift_for_histy
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_direct_flattery
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_direct_flattery
+    }
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_new_histoire_method_tt
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_no_more_lazy_nep
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_a_gift_for_histy
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_a_gift_for_histy
+    }
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_no_more_lazy_nep_tt
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_direct_action
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_monster_fortifications_project
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+		focus = PLA_monster_fortifications_project
+	}
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_unlock_new_public_method_tt
+		#Event
+    }
+}
+
+shared_focus = {
+    id = PLA_stabilize_neptunes_image
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_direct_action
+	x = 0
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+		focus = PLA_direct_action
+	}
+	
+    ai_will_do = {
+        factor = 1
+    }
+	
+	allow_branch = {
+	}
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		custom_effect_tooltip = PLA_stabilize_neptunes_image_tt
+		#Event
+    }
+}
 
 ##Initial Focus Tree
 

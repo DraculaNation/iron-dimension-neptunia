@@ -20,84 +20,122 @@ PLA_reload_public_unrest = {
 ###HOW FLEXIBLE OR RIGID SHOULD THIS BE?
 
 PLA_increase_public_unrest_small = {
-	custom_effect_tooltip = PLA_public_unrest_increase_small_tt
-	add_to_variable = {
-		var = PLA_public_unrest_percent
-		value = 5
-	}
 	if = {
-		limit = {
-			has_country_flag = PLA_public_sensitive
-		}
+		limit = { has_country_flag = PLA_public_unrest_dealt_with }
+		add_political_power = -25
+	}
+	else = {
+		custom_effect_tooltip = PLA_public_unrest_increase_small_tt
 		add_to_variable = {
 			var = PLA_public_unrest_percent
 			value = 5
 		}
+		if = {
+			limit = {
+				has_country_flag = PLA_public_sensitive
+			}
+			add_to_variable = {
+				var = PLA_public_unrest_percent
+				value = 5
+			}
+		}
+		PLA_reload_public_unrest = yes
 	}
-	PLA_reload_public_unrest = yes
 }
 
 PLA_increase_public_unrest_medium = {
-	custom_effect_tooltip = PLA_public_unrest_increase_medium_tt
-	add_to_variable = {
-		var = PLA_public_unrest_percent
-		value = 10
-	}
 	if = {
-		limit = {
-			has_country_flag = PLA_public_sensitive
-		}
+		limit = { has_country_flag = PLA_public_unrest_dealt_with }
+		add_political_power = -50
+	}
+	else = {
+		custom_effect_tooltip = PLA_public_unrest_increase_medium_tt
 		add_to_variable = {
 			var = PLA_public_unrest_percent
-			value = 5
+			value = 10
 		}
+		if = {
+			limit = {
+				has_country_flag = PLA_public_sensitive
+			}
+			add_to_variable = {
+				var = PLA_public_unrest_percent
+				value = 5
+			}
+		}
+		PLA_reload_public_unrest = yes
 	}
-	PLA_reload_public_unrest = yes
 }
 
 PLA_increase_public_unrest_big = {
-	custom_effect_tooltip = PLA_public_unrest_increase_big_tt
-	add_to_variable = {
-		var = PLA_public_unrest_percent
-		value = 15
-	}
 	if = {
-		limit = {
-			has_country_flag = PLA_public_sensitive
-		}
+		limit = { has_country_flag = PLA_public_unrest_dealt_with }
+		add_political_power = -60
+		add_war_support = -0.03
+	}
+	else = {
+		custom_effect_tooltip = PLA_public_unrest_increase_big_tt
 		add_to_variable = {
 			var = PLA_public_unrest_percent
-			value = 5
+			value = 15
 		}
+		if = {
+			limit = {
+				has_country_flag = PLA_public_sensitive
+			}
+			add_to_variable = {
+				var = PLA_public_unrest_percent
+				value = 5
+			}
+		}
+		PLA_reload_public_unrest = yes
 	}
-	PLA_reload_public_unrest = yes
 }
 
 PLA_decrease_public_unrest_small = {
-	custom_effect_tooltip = PLA_public_unrest_decrease_small_tt
-	add_to_variable = {
-		var = PLA_public_unrest_percent
-		value = -5
+	if = {
+		limit = { has_country_flag = PLA_public_unrest_dealt_with }
+		add_political_power = 20
 	}
-	PLA_reload_public_unrest = yes
+	else = {
+		custom_effect_tooltip = PLA_public_unrest_decrease_small_tt
+		add_to_variable = {
+			var = PLA_public_unrest_percent
+			value = -5
+		}
+		PLA_reload_public_unrest = yes
+	}
 }
 
 PLA_decrease_public_unrest_medium = {
-	custom_effect_tooltip = PLA_public_unrest_decrease_medium_tt
-	add_to_variable = {
-		var = PLA_public_unrest_percent
-		value = -10
+	if = {
+		limit = { has_country_flag = PLA_public_unrest_dealt_with }
+		add_political_power = 40
 	}
-	PLA_reload_public_unrest = yes
+	else = {
+		custom_effect_tooltip = PLA_public_unrest_decrease_medium_tt
+		add_to_variable = {
+			var = PLA_public_unrest_percent
+			value = -10
+		}
+		PLA_reload_public_unrest = yes
+	}
 }
 
 PLA_decrease_public_unrest_big = {
-	custom_effect_tooltip = PLA_public_unrest_decrease_big_tt
-	add_to_variable = {
-		var = PLA_public_unrest_percent
-		value = -15
+	if = {
+		limit = { has_country_flag = PLA_public_unrest_dealt_with }
+		add_political_power = 50
+		add_war_support = 0.02
 	}
-	PLA_reload_public_unrest = yes
+	else = {
+		custom_effect_tooltip = PLA_public_unrest_decrease_big_tt
+		add_to_variable = {
+			var = PLA_public_unrest_percent
+			value = -15
+		}
+		PLA_reload_public_unrest = yes
+	}
 }
 
 #Reload Histoire's Discontent - should always incur a penalty
@@ -130,84 +168,122 @@ PLA_reload_histoire_discontent = {
 ###HOW FLEXIBLE OR RIGID SHOULD THIS BE?
 
 PLA_increase_histoire_discontent_small = {
-	custom_effect_tooltip = PLA_histoire_discontent_increase_small_tt
-	add_to_variable = {
-		var = PLA_histoire_discontent_percent
-		value = 5
-	}
 	if = {
-		limit = {
-			has_country_flag = PLA_histoire_sensitive
-		}
+		limit = { has_country_flag = PLA_histoire_discontent_dealt_with }
+		add_political_power = -25
+	}
+	else = {
+		custom_effect_tooltip = PLA_histoire_discontent_increase_small_tt
 		add_to_variable = {
 			var = PLA_histoire_discontent_percent
 			value = 5
 		}
+		if = {
+			limit = {
+				has_country_flag = PLA_histoire_sensitive
+			}
+			add_to_variable = {
+				var = PLA_histoire_discontent_percent
+				value = 5
+			}
+		}
+		PLA_reload_histoire_discontent = yes
 	}
-	PLA_reload_histoire_discontent = yes
 }
 
 PLA_increase_histoire_discontent_medium = {
-	custom_effect_tooltip = PLA_histoire_discontent_increase_medium_tt
-	add_to_variable = {
-		var = PLA_histoire_discontent_percent
-		value = 10
-	}
 	if = {
-		limit = {
-			has_country_flag = PLA_histoire_sensitive
-		}
+		limit = { has_country_flag = PLA_histoire_discontent_dealt_with }
+		add_political_power = -50
+	}
+	else = {
+		custom_effect_tooltip = PLA_histoire_discontent_increase_medium_tt
 		add_to_variable = {
 			var = PLA_histoire_discontent_percent
-			value = 5
+			value = 10
 		}
+		if = {
+			limit = {
+				has_country_flag = PLA_histoire_sensitive
+			}
+			add_to_variable = {
+				var = PLA_histoire_discontent_percent
+				value = 5
+			}
+		}
+		PLA_reload_histoire_discontent = yes
 	}
-	PLA_reload_histoire_discontent = yes
 }
 
 PLA_increase_histoire_discontent_big = {
-	custom_effect_tooltip = PLA_histoire_discontent_increase_big_tt
-	add_to_variable = {
-		var = PLA_histoire_discontent_percent
-		value = 15
-	}
 	if = {
-		limit = {
-			has_country_flag = PLA_histoire_sensitive
-		}
+		limit = { has_country_flag = PLA_histoire_discontent_dealt_with }
+		add_political_power = -60
+		add_stability = -0.03
+	}
+	else = {
+		custom_effect_tooltip = PLA_histoire_discontent_increase_big_tt
 		add_to_variable = {
 			var = PLA_histoire_discontent_percent
-			value = 5
+			value = 15
 		}
+		if = {
+			limit = {
+				has_country_flag = PLA_histoire_sensitive
+			}
+			add_to_variable = {
+				var = PLA_histoire_discontent_percent
+				value = 5
+			}
+		}
+		PLA_reload_histoire_discontent = yes
 	}
-	PLA_reload_histoire_discontent = yes
 }
 
 PLA_decrease_histoire_discontent_small = {
-	custom_effect_tooltip = PLA_histoire_discontent_decrease_small_tt
-	add_to_variable = {
-		var = PLA_histoire_discontent_percent
-		value = -5
+	if = {
+		limit = { has_country_flag = PLA_histoire_discontent_dealt_with }
+		add_political_power = 20
 	}
-	PLA_reload_histoire_discontent = yes
+	else = {
+		custom_effect_tooltip = PLA_histoire_discontent_decrease_small_tt
+		add_to_variable = {
+			var = PLA_histoire_discontent_percent
+			value = -5
+		}
+		PLA_reload_histoire_discontent = yes
+	}
 }
 
 PLA_decrease_histoire_discontent_medium = {
-	custom_effect_tooltip = PLA_histoire_discontent_decrease_medium_tt
-	add_to_variable = {
-		var = PLA_histoire_discontent_percent
-		value = -10
+	if = {
+		limit = { has_country_flag = PLA_histoire_discontent_dealt_with }
+		add_political_power = 40
 	}
-	PLA_reload_histoire_discontent = yes
+	else = {
+		custom_effect_tooltip = PLA_histoire_discontent_decrease_medium_tt
+		add_to_variable = {
+			var = PLA_histoire_discontent_percent
+			value = -10
+		}
+		PLA_reload_histoire_discontent = yes
+	}
 }
 
 PLA_decrease_histoire_discontent_big = {
-	custom_effect_tooltip = PLA_histoire_discontent_decrease_big_tt
-	add_to_variable = {
-		var = PLA_histoire_discontent_percent
-		value = -15
+	if = {
+		limit = { has_country_flag = PLA_histoire_discontent_dealt_with }
+		add_political_power = 50
+		add_stability = 0.02
 	}
-	PLA_reload_histoire_discontent = yes
+	else = {
+		custom_effect_tooltip = PLA_histoire_discontent_decrease_big_tt
+		add_to_variable = {
+			var = PLA_histoire_discontent_percent
+			value = -15
+		}
+		PLA_reload_histoire_discontent = yes
+	}
 }
 
 #Improving the Birthrates

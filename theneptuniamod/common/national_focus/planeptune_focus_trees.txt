@@ -875,6 +875,8 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_improve_birthrates_conservative = yes
     }
 }
 
@@ -908,6 +910,10 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_increase_histoire_discontent_small = yes
+		PLA_increase_public_unrest_small = yes
+		PLA_improve_birthrates_radical = yes
     }
 }
 
@@ -971,6 +977,8 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_improve_birthrates_conservative = yes
     }
 }
 
@@ -1004,6 +1012,9 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_increase_public_unrest_medium = yes
+		PLA_improve_birthrates_radical = yes
     }
 }
 
@@ -1038,6 +1049,8 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_improve_birthrates_conservative = yes
     }
 }
 
@@ -1071,6 +1084,8 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_improve_birthrates_conservative = yes
     }
 }
 
@@ -1104,6 +1119,9 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_increase_histoire_discontent_medium = yes
+		PLA_improve_birthrates_radical = yes
     }
 }
 
@@ -1138,6 +1156,10 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_increase_histoire_discontent_medium = yes
+		PLA_increase_public_unrest_small = yes
+		PLA_improve_birthrates_radical = yes
     }
 }
 
@@ -1172,6 +1194,8 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_improve_birthrates_conservative = yes
     }
 }
 
@@ -1206,6 +1230,9 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_increase_public_unrest_big = yes
+		PLA_improve_birthrates_radical = yes
     }
 }
 
@@ -1239,6 +1266,8 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_improve_birthrates_conservative = yes
     }
 }
 
@@ -1272,6 +1301,9 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_increase_histoire_discontent_big = yes
+		PLA_improve_birthrates_radical = yes
     }
 }
 
@@ -1305,6 +1337,8 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_improve_birthrates_conservative = yes
     }
 }
 
@@ -1338,6 +1372,9 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_increase_public_unrest_medium = yes
+		PLA_improve_birthrates_radical = yes
     }
 }
 
@@ -1373,6 +1410,8 @@ shared_focus = {
     }
     
     completion_reward = {
+		#E V E N T
+		PLA_improve_birthrates_conservative = yes
     }
 }
 
@@ -1948,7 +1987,7 @@ shared_focus = {
 			create_corps_commander = {
 					name = "Falcom"
 					picture = "Portrait_Planeptune_Falcom.dds"
-					traits = { reckless }
+					traits = { trait_reckless }
 					skill = 4
 					attack_skill = 4
 					defense_skill = 3
@@ -2000,7 +2039,7 @@ shared_focus = {
 shared_focus = {
     id = PLA_nep_easy_on_the_pudding
     icon = GFX_goal_generic_military_deal
-    relative_position_id = PLA_obligatory_monologue_scene
+    relative_position_id = PLA_the_army_on_a_vacation
 	x = -1
     y = 2
     cost = 2
@@ -2039,7 +2078,7 @@ shared_focus = {
 shared_focus = {
     id = PLA_develop_pudding_industry
     icon = GFX_goal_generic_military_deal
-    relative_position_id = PLA_obligatory_monologue_scene
+    relative_position_id = PLA_the_army_on_a_vacation
 	x = 1
     y = 2
     cost = 2
@@ -2092,7 +2131,7 @@ shared_focus = {
 shared_focus = {
     id = PLA_the_nep_pudding
     icon = GFX_goal_generic_military_deal
-    relative_position_id = PLA_obligatory_monologue_scene
+    relative_position_id = PLA_the_army_on_a_vacation
 	x = 3
     y = 2
     cost = 2
@@ -2170,7 +2209,7 @@ shared_focus = {
     }
     
     completion_reward = {
-		#Add Idea
+		add_ideas = PLA_eggplant_farms_appropriated
     }
 }
 
@@ -2204,7 +2243,40 @@ shared_focus = {
     }
     
     completion_reward = {
-		#Add Idea
+		55 = {
+			add_resource = {
+				type = oil
+				amount = 8
+			}
+			add_resource = {
+				type = chromium
+				amount = 6
+			}
+		}
+		29 = {
+			add_resource = {
+				type = oil
+				amount = 14
+			}
+			add_resource = {
+				type = chromium
+				amount = 8
+			}
+			add_resource = {
+				type = steel
+				amount = 6
+			}
+		}
+		28 = {
+			add_resource = {
+				type = chromium
+				amount = 4
+			}
+			add_resource = {
+				type = steel
+				amount = 11
+			}
+		}
     }
 }
 
@@ -2275,7 +2347,7 @@ shared_focus = {
     }
     
     completion_reward = {
-		#Add idea
+		add_ideas = PLA_worker_refugees_from_lowee_idea
 		effect_tooltip = {
 			add_manpower = 25000
 		}
@@ -2285,7 +2357,7 @@ shared_focus = {
 shared_focus = {
     id = PLA_neptune_on_the_grind
     icon = GFX_goal_generic_military_deal
-    relative_position_id = PLA_nep_easy_on_the_pudding
+    relative_position_id = PLA_appropriate_eggplant_farms
 	x = 1
     y = 2
     cost = 2
@@ -2310,6 +2382,7 @@ shared_focus = {
     }
     
     completion_reward = {
+		add_ideas = PLA_neptune_grind_idea
 		#EVENT AND IDEA AND EFFECT
     }
 }
@@ -2342,6 +2415,7 @@ shared_focus = {
     }
     
     completion_reward = {
+		add_ideas = PLA_nepgear_grind_idea
 		#EVENT AND IDEA AND EFFECT
     }
 }

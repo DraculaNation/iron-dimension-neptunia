@@ -1,15 +1,12 @@
 guiTypes = {
 	containerWindowType = {
 		name = "open_button_window"
-		position = { x = 0 y = 0 }
-		size = { width = 52 height = 52 }
-		orientation = center 
-		origo = center 
-		
+		position = { x = 516 y = 46 }
+
 		buttonType = {
 			name="open_button"
 			spriteType = "GFX_open_button"
-			position = { x = -180 y = -378 }
+			position = { x = 0 y = 0 }
 			Orientation = "UPPER_LEFT"
 			scale = 0.8%
 			moveable = yes

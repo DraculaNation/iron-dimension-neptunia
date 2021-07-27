@@ -299,5 +299,63 @@ ideas = {
 			}
 		}
 
+		## AUXILIARY ##
+		
+		PLA_eggplant_farms_appropriated = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				consumer_goods_factor = -0.075
+			}
+		}
+		
+		PLA_worker_refugees_from_lowee_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1 
+			}
+		}
+		
+		PLA_neptune_grind_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				political_power_gain = 0.07
+			}
+		}
+		
+		PLA_nepgear_grind_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				research_speed_factor = 0.04
+			}
+		}
+		
 	}
 }

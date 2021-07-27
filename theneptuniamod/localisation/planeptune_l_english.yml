@@ -41,12 +41,15 @@
  #Ideas
  PLA_technological_powerhouse_idea:0 "Technological Powerhouse"
  PLA_technological_powerhouse_idea_desc:0 "Planeptune has always been the center of technology in Gamindustri. Towering skyscrapers and bullet trains dot the city landscape while its parks are green and its air is clear. Planeptune's technological might is something all of the other nations dream of achieving. Innovation has a name, and its name is Planeptune!"
- PLA_stagnant_birthrates_idea:0 "Stagnant Birthrates"
+ PLA_stagnant_birthrates_idea:0 "Falling Birthrates"
  PLA_stagnant_birthrates_idea_desc:0 "Technological progress doesn't come without a cost. The citizens of Planeptune are either too busy with work or too enamoured with fictional women to find a real mate. Even though Planeptune uses robots as its frontline soldiers, it puts a strain on its industry, and fresh recruits are needed for the upcoming war."
  PLA_public_unrest_idea:0 "Disgruntled Populace"
  PLA_public_unrest_idea_desc:0 "§WWar Support:§! [?PLA_public_unrest_effect|%+2]\n§WArmy Organization:§! [?PLA_public_unrest_effect|%+2]\n§WArmy Breakthrough:§! [?PLA_public_unrest_effect|%+2]\n\nOutside of the city of Planeptune, it is not too uncommon to be attacked by monsters - whether by a relatively harmless dogoo or a deadly mech. With Planeptune's guards underequipped and inexperienced, monster attacks are sadly an everyday occurence in Planeptune due to its capital's proximity to the Gamindustri Graveyard.\nIn a time of need, the people of Planeptune feel abandoned by their goddess, whom they haven't seen for years. If no action is taken, the people might take matters into their own hands. Will Lady Purple Heart be able to win back her people? Or will Planeptune fall to chaos?"
  PLA_histoire_discontent_idea:0 "Imbalanced Administration"
  PLA_histoire_discontent_idea_desc:0 "§WStability:§! [?PLA_histoire_discontent_effect|%+2]\n§WDaily Political Power Gain:§! [?PLA_histoire_discontent_effect_pp|+2]\n\nPlaneptune might seem like a stable nation, but behind the scenes Histoire does the bulk of the work while Neptune spends her days playing video games and lazying around. Cracks have begun to show in Histoire's usually flawless ways of handling situation, and outbursts are getting more common. Planeptune's stability depends on Histoire's state of mind - if something goes wrong with her, Planeptune will become an anarchy masquerading as a nation with a CPU."
+ PLA_public_unrest_dummy_idea:0 "Disgruntled Populace"
+ PLA_public_unrest_dummy_idea_desc:0 "§WWar Support:§! [?PLA_public_unrest_effect|%+2]\n§WArmy Organization:§! [?PLA_public_unrest_effect|%+2]\n§WArmy Breakthrough:§! [?PLA_public_unrest_effect|%+2]\n\nOutside of the city of Planeptune, it is not too uncommon to be attacked by monsters - whether by a relatively harmless dogoo or a deadly mech. With Planeptune's guards underequipped and inexperienced, monster attacks are sadly an everyday occurence in Planeptune due to its capital's proximity to the Gamindustri Graveyard.\nIn a time of need, the people of Planeptune feel abandoned by their goddess, whom they haven't seen for years. If no action is taken, the people might take matters into their own hands. Will Lady Purple Heart be able to win back her people? Or will Planeptune fall to chaos?"
+
  
  #Dynamic Modifiers
  PLA_public_unrest_dynamic_modifier:0 "Disgruntled Populace"
@@ -121,6 +124,7 @@
  PLA_get_a_grip_tt:0 "§GNeptune will learn to deal with the pressure!§!"
  PLA_no_more_lazy_nep_tt:0 "§PNeptune can make a deal with Histoire...§! §gor force her to keep working.§!"
  PLA_stabilize_neptunes_image_tt:0 "§PNeptune can try to win the hearts and minds of the people,§! §gno matter what it takes.§!"
+ PLA_event_effect_tt:0 "From the event:"
  
  #Decisions
  

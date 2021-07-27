@@ -26,8 +26,8 @@ ideas = {
 			picture = PLA_falling_birthrates
 			
 			modifier = {
-				monthly_population = -0.8
-				recruitable_population_factor = -0.5	
+				monthly_population = -1.6
+				recruitable_population_factor = -0.4	
 			}
 		}
 		
@@ -54,6 +54,248 @@ ideas = {
 			picture = PLA_histoire_discontent_idea
 			
 			modifier = {
+			}
+		}
+
+		PLA_public_unrest_dummy_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_public_unrest_idea
+			
+			modifier = {
+				war_support_factor = 0.08
+				army_org_factor = 0.08
+				breakthrough_factor = 0.08
+			}
+		}
+
+		### BIRTHRATES ###
+		
+		PLA_stagnant_birthrates_1_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = -1.4
+				recruitable_population_factor = -0.35	
+			}
+		}
+
+		PLA_stagnant_birthrates_2_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = -1.2
+				recruitable_population_factor = -0.3	
+			}
+		}
+
+		PLA_stagnant_birthrates_3_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = -1.0
+				recruitable_population_factor = -0.25
+			}
+		}
+
+		PLA_stagnant_birthrates_4_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = -0.8
+				recruitable_population_factor = -0.2
+			}
+		}
+
+		PLA_stagnant_birthrates_5_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = -0.6
+				recruitable_population_factor = -0.15
+			}
+		}
+
+		PLA_stagnant_birthrates_6_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = -0.4
+				recruitable_population_factor = -0.1
+			}
+		}
+
+		PLA_stagnant_birthrates_7_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = -0.2
+				recruitable_population_factor = -0.05
+			}
+		}
+
+		PLA_resurging_birthrates_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = 0.05
+			}
+		}
+
+		PLA_resurging_birthrates_1_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = 0.1
+				recruitable_population_factor = 0.025
+			}
+		}
+
+		PLA_resurging_birthrates_2_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = 0.15
+				recruitable_population_factor = 0.05
+			}
+		}
+		
+		PLA_resurging_birthrates_3_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = 0.2
+				recruitable_population_factor = 0.075
+			}
+		}
+
+		PLA_resurging_birthrates_4_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = 0.25
+				recruitable_population_factor = 0.1
+			}
+		}
+
+		PLA_resurging_birthrates_5_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = 0.3
+				recruitable_population_factor = 0.125
+			}
+		}
+
+		PLA_resurging_birthrates_6_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = 0.35
+				recruitable_population_factor = 0.15
+			}
+		}
+
+		PLA_resurging_birthrates_7_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_falling_birthrates
+			
+			modifier = {
+				monthly_population = 0.4
+				recruitable_population_factor = 0.2
 			}
 		}
 

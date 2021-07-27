@@ -209,3 +209,222 @@ PLA_decrease_histoire_discontent_big = {
 	}
 	PLA_reload_histoire_discontent = yes
 }
+
+#Improving the Birthrates
+
+PLA_improve_birthrates_conservative = {
+	if = {
+		limit = { has_idea = PLA_stagnant_birthrates_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_idea
+			add_idea = PLA_stagnant_birthrates_1_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_1_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_1_idea
+			add_idea = PLA_stagnant_birthrates_2_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_2_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_2_idea
+			add_idea = PLA_stagnant_birthrates_3_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_3_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_3_idea
+			add_idea = PLA_stagnant_birthrates_4_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_4_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_4_idea
+			add_idea = PLA_stagnant_birthrates_5_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_5_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_5_idea
+			add_idea = PLA_stagnant_birthrates_6_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_6_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_6_idea
+			add_idea = PLA_stagnant_birthrates_7_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_7_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_7_idea
+			add_idea = PLA_resurging_birthrates_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_idea
+			add_idea = PLA_resurging_birthrates_1_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_1_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_1_idea
+			add_idea = PLA_resurging_birthrates_2_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_2_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_2_idea
+			add_idea = PLA_resurging_birthrates_3_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_3_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_3_idea
+			add_idea = PLA_resurging_birthrates_4_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_4_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_4_idea
+			add_idea = PLA_resurging_birthrates_5_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_5_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_5_idea
+			add_idea = PLA_resurging_birthrates_6_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_6_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_6_idea
+			add_idea = PLA_resurging_birthrates_7_idea
+		}
+	}
+}
+
+PLA_improve_birthrates_radical = {
+	if = {
+		limit = { has_idea = PLA_stagnant_birthrates_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_idea
+			add_idea = PLA_stagnant_birthrates_2_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_1_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_1_idea
+			add_idea = PLA_stagnant_birthrates_3_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_2_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_2_idea
+			add_idea = PLA_stagnant_birthrates_4_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_3_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_3_idea
+			add_idea = PLA_stagnant_birthrates_5_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_4_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_4_idea
+			add_idea = PLA_stagnant_birthrates_6_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_5_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_5_idea
+			add_idea = PLA_stagnant_birthrates_7_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_6_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_6_idea
+			add_idea = PLA_resurging_birthrates_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_stagnant_birthrates_7_idea }
+		swap_ideas = {
+			remove_idea = PLA_stagnant_birthrates_7_idea
+			add_idea = PLA_resurging_birthrates_1_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_idea
+			add_idea = PLA_resurging_birthrates_2_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_1_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_1_idea
+			add_idea = PLA_resurging_birthrates_3_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_2_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_2_idea
+			add_idea = PLA_resurging_birthrates_4_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_3_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_3_idea
+			add_idea = PLA_resurging_birthrates_5_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_4_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_4_idea
+			add_idea = PLA_resurging_birthrates_6_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_5_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_5_idea
+			add_idea = PLA_resurging_birthrates_7_idea
+		}
+	}
+	else_if = {
+		limit = { has_idea = PLA_resurging_birthrates_6_idea }
+		swap_ideas = {
+			remove_idea = PLA_resurging_birthrates_6_idea
+			add_idea = PLA_resurging_birthrates_7_idea
+		}
+		add_political_power = 50
+	}
+}

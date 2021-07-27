@@ -777,7 +777,7 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = PLA_auxiliary_help_placeholder
+    id = PLA_obligatory_monologue_scene
     icon = GFX_goal_generic_military_deal
     relative_position_id = PLA_remilitarization_of_erethisan
 	x = 6
@@ -803,8 +803,12 @@ shared_focus = {
     }
     
     completion_reward = {
-		custom_effect_tooltip = PLA_unlock_new_public_method_tt
-		#Maybe add an event
+		#Event
+		custom_effect_tooltip = PLA_event_effect_tt
+		effect_tooltip = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
     }
 }
 
@@ -1905,6 +1909,556 @@ shared_focus = {
     completion_reward = {
 		custom_effect_tooltip = PLA_stabilize_neptunes_image_tt
 		#Event
+    }
+}
+
+##Auxiliary
+
+shared_focus = {
+    id = PLA_the_army_on_a_vacation
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_obligatory_monologue_scene
+	x = -1
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_obligatory_monologue_scene
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_emergency_army_drills
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		###EVENT######################################################
+		custom_effect_tooltip = PLA_event_effect_tt
+		effect_tooltip = {
+			add_war_support = 0.075
+			create_corps_commander = {
+					name = "Falcom"
+					picture = "Portrait_Planeptune_Falcom.dds"
+					traits = { reckless }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 3
+					logistics_skill = 1
+			}
+		}
+		custom_effect_tooltip = PLA_public_unrest_decrease_small_tt
+    }
+}
+
+shared_focus = {
+    id = PLA_emergency_army_drills
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_obligatory_monologue_scene
+	x = 1
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_obligatory_monologue_scene
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_the_army_on_a_vacation
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#Event
+		custom_effect_tooltip = PLA_event_effect_tt
+		effect_tooltip = {
+			add_stability = 0.075
+			army_experience = 30
+		}
+		custom_effect_tooltip = PLA_histoire_discontent_decrease_small_tt
+    }
+}
+
+shared_focus = {
+    id = PLA_nep_easy_on_the_pudding
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_obligatory_monologue_scene
+	x = -1
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_the_army_on_a_vacation
+		focus = PLA_emergency_army_drills
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_develop_pudding_industry
+		focus = PLA_the_nep_pudding
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#Event
+		custom_effect_tooltip = PLA_event_effect_tt
+		custom_effect_tooltip = PLA_histoire_discontent_decrease_medium_tt
+		effect_tooltip = {
+			add_political_power = 50
+			add_stability = 0.05
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_develop_pudding_industry
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_obligatory_monologue_scene
+	x = 1
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_the_army_on_a_vacation
+		focus = PLA_emergency_army_drills
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_nep_easy_on_the_pudding
+		focus = PLA_the_nep_pudding
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#Event
+		custom_effect_tooltip = PLA_event_effect_tt
+		custom_effect_tooltip = PLA_histoire_discontent_decrease_small_tt
+		custom_effect_tooltip = PLA_public_unrest_decrease_small_tt
+		effect_tooltip = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_the_nep_pudding
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_obligatory_monologue_scene
+	x = 3
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_the_army_on_a_vacation
+		focus = PLA_emergency_army_drills
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_nep_easy_on_the_pudding
+		focus = PLA_develop_pudding_industry
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#Event
+		custom_effect_tooltip = PLA_event_effect_tt
+		custom_effect_tooltip = PLA_public_unrest_decrease_medium_tt
+		effect_tooltip = {
+			random_owned_state = {
+				limit = {
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_appropriate_eggplant_farms
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_nep_easy_on_the_pudding
+	x = -1
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_nep_easy_on_the_pudding
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_emergency_excavations_in_virtua
+		focus = PLA_the_art_of_console_wars
+		focus = PLA_worker_refugees_from_lowee
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#Add Idea
+    }
+}
+
+shared_focus = {
+    id = PLA_emergency_excavations_in_virtua
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_nep_easy_on_the_pudding
+	x = 1
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+        focus = PLA_nep_easy_on_the_pudding
+		focus = PLA_develop_pudding_industry
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_appropriate_eggplant_farms
+		focus = PLA_the_art_of_console_wars
+		focus = PLA_worker_refugees_from_lowee
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#Add Idea
+    }
+}
+
+shared_focus = {
+    id = PLA_the_art_of_console_wars
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_nep_easy_on_the_pudding
+	x = 3
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+		focus = PLA_develop_pudding_industry
+		focus = PLA_the_nep_pudding
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_appropriate_eggplant_farms
+		focus = PLA_emergency_excavations_in_virtua
+		focus = PLA_worker_refugees_from_lowee
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		add_tech_bonus = {
+			bonus = 0.7
+			uses = 1
+			category = land_doctrine
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_worker_refugees_from_lowee
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_nep_easy_on_the_pudding
+	x = 5
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+		focus = PLA_the_nep_pudding
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_appropriate_eggplant_farms
+		focus = PLA_emergency_excavations_in_virtua
+		focus = PLA_the_art_of_console_wars
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#Add idea
+		effect_tooltip = {
+			add_manpower = 25000
+		}
+    }
+}
+
+shared_focus = {
+    id = PLA_neptune_on_the_grind
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_nep_easy_on_the_pudding
+	x = 1
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+		focus = PLA_appropriate_eggplant_farms
+		focus = PLA_emergency_excavations_in_virtua
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_nepgear_on_the_grind
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#EVENT AND IDEA AND EFFECT
+    }
+}
+
+shared_focus = {
+    id = PLA_nepgear_on_the_grind
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_the_art_of_console_wars
+	x = 1
+    y = 2
+    cost = 2
+	
+	prerequisite = {
+		focus = PLA_the_art_of_console_wars
+		focus = PLA_worker_refugees_from_lowee
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_neptune_on_the_grind
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#EVENT AND IDEA AND EFFECT
+    }
+}
+
+shared_focus = {
+    id = PLA_time_for_a_heart_to_heart
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_neptune_on_the_grind
+	x = 2
+    y = 1
+    cost = 2
+	
+	prerequisite = {
+		focus = PLA_neptune_on_the_grind
+		focus = PLA_nepgear_on_the_grind
+    }
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#EVENT AND IDEA AND EFFECT
+    }
+}
+
+##END
+
+shared_focus = {
+    id = PLA_planeptunes_resurgence
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_no_more_lazy_nep
+	x = 0
+    y = 1
+    cost = 1
+	
+	prerequisite = {
+		focus = PLA_mending_the_lack_of_manpower
+    }
+	prerequisite = {
+		focus = PLA_no_more_lazy_nep
+    }
+	prerequisite = {
+		focus = PLA_get_a_grip
+    }
+	prerequisite = {
+		focus = PLA_stabilize_neptunes_image
+    }
+	prerequisite = {
+		focus = PLA_time_for_a_heart_to_heart
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_we_have_failed
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#EVENT AND IDEA AND EFFECT
+    }
+}
+
+shared_focus = {
+    id = PLA_we_have_failed
+    icon = GFX_goal_generic_military_deal
+    relative_position_id = PLA_stabilize_neptunes_image
+	x = 0
+    y = 1
+    cost = 1
+	
+	prerequisite = {
+		focus = PLA_mending_the_lack_of_manpower
+    }
+	prerequisite = {
+		focus = PLA_no_more_lazy_nep
+    }
+	prerequisite = {
+		focus = PLA_get_a_grip
+    }
+	prerequisite = {
+		focus = PLA_stabilize_neptunes_image
+    }
+	prerequisite = {
+		focus = PLA_time_for_a_heart_to_heart
+    }
+	
+	mutually_exclusive = {
+		focus = PLA_planeptunes_resurgence
+	}
+    
+    ai_will_do = {
+        factor = 1
+    }
+	
+    available = {
+    }
+	
+    bypass = {
+    }
+    
+    completion_reward = {
+		#EVENT AND IDEA AND EFFECT
     }
 }
 

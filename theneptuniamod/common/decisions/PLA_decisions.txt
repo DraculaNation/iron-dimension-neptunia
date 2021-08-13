@@ -680,11 +680,11 @@ PLA_unrest_category = {
 		}
 		timeout_effect = {
 			set_country_flag = PLA_public_unrest_dealt_with
-			remove_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier } 
+			remove_ideas = {
+				PLA_public_unrest_idea
+			}
 			hidden_effect = {
-				remove_ideas = {
-					PLA_public_unrest_idea
-				}
+				remove_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier } 
 			}
 			###EVENT PLACEHOLDER
 		}
@@ -1456,6 +1456,98 @@ PLA_unrest_category = {
 				remove_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier }
 			}
 			###EVENT PLACEHOLDER
+		}
+	}
+
+	PLA_histoire_collapse_imminent = {
+		icon = GFX_decision_generic_brainwash
+		allowed = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLA_histoire_discontent_stable_level_tt
+				check_variable = {
+					PLA_histoire_discontent_percent < 50
+				}
+			}
+			has_political_power > 24
+		}
+
+		cancel_if_not_visible = yes
+		is_good = no
+		selectable_mission = yes
+
+		days_mission_timeout = 31
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = PLA_collapse_averted_tt
+			add_political_power = -25
+		}
+		
+		timeout_effect = {
+			custom_effect_tooltip = PLA_collapse_imminent_tt
+			remove_ideas = { PLA_histoire_discontent_idea }
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier }
+				set_country_flag = PLA_not_lazy_anymore
+				country_event = {
+					id = planeptune.16
+					days = 1
+				}
+			}
+		}
+	}
+	
+	PLA_public_collapse_imminent = {
+		icon = GFX_decision_generic_brainwash
+		allowed = {
+			always = no
+		}
+
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = PLA_public_unrest_stable_level_tt
+				check_variable = {
+					PLA_public_unrest_percent < 50
+				}
+			}
+			has_political_power > 24
+		}
+
+		cancel_if_not_visible = yes
+		is_good = no
+		selectable_mission = yes
+
+		days_mission_timeout = 31
+
+		ai_will_do = {
+			factor = 100
+		}
+
+		complete_effect = {
+			custom_effect_tooltip = PLA_collapse_averted_tt
+			add_political_power = -25
+		}
+		
+		timeout_effect = {
+			custom_effect_tooltip = PLA_collapse_imminent_tt
+			remove_ideas = {
+				PLA_public_unrest_idea
+			}
+			hidden_effect = {
+				remove_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier } 
+				set_country_flag = PLA_not_lazy_anymore
+				country_event = {
+					id = planeptune.20
+					days = 1
+				}
+			}
 		}
 	}
 

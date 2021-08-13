@@ -62,6 +62,7 @@
  PLA_public_unrest_really_high_sl:0 "§RPublic unrest is at a very high level!§!" #31-40 public unrest
  PLA_public_unrest_really_really_high_sl:0 "§RPublic unrest is reaching critical levels!!!§!" #41-50 public unrest
  PLA_public_unrest_messed_up_sl:0 "§RPublic unrest is widespread! Planeptune is doomed!§!" #>50 public unrest
+ PLA_public_unrest_messed_up_completely_sl:0 "§RRiots have broken out! Planeptune is beyond salvation!§!" #>70 public unrest
  
  PLA_histoire_discontent_low_sl:0 "§GHistoire is currently satisfied.§!" #0-10 histoire discontent
  PLA_histoire_discontent_medium_sl:0 "§YPHistoire is irritated...§!" #11-20 histoire discontent
@@ -69,6 +70,7 @@
  PLA_histoire_discontent_really_high_sl:0 "§RHistoire is angry!!§!" #31-40 histoire discontent
  PLA_histoire_discontent_really_really_high_sl:0 "§RHistoire is reaching her breaking point!!!§!" #41-50 histoire discontent
  PLA_histoire_discontent_messed_up_sl:0 "§RHistoire is on a strike! Planeptune is in chaos!§!" #>50 histoire discontent
+ PLA_histoire_discontent_messed_up_completely_sl:0 "§RHistoire is concentrating power to herself! Planeptune will be in her hands!§!" #>70 histoire discontent
  
  #Country flags
  friendship_treaty_ratified_flag:0 "The Friendship Treaty has been ratified."
@@ -77,6 +79,13 @@
  PLA_histoire_mission_in_progress:0 "Currently dealing with administration issues."
  
  #Tooltips
+ 
+ PLA_oh_shit_tt:0 "§ROh crud...§!"
+ 
+ PLA_collapse_averted_tt:0 "The collapse will be averted... for now."
+ PLA_histoire_discontent_stable_level_tt:0 "Histoire is not freaking out"
+ PLA_public_unrest_stable_level_tt:0 ""
+ 
  PLA_public_unrest_increase_small_tt:0 "§RThis will cause a bit of public unrest.§!"
  PLA_public_unrest_increase_medium_tt:0 "§RThis will cause some public unrest!§!"
  PLA_public_unrest_increase_big_tt:0 "§RThis will cause significant public unrest!§!"

@@ -1,0 +1,52 @@
+﻿capital = 41
+set_convoys = 50
+
+set_politics = {
+	ruling_party = military_junta
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	alternate_cpu_rule = 10
+	maternal_autocracy = 20
+	military_junta = 70
+}
+
+set_stability = 0.5
+
+## Leaders
+
+create_country_leader = {
+	name = "B-Sha"
+	desc = "POLITICS_BSHA_DESC"
+	picture = "gfx/leaders/PLA/Portrait_Planeptune_Bsha.dds"
+	expire = "1965.1.1"
+	ideology = military_junta_subtype
+	traits = {
+		bsha_leader_trait
+		bsha_other_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "Nature"
+	desc = ""
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = anarchy_subtype
+	traits = {
+	}
+}
+
+create_field_marshal = { 
+	name = "B-Sha"
+	picture = "gfx/leaders/PLA/Portrait_Planeptune_Bsha.dds"
+	traits = { politically_connected }
+	skill = 2
+	attack_skill = 3
+	defense_skill = 2
+	planning_skill = 1
+	logistics_skill = 1
+}

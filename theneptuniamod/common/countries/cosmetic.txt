@@ -1,0 +1,19 @@
+PLA_maternal_autocracy = {
+    color = rgb { 75 38 211 }
+    color_ui = rgb { 55 18 191 }
+}
+
+PLA_military_junta = {
+    color = rgb { 153 70 118 }
+    color_ui = rgb { 133 50 98 }
+}
+
+PLA_kleptocracy = {
+    color = rgb { 32 28 61 }
+    color_ui = rgb { 42 38 71 }
+}
+
+PLA_emergency = {
+    color = rgb { 75 38 221 }
+    color_ui = rgb { 55 18 201 }
+}

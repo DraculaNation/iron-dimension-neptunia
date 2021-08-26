@@ -78,6 +78,15 @@ default = {
 			}
 		}
 		
+		corporatocracy = {
+			male = {
+				"gfx/leaders/Generic/Portrait_Everything_Generic1.dds"
+			}
+			female = {
+				"gfx/leaders/Generic/Portrait_Everything_Generic1.dds"
+			}
+		}
+		
 		chauvinism = {
 			male = {
 				"gfx/leaders/Generic/Portrait_Everything_Generic1.dds"

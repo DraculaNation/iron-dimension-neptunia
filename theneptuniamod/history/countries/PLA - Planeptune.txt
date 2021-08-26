@@ -145,6 +145,16 @@ create_country_leader = {
 }
 
 create_country_leader = {
+	name = "Zolgelicoff Tetsu"
+	desc = ""
+	picture = "Portrait_Planeptune_Zolgelicoff_Tetsu.dds"
+	expire = "1965.1.1"
+	ideology = corporatocracy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
 	name = "Histoire"
 	desc = "POLITICS_HISTOIRE_DESC"
 	picture = "Portrait_Planeptune_Histoire.dds"

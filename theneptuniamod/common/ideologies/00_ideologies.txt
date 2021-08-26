@@ -78,6 +78,45 @@ ideologies = {
 		
 	}
 	
+	corporatocracy = {
+	
+		types = {
+			corporatocracy_subtype = {
+			}
+		}
+	
+		dynamic_faction_names = {
+			"FACTION_NAME_COMMUNIST1"
+		}
+		
+		color = { 126 204 81 }
+		
+		war_impact_on_world_tension = 1.00		#Uh oh...
+		faction_impact_on_world_tension = 1.00
+		
+		rules = {
+			can_create_collaboration_government = yes
+			can_force_government = no
+			can_puppet = yes
+			can_join_factions = no
+			can_send_volunteers = yes
+		}
+		
+		can_collaborate = no
+		
+		modifiers = {
+			join_faction_tension = 1.00
+			generate_wargoal_tension = 1.00
+			lend_lease_tension = 1.00
+			annex_cost_factor = 1.00
+		}
+		
+		faction_modifiers = {
+			
+		}
+		
+	}
+	
 	maternal_autocracy = {
 	
 		types = {

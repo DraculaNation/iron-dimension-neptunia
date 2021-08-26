@@ -32,7 +32,7 @@ leader_traits = {
 		}
 	}
 	
-	## PLANEPTUNE ##
+	## PLANEPTUNE LEADERS ##
 	
 	neptune_leader_trait = {
 		random = no
@@ -128,6 +128,49 @@ leader_traits = {
 		random = no
 		consumer_goods_factor = 0.05
 		stability_factor = 0.025
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	## PLANEPTUNE MINISTERS ##
+	
+	histoire_oracle_trait = { #The Little Dictator
+		random = no
+		political_power_cost = 0.06
+		stability_factor = 0.12
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	hatsumi_sega_minister_trait = { #Ambitious Amnesiac
+		random = no
+		political_power_gain = 0.04
+		stability_factor = -0.04
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	compa_chamberlain_trait = { #Clumsy but Gentle
+		random = no
+		army_org_regain = 0.03
+		stability_factor = 0.02
+		consumer_goods_factor = 0.02
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	if_intelligence_trait = { #Trusted Disciple
+		random = no
+		recon_factor = 0.1
+		war_support_factor = 0.04
 		
 		ai_will_do = {
 			factor = 1

@@ -1,0 +1,18 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_ideology_cpu_rule_group"
+		texturefile = "gfx/interface/ideologies/cpu_rule_group.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_alternate_cpu_rule_group"
+		texturefile = "gfx/interface/ideologies/alternate_cpu_rule_group.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_chauvinism_group"
+		texturefile = "gfx/interface/ideologies/chauvinism_group.tga"
+	}
+	
+}

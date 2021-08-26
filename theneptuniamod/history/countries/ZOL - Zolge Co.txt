@@ -1,0 +1,39 @@
+﻿capital = 31
+set_convoys = 50
+
+set_politics = {
+	ruling_party = corporatocracy
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	cpu_rule = 5
+	corporatocracy = 80
+	military_junta = 15
+}
+
+set_stability = 0.5
+
+## Leaders
+
+create_country_leader = {
+	name = "Zolgelicoff Tetsu"
+	desc = ""
+	picture = "gfx/leaders/PLA/Portrait_Planeptune_Zolgelicoff_Tetsu.dds"
+	expire = "1965.1.1"
+	ideology = corporatocracy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Nature"
+	desc = ""
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = anarchy_subtype
+	traits = {
+	}
+}

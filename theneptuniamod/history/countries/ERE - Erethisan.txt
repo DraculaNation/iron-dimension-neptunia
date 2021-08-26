@@ -1,0 +1,39 @@
+﻿capital = 7
+set_convoys = 50
+
+set_politics = {
+	ruling_party = maternal_autocracy
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	cpu_rule = 15
+	maternal_autocracy = 80
+	military_junta = 5
+}
+
+set_stability = 0.5
+
+## Leaders
+
+create_country_leader = {
+	name = "Falcom"
+	desc = "POLITICS_FALCOM_DESC"
+	picture = "gfx/leaders/PLA/Portrait_Planeptune_Falcom.dds"
+	expire = "1965.1.1"
+	ideology = maternal_autocracy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Nature"
+	desc = ""
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = anarchy_subtype
+	traits = {
+	}
+}

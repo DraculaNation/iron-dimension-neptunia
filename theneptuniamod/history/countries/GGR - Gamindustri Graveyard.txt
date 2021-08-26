@@ -1,0 +1,27 @@
+﻿capital = 32
+set_convoys = 50
+
+set_politics = {
+	ruling_party = anarchy
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	anarchy = 100
+}
+
+set_stability = 0.5
+
+## Leaders
+
+create_country_leader = {
+	name = "Gamindustri Graveyard"
+	desc = ""
+	picture = "Portrait_Gamindustri_Graveyard_Graveyard.dds"
+	expire = "1965.1.1"
+	ideology = anarchy_subtype
+	traits = {
+	}
+}

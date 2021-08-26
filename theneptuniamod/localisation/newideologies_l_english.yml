@@ -12,6 +12,12 @@
  kleptocracy_subtype:0 "Kleptocracy"
  kleptocracy_subtype_desc:0 "Kleptocracy is a government where wealth is concentrated to a single person or a group. Oftentimes, this group is the ASIC - Arfoire Syndicate of International Crime."
  
+ corporatocracy:0 "Corporatocracy"
+ corporatocracy_noun:0 "Corporatocracy"
+ corporatocracy_desc:0 "Corporatocrat"
+ corporatocracy_subtype:0 "Corporatocracy"
+ corporatocracy_subtype_desc:0 "Corporatocracy is a system of government where a corporation, or multiple corporations, are placed at a nation's helm. Sometimes they're unofficial rulers, influencing a nation's government from the shadows, while at other times they're the governing body of their own nation."
+ 
  maternal_autocracy:0 "Maternal Autocrat"
  maternal_autocracy_noun: "Autocracy"
  maternal_autocracy_desc:0 "Autocrat"

@@ -14,7 +14,7 @@ PLA_unrest_category = {
 		
 		available = {
 			has_country_flag = PLA_not_lazy_anymore
-			hidden_effect = {
+			hidden_trigger = {
 				NOT = { has_country_flag = PLA_ticker_disabled }
 			}
 		}

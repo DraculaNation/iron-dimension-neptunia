@@ -1,0 +1,48 @@
+﻿add_namespace = gamindustrigraveyard
+
+#country_event = { #Gamindustri Graveyard
+#	id = gamindustrigraveyard.1
+#	title = gamindustrigraveyard.1.t
+#	desc = gamindustrigraveyard.1.d
+#	picture = GFX_report_event_physics_lab_01
+#	
+#	is_triggered_only = yes
+#	
+#	option = { #Attack Lastation
+#		name = gamindustrigraveyard.1.a	
+#		ai_chance = { factor = 100 }
+#		start_border_war = {
+#			change_state_after_war = no
+#			attacker = {
+#				state = 32
+#				num_provinces = 12
+#				on_win = gamindustrigraveyard.2
+#				on_lose = gamindustrigraveyard.3
+#				on_cancel = gamindustrigraveyard.4
+#			}
+#						
+#			defender = {
+#				state = 46
+#				num_provinces = 11
+#				on_win = gamindustrigraveyard.3
+#				on_lose = gamindustrigraveyard.2
+#				on_cancel = gamindustrigraveyard.4
+#			}
+#		}
+#	}
+#}
+#
+#country_event = { #Lastation hands over the state
+#	id = gamindustrigraveyard.2
+#	title = gamindustrigraveyard.2.t
+#	desc = gamindustrigraveyard.2.d
+#	picture = GFX_report_event_physics_lab_01
+#	
+#	is_triggered_only = yes
+#	
+#	option = { #Bye bye
+#		name = gamindustrigraveyard.1.a	
+#		ai_chance = { factor = 100 }
+#		
+#	}
+#}

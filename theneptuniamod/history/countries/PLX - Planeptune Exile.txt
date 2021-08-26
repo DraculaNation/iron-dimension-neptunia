@@ -1,0 +1,52 @@
+﻿capital = 55
+set_convoys = 50
+
+set_politics = {
+	ruling_party = cpu_rule
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	alternate_cpu_rule = 30
+	cpu_rule = 50
+	maternal_autocracy = 10
+	military_junta = 10
+}
+
+set_stability = 0.5
+
+## Leaders
+
+create_country_leader = {
+	name = "Neptune"
+	desc = "POLITICS_NEPTUNE_DESC"
+	picture = "gfx/leaders/PLA/Portrait_Planeptune_Neptune.dds"
+	expire = "1965.1.1"
+	ideology = cpu_rule_subtype
+	traits = {
+		neptune_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "Nepgear"
+	desc = "POLITICS_NEPGEAR_DESC"
+	picture = "gfx/leaders/PLA/Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = alternate_cpu_rule_subtype
+	traits = {
+		nepgear_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "Nature"
+	desc = ""
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = anarchy_subtype
+	traits = {
+	}
+}

@@ -478,6 +478,7 @@ country_event = { #Collapse Start - Histoire
 	desc = planeptune.14.d
 	picture = GFX_report_event_physics_lab_01
 	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
 	
 	trigger = {
 		check_variable = {
@@ -488,7 +489,7 @@ country_event = { #Collapse Start - Histoire
 	}
 	
 	immediate = {
-		PLA_increase_histoire_discontent_big
+		PLA_increase_histoire_discontent_big = yes
 	}
 	
 	option = {
@@ -504,6 +505,7 @@ country_event = { #Collapse Start - Public
 	desc = planeptune.15.d
 	picture = GFX_report_event_physics_lab_01
 	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
 	
 	trigger = {
 		check_variable = {
@@ -514,7 +516,7 @@ country_event = { #Collapse Start - Public
 	}
 	
 	immediate = {
-		PLA_increase_public_unrest_big
+		PLA_increase_public_unrest_big = yes
 	}
 	
 	option = {
@@ -559,7 +561,7 @@ country_event = { #Histoire independent of Neptune - Neptune catches on when His
 		ai_chance = { factor = 100 }
 		add_political_power = -50
 		add_popularity = {
-			ideology = maternal_autocrat
+			ideology = maternal_autocracy
 			popularity = 0.10
 		}
 		hidden_effect = {
@@ -582,7 +584,7 @@ country_event = { #Neps kicked out
 	option = {
 		name = planeptune.18.a #Buh-bye
 		ai_chance = { factor = 100 }
-		set_politics = { ruling_party = maternal_autocrat }
+		set_politics = { ruling_party = maternal_autocracy }
 		add_political_power = -150
 		add_stability = -0.1
 		add_war_support = -0.25
@@ -607,7 +609,7 @@ country_event = { #Histy solidifies control
 		name = planeptune.18.a #Buh-bye
 		ai_chance = { factor = 100 }
 		add_popularity = {
-			ideology = maternal_autocrat
+			ideology = maternal_autocracy
 			popularity = 0.05
 		}
 		add_political_power = 30
@@ -721,6 +723,7 @@ country_event = { #T O T A L C O L L A P S E
 	desc = planeptune.24.d
 	picture = GFX_report_event_physics_lab_01
 	mean_time_to_happen = { days = 1 }
+	fire_only_once = yes
 	
 	trigger = {
 		has_active_mission = PLA_histoire_collapse_imminent
@@ -765,9 +768,9 @@ country_event = { #Histoire suddenly takes over
 	option = {
 		name = planeptune.25.a #Cincinnatus
 		ai_chance = { factor = 100 }
-		set_politics = { ruling_party = maternal_autocrat }
+		set_politics = { ruling_party = maternal_autocracy }
 		add_popularity = {
-			ideology = maternal_autocrat
+			ideology = maternal_autocracy
 			popularity = -0.05
 		}
 		add_political_power = 50
@@ -777,6 +780,7 @@ country_event = { #Histoire suddenly takes over
 				id = planeptune.26
 				days = 7
 			}
+			set_cosmetic_tag = PLA_maternal_autocracy
 		}
 	}
 }
@@ -808,6 +812,7 @@ country_event = { #B-Sha takes over, kicks the neps out and forces Histoire to w
 				id = planeptune.27
 				days = 7
 			}
+			set_cosmetic_tag = PLA_military_junta
 		}
 	}
 }
@@ -823,9 +828,9 @@ country_event = { #Histoire coups B-Sha again and banishes her
 	option = {
 		name = planeptune.27.a #Cincinnatus
 		ai_chance = { factor = 100 }
-		set_politics = { ruling_party = maternal_autocrat }
+		set_politics = { ruling_party = maternal_autocracy }
 		add_popularity = {
-			ideology = maternal_autocrat
+			ideology = maternal_autocracy
 			popularity = -0.05
 		}
 		add_political_power = 25
@@ -835,6 +840,7 @@ country_event = { #Histoire coups B-Sha again and banishes her
 				id = planeptune.28
 				days = 7
 			}
+			set_cosmetic_tag = PLA_emergency
 		}
 	}
 }
@@ -862,3 +868,238 @@ country_event = { #Haneda Riots
 	}
 }
 
+country_event = { #Bye bye Haneda
+	id = planeptune.29
+	title = planeptune.29.t
+	desc = planeptune.29.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.29.a #Bye!
+		ai_chance = { factor = 100 }
+		add_political_power = -200
+		add_stability = -0.05
+		PLB = {
+			transfer_state = 41
+			transfer_state = 30
+			transfer_state = 42
+		}
+		every_state = { 
+			limit = { is_core_of = PLA }
+			add_core_of = PLB
+		}
+		41 = { set_demilitarized_zone = no }
+		55 = { set_demilitarized_zone = yes }
+		hidden_effect = {
+			country_event = {
+				id = planeptune.30
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = { #Bye bye Virtua
+	id = planeptune.30
+	title = planeptune.30.t
+	desc = planeptune.30.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.30.a #Bye!
+		ai_chance = { factor = 100 }
+		add_political_power = -100
+		add_stability = -0.05
+		PLX = {
+			transfer_state = 55
+			transfer_state = 28
+			transfer_state = 29
+		}
+		every_state = { 
+			limit = { is_core_of = PLA }
+			add_core_of = PLX
+		}
+		55 = { set_demilitarized_zone = no }
+		hidden_effect = {
+			country_event = {
+				id = planeptune.31
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = { #Bye bye Erethisan
+	id = planeptune.31
+	title = planeptune.31.t
+	desc = planeptune.31.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.31.a #Bye!
+		ai_chance = { factor = 100 }
+		add_political_power = -25
+		add_stability = -0.05
+		ERE = {
+			transfer_state = 7
+			transfer_state = 18
+		}
+		7 = { add_core_of = ERE }
+		18 = { add_core_of = ERE }
+		hidden_effect = {
+			country_event = {
+				id = planeptune.32
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = { #Monsters take control
+	id = planeptune.32
+	title = planeptune.32.t
+	desc = planeptune.32.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.32.a #Bye!
+		ai_chance = { factor = 100 }
+		add_stability = 0.1
+		add_political_power = -100
+		PGA = {
+			transfer_state = 54
+			transfer_state = 39
+			transfer_state = 52
+			transfer_state = 5
+			transfer_state = 17
+			transfer_state = 53
+			transfer_state = 36
+			transfer_state = 11
+			transfer_state = 32
+			transfer_state = 44
+			transfer_state = 8
+		}	
+		every_state = { 
+			limit = { is_core_of = PLA }
+			add_core_of = PGA
+		}
+		hidden_effect = {
+			country_event = {
+				id = planeptune.33
+				days = 7
+			}
+			PGA = {
+				country_event = {
+					id = planeptune.36
+					days = 31
+				}
+			}
+		}
+	}
+}
+
+country_event = { #Bye bye Zolge
+	id = planeptune.33
+	title = planeptune.33.t
+	desc = planeptune.33.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.33.a #Bye!
+		ai_chance = { factor = 100 }
+		ZOL = {
+			transfer_state = 31
+		}
+		31 = { add_core_of = ZOL }
+		hidden_effect = {
+			country_event = {
+				id = planeptune.34
+				days = 7
+			}
+			GGR = {
+				transfer_state = 32
+				transfer_state = 44
+			}
+			32 = { add_core_of = GGR }
+			44 = { add_core_of = GGR }
+			45 = { add_core_of = GGR }
+			46 = { add_core_of = GGR }
+			#hidden_effect = {
+			#	country_event = {
+			#		id = gamindustrigraveyard.1
+			#		days = 31
+			#	}
+			#}
+		}
+	}
+}
+
+country_event = { #WAR
+	id = planeptune.34
+	title = planeptune.34.t
+	desc = planeptune.34.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.34.a	
+		ai_chance = { factor = 100 }
+		set_stability = 0.5
+		set_political_power = 0
+		PLX = {
+			declare_war_on = {
+				target = PLA
+				type = annex_everything
+			}
+		}
+		PLB = {
+			declare_war_on = {
+				target = PLA
+				type = annex_everything
+			}
+			declare_war_on = {
+				target = PLX
+				type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = { #Monsters attack!
+	id = planeptune.35
+	title = planeptune.35.t
+	desc = planeptune.35.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.34.a	
+		ai_chance = { factor = 100 }
+		PGA = {
+			declare_war_on = {
+				target = PLA
+				type = civil_war_neptunia
+			}
+			declare_war_on = {
+				target = PLX
+				type = civil_war_neptunia
+			}
+			declare_war_on = {
+				target = PLB
+				type = civil_war_neptunia
+			}
+		}
+	}
+}

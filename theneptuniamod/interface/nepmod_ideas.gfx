@@ -19,5 +19,27 @@ spriteTypes = {
 		name = "GFX_idea_PLA_histoire_discontent_idea"
 		textureFile = "gfx/interface/ideas/PLA_histoire_discontent_idea.tga"
 	}
+	
+	### MINISTERS ###
+	
+	spriteType = {
+		name = "GFX_idea_oracle_histoire_minister"
+		textureFile = "gfx/interface/ministers/minister_oracle_histoire.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_prime_hatsumi_sega_minister"
+		textureFile = "gfx/interface/ministers/minister_prime_hatsumi_sega.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_chamberlain_compoa_minister"
+		textureFile = "gfx/interface/ministers/minister_chamberlain_compa.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_intelligence_if_minister"
+		textureFile = "gfx/interface/ministers/minister_intelligence_if.tga"
+	}
 
 }

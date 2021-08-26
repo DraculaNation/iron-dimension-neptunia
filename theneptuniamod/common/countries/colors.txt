@@ -8,11 +8,6 @@ LOW = {
 	color_ui = rgb { 200 196 198 }
 }
 
-PLA = {
-	color = rgb { 119 48 212 }
-	color_ui = rgb { 74 32 129 }
-}
-
 LAS = {
 	color = rgb { 26 26 27 }
 	color_ui = rgb { 45 45 50 }
@@ -21,4 +16,39 @@ LAS = {
 LEA = {
 	color = rgb { 71 243 45 }
 	color_ui = rgb { 51 131 39 }
+}
+
+PLA = {
+	color = rgb { 119 48 212 }
+	color_ui = rgb { 74 32 129 }
+}
+
+PLX = {
+	color = rgb { 121 28 188 }
+	color_ui = rgb { 101 8 168 }
+}
+
+PLB = {
+	color = rgb { 219 69 39 }
+	color_ui = rgb { 199 49 29 }
+}
+
+PGA = {
+	color = rgb { 62 143 209 }
+	color_ui = rgb { 42  123  189 }
+}
+
+ZOL = {
+	color = rgb { 75 135 35 }
+	color_ui = rgb { 55 115 15 }
+}
+
+ERE = {
+	color = rgb { 160 0 2 }
+	color_ui = rgb { 140 0 0 }
+}
+
+GGR = {
+	color = rgb { 54 6 9}
+	color_ui = rgb { 54 6 9 }
 }

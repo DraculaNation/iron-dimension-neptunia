@@ -1,4 +1,5 @@
 ideas = {
+
 	country = {
 		
 		PLA_technological_powerhouse_idea = {
@@ -356,6 +357,82 @@ ideas = {
 				research_speed_factor = 0.04
 			}
 		}
-		
 	}
+	
+	political_advisor = {
+		
+		PLA_minister_oracle_histoire = {
+			allowed = {
+				original_tag = PLA
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { histoire_oracle_trait }
+			
+			ai_will_do = {
+				factor = 0
+			}
+			
+			picture = oracle_histoire_minister
+			
+		}
+		
+		PLA_minister_prime_hatsumi_sega = {
+			allowed = {
+				original_tag = PLA
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { hatsumi_sega_minister_trait }
+			
+			picture = prime_hatsumi_sega_minister
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		PLA_minister_chamberlain_compa = {
+			allowed = {
+				original_tag = PLA
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { compa_chamberlain_trait }
+			
+			picture = chamberlain_compa_minister
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		
+		PLA_minister_intelligence_if = {
+			allowed = {
+				original_tag = PLA
+			}
+
+			available = {
+				always = yes
+			}
+			
+			traits = { if_intelligence_trait }
+			
+			picture = intelligence_if_minister
+			
+			ai_will_do = {
+				factor = 0
+			}
+		}
+	}
+	
 }

@@ -1,5 +1,7 @@
 spriteTypes = {
 
+	### PLANEPTUNE ###
+
 	spriteType = {
 		name = "GFX_idea_PLA_falling_birthrates"
 		textureFile = "gfx/interface/ideas/PLA_falling_birthrates.tga"
@@ -20,6 +22,62 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/PLA_histoire_discontent_idea.tga"
 	}
 	
+	### LOWEE ###
+	
+	spriteType = {
+		name = "GFX_idea_LOW_censored_media"
+		textureFile = "gfx/interface/ideas/LOW_censored_media.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LOW_divided_industry"
+		textureFile = "gfx/interface/ideas/LOW_divided_industry.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LOW_unsure_loyalties"
+		textureFile = "gfx/interface/ideas/LOW_unsure_loyalties.tga"
+	}
+	
+	### LASTATION ###
+	
+	spriteType = {
+		name = "GFX_idea_LAS_overindustrialization"
+		textureFile = "gfx/interface/ideas/LAS_overindustrialization.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LAS_poor_transportation"
+		textureFile = "gfx/interface/ideas/LAS_poor_transportation.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LAS_vulnerable_security"
+		textureFile = "gfx/interface/ideas/LAS_vulnerable_security.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LAS_widespread_pollution"
+		textureFile = "gfx/interface/ideas/LAS_widespread_pollution.tga"
+	}
+	
+	### LEANBOX ###
+	
+	spriteType = {
+		name = "GFX_idea_LEA_rampant_riots"
+		textureFile = "gfx/interface/ideas/LEA_rampant_riots.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LEA_succession_crisis"
+		textureFile = "gfx/interface/ideas/LEA_succession_crisis.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_LEA_infiltrated_cabinet"
+		textureFile = "gfx/interface/ideas/LEA_infiltrated_cabinet.tga"
+	}
+	
 	### MINISTERS ###
 	
 	spriteType = {
@@ -33,7 +91,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_idea_chamberlain_compoa_minister"
+		name = "GFX_idea_chamberlain_compa_minister"
 		textureFile = "gfx/interface/ministers/minister_chamberlain_compa.tga"
 	}
 	

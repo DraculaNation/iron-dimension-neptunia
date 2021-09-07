@@ -20,12 +20,30 @@ bookmarks = {
 		}
 		"LOW"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = cpu_rule
+			ideas = {
+				LOW_censored_media_idea
+				LOW_divided_industry_idea
+				LOW_unsure_loyalties_idea
+			}
 		}
 		"LAS"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = cpu_rule
+			ideas = {
+				LAS_overindustrialization_idea
+				LAS_widespread_pollution_idea
+				LAS_vulnerable_security_idea
+			}
 		}
 		"LEA"={
 			history = "OTHER_GATHERING_STORM_DESC"
+			ideology = cpu_rule
+			ideas = {
+				LEA_succession_crisis
+				LEA_infiltrated_cabinet
+				LEA_rampant_riots
+			}
 		}
 		effect = {
 			randomize_weather = 22345 # <- Obligatory in every bookmark !

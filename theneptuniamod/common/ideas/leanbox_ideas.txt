@@ -1,0 +1,53 @@
+ideas = {
+	country = {
+		
+		LEA_succession_crisis = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = LEA_succession_crisis
+			
+			modifier = {
+				stability_factor = -0.10
+				surrender_limit = -0.1
+				alternate_cpu_rule_drift = -0.1
+			}
+		}
+		
+		LEA_infiltrated_cabinet = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = LEA_infiltrated_cabinet
+			
+			modifier = {
+				political_power_gain = -0.2
+				experience_gain_army = -0.03
+				surrender_limit = -0.1
+			}
+		}
+		
+		LEA_rampant_riots = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = LEA_rampant_riots
+			
+			modifier = {
+				stability_factor = -0.10
+				war_support_factor = -0.2
+				recruitable_population_factor = -0.33
+			}
+		}
+
+	}
+}

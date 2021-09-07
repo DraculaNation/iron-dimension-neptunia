@@ -1552,3 +1552,139 @@ PLA_unrest_category = {
 	}
 
 }
+
+PLA_gamindustri_graveyard_category = {
+
+	PLA_war_with_gamindustri_graveyard = {
+		icon = GFX_decision_hol_draw_up_staff_plans
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			has_country_flag = PLA_lastation_approves
+			has_country_flag = PLA_lowee_informed
+			has_country_flag = PLA_leanbox_informed
+		}
+		
+		visible = {
+			has_country_flag = PLA_gamindustri_graveyard_talks
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		cost = 0
+		fire_only_once = yes
+		
+		complete_effect = {
+			declare_war_on = {
+				target = GGR
+				type = annex_everything
+			}
+			LAS = {
+				declare_war_on = {
+					target = GGR
+					type = annex_everything
+				}
+			}
+		}
+	}
+
+	PLA_talks_with_lastation_about_graveyard = {
+		icon = GFX_decision_generic_political_discourse
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			has_country_flag = PLA_gamindustri_graveyard_talks
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		cost = 5
+		fire_only_once = yes
+		
+		complete_effect = {
+			LAS = {
+				country_event = {
+					id = planeptune.36
+					days = 7
+				}
+			}
+		}
+	}
+	
+	PLA_talks_with_lowee_about_graveyard = {
+		icon = GFX_decision_generic_political_discourse
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			has_country_flag = PLA_gamindustri_graveyard_talks
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		cost = 5
+		fire_only_once = yes
+		
+		complete_effect = {
+			country_event = {
+				id = planeptune.37
+				days = 1
+			}
+		}
+	}
+
+	PLA_talks_with_leanbox_about_graveyard = {
+		icon = GFX_decision_generic_political_discourse
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			has_country_flag = PLA_gamindustri_graveyard_talks
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+		
+		cost = 5
+		fire_only_once = yes
+		
+		complete_effect = {
+			LEA = {
+				country_event = {
+					id = planeptune.40
+					days = 7
+				}
+			}
+		}
+	}
+
+}

@@ -380,6 +380,10 @@ ideas = {
 			
 		}
 		
+	}
+	
+	minister_advisor = {
+		
 		PLA_minister_prime_hatsumi_sega = {
 			allowed = {
 				original_tag = PLA
@@ -397,7 +401,11 @@ ideas = {
 				factor = 0
 			}
 		}
-		
+	
+	}
+	
+	chamberlain_advisor = {
+	
 		PLA_minister_chamberlain_compa = {
 			allowed = {
 				original_tag = PLA
@@ -416,6 +424,10 @@ ideas = {
 			}
 		}
 		
+	}
+	
+	intelligence_advisor = {
+	
 		PLA_minister_intelligence_if = {
 			allowed = {
 				original_tag = PLA
@@ -433,6 +445,6 @@ ideas = {
 				factor = 0
 			}
 		}
+
 	}
-	
 }

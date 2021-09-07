@@ -1548,7 +1548,7 @@ shared_focus = {
 }
 
 shared_focus = {
-    id = PLA_use_hard_drive_divinity
+    id = PLA_use_hard_drive_divinity ##GAMINDUSTRI GRAVEYARD TALKS
     icon = GFX_goal_generic_military_deal
     relative_position_id = PLA_pay_lip_service
 	x = 0
@@ -1574,7 +1574,11 @@ shared_focus = {
     
     completion_reward = {
 		#Event
-		#Tooltip on the event - PLA_neptune_can_transform_tt
+		set_variable = {
+			var = PLA_GGR_declare_war_cost
+			value = 50
+		}
+		set_country_flag = PLA_gamindustri_graveyard_talks
     }
 }
 

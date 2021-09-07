@@ -1,12 +1,22 @@
 ﻿l_english:
  
+ ### COUNTRY NAMES ###
  
- LAS_neutrality:0 "Lastation"
- LAS_neutrality_DEF:0 "Lastation"
- LAS_fascism:0 "Lastation"
- LAS_fascism_DEF:0 "Lastation"
- LAS_cpu_rule:0 "Lastation"
- LAS_cpu_rule_DEF:0 "Lastation"
- LAS_communism:0 "Lastation"
- LAS_communism_DEF:0 "Lastation"
+ LAS:0 "Lastation"
+ LAS_DEF:0 "Lastation"
  LAS_ADJ:0 "Lastation"
+ 
+ ### IDEAS ###
+ 
+ LAS_overindustrialization_idea:0 "Overindustrialization"
+ LAS_overindustrialization_idea_desc:0 "Buildings and refineries dot Lastation's landscape. People live in tightly packed apartments. Expansive roads connect one city with the other. There is no denying that Lastation is a heavily industrialized country. At some point, the magnitude and scope of industrialization becomes a problem itself. Where to expand? Where to build new industry? Where to retreat when city life becomes too intense? If Lastation is to flourish, it has to solve its problem of overindustrialization."
+ LAS_widespread_pollution_idea:0 "Widespread Pollution"
+ LAS_widespread_pollution_idea_desc:0 "With the issue of industrialization comes another problem - widespread pollution that is impacting the health of Lastation's citizens. Through years, Lastation has been using very inefficient and toxic energy sources at the expense of its people's wellbeing. Additionally, Lastation is used to throwing waste both in the former forests and into the sea, creating huge, toxic dumping grounds. Smog envelops Lastation's cities. It has gotten to the point that gas masks are common in some neighborhoods. If Lastation is to sustain itself, it needs to get rid of pollution and move on to more modern methods of producing energy."
+ LAS_vulnerable_security_idea:0 "Vulnerable Security"
+ LAS_vulnerable_security_idea_desc:0 "A while ago, a small loophole was discovered in Lastation's security. Unbeknowns to Noire and Uni, this loophole remained active for a long time. That specific loophole has been fixed recently, but not the consequences of the hacker's doing. The hacker has likely created more loopholes. If she fails to react, Noire may become a victim of the hacker's whims."
+ LAS_delicate_transportation_idea:0 "Delicate Transportation"
+ LAS_delicate_transportation_idea_desc:0 "As a consequence of Lastation's rapid industrial expansion, its public transport has suffered from various issues ranging from failing infrastructure to constant repairs. The roads and highways aren't better, either - most being made before modern day street planning took effect - creating lots of narrow streets with tight turns randomly converging one into another. Only time will tell if Lastation manages to fix its delicate transportation."
+ 
+ ### LEADER TRAITS ###
+ 
+ noire_leader_trait:0 "Token Tsundere"

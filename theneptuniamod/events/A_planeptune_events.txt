@@ -983,8 +983,6 @@ country_event = { #Monsters take control
 			transfer_state = 53
 			transfer_state = 36
 			transfer_state = 11
-			transfer_state = 32
-			transfer_state = 44
 			transfer_state = 8
 		}	
 		every_state = { 
@@ -1026,14 +1024,6 @@ country_event = { #Bye bye Zolge
 				id = planeptune.34
 				days = 7
 			}
-			GGR = {
-				transfer_state = 32
-				transfer_state = 44
-			}
-			32 = { add_core_of = GGR }
-			44 = { add_core_of = GGR }
-			45 = { add_core_of = GGR }
-			46 = { add_core_of = GGR }
 			#hidden_effect = {
 			#	country_event = {
 			#		id = gamindustrigraveyard.1
@@ -1085,7 +1075,7 @@ country_event = { #Monsters attack!
 	is_triggered_only = yes
 	
 	option = {
-		name = planeptune.34.a	
+		name = planeptune.35.a	
 		ai_chance = { factor = 100 }
 		PGA = {
 			declare_war_on = {
@@ -1100,6 +1090,141 @@ country_event = { #Monsters attack!
 				target = PLB
 				type = civil_war_neptunia
 			}
+		}
+	}
+}
+
+country_event = { #Gamindustri Graveyard talks - Lastation
+	id = planeptune.36
+	title = planeptune.36.t
+	desc = planeptune.36.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.36.a	
+		ai_chance = { factor = 100 }
+		PLA = {
+			set_country_flag = PLA_lastation_approves
+		}
+	}
+}
+
+country_event = { #Gamindustri Graveyard talks - Lowee
+	id = planeptune.37
+	title = planeptune.37.t
+	desc = planeptune.37.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.37.a #Promise them their rightful lands
+		ai_chance = { factor = 100 }
+		LOW = {
+			country_event = {
+				id = planeptune.38
+				days = 7
+			}
+		}
+	}
+	
+	option = {
+		name = planeptune.37.b #Promise them nothing
+		ai_chance = { factor = 100 }
+		LOW = {
+			country_event = {
+				id = planeptune.39
+				days = 7
+			}
+		}
+	}
+}
+
+country_event = { #Gamindustri Graveyard talks - Lowee's response
+	id = planeptune.38
+	title = planeptune.38.t
+	desc = planeptune.38.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.38.a #We'll get our part - yay!
+		ai_chance = { factor = 100 }
+		add_political_power = 25
+		PLA = {
+			set_country_flag = PLA_lowee_informed
+		}
+	}
+	
+	option = {
+		name = planeptune.38.b #Promise them nothing
+		ai_chance = { factor = 0 }
+		PLA = {
+			add_to_variable = {
+				var = PLA_GGR_declare_war_cost
+				value = 50
+			}
+			set_country_flag = PLA_lowee_informed
+			set_country_flag = PLA_lowee_diplomatic_protest
+		}
+	}
+}
+
+country_event = { #Gamindustri Graveyard talks - Lowee's response to shit
+	id = planeptune.39
+	title = planeptune.39.t
+	desc = planeptune.39.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.39.a #We hate Planeptune!
+		ai_chance = { factor = 100 }
+		add_political_power = 25
+		PLA = {
+			add_to_variable = {
+				var = PLA_GGR_declare_war_cost
+				value = 50
+			}
+			set_country_flag = PLA_lowee_informed
+			set_country_flag = PLA_lowee_diplomatic_protest
+		}
+	}
+}
+
+country_event = { #Gamindustri Graveyard talks - Leanbox's response
+	id = planeptune.40
+	title = planeptune.40.t
+	desc = planeptune.40.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.40.a #Fine by us!
+		ai_chance = { factor = 75 }
+		PLA = {
+			set_country_flag = PLA_leanbox_informed
+		}
+	}
+	
+	option = {
+		name = planeptune.40.b #Diplomatic protest
+		ai_chance = { factor = 25 }
+		add_political_power = -30
+		add_war_support = 0.025
+		custom_effect_tooltip = PLA_increased_declare_war_cost_tt
+		PLA = {
+			add_to_variable = {
+				var = PLA_GGR_declare_war_cost
+				value = 25
+			}
+			set_country_flag = PLA_leanbox_informed
+			set_country_flag = PLA_leanbox_diplomatic_protest
 		}
 	}
 }

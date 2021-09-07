@@ -1,6 +1,39 @@
 ideas = {
 	country = {
 		
+		LOW_censored_media_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = LOW_censored_media
+			
+			modifier = {
+				political_power_gain = 0.2
+				research_speed_factor = -0.08
+				trade_opinion_factor = -0.15
+			}
+		}
+		
+		LOW_the_great_firewall_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = LOW_censored_media
+			
+			modifier = {
+				political_power_gain = 0.5
+				research_speed_factor = -0.08
+				trade_opinion_factor = -0.15
+				army_core_defence_factor = 0.1
+			}
+		}
+		
 		LOW_divided_industry_idea = {
 			allowed = {
 				always = no
@@ -8,7 +41,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = LOW_divided_industry
 			
 			modifier = {
 				production_speed_infrastructure_factor = -0.8
@@ -23,7 +56,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = LOW_divided_industry
 			
 			modifier = {
 				production_speed_infrastructure_factor = -0.8
@@ -41,43 +74,10 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = LOW_divided_industry
 			
 			modifier = {
 				production_speed_infrastructure_factor = 0.5
-			}
-		}
-		
-		LOW_censored_media_idea = {
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = FRA_scw_intervention_nationalists_focus
-			
-			modifier = {
-				political_power_gain = 0.2
-				research_speed_factor = -0.08
-				trade_opinion_factor = -0.15
-			}
-		}
-		
-		LOW_the_great_firewall_idea = {
-			allowed = {
-				always = no
-			}
-			
-			removal_cost = -1
-
-			picture = FRA_scw_intervention_nationalists_focus
-			
-			modifier = {
-				political_power_gain = 0.5
-				research_speed_factor = -0.08
-				trade_opinion_factor = -0.15
-				army_core_defence_factor = 0.1
 			}
 		}
 		
@@ -88,7 +88,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = LOW_unsure_loyalties
 			
 			modifier = {
 				conscription_factor = -0.1
@@ -104,7 +104,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = FRA_scw_intervention_nationalists_focus
+			picture = LOW_unsure_loyalties
 			
 			modifier = {
 				conscription_factor = -0.33

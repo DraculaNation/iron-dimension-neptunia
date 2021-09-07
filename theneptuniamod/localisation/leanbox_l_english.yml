@@ -1,12 +1,20 @@
 ﻿l_english:
  
+ ### COUNTRY NAMES ###
  
- LEA_neutrality:0 "Leanbox"
- LEA_neutrality_DEF:0 "Leanbox"
- LEA_fascism:0 "Leanbox"
- LEA_fascism_DEF:0 "Leanbox"
- LEA_cpu_rule:0 "Leanbox"
- LEA_cpu_rule_DEF:0 "Leanbox"
- LEA_communism:0 "Leanbox"
- LEA_communism_DEF:0 "Leanbox"
+ LEA:0 "Leanbox"
+ LEA_DEF:0 "Leanbox"
  LEA_ADJ:0 "Leanbox"
+ 
+ ### IDEAS ###
+ 
+ LEA_succession_crisis:0 "Succession Crisis"
+ LEA_succession_crisis_desc:0 "Neptune has Nepgear. Noire has Uni. Blanc has both Rom and Ram. Whom does Vert have? The grief of being an only child has taken a toll on Vert and is one of the biggest insecurities for an otherwise gifted goddess. This has also created a certain sort of instability in the Leanbox administration. Due to the lack of a successor, it is unknown who will take rightful leadership if -- IF something happens to Vert."
+ LEA_infiltrated_cabinet:0 "Infiltrated Cabinet"
+ LEA_infiltrated_cabinet_desc:0 "Leanbox's cabinet has a mole. Someone is working for the criminals and mobsters, but the mole's identity is unknown. Before tackling other societal issues, Leanbox's government has to fix itself first. Only thorough investigations will show sho the mole is - and when the mole is found, Leanbox will know stability."
+ LEA_rampant_riots:0 "Rampant Riots"
+ LEA_rampant_riots_desc:0 "Despite being a large and prosperous nations, Leanbox has a problem with crime. Ghettos are a primary breeding ground for this kind of behavior. Thus, it is easy to incite riots by using people who feel like they have nothing to lose. Even worse, Leanbox has to fix its issue of having a mole in its cabinet - only then can it take action without the information reaching various mobsters who only complicate things."
+ 
+ ### LEADER TRAITS ###
+ 
+ vert_leader_trait:0 "The Gamer Goddess"

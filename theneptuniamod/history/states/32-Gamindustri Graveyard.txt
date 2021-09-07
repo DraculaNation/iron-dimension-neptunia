@@ -3,8 +3,7 @@ state={
 	id=32
 	name="STATE_32"
 	history={
-		owner = PLA
-		remove_core_of = PLA
+		owner = GGR
 		buildings = {
 			infrastructure = 2
 		}

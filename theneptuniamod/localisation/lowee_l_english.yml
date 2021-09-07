@@ -1,12 +1,20 @@
 ﻿l_english:
  
+ ### COUNTRY NAMES ###
  
- LOW_neutrality:0 "Lowee"
- LOW_neutrality_DEF:0 "Lowee"
- LOW_fascism:0 "Lowee"
- LOW_fascism_DEF:0 "Lowee"
- LOW_cpu_rule:0 "Lowee"
- LOW_cpu_rule_DEF:0 "Lowee"
- LOW_communism:0 "Lowee"
- LOW_communism_DEF:0 "Lowee"
+ LOW:0 "Lowee"
+ LOW_DEF:0 "Lowee"
  LOW_ADJ:0 "Lowee"
+ 
+ ### IDEAS ###
+ 
+ LOW_censored_media_idea:0 "Censored Media"
+ LOW_censored_media_idea_desc:0 "Lowee has always had a sctrict policy when it comes to media. Lowee's media commission ensures that every movie, TV series, or video game released in Lowee adheres to standards which would make it appropriate for everyone - children, adults, old people, and so on... Additionally, Lowee has a firmer grip on imports and exports, where media is subjected to thorough reviews."
+ LOW_divided_industry_idea:0 "Divided Industry"
+ LOW_divided_industry_idea_desc:0 "A common saying in Lowee goes: 'Inside of Lowee there are two more Lowees. One consists of bustling cities, and the other of sparse farmlands. There is no inbetweeen.' This has, additionally, caused a divide between Lowee's population. The city dwellers have a disdain for farmers, and vice versa. However, the industrial Lowee gives much-needed money to the agricultural Lowee, and in return the agricultural Lowee feeds the industrial Lowee. As it currently stands, Lowee cannot expand its industry into the countryside without disturbing the delicate balance between the two Lowees."
+ LOW_unsure_loyalties_idea:0 "Unsure Loyalties"
+ LOW_unsure_loyalties_idea_desc:0 "Blanc's iron-fisted rule is not met without resistance and power checks of various members of the Lowee government. As of lately, Blanc has been suspecting that her opposition might not be entirely loyal to her - there might be other factions that Lowee's cabinet members pledge their loyalty to. In the light of the Friendship Treaty, a declaration of friendship that's bound to be popular with the people as well as the cabinet members, Blanc has decided to wait and see how everything will proceed."
+ 
+ ### LEADER TRAITS ###
+ 
+ blanc_leader_trait:0 "Short Fuse"

@@ -101,3 +101,67 @@ defined_text = {
 		localization_key = PLA_histoire_discontent_messed_up_sl
 	}
 }
+
+defined_text = {
+	name = PLA_gamindustri_graveyard_lastation_status #Lastation is (text)
+	text = {
+		trigger = {
+			NOT = { has_country_flag = PLA_lastation_approves }
+		}
+		localization_key = PLA_uninformed_sl
+	}
+	text = {
+		trigger = {
+			has_country_flag = PLA_lastation_approves
+		}
+		localization_key = PLA_ready_sl
+	}
+}
+
+defined_text = {
+	name = PLA_gamindustri_graveyard_lowee_status #Lowee is (text)
+	text = {
+		trigger = {
+			NOT = { has_country_flag = PLA_lowee_informed }
+		}
+		localization_key = PLA_uninformed_sl
+	}
+	text = {
+		trigger = {
+			has_country_flag = PLA_lowee_informed
+			NOT = { has_country_flag = PLA_lowee_diplomatic_protest }
+		}
+		localization_key = PLA_approve_sl
+	}
+	text = {
+		trigger = {
+			has_country_flag = PLA_lowee_informed
+			has_country_flag = PLA_lowee_diplomatic_protest
+		}
+		localization_key = PLA_diplomatic_protest_sl
+	}
+}
+
+defined_text = {
+	name = PLA_gamindustri_graveyard_leanbox_status #Leanbox is (text)
+	text = {
+		trigger = {
+			NOT = { has_country_flag = PLA_leanbox_informed }
+		}
+		localization_key = PLA_uninformed_sl
+	}
+	text = {
+		trigger = {
+			has_country_flag = PLA_leanbox_informed
+			NOT = { has_country_flag = PLA_leanbox_diplomatic_protest }
+		}
+		localization_key = PLA_approve_sl
+	}
+	text = {
+		trigger = {
+			has_country_flag = PLA_leanbox_informed
+			has_country_flag = PLA_leanbox_diplomatic_protest
+		}
+		localization_key = PLA_diplomatic_protest_sl
+	}
+}

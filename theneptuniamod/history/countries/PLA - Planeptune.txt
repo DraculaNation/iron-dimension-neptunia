@@ -64,6 +64,14 @@ add_ideas = {
 		PLA_stagnant_birthrates_idea
 		PLA_public_unrest_idea
 		PLA_histoire_discontent_idea
+		
+		#Ministers
+		
+		PLA_minister_oracle_histoire
+		PLA_minister_prime_hatsumi_sega
+		PLA_minister_chamberlain_compa
+		PLA_minister_intelligence_if
+		
 }
 
 add_dynamic_modifier = {

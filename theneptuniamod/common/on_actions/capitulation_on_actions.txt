@@ -1,0 +1,41 @@
+on_actions = { #Gamindustri Graveyard
+	on_capitulation = {
+        effect = {
+            if = {
+                limit = {
+                    FROM = { OR = {
+						tag = PLA
+						tag = LAS
+					} }
+                    ROOT = { tag = GGR }
+                } 
+				GGR = {
+					white_peace = PLA
+					white_peace = LAS
+					create_country_leader = {
+						name = "Ganache"
+						desc = ""
+						picture = "gfx/leaders/LAS/Portrait_Lastation_Ganache.dds"
+						expire = "1965.1.1"
+						ideology = corporatocracy_subtype
+					}
+					set_politics = { ruling_party = corporatocracy }
+					PLA = { transfer_state = 44 }
+					LAS = { transfer_state = 46 }
+					if = {
+						limit = {
+							PLA = { has_country_flag = PLA_lowee_dimplomatic_protest }
+						}
+						PLA = { transfer_state = 45 }
+						else = {
+							LOW = { transfer_state = 45 }
+						}
+					}
+					remove_ideas = { GGR_monster_army_idea }
+					add_ideas = { GGR_neutral_zone_idea }
+				}
+            }
+			
+        }
+    }
+}

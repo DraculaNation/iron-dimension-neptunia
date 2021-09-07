@@ -47,3 +47,10 @@
  chauvinism_desc:0 "Chauvinist"
  chauvinism_subtype:0 "Chauvinism"
  chauvinism_subtype_desc:0 "There exist very few people who are devoted to their nation in such an extreme way. On one hand, Chauvinism can encompass absolute devotion to a goddess and her nation while seeking to destroy all of the other goddesses or make them subservient. Other chauvinists put their nation above their goddess and everything else."
+ 
+ ## Ministers
+ 
+ political_advisor:0 "Oracle"
+ minister_advisor:0 "Prime Minister"
+ chamberlain_advisor:0 "Chamberlain"
+ intelligence_advisor:0 "Head of Intelligence"

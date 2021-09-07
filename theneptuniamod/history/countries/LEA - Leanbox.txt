@@ -8,7 +8,14 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	cpu_rule = 100
+	cpu_rule = 70
+	kleptocracy = 30
+}
+
+add_ideas = {
+		LEA_succession_crisis
+		LEA_infiltrated_cabinet
+		LEA_rampant_riots
 }
 
 create_country_leader = {

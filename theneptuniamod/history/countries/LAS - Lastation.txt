@@ -8,7 +8,16 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	cpu_rule = 100
+	cpu_rule = 70
+	kleptocracy = 15
+	military_junta = 15
+}
+
+add_ideas = {
+		LAS_overindustrialization_idea
+		LAS_widespread_pollution_idea
+		LAS_vulnerable_security_idea
+		LAS_delicate_transportation_idea
 }
 
 create_country_leader = {

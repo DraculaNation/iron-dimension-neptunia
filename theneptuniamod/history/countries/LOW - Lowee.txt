@@ -12,6 +12,12 @@ set_popularities = {
 	cpu_rule = 70
 }
 
+add_ideas = {
+		LOW_censored_media_idea
+		LOW_divided_industry_idea
+		LOW_unsure_loyalties_idea
+}
+
 create_country_leader = {
 	name = "Blanc"
 	desc = "POLITICS_BLANC_DESC"

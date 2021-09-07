@@ -4,7 +4,7 @@ state={
 	name="STATE_46"
 
 	history={
-		owner = LAS
+		owner = GGR
 		victory_points = { 2292 16 }
 		buildings = {
 			infrastructure = 2

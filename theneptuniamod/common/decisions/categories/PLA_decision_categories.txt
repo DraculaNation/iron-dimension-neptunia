@@ -13,3 +13,15 @@ PLA_unrest_category = {
 	}
 	visible_when_empty = yes
 }
+
+PLA_gamindustri_graveyard_category = {
+	icon = infiltration
+	available = {
+
+		hidden_trigger = {
+			tag = PLA
+			has_country_flag = PLA_gamindustri_graveyard_talks
+		}
+	}
+	visible_when_empty = no
+}

@@ -4,8 +4,7 @@ state={
 	name="STATE_44"
 
 	history={
-		owner = PLA
-		remove_core_of = PLA
+		owner = GGR
 		buildings = {
 			infrastructure = 1
 		}

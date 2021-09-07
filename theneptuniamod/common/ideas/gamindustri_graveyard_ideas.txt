@@ -1,0 +1,62 @@
+ideas = {
+
+	country = {
+		
+		GGR_monster_army_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_technological_powerhouse
+			
+			modifier = {
+				research_speed_factor = -1.00
+				production_speed_buildings_factor = -1.00
+				repair_speed_factor = -0.8
+				conscription = 0.15
+				pocket_penalty = 0.8
+				army_speed_factor = 0.5
+			}
+		}
+		
+		GGR_neutral_zone_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = PLA_technological_powerhouse
+			
+			modifier = {
+				conscription = -0.02
+				army_speed_factor = -0.2
+				local_resources_factor = 1.20
+			}
+			
+			targeted_modifier = {
+				tag = PLA
+				trade_cost_for_target_factor = 0.5
+			}
+			
+			targeted_modifier = {
+				tag = LAS
+				trade_cost_for_target_factor = 0.5
+			}
+			
+			targeted_modifier = {
+				tag = LOW
+				trade_cost_for_target_factor = 0.5
+			}
+			
+			targeted_modifier = {
+				tag = LEA
+				trade_cost_for_target_factor = 0.5
+			}
+			
+		}
+		
+	}
+}

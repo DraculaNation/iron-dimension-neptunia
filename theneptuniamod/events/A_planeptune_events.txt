@@ -496,6 +496,7 @@ country_event = { #Collapse Start - Histoire
 		name = planeptune.14.a #Oh no...
 		ai_chance = { factor = 100 }
 		custom_effect_tooltip = PLA_histoire_discontent_increase_big_tt
+		activate_mission = PLA_histoire_collapse_imminent
 	}
 }
 
@@ -523,6 +524,7 @@ country_event = { #Collapse Start - Public
 		name = planeptune.15.a #Oh no...
 		ai_chance = { factor = 100 }
 		custom_effect_tooltip = PLA_public_unrest_increase_big_tt
+		activate_mission = PLA_histoire_collapse_imminent
 	}
 }
 
@@ -533,6 +535,18 @@ country_event = { #Histoire refuses to work
 	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			remove_mission = PLA_histoire_collapse_imminent
+			remove_mission = PLA_public_collapse_imminent
+			set_country_flag = PLA_not_lazy_anymore
+			remove_ideas = { PLA_public_unrest_idea }
+			remove_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier } 
+			remove_ideas = { PLA_histoire_discontent_idea }
+			remove_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier } 
+		}
+	}
 	
 	option = {
 		name = planeptune.16.a #HISTOIRE MAKE YOU LOSE CONTROL
@@ -626,6 +640,18 @@ country_event = { #Planeptune Riots
 	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			remove_mission = PLA_histoire_collapse_imminent
+			remove_mission = PLA_public_collapse_imminent
+			set_country_flag = PLA_not_lazy_anymore
+			remove_ideas = { PLA_public_unrest_idea }
+			remove_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier } 
+			remove_ideas = { PLA_histoire_discontent_idea }
+			remove_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier } 
+		}
+	}
 	
 	option = {
 		name = planeptune.20.a #I predict a riot
@@ -733,12 +759,15 @@ country_event = { #T O T A L C O L L A P S E
 	}
 	
 	immediate = {
-		remove_mission = PLA_histoire_collapse_imminent
-		remove_mission = PLA_public_collapse_imminent
-		remove_ideas = { PLA_public_unrest_idea }
-		remove_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier } 
-		remove_ideas = { PLA_histoire_discontent_idea }
-		remove_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier } 
+		hidden_effect = {
+			remove_mission = PLA_histoire_collapse_imminent
+			remove_mission = PLA_public_collapse_imminent
+			set_country_flag = PLA_not_lazy_anymore
+			remove_ideas = { PLA_public_unrest_idea }
+			remove_dynamic_modifier = { modifier = PLA_public_unrest_dynamic_modifier } 
+			remove_ideas = { PLA_histoire_discontent_idea }
+			remove_dynamic_modifier = { modifier = PLA_histoire_discontent_dynamic_modifier } 
+		}
 	}
 	
 	option = {

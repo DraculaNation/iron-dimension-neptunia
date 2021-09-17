@@ -1,5 +1,22 @@
 ideas = {
 
+	hidden_ideas = {
+		
+		PLA_using_extra_political_resources_idea = {
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				political_power_cost = 0.25
+			}
+		
+		}
+		
+	}
+
 	country = {
 		
 		PLA_technological_powerhouse_idea = {

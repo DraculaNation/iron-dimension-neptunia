@@ -648,7 +648,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_remilitarization_of_erethisan
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_rhineland
     relative_position_id = PLA_initial_consequences_angry_people
 	x = 0
     y = 1
@@ -682,11 +682,12 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_execute_a_census
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_execute_a_census
     relative_position_id = PLA_remilitarization_of_erethisan
 	x = -6
     y = 1
     cost = 3
+	cancelable = no
 	
 	prerequisite = {
         focus = PLA_remilitarization_of_erethisan
@@ -705,16 +706,26 @@ shared_focus = {
 	
     bypass = {
     }
+	
+	select_effect = {
+		hidden_effect = {
+			add_ideas = PLA_using_extra_political_resources_idea
+		}
+	}
     
     completion_reward = {
 		custom_effect_tooltip = PLA_execute_a_census_tt
+		custom_effect_tooltip = PLA_strain_on_political_power_tt
+		hidden_effect = {
+			remove_ideas = PLA_using_extra_political_resources_idea
+		}
 		#Maybe add an event where Histoire and Neptune discuss various approaches
     }
 }
 
 shared_focus = {
     id = PLA_role_of_the_oracle
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_role_oracle
     relative_position_id = PLA_remilitarization_of_erethisan
 	x = -2
     y = 1
@@ -746,7 +757,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_waking_up_the_public
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_waking_up_the_public
     relative_position_id = PLA_remilitarization_of_erethisan
 	x = 2
     y = 1
@@ -778,7 +789,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_obligatory_monologue_scene
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_obligatory_monolog_scene
     relative_position_id = PLA_remilitarization_of_erethisan
 	x = 6
     y = 1
@@ -816,11 +827,12 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_finding_the_culprit
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_finding_the_culprit
     relative_position_id = PLA_execute_a_census
 	x = 0
     y = 1
     cost = 3
+	cancelable = no
 	
 	prerequisite = {
         focus = PLA_execute_a_census
@@ -838,16 +850,26 @@ shared_focus = {
 	
     bypass = {
     }
+	
+	select_effect = {
+		hidden_effect = {
+			add_ideas = PLA_using_extra_political_resources_idea
+		}
+	}
     
     completion_reward = {
 		custom_effect_tooltip = PLA_finding_the_culprit_tt
+		custom_effect_tooltip = PLA_strain_on_political_power_tt
+		hidden_effect = {
+			remove_ideas = PLA_using_extra_political_resources_idea
+		}
 		#Maybe add an event where Histoire and Neptune discuss various approaches
     }
 }
 
 shared_focus = {
     id = PLA_education_reform
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_education_reform
     relative_position_id = PLA_finding_the_culprit
 	x = -1
     y = 1
@@ -882,7 +904,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_advertisement_campaign
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_introduce_advertisements
     relative_position_id = PLA_finding_the_culprit
 	x = 1
     y = 1
@@ -919,7 +941,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_planning_the_campaign
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_planning_the_campaign
     relative_position_id = PLA_education_reform
 	x = 1
     y = 1
@@ -942,14 +964,25 @@ shared_focus = {
 	
     bypass = {
     }
+	
+	select_effect = {
+		hidden_effect = {
+			add_ideas = PLA_using_extra_political_resources_idea
+		}
+	}
     
     completion_reward = {
+		custom_effect_tooltip = PLA_planning_the_campaign_tt
+		custom_effect_tooltip = PLA_strain_on_political_power_tt
+		hidden_effect = {
+			remove_ideas = PLA_using_extra_political_resources_idea
+		}
     }
 }
 
 shared_focus = {
     id = PLA_parental_leave_for_men
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_parental_leave_for_men
     relative_position_id = PLA_planning_the_campaign
 	x = -3
     y = 1
@@ -984,7 +1017,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_ban_contraceptives
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_ban_contraceptives
     relative_position_id = PLA_planning_the_campaign
 	x = -1
     y = 1
@@ -1020,7 +1053,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_increase_welfare_budget
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_increase_welfare_budget
     relative_position_id = PLA_parental_leave_for_men
 	x = 1
     y = 1
@@ -1056,7 +1089,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_improve_healthcare
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_improve_healthcare
     relative_position_id = PLA_planning_the_campaign
 	x = 1
     y = 1
@@ -1091,7 +1124,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_panty_vending_machines
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_panty_vending_machines
     relative_position_id = PLA_planning_the_campaign
 	x = 3
     y = 1
@@ -1127,7 +1160,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_state_mandated_sweetheart
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_state_mandated_sweetheart
     relative_position_id = PLA_improve_healthcare
 	x = 1
     y = 1
@@ -1165,7 +1198,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_pregnancy_benefits
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_pregnancy_benefits
     relative_position_id = PLA_increase_welfare_budget
 	x = 1
     y = 1
@@ -1201,7 +1234,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_ban_lewd_anime
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_ban_lewd_anime
     relative_position_id = PLA_increase_welfare_budget
 	x = 3
     y = 1
@@ -1238,7 +1271,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_invest_in_orphanages
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_subsidize_orphanages
     relative_position_id = PLA_pregnancy_benefits
 	x = 0
     y = 2
@@ -1273,7 +1306,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_media_review_commission
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_media_review_commission
     relative_position_id = PLA_ban_lewd_anime
 	x = 0
     y = 2
@@ -1309,7 +1342,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_subsidies_for_huge_families
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_subsidize_huge_families
     relative_position_id = PLA_increase_welfare_budget
 	x = 0
     y = 2
@@ -1344,7 +1377,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_legalize_harems
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_legalize_harems
     relative_position_id = PLA_state_mandated_sweetheart
 	x = 0
     y = 2
@@ -1380,7 +1413,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_mending_the_lack_of_manpower
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_mending_the_lack_of_manpower
     relative_position_id = PLA_invest_in_orphanages
 	x = 1
     y = 1
@@ -1411,6 +1444,7 @@ shared_focus = {
     
     completion_reward = {
 		#E V E N T
+		add_political_power = 100
 		PLA_improve_birthrates_conservative = yes
     }
 }
@@ -1419,7 +1453,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_bribery_in_cookies
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_bribery_in_cookies
     relative_position_id = PLA_role_of_the_oracle
 	x = 0
     y = 1
@@ -1450,7 +1484,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_self_reliance
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_public_self_reliance
     relative_position_id = PLA_waking_up_the_public
 	x = 0
     y = 1
@@ -1481,7 +1515,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_nepgears_methods
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_nepgears_methods
     relative_position_id = PLA_bribery_in_cookies
 	x = 2
     y = 1
@@ -1516,7 +1550,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_pay_lip_service
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_pay_lip_service
     relative_position_id = PLA_nepgears_methods
 	x = 0
     y = 2
@@ -1549,12 +1583,16 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_use_hard_drive_divinity ##GAMINDUSTRI GRAVEYARD TALKS
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_gamindustri_graveyard_talks
     relative_position_id = PLA_pay_lip_service
 	x = 0
     y = 2
     cost = 2
 	
+	prerequisite = {
+        focus = PLA_sway_the_people
+		focus = PLA_we_need_you_histy
+    }
 	prerequisite = {
         focus = PLA_pay_lip_service
     }
@@ -1584,7 +1622,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_a_heartfelt_promise
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_a_heartfelt_promise
     relative_position_id = PLA_bribery_in_cookies
 	x = 0
     y = 2
@@ -1623,7 +1661,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_a_nations_duty
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_the_haneda_speech
     relative_position_id = PLA_self_reliance
 	x = 0
     y = 2
@@ -1662,7 +1700,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_sway_the_people
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_sway_the_people
     relative_position_id = PLA_a_heartfelt_promise
 	x = 0
     y = 2
@@ -1693,7 +1731,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_we_need_you_histy
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_we_need_you_histy
     relative_position_id = PLA_a_nations_duty
 	x = 0
     y = 2
@@ -1724,7 +1762,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_direct_flattery
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_direct_flattery
     relative_position_id = PLA_sway_the_people
 	x = 0
     y = 2
@@ -1760,7 +1798,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_monster_fortifications_project
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_monster_fortifications
     relative_position_id = PLA_we_need_you_histy
 	x = 0
     y = 2
@@ -1796,16 +1834,11 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_get_a_grip
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_get_a_grip
     relative_position_id = PLA_use_hard_drive_divinity
 	x = 0
-    y = 3
+    y = 2
     cost = 3
-	
-	prerequisite = {
-        focus = PLA_sway_the_people
-		focus = PLA_we_need_you_histy
-    }
 	
 	prerequisite = {
 		focus = PLA_use_hard_drive_divinity
@@ -1833,7 +1866,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_a_gift_for_histy
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_a_gift_for_histy
     relative_position_id = PLA_direct_flattery
 	x = 0
     y = 1
@@ -1864,7 +1897,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_no_more_lazy_nep
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_no_more_lazy_nep
     relative_position_id = PLA_a_gift_for_histy
 	x = 0
     y = 1
@@ -1872,6 +1905,9 @@ shared_focus = {
 	
 	prerequisite = {
         focus = PLA_a_gift_for_histy
+    }
+	prerequisite = {
+        focus = PLA_get_a_grip
     }
 	
     ai_will_do = {
@@ -1895,7 +1931,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_direct_action
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_direct_action
     relative_position_id = PLA_monster_fortifications_project
 	x = 0
     y = 1
@@ -1926,7 +1962,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_stabilize_neptunes_image
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_stabilize_neptunes_image
     relative_position_id = PLA_direct_action
 	x = 0
     y = 1
@@ -1935,6 +1971,9 @@ shared_focus = {
 	prerequisite = {
 		focus = PLA_direct_action
 	}
+	prerequisite = {
+        focus = PLA_get_a_grip
+    }
 	
     ai_will_do = {
         factor = 1
@@ -1959,7 +1998,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_the_army_on_a_vacation
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_the_army_on_a_vacation
     relative_position_id = PLA_obligatory_monologue_scene
 	x = -1
     y = 2
@@ -2005,7 +2044,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_emergency_army_drills
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_emergency_army_drills
     relative_position_id = PLA_obligatory_monologue_scene
 	x = 1
     y = 2
@@ -2042,7 +2081,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_nep_easy_on_the_pudding
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_nep_easy_on_the_pudding
     relative_position_id = PLA_the_army_on_a_vacation
 	x = -1
     y = 2
@@ -2081,7 +2120,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_develop_pudding_industry
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_develop_pudding_industry
     relative_position_id = PLA_the_army_on_a_vacation
 	x = 1
     y = 2
@@ -2134,7 +2173,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_the_nep_pudding
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_the_nep_pudding
     relative_position_id = PLA_the_army_on_a_vacation
 	x = 3
     y = 2
@@ -2469,9 +2508,6 @@ shared_focus = {
 		focus = PLA_no_more_lazy_nep
     }
 	prerequisite = {
-		focus = PLA_get_a_grip
-    }
-	prerequisite = {
 		focus = PLA_stabilize_neptunes_image
     }
 	prerequisite = {
@@ -2510,9 +2546,6 @@ shared_focus = {
     }
 	prerequisite = {
 		focus = PLA_no_more_lazy_nep
-    }
-	prerequisite = {
-		focus = PLA_get_a_grip
     }
 	prerequisite = {
 		focus = PLA_stabilize_neptunes_image

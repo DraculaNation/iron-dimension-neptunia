@@ -87,6 +87,8 @@
  PLA_public_unrest_dummy_idea:0 "Disgruntled Populace"
  PLA_public_unrest_dummy_idea_desc:0 "Outside of the city of Planeptune, it is not too uncommon to be attacked by monsters - whether by a relatively harmless dogoo or a deadly mech. With Planeptune's guards underequipped and inexperienced, monster attacks are sadly an everyday occurence in Planeptune due to its capital's proximity to the Gamindustri Graveyard.\nIn a time of need, the people of Planeptune feel abandoned by their goddess, whom they haven't seen for years. If no action is taken, the people might take matters into their own hands. Will Lady Purple Heart be able to win back her people? Or will Planeptune fall to chaos?"
 
+ #Hidden ideas
+ PLA_using_extra_political_resources_idea:0 "Analyzing Data"
  
  #Dynamic Modifiers
  PLA_public_unrest_dynamic_modifier:0 "Disgruntled Populace"
@@ -163,7 +165,9 @@
  PLA_histoire_discontent_finish_alternate_tt:0 "Histoire is not angry."
  
  PLA_execute_a_census_tt:0 "§GWe will make several polls and censuses to determine the cause of falling birthrates.§!"
- PLA_finding_the_culprit_tt:0 "§GWe will analyze the data we have collected and plan out our approach.§!"
+ PLA_finding_the_culprit_tt:0 "§GWe will analyze the data we have collected and start planning out our approach.§!"
+ PLA_planning_the_campaign_tt:0 "§GWe will plan out how to proceed to tackle our problem of falling birthrates!§!"
+ PLA_strain_on_political_power_tt:0 "§RTaking this focus will put a strain on our administration, costing us more daily political power.§!"
  
  PLA_unlock_new_histoire_method_tt:0 "§GWe will unlock a new method to deal with our imbalanced administration!§!"
  PLA_unlock_new_public_method_tt:0 "§GWe will unlock a new method to deal with our citizens' concerns!§!"
@@ -300,8 +304,8 @@
  PLA_pregnancy_benefits_desc:0 "placeholder"
  PLA_ban_lewd_anime:0 "Ban Lewd Anime"
  PLA_ban_lewd_anime_desc:0 "placeholder"
- PLA_subsidies_for_large_families:0 "Subsidies for Large Families"
- PLA_subsidies_for_large_families_desc:0 "placeholder"
+ PLA_subsidies_for_huge_families:0 "Subsidies for Large Families"
+ PLA_subsidies_for_huge_families_desc:0 "placeholder"
  PLA_legalize_harems:0 "Legalize Harems"
  PLA_legalize_harems_desc:0 "placeholder"
  PLA_invest_in_orphanages:0 "Invest in Orphanages"
@@ -331,7 +335,7 @@
  PLA_sway_the_people_desc:0 "placeholder"
  PLA_we_need_you_histy:0 "We Need You, Histy!"
  PLA_we_need_you_histy_desc:0 "placeholder"
- PLA_use_hard_drive_divinity:0 "Use Hard Drive Divinity"
+ PLA_use_hard_drive_divinity:0 "The Gamindustri Graveyard Gambit"
  PLA_use_hard_drive_divinity_desc:0 "placeholder"
  PLA_direct_flattery:0 "Direct Flattery"
  PLA_direct_flattery_desc:0 "placeholder"
@@ -358,7 +362,7 @@
  PLA_nep_easy_on_the_pudding_desc:0 "placeholder"
  PLA_develop_pudding_industry:0 "Develop Pudding Industry"
  PLA_develop_pudding_industry_desc:0 "placeholder"
- PLA_the_nep_pudding:0 "The Nep™ Pudding!"
+ PLA_the_nep_pudding:0 "The Nep(tm) Pudding!"
  PLA_the_nep_pudding_desc:0 "placeholder"
  PLA_appropriate_eggplant_farms:0 "Appropriate Eggplant Farms"
  PLA_appropriate_eggplant_farms_desc:0 "placeholder"
@@ -377,7 +381,7 @@
 
  PLA_planeptunes_resurgence:0 "Planeptune's Resurgence"
  PLA_planeptunes_resurgence_desc:0 "placeholder"
- PLA_we_have_failed:0 "The Army on a Vacation"
+ PLA_we_have_failed:0 "We Have Failed"
  PLA_we_have_failed_desc:0 "placeholder"
 
  #Events

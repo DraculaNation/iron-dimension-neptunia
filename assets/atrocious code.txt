@@ -1,0 +1,109 @@
+            if = {
+                limit = {
+                    FROM = { OR = {
+						tag = PLA
+						tag = PLB
+						tag = PLX
+					} }
+                    ROOT = { OR = {
+						tag = PLA
+						tag = PLB
+						tag = PLX
+					} }
+                }
+				FROM = { save_global_event_target_as = planeptune_civil_war_winner }
+				ROOT = { save_global_event_target_as = planeptune_civil_war_loser }
+				if = { ###    Check if PLA is in the war
+					limit = { AND = {
+						 OR = { ## If PLB is participating
+							PLB = event_target:planeptune_civil_war_winner
+							PLB = event_target:planeptune_civil_war_loser
+						}
+						 OR = { ## If PLX is participating
+							PLX = event_target:planeptune_civil_war_winner
+							PLX = event_target:planeptune_civil_war_loser
+						}
+						country_exists = PLA
+					} }
+					PLA = { save_global_event_target_as = planeptune_civil_war_passive }
+					set_global_flag = planeptune_threeway
+				}
+				if = { ###    Check if PLB is in the war
+					limit = { AND = {
+						 OR = { ## If PLA is participating
+							PLA = event_target:planeptune_civil_war_winner
+							PLA = event_target:planeptune_civil_war_loser
+						}
+						 OR = { ## If PLX is participating
+							PLX = event_target:planeptune_civil_war_winner
+							PLX = event_target:planeptune_civil_war_loser
+						}
+						country_exists = PLB
+					} }
+					PLB = { save_global_event_target_as = planeptune_civil_war_passive }
+					set_global_flag = planeptune_threeway
+				}
+				if = { ###    Check if PLX is in the war
+					limit = { AND = {
+						 OR = { ## If PLB is participating
+							PLB = event_target:planeptune_civil_war_winner
+							PLB = event_target:planeptune_civil_war_loser
+						}
+						 OR = { ## If PLX is participating
+							PLA = event_target:planeptune_civil_war_winner
+							PLA = event_target:planeptune_civil_war_loser
+						}
+						country_exists = PLX
+					} }
+					PLX = { save_global_event_target_as = planeptune_civil_war_passive }
+					set_global_flag = planeptune_threeway
+				}
+				if = { ### The passive country gets a piece of the tasty cake
+					limit = { has_global_flag = planeptune_threeway }
+					event_target:planeptune_civil_war_passive = {
+						any_controlled_state = {
+							limit = { is_owned_by = event_target:planeptune_civil_war_loser }
+							transfer_state = PREV
+						}
+					}
+				}
+				event_target:planeptune_civil_war_winner = { ### The winneer annexes the loser
+					annex_country = {
+						target = event_target:planeptune_civil_war_loser
+						transfer_troops = no
+					}
+				}
+				clr_global_flag = planeptune_threeway
+            }
+			
+			
+			
+			
+It gives the following errors:
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLB' in common/on_actions/capitulation_on_actions.txt line : 57
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLB' in common/on_actions/capitulation_on_actions.txt line : 58
+[00:24:41][trigger.cpp:480]: Error: "Unknown trigger-type: PLB, near line: 57
+Unknown trigger-type: PLB, near line: 58" in file: "common/on_actions/capitulation_on_actions.txt" near line: 59
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLX' in common/on_actions/capitulation_on_actions.txt line : 61
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLX' in common/on_actions/capitulation_on_actions.txt line : 62
+[00:24:41][trigger.cpp:480]: Error: "Unknown trigger-type: PLX, near line: 61
+Unknown trigger-type: PLX, near line: 62" in file: "common/on_actions/capitulation_on_actions.txt" near line: 63
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLA' in common/on_actions/capitulation_on_actions.txt line : 72
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLA' in common/on_actions/capitulation_on_actions.txt line : 73
+[00:24:41][trigger.cpp:480]: Error: "Unknown trigger-type: PLA, near line: 72
+Unknown trigger-type: PLA, near line: 73" in file: "common/on_actions/capitulation_on_actions.txt" near line: 74
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLX' in common/on_actions/capitulation_on_actions.txt line : 76
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLX' in common/on_actions/capitulation_on_actions.txt line : 77
+[00:24:41][trigger.cpp:480]: Error: "Unknown trigger-type: PLX, near line: 76
+Unknown trigger-type: PLX, near line: 77" in file: "common/on_actions/capitulation_on_actions.txt" near line: 78
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLB' in common/on_actions/capitulation_on_actions.txt line : 87
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLB' in common/on_actions/capitulation_on_actions.txt line : 88
+[00:24:41][trigger.cpp:480]: Error: "Unknown trigger-type: PLB, near line: 87
+Unknown trigger-type: PLB, near line: 88" in file: "common/on_actions/capitulation_on_actions.txt" near line: 89
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLA' in common/on_actions/capitulation_on_actions.txt line : 91
+[00:24:41][trigger.cpp:620]: Invalid trigger 'PLA' in common/on_actions/capitulation_on_actions.txt line : 92
+[00:24:41][trigger.cpp:480]: Error: "Unknown trigger-type: PLA, near line: 91
+Unknown trigger-type: PLA, near line: 92" in file: "common/on_actions/capitulation_on_actions.txt" near line: 93
+[00:24:41][effect.cpp:391]: Invalid effect 'any_controlled_state' in common/on_actions/capitulation_on_actions.txt line : 102
+[00:24:41][effect.cpp:292]: Error: "Unknown effect-type: any_controlled_state, near line: 102
+" in file: "common/on_actions/capitulation_on_actions.txt" near line: 106

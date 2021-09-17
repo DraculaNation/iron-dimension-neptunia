@@ -12,6 +12,11 @@ set_popularities = {
 	anarchy = 100
 }
 
+add_ideas = {
+		GGR_monster_army_idea
+		closed_economy
+}
+
 set_stability = 0.5
 
 ## Leaders

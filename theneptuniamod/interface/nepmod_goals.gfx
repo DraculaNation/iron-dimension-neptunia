@@ -1,6 +1,6 @@
 spriteTypes = {	
 
-	#### Generic continuous goal icons
+	#### PLANEPTUNE ####
 
 	SpriteType = { 
 		name = "GFX_goal_land_of_purple_progress"
@@ -24,4 +24,994 @@ spriteTypes = {
 			animationtexturescale = { x = 1.0 y = 1.0 } 
 		}
 	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_role_oracle"
+		texturefile = "gfx/interface/goals/PLA_role_oracle.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_role_oracle_shine"
+		texturefile = "gfx/interface/goals/PLA_role_oracle.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_role_oracle.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_bribery_in_cookies"
+		texturefile = "gfx/interface/goals/PLA_bribery_in_cookies.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_bribery_in_cookies_shine"
+		texturefile = "gfx/interface/goals/PLA_bribery_in_cookies.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_bribery_in_cookies.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_execute_a_census"
+		texturefile = "gfx/interface/goals/PLA_execute_a_census.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_execute_a_census_shine"
+		texturefile = "gfx/interface/goals/PLA_execute_a_census.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_execute_a_census.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_nepgears_methods"
+		texturefile = "gfx/interface/goals/PLA_nepgears_methods.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_nepgears_methods_shine"
+		texturefile = "gfx/interface/goals/PLA_nepgears_methods.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_nepgears_methods.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_public_self_reliance"
+		texturefile = "gfx/interface/goals/PLA_public_self_reliance.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_public_self_reliance_shine"
+		texturefile = "gfx/interface/goals/PLA_public_self_reliance.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_public_self_reliance.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_waking_up_the_public"
+		texturefile = "gfx/interface/goals/PLA_waking_up_the_public.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_waking_up_the_public_shine"
+		texturefile = "gfx/interface/goals/PLA_waking_up_the_public.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_waking_up_the_public.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_education_reform"
+		texturefile = "gfx/interface/goals/PLA_education_reform.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_education_reform_shine"
+		texturefile = "gfx/interface/goals/PLA_education_reform.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_education_reform.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_emergency_army_drills"
+		texturefile = "gfx/interface/goals/PLA_emergency_army_drills.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_emergency_army_drills_shine"
+		texturefile = "gfx/interface/goals/PLA_emergency_army_drills.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_emergency_army_drills.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_finding_the_culprit"
+		texturefile = "gfx/interface/goals/PLA_finding_the_culprit.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_finding_the_culprit_shine"
+		texturefile = "gfx/interface/goals/PLA_finding_the_culprit.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_finding_the_culprit.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_introduce_advertisements"
+		texturefile = "gfx/interface/goals/PLA_introduce_advertisements.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_introduce_advertisements_shine"
+		texturefile = "gfx/interface/goals/PLA_introduce_advertisements.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_introduce_advertisements.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_obligatory_monolog_scene"
+		texturefile = "gfx/interface/goals/PLA_obligatory_monolog_scene.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_obligatory_monolog_scene_shine"
+		texturefile = "gfx/interface/goals/PLA_obligatory_monolog_scene.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_obligatory_monolog_scene.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_the_army_on_a_vacation"
+		texturefile = "gfx/interface/goals/PLA_the_army_on_a_vacation.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_the_army_on_a_vacation_shine"
+		texturefile = "gfx/interface/goals/PLA_the_army_on_a_vacation.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_the_army_on_a_vacation.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_planning_the_campaign"
+		texturefile = "gfx/interface/goals/PLA_planning_the_campaign.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_planning_the_campaign_shine"
+		texturefile = "gfx/interface/goals/PLA_planning_the_campaign.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_planning_the_campaign.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_a_heartfelt_promise"
+		texturefile = "gfx/interface/goals/PLA_a_heartfelt_promise.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_a_heartfelt_promise_shine"
+		texturefile = "gfx/interface/goals/PLA_a_heartfelt_promise.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_a_heartfelt_promise.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_the_haneda_speech"
+		texturefile = "gfx/interface/goals/PLA_the_haneda_speech.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_the_haneda_speech_shine"
+		texturefile = "gfx/interface/goals/PLA_the_haneda_speech.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_the_haneda_speech.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_ban_contraceptives"
+		texturefile = "gfx/interface/goals/PLA_ban_contraceptives.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_ban_contraceptives_shine"
+		texturefile = "gfx/interface/goals/PLA_ban_contraceptives.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_ban_contraceptives.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_parental_leave_for_men"
+		texturefile = "gfx/interface/goals/PLA_parental_leave_for_men.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_parental_leave_for_men_shine"
+		texturefile = "gfx/interface/goals/PLA_parental_leave_for_men.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_parental_leave_for_men.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_improve_healthcare"
+		texturefile = "gfx/interface/goals/PLA_improve_healthcare.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_improve_healthcare_shine"
+		texturefile = "gfx/interface/goals/PLA_improve_healthcare.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_improve_healthcare.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_panty_vending_machines"
+		texturefile = "gfx/interface/goals/PLA_panty_vending_machines.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_panty_vending_machines_shine"
+		texturefile = "gfx/interface/goals/PLA_panty_vending_machines.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_panty_vending_machines.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_increase_welfare_budget"
+		texturefile = "gfx/interface/goals/PLA_increase_welfare_budget.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_increase_welfare_budget_shine"
+		texturefile = "gfx/interface/goals/PLA_increase_welfare_budget.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_increase_welfare_budget.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_state_mandated_sweetheart"
+		texturefile = "gfx/interface/goals/PLA_state_mandated_sweetheart.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_state_mandated_sweetheart_shine"
+		texturefile = "gfx/interface/goals/PLA_state_mandated_sweetheart.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_state_mandated_sweetheart.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_pregnancy_benefits"
+		texturefile = "gfx/interface/goals/PLA_pregnancy_benefits.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_pregnancy_benefitst_shine"
+		texturefile = "gfx/interface/goals/PLA_pregnancy_benefits.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_pregnancy_benefits.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_ban_lewd_anime"
+		texturefile = "gfx/interface/goals/PLA_ban_lewd_anime.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_ban_lewd_anime_shine"
+		texturefile = "gfx/interface/goals/PLA_ban_lewd_anime.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_ban_lewd_anime.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_subsidize_orphanages"
+		texturefile = "gfx/interface/goals/PLA_subsidize_orphanages.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_subsidize_orphanages_shine"
+		texturefile = "gfx/interface/goals/PLA_subsidize_orphanages.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_subsidize_orphanages.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_media_review_commission"
+		texturefile = "gfx/interface/goals/PLA_media_review_commission.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_media_review_commission_shine"
+		texturefile = "gfx/interface/goals/PLA_media_review_commission.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_media_review_commission.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_education_reform_no_pacifier"
+		texturefile = "gfx/interface/goals/PLA_education_reform_no_pacifier.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_education_reform_no_pacifier_shine"
+		texturefile = "gfx/interface/goals/PLA_education_reform_no_pacifier.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_education_reform_no_pacifier.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_subsidize_huge_families"
+		texturefile = "gfx/interface/goals/PLA_subsidize_huge_families.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_subsidize_huge_families_shine"
+		texturefile = "gfx/interface/goals/PLA_subsidize_huge_families.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_subsidize_huge_families.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_legalize_harems"
+		texturefile = "gfx/interface/goals/PLA_legalize_harems.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_legalize_harems_shine"
+		texturefile = "gfx/interface/goals/PLA_legalize_harems.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_legalize_harems.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_mending_the_lack_of_manpower"
+		texturefile = "gfx/interface/goals/PLA_mending_the_lack_of_manpower.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_mending_the_lack_of_manpower_shine"
+		texturefile = "gfx/interface/goals/PLA_mending_the_lack_of_manpower.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_mending_the_lack_of_manpower.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_pay_lip_service"
+		texturefile = "gfx/interface/goals/PLA_pay_lip_service.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_pay_lip_service_shine"
+		texturefile = "gfx/interface/goals/PLA_pay_lip_service.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_pay_lip_service.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_sway_the_people"
+		texturefile = "gfx/interface/goals/PLA_sway_the_people.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_sway_the_people_shine"
+		texturefile = "gfx/interface/goals/PLA_sway_the_people.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_sway_the_people.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_we_need_you_histy"
+		texturefile = "gfx/interface/goals/PLA_we_need_you_histy.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_we_need_you_histy_shine"
+		texturefile = "gfx/interface/goals/PLA_we_need_you_histy.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_we_need_you_histy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_gamindustri_graveyard_talks"
+		texturefile = "gfx/interface/goals/PLA_gamindustri_graveyard_talks.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_gamindustri_graveyard_talks_shine"
+		texturefile = "gfx/interface/goals/PLA_gamindustri_graveyard_talks.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_gamindustri_graveyard_talks.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_direct_flattery"
+		texturefile = "gfx/interface/goals/PLA_direct_flattery.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_direct_flattery_shine"
+		texturefile = "gfx/interface/goals/PLA_direct_flattery.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_direct_flattery.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_monster_fortifications"
+		texturefile = "gfx/interface/goals/PLA_monster_fortifications.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_monster_fortifications_shine"
+		texturefile = "gfx/interface/goals/PLA_monster_fortifications.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_monster_fortifications.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_a_gift_for_histy"
+		texturefile = "gfx/interface/goals/PLA_a_gift_for_histy.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_a_gift_for_histy_shine"
+		texturefile = "gfx/interface/goals/PLA_a_gift_for_histy.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_a_gift_for_histy.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_direct_action"
+		texturefile = "gfx/interface/goals/PLA_direct_action.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_direct_action_shine"
+		texturefile = "gfx/interface/goals/PLA_direct_action.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_direct_action.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_no_more_lazy_nep"
+		texturefile = "gfx/interface/goals/PLA_no_more_lazy_nep.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_no_more_lazy_nep_shine"
+		texturefile = "gfx/interface/goals/PLA_no_more_lazy_nep.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_no_more_lazy_nep.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_get_a_grip"
+		texturefile = "gfx/interface/goals/PLA_get_a_grip.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_get_a_grip_shine"
+		texturefile = "gfx/interface/goals/PLA_get_a_grip.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_get_a_grip.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_stabilize_neptunes_image"
+		texturefile = "gfx/interface/goals/PLA_stabilize_neptunes_image.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_stabilize_neptunes_image_shine"
+		texturefile = "gfx/interface/goals/PLA_stabilize_neptunes_image.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_stabilize_neptunes_image.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_nep_easy_on_the_pudding"
+		texturefile = "gfx/interface/goals/PLA_nep_easy_on_the_pudding.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_nep_easy_on_the_pudding_shine"
+		texturefile = "gfx/interface/goals/PLA_nep_easy_on_the_pudding.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_nep_easy_on_the_pudding.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_develop_pudding_industry"
+		texturefile = "gfx/interface/goals/PLA_develop_pudding_industry.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_develop_pudding_industry_shine"
+		texturefile = "gfx/interface/goals/PLA_develop_pudding_industry.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_develop_pudding_industry.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
+	SpriteType = { 
+		name = "GFX_goal_PLA_the_nep_pudding"
+		texturefile = "gfx/interface/goals/PLA_the_nep_pudding.tga"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PLA_the_nep_pudding_shine"
+		texturefile = "gfx/interface/goals/PLA_the_nep_pudding.tga"
+				effectFile = "gfx/FX/buttonstate.lua"
+		animation = {
+			animationmaskfile = "gfx/interface/goals/PLA_the_nep_pudding.tga"
+			animationtexturefile = "gfx/interface/goals/shine_overlay.dds" 	# <- the animated file
+			animationrotation = -90.0		# -90 clockwise 90 counterclockwise(by default)
+			animationlooping = no			# yes or no ;)
+			animationtime = 0.75				# in seconds
+			animationdelay = 0			# in seconds
+			animationblendmode = "add"       #add, multiply, overlay
+			animationtype = "scrolling"      #scrolling, rotating, pulsing
+			animationrotationoffset = { x = 0.0 y = 0.0 }
+			animationtexturescale = { x = 1.0 y = 1.0 } 
+		}
+	}
+	
 }

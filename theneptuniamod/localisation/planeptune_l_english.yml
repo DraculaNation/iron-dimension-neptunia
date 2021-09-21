@@ -104,7 +104,7 @@
  PLA_public_unrest_messed_up_completely_sl:0 "§RRiots have broken out! Planeptune is beyond salvation!§!" #>70 public unrest
  
  PLA_histoire_discontent_low_sl:0 "§GHistoire is currently satisfied.§!" #0-10 histoire discontent
- PLA_histoire_discontent_medium_sl:0 "§YPHistoire is irritated...§!" #11-20 histoire discontent
+ PLA_histoire_discontent_medium_sl:0 "§YHistoire is irritated...§!" #11-20 histoire discontent
  PLA_histoire_discontent_high_sl:0 "§RHistoire is disgruntled!§!" #21-30 histoire discontent
  PLA_histoire_discontent_really_high_sl:0 "§RHistoire is angry!!§!" #31-40 histoire discontent
  PLA_histoire_discontent_really_really_high_sl:0 "§RHistoire is reaching her breaking point!!!§!" #41-50 histoire discontent
@@ -125,6 +125,7 @@
  #Tooltips
  
  PLA_oh_shit_tt:0 "§ROh crud...§!"
+ PLA_collapse_imminent_tt:0 "§RIf not handled properly, our collapse will be imminent!§!"
  
  PLA_collapse_averted_tt:0 "The collapse will be averted... for now."
  PLA_histoire_discontent_stable_level_tt:0 "Histoire is not freaking out"
@@ -180,6 +181,7 @@
  PLA_no_more_lazy_nep_tt:0 "§PNeptune can make a deal with Histoire...§! §gor force her to keep working.§!"
  PLA_stabilize_neptunes_image_tt:0 "§PNeptune can try to win the hearts and minds of the people,§! §gno matter what it takes.§!"
  PLA_event_effect_tt:0 "From the event:"
+ PLA_effects_depend_on_choice_tt:0 "§YThe effect of this event depends on your previous choice.§!"
  
  PLA_increased_declare_war_cost_tt:0 "§PThe cost to declare war on Gamindustri Graveyard will be higher for Planeptune!§!"
  

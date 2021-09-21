@@ -548,7 +548,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_neptune_gets_depressed
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_oh_no
     relative_position_id = PLA_ratify_the_friendship_treaty
 	x = 0
     y = 1
@@ -575,7 +575,7 @@ shared_focus = {
     
     completion_reward = {
 		country_event = {
-			id = planeptune.8
+			id = planeptune.8 #Nep gets a tantrum and lashes out at Histy
 		}
 		hidden_effect = { set_country_flag = PLA_dealing_with_unrest_start }
     }
@@ -583,7 +583,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_initial_consequences_angry_people
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_why_die_for_planeptune
     relative_position_id = PLA_neptune_gets_depressed
 	x = 0
     y = 1
@@ -613,38 +613,38 @@ shared_focus = {
     }
 }
 
-shared_focus = {
-    id = PLA_depression_nap
-    icon = GFX_goal_generic_military_deal
-    relative_position_id = PLA_initial_consequences_angry_people
-	x = 0
-    y = 1
-    cost = 2
-	
-	prerequisite = {
-        focus = PLA_initial_consequences_angry_people
-    }
-    
-    ai_will_do = {
-        factor = 1
-    }
-	
-	allow_branch = {
-	}
-	
-    available = {
-    }
-	
-    bypass = {
-    }
-    
-    completion_reward = {
-		hidden_effect = { activate_mission = PLA_ticking }
-		country_event = {
-			id = planeptune.10
-		}
-    }
-}
+#shared_focus = {
+#    id = PLA_depression_nap
+#    icon = GFX_goal_generic_military_deal
+#    relative_position_id = PLA_initial_consequences_angry_people
+#	x = 0
+#    y = 1
+#    cost = 2
+#	
+#	prerequisite = {
+#        focus = PLA_initial_consequences_angry_people
+#    }
+#    
+#    ai_will_do = {
+#        factor = 1
+#    }
+#	
+#	allow_branch = {
+#	}
+#	
+#   available = {
+#    }
+#	
+#    bypass = {
+#    }
+#    
+#    completion_reward = {
+#		hidden_effect = { activate_mission = PLA_ticking }
+#		country_event = {
+#			id = planeptune.10
+#		}
+#    }
+#}
 
 shared_focus = {
     id = PLA_remilitarization_of_erethisan
@@ -2225,7 +2225,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_appropriate_eggplant_farms
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_appropriate_eggplant_farms
     relative_position_id = PLA_nep_easy_on_the_pudding
 	x = -1
     y = 2
@@ -2258,7 +2258,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_emergency_excavations_in_virtua
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_virtua_emergency_excavations
     relative_position_id = PLA_nep_easy_on_the_pudding
 	x = 1
     y = 2
@@ -2325,7 +2325,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_the_art_of_console_wars
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_the_art_of_console_wars
     relative_position_id = PLA_nep_easy_on_the_pudding
 	x = 3
     y = 2
@@ -2363,7 +2363,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_worker_refugees_from_lowee
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_worker_refugees_from_lowee
     relative_position_id = PLA_nep_easy_on_the_pudding
 	x = 5
     y = 2
@@ -2399,7 +2399,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_neptune_on_the_grind
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_neptune_on_the_grind
     relative_position_id = PLA_appropriate_eggplant_farms
 	x = 1
     y = 2
@@ -2425,14 +2425,17 @@ shared_focus = {
     }
     
     completion_reward = {
-		add_ideas = PLA_neptune_grind_idea
+		add_timed_idea = { 
+			idea = PLA_neptune_grind_idea
+			days = 280
+		}
 		#EVENT AND IDEA AND EFFECT
     }
 }
 
 shared_focus = {
     id = PLA_nepgear_on_the_grind
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_nepgear_on_the_grind
     relative_position_id = PLA_the_art_of_console_wars
 	x = 1
     y = 2
@@ -2458,14 +2461,17 @@ shared_focus = {
     }
     
     completion_reward = {
-		add_ideas = PLA_nepgear_grind_idea
+		add_timed_idea = { 
+			idea = PLA_nepgear_grind_idea
+			days = 280
+		}
 		#EVENT AND IDEA AND EFFECT
     }
 }
 
 shared_focus = {
     id = PLA_time_for_a_heart_to_heart
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_time_for_a_heart_to_heart
     relative_position_id = PLA_neptune_on_the_grind
 	x = 2
     y = 1
@@ -2487,7 +2493,46 @@ shared_focus = {
     }
     
     completion_reward = {
-		#EVENT AND IDEA AND EFFECT
+		if = {
+			limit = {
+				NOT = {
+					has_completed_focus = PLA_neptune_on_the_grind
+					has_completed_focus = PLA_nepgear_on_the_grind
+				}
+				custom_effect_tooltip = PLA_effects_depend_on_choice_tt
+			}
+		}
+		if = {
+			limit = {
+				has_completed_focus = PLA_neptune_on_the_grind
+			}
+			#EVENT
+			custom_effect_tooltip = PLA_event_effect_tt
+			effect_tooltip = {
+				add_political_power = 150
+				add_stability = 0.1
+				add_command_power = 25
+				add_manpower = 30000
+			}
+			#INSERT
+		}
+		if = {
+			limit = {
+				has_completed_focus = PLA_nepgear_on_the_grind
+			}
+			#EVENT
+			custom_effect_tooltip = PLA_event_effect_tt
+			effect_tooltip = {
+				add_political_power = 150
+				add_war_support = 0.1
+				army_experience = 20
+				add_tech_bonus = {
+					bonus = 0.5
+					uses = 1
+					category = electronics
+				}
+			}
+		}
     }
 }
 
@@ -2495,7 +2540,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_planeptunes_resurgence
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_planeptune_resurgence
     relative_position_id = PLA_no_more_lazy_nep
 	x = 0
     y = 1
@@ -2535,7 +2580,7 @@ shared_focus = {
 
 shared_focus = {
     id = PLA_we_have_failed
-    icon = GFX_goal_generic_military_deal
+    icon = GFX_goal_PLA_we_have_failed
     relative_position_id = PLA_stabilize_neptunes_image
 	x = 0
     y = 1

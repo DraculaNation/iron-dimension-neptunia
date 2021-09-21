@@ -9,7 +9,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_technological_powerhouse
+			picture = GGR_monster_army
 			
 			modifier = {
 				research_speed_factor = -1.00
@@ -28,7 +28,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_technological_powerhouse
+			picture = GGR_monster_army
 			
 			modifier = {
 				conscription = -0.02

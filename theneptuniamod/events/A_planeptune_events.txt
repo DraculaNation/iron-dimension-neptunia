@@ -477,26 +477,12 @@ country_event = { #Collapse Start - Histoire
 	title = planeptune.14.t
 	desc = planeptune.14.d
 	picture = GFX_report_event_physics_lab_01
-	mean_time_to_happen = { days = 1 }
-	fire_only_once = yes
-	
-	trigger = {
-		check_variable = {
-			PLA_histoire_discontent_percent > 49
-		}
-		has_idea = PLA_histoire_discontent_idea
-		NOT = { has_active_mission = PLA_histoire_collapse_imminent }
-	}
-	
-	immediate = {
-		PLA_increase_histoire_discontent_big = yes
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = planeptune.14.a #Oh no...
 		ai_chance = { factor = 100 }
 		custom_effect_tooltip = PLA_histoire_discontent_increase_big_tt
-		activate_mission = PLA_histoire_collapse_imminent
 	}
 }
 
@@ -505,26 +491,12 @@ country_event = { #Collapse Start - Public
 	title = planeptune.15.t
 	desc = planeptune.15.d
 	picture = GFX_report_event_physics_lab_01
-	mean_time_to_happen = { days = 1 }
-	fire_only_once = yes
-	
-	trigger = {
-		check_variable = {
-			PLA_public_unrest_percent > 49
-		}
-		has_idea = PLA_public_unrest_idea
-		NOT = { has_active_mission = PLA_public_collapse_imminent }
-	}
-	
-	immediate = {
-		PLA_increase_public_unrest_big = yes
-	}
+	is_triggered_only = yes
 	
 	option = {
 		name = planeptune.15.a #Oh no...
 		ai_chance = { factor = 100 }
 		custom_effect_tooltip = PLA_public_unrest_increase_big_tt
-		activate_mission = PLA_histoire_collapse_imminent
 	}
 }
 

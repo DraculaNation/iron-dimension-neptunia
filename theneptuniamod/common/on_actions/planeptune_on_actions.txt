@@ -1,0 +1,37 @@
+on_actions = { #Gamindustri Graveyard
+	on_daily_PLA = {
+        effect = {
+			
+			### HISTOIRE COLLAPSE START ###
+			
+            if = {
+                limit = {
+					check_variable = { PLA_histoire_discontent_percent > 49	}
+						has_idea = PLA_histoire_discontent_idea
+						NOT = { has_active_mission = PLA_histoire_collapse_imminent }
+                } 
+				PLA_increase_histoire_discontent_big = yes
+				activate_mission = PLA_histoire_collapse_imminent
+				country_event = {
+					id = planeptune.14
+				}
+			}
+			
+			### PUBLIC COLLAPSE START ###
+			
+            if = {
+                limit = {
+					check_variable = { PLA_public_unrest_percent > 49 }
+						has_idea = PLA_public_unrest_idea
+						NOT = { has_active_mission = PLA_public_collapse_imminent }
+                } 
+				PLA_increase_public_unrest_big = yes
+				activate_mission = PLA_public_collapse_imminent
+				country_event = {
+					id = planeptune.15
+				}
+			}
+			
+        }
+    }
+}

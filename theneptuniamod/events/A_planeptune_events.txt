@@ -352,6 +352,7 @@ country_event = { #Neptune realizes that stuff is fucked up
 	option = {
 		name = planeptune.8.a
 		ai_chance = { factor = 100 }
+		PLA_increase_histoire_discontent_medium = yes
 	}
 }
 
@@ -370,7 +371,7 @@ country_event = { #People are angry and don't want to enlist
 	}
 }
 
-country_event = { #Neptune's depression nap
+country_event = { #Neptune's depression nap - UNUSED EVENT; NO TEXT
 	id = planeptune.10
 	title = planeptune.10.t
 	desc = planeptune.10.d
@@ -397,8 +398,8 @@ country_event = { #Nep remilitarizes Erethisan
 		name = planeptune.11.a #Sudden remilitarization
 		ai_chance = { factor = 100 }
 		add_threat = 5
-		PLA_increase_public_unrest_big = yes
-		PLA_increase_histoire_discontent_small = yes
+		PLA_increase_public_unrest_medium = yes
+		PLA_increase_histoire_discontent_medium = yes
 		7 = { set_demilitarized_zone = no }
 		18 = { set_demilitarized_zone = no }
 		hidden_effect = {
@@ -410,8 +411,9 @@ country_event = { #Nep remilitarizes Erethisan
 	option = {
 		name = planeptune.11.b #Gradual remilitarization - fake monster attack
 		ai_chance = { factor = 100 }
-		PLA_increase_public_unrest_medium = yes
-		PLA_increase_histoire_discontent_medium = yes
+		PLA_increase_public_unrest_small = yes
+		PLA_increase_histoire_discontent_big = yes
+		custom_effect_tooltip = PLA_erethisan_remilitarized_soon_tt
 		hidden_effect = {
 			country_event = {
 				id = planeptune.13 #Remilitarization finished
@@ -469,8 +471,9 @@ country_event = { #Remilitarization Finished
 	}
 }
 
-#############
-## PLANEPTUNE COLLAPSE
+####################################
+##       PLANEPTUNE COLLAPSE      ##
+####################################
 
 country_event = { #Collapse Start - Histoire
 	id = planeptune.14
@@ -580,6 +583,7 @@ country_event = { #Neps kicked out
 				days = 15
 			}
 		}
+		set_cosmetic_tag = PLA_maternal_autocracy
 	}
 }
 
@@ -684,6 +688,7 @@ country_event = { #Bye bye Neps! Love, B-Sha
 		add_political_power = -150
 		add_stability = -0.1
 		add_war_support = -0.20
+		set_cosmetic_tag = PLA_military_junta
 		hidden_effect = {
 			country_event = {
 				id = planeptune.23
@@ -985,7 +990,11 @@ country_event = { #Monsters take control
 			transfer_state = 36
 			transfer_state = 11
 			transfer_state = 8
-		}	
+		}
+		if = {
+			limit = { owns_state = 44 }
+			GGR = { transfer_state = 44 }
+		}
 		every_state = { 
 			limit = { is_core_of = PLA }
 			add_core_of = PGA
@@ -994,12 +1003,6 @@ country_event = { #Monsters take control
 			country_event = {
 				id = planeptune.33
 				days = 7
-			}
-			PGA = {
-				country_event = {
-					id = planeptune.36
-					days = 31
-				}
 			}
 		}
 	}
@@ -1094,6 +1097,10 @@ country_event = { #Monsters attack!
 		}
 	}
 }
+
+####################################
+##  GAMINDUSTRI GRAVEYARD TALKS   ##
+####################################
 
 country_event = { #Gamindustri Graveyard talks - Lastation
 	id = planeptune.36
@@ -1227,5 +1234,202 @@ country_event = { #Gamindustri Graveyard talks - Leanbox's response
 			set_country_flag = PLA_leanbox_informed
 			set_country_flag = PLA_leanbox_diplomatic_protest
 		}
+	}
+}
+
+####################################
+##        FOCUS TREE EVENTS       ##
+####################################
+
+country_event = { #Obligatory Monologue Scene
+	id = planeptune.41
+	title = planeptune.41.t
+	desc = planeptune.41.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.41.a
+		ai_chance = { factor = 100 }
+		add_political_power = 50
+		add_stability = 0.05
+	}
+}
+
+country_event = { #The Army on a Vacation
+	id = planeptune.42
+	title = planeptune.42.t
+	desc = planeptune.42.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.42.a
+		ai_chance = { factor = 100 }
+		add_war_support = 0.075
+		create_corps_commander = {
+			name = "Falcom"
+			picture = "Portrait_Planeptune_Falcom.dds"
+			traits = { trait_reckless }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+		}
+		PLA_decrease_public_unrest_small = yes
+	}
+}
+
+country_event = { #Emergency Army Drills
+	id = planeptune.43
+	title = planeptune.43.t
+	desc = planeptune.43.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.43.a
+		ai_chance = { factor = 100 }
+		add_stability = 0.075
+		army_experience = 30
+		PLA_decrease_histoire_discontent_small = yes
+	}
+}
+
+country_event = { #nep... easy on the pudding
+	id = planeptune.44
+	title = planeptune.44.t
+	desc = planeptune.44.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.44.a
+		ai_chance = { factor = 100 }
+		PLA_decrease_histoire_discontent_medium = yes
+		add_political_power = 50
+		add_stability = 0.05
+	}
+}
+
+country_event = { #Develop Pudding Industry
+	id = planeptune.45
+	title = planeptune.45.t
+	desc = planeptune.45.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.45.a
+		ai_chance = { factor = 100 }
+		PLA_decrease_histoire_discontent_small = yes
+		PLA_decrease_public_unrest_small = yes
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { #The Nep Pudding
+	id = planeptune.46
+	title = planeptune.46.t
+	desc = planeptune.46.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.46.a
+		ai_chance = { factor = 100 }
+		PLA_decrease_public_unrest_medium = yes
+		random_owned_state = {
+			limit = {
+				free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+				}
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+				type = industrial_complex
+				level = 1
+				instant_build = yes
+			}
+		}
+	}
+}
+
+country_event = { #Heart to Heart - Neptune
+	id = planeptune.47
+	title = planeptune.47.t
+	desc = planeptune.47.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.47.a
+		ai_chance = { factor = 100 }
+		add_political_power = 150
+		add_stability = 0.15
+		army_experience = 25
+		add_manpower = 30000
+	}
+}
+
+country_event = { #Heart to Heart - Nepgear
+	id = planeptune.48
+	title = planeptune.48.t
+	desc = planeptune.48.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.48.a
+		ai_chance = { factor = 100 }
+		add_political_power = 150
+		add_war_support = 0.1
+		add_command_power = 30
+		add_tech_bonus = {
+			bonus = 0.5
+			uses = 1
+			category = electronics
+		}
+	}
+}
+
+country_event = { #Neptune pays Lip Service - 'All bark, no bite'
+	id = planeptune.49
+	title = planeptune.49.t
+	desc = planeptune.49.d
+	picture = GFX_report_event_physics_lab_01
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.49.a
+		ai_chance = { factor = 100 }
+		PLA_decrease_histoire_discontent_small = yes
+		PLA_decrease_public_unrest_small = yes
 	}
 }

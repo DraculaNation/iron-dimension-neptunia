@@ -22,6 +22,16 @@ spriteTypes = {
 		textureFile = "gfx/interface/ideas/PLA_histoire_discontent_idea.tga"
 	}
 	
+	spriteType = {
+		name = "GFX_idea_PLA_neptune_grind_idea"
+		textureFile = "gfx/interface/ideas/PLA_neptune_grind_idea.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_PLA_nepgear_grind_idea"
+		textureFile = "gfx/interface/ideas/PLA_nepgear_grind_idea.tga"
+	}
+	
 	### LOWEE ###
 	
 	spriteType = {
@@ -76,6 +86,28 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_LEA_infiltrated_cabinet"
 		textureFile = "gfx/interface/ideas/LEA_infiltrated_cabinet.tga"
+	}
+	
+	### GAMINDUSTRI GRAVEYARD ###
+	
+	spriteType = {
+		name = "GFX_idea_GGR_monster_army"
+		textureFile = "gfx/interface/ideas/GGR_monster_army.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GGR_joint_occupation_zone"
+		textureFile = "gfx/interface/ideas/GGR_joint_occupation_zone.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GGR_lowee_trade"
+		textureFile = "gfx/interface/ideas/GGR_lowee_trade.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_GGR_leanbox_trade"
+		textureFile = "gfx/interface/ideas/GGR_leanbox_trade.tga"
 	}
 	
 	### MINISTERS ###

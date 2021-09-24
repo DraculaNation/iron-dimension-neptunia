@@ -815,6 +815,9 @@ shared_focus = {
     
     completion_reward = {
 		#Event
+		country_event = {
+			id = planeptune.41
+		}
 		custom_effect_tooltip = PLA_event_effect_tt
 		effect_tooltip = {
 			add_political_power = 50
@@ -1574,10 +1577,14 @@ shared_focus = {
     }
     
     completion_reward = {
-		#In the event:
-		#PLA_decrease_public_unrest_small = yes
-		#PLA_decrease_histoire_discontent_small = yes
-		#Event?
+		country_event = {
+			id = planeptune.49
+		}
+		custom_effect_tooltip = PLA_event_effect_tt
+		effect_tooltip = {
+			PLA_public_unrest_decrease_small_tt
+			PLA_histoire_discontent_decrease_small_tt
+		}
     }
 }
 
@@ -2023,7 +2030,9 @@ shared_focus = {
     }
     
     completion_reward = {
-		###EVENT######################################################
+		country_event = {
+			id = planeptune.42
+		}
 		custom_effect_tooltip = PLA_event_effect_tt
 		effect_tooltip = {
 			add_war_support = 0.075
@@ -2069,7 +2078,9 @@ shared_focus = {
     }
     
     completion_reward = {
-		#Event
+		country_event = {
+			id = planeptune.43
+		}
 		custom_effect_tooltip = PLA_event_effect_tt
 		effect_tooltip = {
 			add_stability = 0.075
@@ -2108,7 +2119,9 @@ shared_focus = {
     }
     
     completion_reward = {
-		#Event
+		country_event = {
+			id = planeptune.44
+		}
 		custom_effect_tooltip = PLA_event_effect_tt
 		custom_effect_tooltip = PLA_histoire_discontent_decrease_medium_tt
 		effect_tooltip = {
@@ -2147,7 +2160,9 @@ shared_focus = {
     }
     
     completion_reward = {
-		#Event
+		country_event = {
+			id = planeptune.45
+		}
 		custom_effect_tooltip = PLA_event_effect_tt
 		custom_effect_tooltip = PLA_histoire_discontent_decrease_small_tt
 		custom_effect_tooltip = PLA_public_unrest_decrease_small_tt
@@ -2200,7 +2215,9 @@ shared_focus = {
     }
     
     completion_reward = {
-		#Event
+		country_event = {
+			id = planeptune.46
+		}
 		custom_effect_tooltip = PLA_event_effect_tt
 		custom_effect_tooltip = PLA_public_unrest_decrease_medium_tt
 		effect_tooltip = {
@@ -2499,19 +2516,21 @@ shared_focus = {
 					has_completed_focus = PLA_neptune_on_the_grind
 					has_completed_focus = PLA_nepgear_on_the_grind
 				}
-				custom_effect_tooltip = PLA_effects_depend_on_choice_tt
 			}
+			custom_effect_tooltip = PLA_effects_depend_on_choice_tt
 		}
 		if = {
 			limit = {
 				has_completed_focus = PLA_neptune_on_the_grind
 			}
-			#EVENT
+			country_event = {
+				id = planeptune.47
+			}
 			custom_effect_tooltip = PLA_event_effect_tt
 			effect_tooltip = {
 				add_political_power = 150
-				add_stability = 0.1
-				add_command_power = 25
+				add_stability = 0.15
+				army_experience = 25
 				add_manpower = 30000
 			}
 			#INSERT
@@ -2520,12 +2539,14 @@ shared_focus = {
 			limit = {
 				has_completed_focus = PLA_nepgear_on_the_grind
 			}
-			#EVENT
+			country_event = {
+				id = planeptune.48
+			}
 			custom_effect_tooltip = PLA_event_effect_tt
 			effect_tooltip = {
 				add_political_power = 150
 				add_war_support = 0.1
-				army_experience = 20
+				add_command_power = 30
 				add_tech_bonus = {
 					bonus = 0.5
 					uses = 1

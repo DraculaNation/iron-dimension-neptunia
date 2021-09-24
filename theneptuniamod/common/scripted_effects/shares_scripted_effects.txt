@@ -1,0 +1,26 @@
+#CLAMP SHARES
+clamp_shares_effect = {
+
+	clamp_variable = {
+		var = PLA.shares_factor
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = LAS.shares_factor
+		min = 0
+		max = 100
+	}
+	clamp_variable = {
+		var = LEA.shares_factor
+		min = 0
+		max = 100 
+	}
+		clamp_variable = {
+		var = LOW.shares_factor
+		min = 0 
+		max = 100
+	}
+	
+}
+

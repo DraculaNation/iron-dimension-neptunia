@@ -4,49 +4,49 @@
  anarchy_noun: "Anarchy"
  anarchy_desc:0 "Anarchy"
  anarchy_subtype:0 "Anarchy"
- anarchy_subtype_desc:0 "Some nations have no rulers in Gamindustri."
+ anarchy_subtype_desc:0 "Gamindustri is a small place. However, that does not mean that it lacks wilderness - lawless areas where monsters roam free. For Gamindustri, Anarchy is less of a term denoting a political ideology, and more of a term describing the rough nature of some treacherous places. Places where you’re not saved by a nation’s law - only by the rules of nature. Places where you must show raw strength to survive. Places where monsters prowl freely and can attack at any time. Either unexplored areas or abandoned settlements, anarchy is the purest form of nature - and its darkest side."
  
  kleptocracy:0 "Kleptocracy"
  kleptocracy_noun: "Kleptocracy"
  kleptocracy_desc:0 "Kleptocrat"
  kleptocracy_subtype:0 "Kleptocracy"
- kleptocracy_subtype_desc:0 "Kleptocracy is a government where wealth is concentrated to a single person or a group. Oftentimes, this group is the ASIC - Arfoire Syndicate of International Crime."
+ kleptocracy_subtype_desc:0 "Even with the valiant efforts of the goddesses, Gamindustri is not free of thieves and criminals. Either hiding in the dodgy suburbs of a ghetto district or operating in a secret lair in the wild; participating in an electronics black market or distributing pirated software; criminals come in all varieties and flavors. Sometimes, these criminals can take control of an area - their rule known as a kleptocracy. In a kleptocracy, wealth is usually taken from normal residents and redistributed to the criminal organization or its leader. Most commonly, kleptocrats challenge the old order - mostly fighting against the CPUs."
  
  corporatocracy:0 "Corporatocracy"
  corporatocracy_noun:0 "Corporatocracy"
  corporatocracy_desc:0 "Corporatocrat"
  corporatocracy_subtype:0 "Corporatocracy"
- corporatocracy_subtype_desc:0 "Corporatocracy is a system of government where a corporation, or multiple corporations, are placed at a nation's helm. Sometimes they're unofficial rulers, influencing a nation's government from the shadows, while at other times they're the governing body of their own nation."
+ corporatocracy_subtype_desc:0 "Money makes the world go round. Corporations know that and might sometimes impose their rule on a specific territory. The rule of corporations over a piece of land is called a corporatocracy. In a way, corporate rule can be very pragmatic - after all, that is where most of the wealth is stashed. Thus, corporations use their money and influence to execute their rule over people and keep them in place. Sometimes they may use paychecks and salaries as an incentive to work; other times they own slaves in all but name. Despite their similarities, corporatocracies come in lots of different flavors."
  
  maternal_autocracy:0 "Maternal Autocrat"
  maternal_autocracy_noun: "Autocracy"
  maternal_autocracy_desc:0 "Autocrat"
  maternal_autocracy_subtype:0 "Maternal Autocrat"
- maternal_autocracy_subtype_desc:0 "Sometimes a nation doesn't have to be ruled by a CPU or someone affiliated with ASIC. Some governments are ruled by an autocratic ruler with a cult of personality around them."
+ maternal_autocracy_subtype_desc:0 "Often, a state with a strong, authoritarian leader is needed to take care of the people in a particularly harsh time. Maternal Autocracies are exactly the type of government to impose authoritarian measures on their citizens in the name of their wellbeing - whether they have the citizens’ genuine interest in mind; or to hide more selfish reasons. Usually, Maternal Autocracies are led by one motherly figure with only a few checks to her power. In addition, Maternal Autocracies may use a variety of economic systems - whether it’s capitalism, corporatism or something else."
  
  military_junta:0 "Military Junta"
  military_junta_noun: "Junta"
  military_junta_desc:0 "Military"
  military_junta_subtype:0 "Military Junta"
- military_junta_subtype_desc:0 "Each of the CPUs have a former rival that they entrust military matters to, with all of them being members of the Gold Third. These rivals are usually friendly towards their CPUs, but sometimes a rift might be caused between the military and its CPU. Members of the Gold Third are usually very competent rulers."
+ military_junta_subtype_desc:0 "Left foot, right foot! Continue marching for your motherland and for the Gold Third! As implied, Military Juntas are governments that are usually run by a nation’s military that decided to rebel or take charge for one reason or another. In most situations, the leaders are members of Gold Third, a group that can harness the power of people’s faith similar to the CPUs. In the past, members of the Gold Third worked against the goddesses, each for their own goals. Over time, they switched sides and started helping the goddesses. What might happen in the future? We will see."
  
  alternate_cpu_rule:0 "Alternate CPU Rule"
  alternate_cpu_rule_noun:0 "Alternate CPU Rule"
  alternate_cpu_rule_desc:0 "Alternate CPU Rule"
  alternate_cpu_rule_subtype:0 "Alternate CPU Rule"
- alternate_cpu_rule_subtype_desc:0 "CPU rule is a type of administration with a Console Patron Unit as its central figure. CPUs are dependent on their people's faith. Oftentimes, CPUs can enter an improved form called the HDD form, which comes with increased combat abilities. Most CPUs have ruled over their nations for decades, entrenching their people's faith."
+ alternate_cpu_rule_subtype_desc:0 "Not every CPU is suited for their role, for one reason or another. Be it their incompetence, their wish to retire, or if they shockingly get assassinated or die otherwise - their CPU candidates are always ready to take the helm! As CPUs change incredibly rarely, having a different CPU is a radical change in people’s lives. Therefore, if a CPU candidate becomes a full-fledged CPU, it will shake the status quo that was in place for decades. Even though it is something new, Alternate CPU Rule does not present a change as great as the other ideologies do, but the change is still tangible."
  
  cpu_rule:0 "CPU Rule"
  cpu_rule_noun:0 "CPU Rule"
  cpu_rule_desc:0 "CPU Rule"
  cpu_rule_subtype:0 "CPU Rule"
- cpu_rule_subtype_desc:0 "CPU rule is a type of administration with a Console Patron Unit as its central figure. CPUs are dependent on their people's faith. Oftentimes, CPUs can enter an improved form called the HDD form, which comes with increased combat abilities. Most CPUs have ruled over their nations for decades, entrenching their people's faith."
+ cpu_rule_subtype_desc:0 "Each of the four nations are, or are supposed to be, ruled by CPUs - goddesses that take in their people’s faith and convert it into shares. Usually coming into power early on in their lives, CPUs are nigh-immortal deities that can use their people’s faith to transform into their HDD forms which are better suited for battles. Even though they enjoy a life of luxuries, a CPU still needs to take care of her people and do what is best for her nation. Sometimes, sticking with the old order is the best option."
  
  chauvinism:0 "Chauvinism"
  chauvinism_noun:0 "Chauvinism"
  chauvinism_desc:0 "Chauvinist"
  chauvinism_subtype:0 "Chauvinism"
- chauvinism_subtype_desc:0 "There exist very few people who are devoted to their nation in such an extreme way. On one hand, Chauvinism can encompass absolute devotion to a goddess and her nation while seeking to destroy all of the other goddesses or make them subservient. Other chauvinists put their nation above their goddess and everything else."
+ chauvinism_subtype_desc:0 "If kleptocrats are the radical, evil ideologues who despise the CPUs and everything they do, chauvinists are on the other side of the horseshoe. For a chauvinist, their nation comes first - and then the goddess and everything else. Believing in absolute devotion to the state, chauvinists often employ very authoritarian measures to ensure compliance from the population. A chauvinist nation will often have a vast army whose faithful soldiers will be ready to give their lives and bring Gamindustri into an age of enlightenment, sometimes wanting to secure the whole continent to themselves. "
  
  ## Ministers
  

@@ -54,6 +54,11 @@ multiply_variable = {
 	var = PLA_histoire_discontent_effect_pp
 	value = -0.01
 }
+## Other variables
+set_variable = {
+	var = PLA_GGR_declare_war_cost
+	value = 20
+}
 
 #Demilitarize Erethisan
 7 = { set_demilitarized_zone = yes }

@@ -20,6 +20,8 @@ on_actions = { #Gamindustri Graveyard
 						expire = "1965.1.1"
 						ideology = corporatocracy_subtype
 					}
+					remove_ideas = { GGR_monster_army_idea }
+					add_ideas = { GGR_neutral_zone_idea }
 					set_politics = { ruling_party = corporatocracy }
 					PLA = { transfer_state = 44 }
 					LAS = { transfer_state = 46 }
@@ -30,10 +32,16 @@ on_actions = { #Gamindustri Graveyard
 						LAS = { transfer_state = 45 }
 						else = {
 							LOW = { transfer_state = 45 }
+							add_ideas = { GGR_lowee_trade_idea }
 						}
 					}
-					remove_ideas = { GGR_monster_army_idea }
-					add_ideas = { GGR_neutral_zone_idea }
+					if = {
+						limit = {
+							PLA = { NOT = { has_country_flag = PLA_leanbox_dimplomatic_protest } }
+						}
+						add_ideas = { GGR_leanbox_trade_idea }
+					}
+
 				}
             }
 

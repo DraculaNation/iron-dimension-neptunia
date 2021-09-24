@@ -21,19 +21,19 @@ ideas = {
 			}
 		}
 		
-		GGR_neutral_zone_idea = {
+		GGR_neutral_zone_idea = { #Joint Occupation Zone
 			allowed = {
 				always = no
 			}
 			
 			removal_cost = -1
 
-			picture = GGR_monster_army
+			picture = GGR_joint_occupation_zone
 			
 			modifier = {
 				conscription = -0.02
-				army_speed_factor = -0.2
-				local_resources_factor = 1.20
+				army_speed_factor = -0.25
+				local_resources_factor = 0.80
 			}
 			
 			targeted_modifier = {
@@ -45,17 +45,44 @@ ideas = {
 				tag = LAS
 				trade_cost_for_target_factor = 0.5
 			}
+		}
+		
+		GGR_lowee_trade_idea = { #Lowee Trade
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = GGR_lowee_trade
+			
+			modifier = {
+				local_resources_factor = 0.20
+			}
 			
 			targeted_modifier = {
 				tag = LOW
 				trade_cost_for_target_factor = 0.5
+			}
+		}
+		
+		GGR_leanbox_trade_idea = { #Lowee Trade
+			allowed = {
+				always = no
+			}
+			
+			removal_cost = -1
+
+			picture = GGR_leanbox_trade
+			
+			modifier = {
+				local_resources_factor = 0.20
 			}
 			
 			targeted_modifier = {
 				tag = LEA
 				trade_cost_for_target_factor = 0.5
 			}
-			
 		}
 		
 	}

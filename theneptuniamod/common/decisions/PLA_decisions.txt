@@ -2,7 +2,12 @@ PLA_unrest_category = {
 
 	PLA_ticking = {
 	
-		activation = { has_country_flag = PLA_dealing_with_unrest_start }
+		activation = {
+			has_country_flag = PLA_dealing_with_unrest_start
+			hidden_trigger {
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+			}
+		}
 		
 		visible = {
 			hidden_trigger = {
@@ -21,19 +26,22 @@ PLA_unrest_category = {
 		
 		allowed = {
 				always = yes
-				hidden_trigger {
+				hidden_trigger = {
 					NOT = { has_country_flag = PLA_not_lazy_anymore }
 				}
 		}
 		
 		cancel_if_not_visible = yes
 		is_good = yes
-		days_mission_timeout = 61
+		days_mission_timeout = 31
 		
 		timeout_effect = {
 			country_event = { id = planeptune.12 }
 			hidden_effect = {
-				activate_mission = PLA_ticking
+				if = {
+					limit = { NOT = { has_country_flag = PLA_not_lazy_anymore } }
+					activate_mission = PLA_ticking
+				}
 			}
 		}
 	}
@@ -1579,7 +1587,7 @@ PLA_gamindustri_graveyard_category = {
 			factor = 100
 		}
 		
-		cost = 0
+		cost = PLA.PLA_GGR_declare_war_cost
 		fire_only_once = yes
 		
 		complete_effect = {
@@ -1651,9 +1659,21 @@ PLA_gamindustri_graveyard_category = {
 		fire_only_once = yes
 		
 		complete_effect = {
-			country_event = {
-				id = planeptune.37
-				days = 1
+			effect_tooltip = {
+				LOW = {
+					country_event = {
+						id = planeptune.38
+						days = 1
+					}
+				}
+			}
+			hidden_effect = {
+				LAS = {
+					country_event = {
+						id = planeptune.37
+						days = 1
+					}
+				}
 			}
 		}
 	}

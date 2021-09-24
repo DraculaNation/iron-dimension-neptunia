@@ -1,7 +1,7 @@
 on_actions = {
 	on_startup = {
 		effect = {
-		#SET VARIABLES 
+		#SET VARIABLES - SHARES FACTOR
 			set_variable = {
 			var = PLA.shares_factor
 			value = 10
@@ -17,6 +17,23 @@ on_actions = {
 			set_variable = {
 			var = LOW.shares_factor 
 			value = 20
+			}
+		#SET VARIABLES - SHARES STRENGTH
+			set_variable = {	
+			var = PLA.shares_strength
+			value = 1
+			}
+			set_variable = {
+			var = LAS.shares_strength
+			value = 1
+			}
+			set_variable = {
+			var = LEA.shares_strength
+			value = 1
+			}
+			set_variable = {
+			var = LOW.shares_strength 
+			value = 1
 			}
 		#CLAMP VARIABLES
 			clamp_variable = {

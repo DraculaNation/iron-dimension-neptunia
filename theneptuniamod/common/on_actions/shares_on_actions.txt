@@ -56,6 +56,259 @@ on_actions = {
 			min = 0 
 			max = 100
 			}
+			
+		#SHARES MODIFIERS
+		##Yeah, I know the code is a mess, but this is basically how it goes:
+		###Shares factor gets loaded in
+		###Then it gets multiplied by shares strength
+		###And finally it gets calculated using a modifier
+		
+		#PLANEPTUNE
+		
+			#Load Factor
+			set_variable = {
+			var = PLA.shares_hundred
+			value = PLA.shares_factor
+			}
+			set_variable = {
+			var = PLA.shares_fifty
+			value = PLA.shares_factor
+			}
+			set_variable = {
+			var = PLA.shares_twentyfive
+			value = PLA.shares_factor
+			}
+			set_variable = {
+			var = PLA.shares_ten
+			value = PLA.shares_factor
+			}
+			
+			#Apply Shares Strength
+			multiply_variable = {
+			var = PLA.shares_hundred
+			value = PLA.shares_strength
+			}
+			multiply_variable = {
+			var = PLA.shares_fifty
+			value = PLA.shares_strength
+			}
+			multiply_variable = {
+			var = PLA.shares_twentyfive
+			value = PLA.shares_strength
+			}
+			multiply_variable = {
+			var = PLA.shares_ten
+			value = PLA.shares_strength
+			}
+			
+			#Calculate Modifier
+			multiply_variable = {
+			var = PLA.shares_hundred
+			value = 0.01
+			}
+			multiply_variable = {
+			var = PLA.shares_fifty
+			value = 0.005
+			}
+			multiply_variable = {
+			var = PLA.shares_twentyfive
+			value = 0.0025
+			}
+			multiply_variable = {
+			var = PLA.shares_ten
+			value = 0.001
+			}
+			
+		#LASTATION
+		
+			#Load Factor
+			set_variable = {
+			var = LAS.shares_hundred
+			value = LAS.shares_factor
+			}
+			set_variable = {
+			var = LAS.shares_fifty
+			value = LAS.shares_factor
+			}
+			set_variable = {
+			var = LAS.shares_twentyfive
+			value = LAS.shares_factor
+			}
+			set_variable = {
+			var = LAS.shares_ten
+			value = LAS.shares_factor
+			}
+			
+			#Apply Shares Strength
+			multiply_variable = {
+			var = LAS.shares_hundred
+			value = LAS.shares_strength
+			}
+			multiply_variable = {
+			var = LAS.shares_fifty
+			value = LAS.shares_strength
+			}
+			multiply_variable = {
+			var = LAS.shares_twentyfive
+			value = LAS.shares_strength
+			}
+			multiply_variable = {
+			var = LAS.shares_ten
+			value = LAS.shares_strength
+			}
+			
+			#Calculate Modifier
+			multiply_variable = {
+			var = LAS.shares_hundred
+			value = 0.01
+			}
+			multiply_variable = {
+			var = LAS.shares_fifty
+			value = 0.005
+			}
+			multiply_variable = {
+			var = LAS.shares_twentyfive
+			value = 0.0025
+			}
+			multiply_variable = {
+			var = LAS.shares_ten
+			value = 0.001
+			}
+			
+		#LEANBOX
+		
+			#Load Factor
+			set_variable = {
+			var = LEA.shares_hundred
+			value = LEA.shares_factor
+			}
+			set_variable = {
+			var = LEA.shares_fifty
+			value = LEA.shares_factor
+			}
+			set_variable = {
+			var = LEA.shares_twentyfive
+			value = LEA.shares_factor
+			}
+			set_variable = {
+			var = LEA.shares_ten
+			value = LEA.shares_factor
+			}
+			
+			#Apply Shares Strength
+			multiply_variable = {
+			var = LEA.shares_hundred
+			value = LEA.shares_strength
+			}
+			multiply_variable = {
+			var = LEA.shares_fifty
+			value = LEA.shares_strength
+			}
+			multiply_variable = {
+			var = LEA.shares_twentyfive
+			value = LEA.shares_strength
+			}
+			multiply_variable = {
+			var = LEA.shares_ten
+			value = LEA.shares_strength
+			}
+			
+			#Calculate Modifier
+			multiply_variable = {
+			var = LEA.shares_hundred
+			value = 0.01
+			}
+			multiply_variable = {
+			var = LEA.shares_fifty
+			value = 0.005
+			}
+			multiply_variable = {
+			var = LEA.shares_twentyfive
+			value = 0.0025
+			}
+			multiply_variable = {
+			var = LEA.shares_ten
+			value = 0.001
+			}
+			
+		#LOWEE
+		
+			#Load Factor
+			set_variable = {
+			var = LOW.shares_hundred
+			value = LOW.shares_factor
+			}
+			set_variable = {
+			var = LOW.shares_fifty
+			value = LOW.shares_factor
+			}
+			set_variable = {
+			var = LOW.shares_twentyfive
+			value = LOW.shares_factor
+			}
+			set_variable = {
+			var = LOW.shares_ten
+			value = LOW.shares_factor
+			}
+			
+			#Apply Shares Strength
+			multiply_variable = {
+			var = LOW.shares_hundred
+			value = LOW.shares_strength
+			}
+			multiply_variable = {
+			var = LOW.shares_fifty
+			value = LOW.shares_strength
+			}
+			multiply_variable = {
+			var = LOW.shares_twentyfive
+			value = LOW.shares_strength
+			}
+			multiply_variable = {
+			var = LOW.shares_ten
+			value = LOW.shares_strength
+			}
+			
+			#Calculate Modifier
+			multiply_variable = {
+			var = LOW.shares_hundred
+			value = 0.01
+			}
+			multiply_variable = {
+			var = LOW.shares_fifty
+			value = 0.005
+			}
+			multiply_variable = {
+			var = LOW.shares_twentyfive
+			value = 0.0025
+			}
+			multiply_variable = {
+			var = LOW.shares_ten
+			value = 0.001
+			}
+			
+			#Add dynamic modifier to every country
+			PLA = {
+				add_dynamic_modifier = {
+					modifier = shares_modifier
+				}
+			}
+			LAS = {
+				add_dynamic_modifier = {
+					modifier = shares_modifier
+				}
+			}
+			LEA = {
+				add_dynamic_modifier = {
+					modifier = shares_modifier
+				}
+			}
+			LOW = {
+				add_dynamic_modifier = {
+					modifier = shares_modifier
+				}
+			}
+			
 		}
 	}
 }

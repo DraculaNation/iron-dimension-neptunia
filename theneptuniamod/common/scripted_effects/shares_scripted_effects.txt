@@ -1,3 +1,7 @@
+
+### THE SHARES SYSTEM
+# It might be a bit clunky but please forgive me, at this point I'm working on this mod alone
+
 #CLAMP SHARES
 clamp_shares_effect = {
 
@@ -21,6 +25,629 @@ clamp_shares_effect = {
 		min = 0 
 		max = 100
 	}
+
+}
+
+
+#REFRESH SHARES PLANEPTUNE
+PLA_refresh_shares_effect = {
+
+		set_variable = {
+		var = PLA.shares_hundred
+		value = PLA.shares_factor
+		}
+		set_variable = {
+		var = PLA.shares_fifty
+		value = PLA.shares_factor
+		}
+		set_variable = {
+		var = PLA.shares_twentyfive
+		value = PLA.shares_factor
+		}
+		set_variable = {
+		var = PLA.shares_ten
+		value = PLA.shares_factor
+		}
+		
+		#Apply Shares Strength
+		multiply_variable = {
+		var = PLA.shares_hundred
+		value = PLA.shares_strength
+		}
+		multiply_variable = {
+		var = PLA.shares_fifty
+		value = PLA.shares_strength
+		}
+		multiply_variable = {
+		var = PLA.shares_twentyfive
+		value = PLA.shares_strength
+		}
+		multiply_variable = {
+		var = PLA.shares_ten
+		value = PLA.shares_strength
+		}
+		
+		#Calculate Modifier
+		multiply_variable = {
+		var = PLA.shares_hundred
+		value = 0.01
+		}
+		multiply_variable = {
+		var = PLA.shares_fifty
+		value = 0.005
+		}
+		multiply_variable = {
+		var = PLA.shares_twentyfive
+		value = 0.0025
+		}
+		multiply_variable = {
+		var = PLA.shares_ten
+		value = 0.001
+		}
+
+}
+
+#REFRESH SHARES LASTATION
+LAS_refresh_shares_effect = {
+
+		set_variable = {
+		var = LAS.shares_hundred
+		value = LAS.shares_factor
+		}
+		set_variable = {
+		var = LAS.shares_fifty
+		value = LAS.shares_factor
+		}
+		set_variable = {
+		var = LAS.shares_twentyfive
+		value = LAS.shares_factor
+		}
+		set_variable = {
+		var = LAS.shares_ten
+		value = LAS.shares_factor
+		}
+		
+		#Apply Shares Strength
+		multiply_variable = {
+		var = LAS.shares_hundred
+		value = LAS.shares_strength
+		}
+		multiply_variable = {
+		var = LAS.shares_fifty
+		value = LAS.shares_strength
+		}
+		multiply_variable = {
+		var = LAS.shares_twentyfive
+		value = LAS.shares_strength
+		}
+		multiply_variable = {
+		var = LAS.shares_ten
+		value = LAS.shares_strength
+		}
+		
+		#Calculate Modifier
+		multiply_variable = {
+		var = LAS.shares_hundred
+		value = 0.01
+		}
+		multiply_variable = {
+		var = LAS.shares_fifty
+		value = 0.005
+		}
+		multiply_variable = {
+		var = LAS.shares_twentyfive
+		value = 0.0025
+		}
+		multiply_variable = {
+		var = LAS.shares_ten
+		value = 0.001
+		}
+
+}
+
+#REFRESH SHARES LEANBOX
+LEA_refresh_shares_effect = {
+
+		set_variable = {
+		var = LEA.shares_hundred
+		value = LEA.shares_factor
+		}
+		set_variable = {
+		var = LEA.shares_fifty
+		value = LEA.shares_factor
+		}
+		set_variable = {
+		var = LEA.shares_twentyfive
+		value = LEA.shares_factor
+		}
+		set_variable = {
+		var = LEA.shares_ten
+		value = LEA.shares_factor
+		}
+		
+		#Apply Shares Strength
+		multiply_variable = {
+		var = LEA.shares_hundred
+		value = LEA.shares_strength
+		}
+		multiply_variable = {
+		var = LEA.shares_fifty
+		value = LEA.shares_strength
+		}
+		multiply_variable = {
+		var = LEA.shares_twentyfive
+		value = LEA.shares_strength
+		}
+		multiply_variable = {
+		var = LEA.shares_ten
+		value = LEA.shares_strength
+		}
+		
+		#Calculate Modifier
+		multiply_variable = {
+		var = LEA.shares_hundred
+		value = 0.01
+		}
+		multiply_variable = {
+		var = LEA.shares_fifty
+		value = 0.005
+		}
+		multiply_variable = {
+		var = LEA.shares_twentyfive
+		value = 0.0025
+		}
+		multiply_variable = {
+		var = LEA.shares_ten
+		value = 0.001
+		}
+
+}
+
+#REFRESH SHARES LOWEE
+LOW_refresh_shares_effect = {
+
+		set_variable = {
+		var = LOW.shares_hundred
+		value = LOW.shares_factor
+		}
+		set_variable = {
+		var = LOW.shares_fifty
+		value = LOW.shares_factor
+		}
+		set_variable = {
+		var = LOW.shares_twentyfive
+		value = LOW.shares_factor
+		}
+		set_variable = {
+		var = LOW.shares_ten
+		value = LOW.shares_factor
+		}
+		
+		#Apply Shares Strength
+		multiply_variable = {
+		var = LOW.shares_hundred
+		value = LOW.shares_strength
+		}
+		multiply_variable = {
+		var = LOW.shares_fifty
+		value = LOW.shares_strength
+		}
+		multiply_variable = {
+		var = LOW.shares_twentyfive
+		value = LOW.shares_strength
+		}
+		multiply_variable = {
+		var = LOW.shares_ten
+		value = LOW.shares_strength
+		}
+		
+		#Calculate Modifier
+		multiply_variable = {
+		var = LOW.shares_hundred
+		value = 0.01
+		}
+		multiply_variable = {
+		var = LOW.shares_fifty
+		value = 0.005
+		}
+		multiply_variable = {
+		var = LOW.shares_twentyfive
+		value = 0.0025
+		}
+		multiply_variable = {
+		var = LOW.shares_ten
+		value = 0.001
+		}
+
+}
+
+### SHARE TRANSFERS ###
+### In the future, make each effect give out a message in the GUI.
+### If the target country has less than needed, the cycle would go like this
+### PLA -> LOW -> LAS -> -> LEA -> PLA [...]
+### Obviously skipping the country that takes the shares
+### You can search for the effects by typing: [Country taking the shares] [Country losing the shares] [Size]
+### For example MEDIUM LAS LEA; where Lastation takes 10% of shares from Leanbox
+###Status:
+### PLA LOW SMALL
+### PLA LOW MEDIUM
+### PLA LOW HUGE
+### PLA LAS SMALL - Complete
+### PLA LAS MEDIUM
+### PLA LAS HUGE
+### PLA LEA SMALL - Complete
+### PLA LEA MEDIUM 
+### PLA LEA HUGE
+### LOW LAS SMALL
+### LOW LAS MEDIUM
+### LOW LAS HUGE
+### LOW LEA SMALL
+### LOW LEA MEDIUM
+### LOW LEA HUGE
+### LOW PLA SMALL
+### LOW PLA MEDIUM
+### LOW PLA HUGE
+### LAS LEA SMALL
+### LAS LEA MEDIUM
+### LAS LEA HUGE
+### LAS PLA SMALL
+### LAS PLA MEDIUM
+### LAS PLA HUGE
+### LAS LOW SMALL
+### LAS LOW MEDIUM
+### LAS LOW HUGE
+### LEA PLA SMALL
+### LEA PLA MEDIUM
+### LEA PLA HUGE
+### LEA LOW SMALL
+### LEA LOW MEDIUM
+### LEA LOW HUGE
+### LEA LAS SMALL
+### LEA LAS MEDIUM
+### LEA LAS HUGE
+
+### PLA LAS SMALL
+
+PLA_kill_LAS_shares_small_effect = {
+
+	#If Lastation has more than 5 shares - valid trigger
+	if = {
+	
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_lastation_small_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+	
+	#If Lastation has less than 5 shares and Leanbox has more than 5 shares
+	else_if = {
+	
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = less_than
+			}
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Set Lastation's shares to 0
+		set_variable = {
+			var = LAS.shares_factor
+			value = 0
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	
+	#If Lastation has less than 5 shares and Lowee has more than 5 shares
+	else_if = {
+	
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = less_than
+			}
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = less_than
+			}
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Set Lastation's shares to 0
+		set_variable = {
+			var = LAS.shares_factor
+			value = 0
+		}
+		
+		#Set Leanbox's shares to 0
+		set_variable = {
+			var = LEA.shares_factor
+			value = 0
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+		
+	#Else...
+	else = {
+	
+		#Set Planeptune's shares to 100
+		custom_effect_tooltip = shares_increase_planeptune_max_tt
+		set_variable = {
+			var = PLA.shares_factor
+			value = 100
+		}
+	
+		#Set Lastation's shares to 0
+		set_variable = {
+			var = LAS.shares_factor
+			value = 0
+		}
+		
+		#Set Leanbox's shares to 0
+		set_variable = {
+			var = LEA.shares_factor
+			value = 0
+		}
+		
+		#Set Lowee's shares to 0
+		set_variable = {
+			var = LOW.shares_factor
+			value = 0
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
 	
 }
+
+### PLANEPTUNE INREASE LEANBOX DECREASE
+
+### PLA LEA SMALL
+
+PLA_kill_LEA_shares_small_effect = {
+
+	#If Leanbox has more than 5 shares - valid trigger
+	if = {
+	
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	
+	#If Leanbox has less than 5 shares and Leanbox has more than 5 shares
+	else_if = {
+	
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = less_than
+			}
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Set Leanbox's shares to 0
+		set_variable = {
+			var = LEA.shares_factor
+			value = 0
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	
+	#If Leanbox has less than 5 shares and Lastation has more than 5 shares
+	else_if = {
+	
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = less_than
+			}
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = less_than
+			}
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Set Leanbox's shares to 0
+		set_variable = {
+			var = LEA.shares_factor
+			value = 0
+		}
+		
+		#Set Lowee's shares to 0
+		set_variable = {
+			var = LOW.shares_factor
+			value = 0
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_lastation_small_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+		
+	#Else...
+	else = {
+	
+		#Set Planeptune's shares to 100
+		custom_effect_tooltip = shares_increase_planeptune_max_tt
+		set_variable = {
+			var = PLA.shares_factor
+			value = 100
+		}
+	
+		#Set Lastation's shares to 0
+		set_variable = {
+			var = LAS.shares_factor
+			value = 0
+		}
+		
+		#Set Leanbox's shares to 0
+		set_variable = {
+			var = LEA.shares_factor
+			value = 0
+		}
+		
+		#Set Lowee's shares to 0
+		set_variable = {
+			var = LOW.shares_factor
+			value = 0
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+		
+}
+
 

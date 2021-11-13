@@ -1581,10 +1581,8 @@ shared_focus = {
 			id = planeptune.49
 		}
 		custom_effect_tooltip = PLA_event_effect_tt
-		effect_tooltip = {
-			PLA_public_unrest_decrease_small_tt
-			PLA_histoire_discontent_decrease_small_tt
-		}
+		custom_effect_tooltip = PLA_public_unrest_decrease_small_tt
+		custom_effect_tooltip = PLA_histoire_discontent_decrease_small_tt
     }
 }
 
@@ -2036,16 +2034,8 @@ shared_focus = {
 		custom_effect_tooltip = PLA_event_effect_tt
 		effect_tooltip = {
 			add_war_support = 0.075
-			create_corps_commander = {
-					name = "Falcom"
-					picture = "Portrait_Planeptune_Falcom.dds"
-					traits = { trait_reckless }
-					skill = 4
-					attack_skill = 4
-					defense_skill = 3
-					planning_skill = 3
-					logistics_skill = 1
-			}
+			add_political_power = 75
+			add_command_power = 50
 		}
 		custom_effect_tooltip = PLA_public_unrest_decrease_small_tt
     }
@@ -2085,6 +2075,16 @@ shared_focus = {
 		effect_tooltip = {
 			add_stability = 0.075
 			army_experience = 30
+			create_corps_commander = {
+					name = "Falcom"
+					picture = "Portrait_Planeptune_Falcom.dds"
+					traits = { trait_reckless }
+					skill = 4
+					attack_skill = 4
+					defense_skill = 3
+					planning_skill = 3
+					logistics_skill = 1
+			}
 		}
 		custom_effect_tooltip = PLA_histoire_discontent_decrease_small_tt
     }

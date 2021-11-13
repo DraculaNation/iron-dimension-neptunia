@@ -26,9 +26,6 @@ PLA_unrest_category = {
 		
 		allowed = {
 				always = yes
-				hidden_trigger = {
-					NOT = { has_country_flag = PLA_not_lazy_anymore }
-				}
 		}
 		
 		cancel_if_not_visible = yes

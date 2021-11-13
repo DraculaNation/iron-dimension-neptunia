@@ -1269,16 +1269,8 @@ country_event = { #The Army on a Vacation
 		name = planeptune.42.a
 		ai_chance = { factor = 100 }
 		add_war_support = 0.075
-		create_corps_commander = {
-			name = "Falcom"
-			picture = "Portrait_Planeptune_Falcom.dds"
-			traits = { trait_reckless }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 1
-		}
+		add_political_power = 75
+		add_command_power = 50
 		PLA_decrease_public_unrest_small = yes
 	}
 }
@@ -1294,8 +1286,19 @@ country_event = { #Emergency Army Drills
 	option = {
 		name = planeptune.43.a
 		ai_chance = { factor = 100 }
+		
 		add_stability = 0.075
 		army_experience = 30
+		create_corps_commander = {
+			name = "Falcom"
+			picture = "Portrait_Planeptune_Falcom.dds"
+			traits = { trait_reckless }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+		}
 		PLA_decrease_histoire_discontent_small = yes
 	}
 }

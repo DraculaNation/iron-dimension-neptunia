@@ -1,0 +1,11 @@
+shares_modifier = {
+	enable = { always = yes }
+
+	political_power_gain = shares_hundred
+    war_support_factor = shares_twenty_five
+    stability_factor = shares_twenty_five
+	recruitable_population_factor = shares_twenty_five
+	army_org_factor = shares_ten
+	army_morale_factor = shares_ten
+	
+}

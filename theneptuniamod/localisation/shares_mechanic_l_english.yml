@@ -8,7 +8,7 @@
  shares_decrease_planeptune_small_tt:0 "§PPlaneptune's§! §gshares will§! §Rfall§! §ga little!§!"
  shares_decrease_planeptune_medium_tt:0 "§PPlaneptune's§! §gshares will§! §Rfall!§!"
  shares_decrease_planeptune_high_tt:0 "§PPlaneptune's§! §gshares will§! §Rfall§! §ggreatly!§!"
- shares_increase_planeptune_max_tt:0 "§PPlaneptune's§! §gshares are already at its maximum!§!!"
+ shares_increase_planeptune_max_tt:0 "§PPlaneptune's§! §gshares are already at the maximum!§!"
  
  shares_increase_lowee_small_tt:0 "§WLowee's§! §gshares will§! §Grise§! §ga little!§!"
  shares_increase_lowee_medium_tt:0 "§WLowee's§! §gshares will§! §Grise!§!"
@@ -16,6 +16,7 @@
  shares_decrease_lowee_small_tt:0 "§WLowee's§! §gshares will§! §Rfall§! §ga little!§!"
  shares_decrease_lowee_medium_tt:0 "§WLowee's§! §gshares will§! §Rfall!§!"
  shares_decrease_lowee_high_tt:0 "§WLowee's§! §gshares will§! §Rfall§! §ggreatly!§!"
+ shares_increase_lowee_max_tt:0 "§WLowee's§! §gshares are already at the maximum!§!"
  
  shares_increase_leanbox_small_tt:0 "§GLeanbox's§! §gshares will§! §Grise§! §ga little!§!"
  shares_increase_leanbox_medium_tt:0 "§GLeanbox's§! §gshares will§! §Grise!§!"
@@ -23,6 +24,7 @@
  shares_decrease_leanbox_small_tt:0 "§GLeanbox's§! §gshares will§! §Rfall§! §ga little!§!"
  shares_decrease_leanbox_medium_tt:0 "§GLeanbox's§! §gshares will§! §Rfall!§!"
  shares_decrease_leanbox_high_tt:0 "§GLeanbox's§! §gshares will§! §Rfall§! §ggreatly!§!"
+ shares_increase_leanbox_max_tt:0 "§GLeanbox's§! §gshares are already at the maximum!§!"
  
  shares_increase_lastation_small_tt:0 "§bLastation's§! §gshares will§! §Grise§! §ga little!§!"
  shares_increase_lastation_medium_tt:0 "§bLastation's§! §gshares will§! §Grise!§!"
@@ -30,3 +32,6 @@
  shares_decrease_lastation_small_tt:0 "§bLastation's§! §gshares will§! §Rfall§! §ga little!§!"
  shares_decrease_lastation_medium_tt:0 "§bLastation's§! §gshares will§! §Rfall!§!"
  shares_decrease_lastation_high_tt:0 "§bLastation's§! §gshares will§! §Rfall§! §ggreatly!§!"
+ shares_increase_lastation_max_tt:0 "§bLastation's§! §gshares are already at the maximum!§!"
+ 
+ shares_modifier:0 "Shares"

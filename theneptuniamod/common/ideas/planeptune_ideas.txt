@@ -145,7 +145,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_stagnant_birthrates
 			
 			modifier = {
 				monthly_population = -0.8
@@ -160,7 +160,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_stagnant_birthrates
 			
 			modifier = {
 				monthly_population = -0.6
@@ -175,7 +175,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_stagnant_birthrates
 			
 			modifier = {
 				monthly_population = -0.4
@@ -190,7 +190,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_stagnant_birthrates
 			
 			modifier = {
 				monthly_population = -0.2
@@ -205,7 +205,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_rising_birthrates
 			
 			modifier = {
 				monthly_population = 0.05
@@ -219,7 +219,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_rising_birthrates
 			
 			modifier = {
 				monthly_population = 0.1
@@ -235,7 +235,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_rising_birthrates
 			
 			modifier = {
 				monthly_population = 0.15
@@ -251,7 +251,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_rising_birthrates
 			
 			modifier = {
 				monthly_population = 0.2
@@ -267,7 +267,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_rapid_birthrates
 			
 			modifier = {
 				monthly_population = 0.25
@@ -283,7 +283,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_rapid_birthrates
 			
 			modifier = {
 				monthly_population = 0.3
@@ -299,7 +299,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_rapid_birthrates
 			
 			modifier = {
 				monthly_population = 0.35
@@ -315,7 +315,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_rapid_birthrates
 			
 			modifier = {
 				monthly_population = 0.4
@@ -333,7 +333,7 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = PLA_eggplant_farms_appropriated_idea
 			
 			modifier = {
 				consumer_goods_factor = -0.075
@@ -347,10 +347,10 @@ ideas = {
 			
 			removal_cost = -1
 
-			picture = PLA_falling_birthrates
+			picture = GFX_idea_PLA_lowee_worker_refugees_idea
 			
 			modifier = {
-				production_speed_buildings_factor = 0.1 
+				production_speed_buildings_factor = 0.12
 			}
 		}
 		

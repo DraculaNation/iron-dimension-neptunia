@@ -20,7 +20,7 @@ country_event = { #Land of the Purple Progress
 	id = planeptune.1
 	title = planeptune.1.t
 	desc = planeptune.1.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_histoire_doth_protest
 	
 	is_triggered_only = yes
 	
@@ -217,7 +217,6 @@ country_event = { #Blanc gets called flat
 	id = planeptune.4
 	title = planeptune.4.t
 	desc = planeptune.4.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -248,7 +247,6 @@ country_event = { #Neptune not present
 	id = planeptune.5
 	title = planeptune.5.t
 	desc = planeptune.5.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -279,7 +277,6 @@ country_event = { #Vert tries to kidnap Nepgear
 	id = planeptune.6
 	title = planeptune.6.t
 	desc = planeptune.6.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -310,7 +307,6 @@ country_event = { #Noire gets calling out for having no friends
 	id = planeptune.7
 	title = planeptune.7.t
 	desc = planeptune.7.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -345,7 +341,7 @@ country_event = { #Neptune realizes that stuff is fucked up
 	id = planeptune.8
 	title = planeptune.8.t
 	desc = planeptune.8.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_histoire_scream
 	
 	is_triggered_only = yes
 	
@@ -429,7 +425,7 @@ country_event = { #Timed event where Neptune either makes Histy mad, makes the p
 	id = planeptune.12
 	title = planeptune.12.t
 	desc = planeptune.12.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_histoire_generic
 	
 	is_triggered_only = yes
 	
@@ -457,7 +453,6 @@ country_event = { #Remilitarization Finished
 	id = planeptune.13
 	title = planeptune.13.t
 	desc = planeptune.13.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -479,7 +474,7 @@ country_event = { #Collapse Start - Histoire
 	id = planeptune.14
 	title = planeptune.14.t
 	desc = planeptune.14.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_histoire_generic
 	is_triggered_only = yes
 	
 	option = {
@@ -493,7 +488,7 @@ country_event = { #Collapse Start - Public
 	id = planeptune.15
 	title = planeptune.15.t
 	desc = planeptune.15.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_histoire_generic
 	is_triggered_only = yes
 	
 	option = {
@@ -507,7 +502,7 @@ country_event = { #Histoire refuses to work
 	id = planeptune.16
 	title = planeptune.16.t
 	desc = planeptune.16.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_histoire_scream
 	
 	is_triggered_only = yes
 	
@@ -541,7 +536,7 @@ country_event = { #Histoire independent of Neptune - Neptune catches on when His
 	id = planeptune.17
 	title = planeptune.17.t
 	desc = planeptune.17.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_histoire_doth_protest
 	
 	is_triggered_only = yes
 	
@@ -591,7 +586,7 @@ country_event = { #Histy solidifies control
 	id = planeptune.19
 	title = planeptune.19.t
 	desc = planeptune.19.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_histoire_normal
 	
 	is_triggered_only = yes
 	
@@ -1106,7 +1101,6 @@ country_event = { #Gamindustri Graveyard talks - Lastation
 	id = planeptune.36
 	title = planeptune.36.t
 	desc = planeptune.36.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -1123,7 +1117,6 @@ country_event = { #Gamindustri Graveyard talks - Lowee
 	id = planeptune.37
 	title = planeptune.37.t
 	desc = planeptune.37.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -1154,7 +1147,6 @@ country_event = { #Gamindustri Graveyard talks - Lowee's response
 	id = planeptune.38
 	title = planeptune.38.t
 	desc = planeptune.38.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -1185,7 +1177,6 @@ country_event = { #Gamindustri Graveyard talks - Lowee's response to shit
 	id = planeptune.39
 	title = planeptune.39.t
 	desc = planeptune.39.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -1208,7 +1199,6 @@ country_event = { #Gamindustri Graveyard talks - Leanbox's response
 	id = planeptune.40
 	title = planeptune.40.t
 	desc = planeptune.40.d
-	picture = GFX_report_event_physics_lab_01
 	
 	is_triggered_only = yes
 	
@@ -1307,7 +1297,7 @@ country_event = { #nep... easy on the pudding
 	id = planeptune.44
 	title = planeptune.44.t
 	desc = planeptune.44.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_neptune_nomming_on_pudding
 	
 	is_triggered_only = yes
 	

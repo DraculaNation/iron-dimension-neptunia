@@ -14,5 +14,30 @@ spriteTypes = {
 		name = "GFX_ideology_chauvinism_group"
 		texturefile = "gfx/interface/ideologies/chauvinism_group.tga"
 	}
+
+	spriteType = {
+		name = "GFX_ideology_anarchy_group"
+		texturefile = "gfx/interface/ideologies/anarchy_group.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_corporatocracy_group"
+		texturefile = "gfx/interface/ideologies/corporatocracy_group.tga"
+	}
+		
+	spriteType = {
+		name = "GFX_ideology_kleptocracy_group"
+		texturefile = "gfx/interface/ideologies/kleptocracy_group.tga"
+	}
+			
+	spriteType = {
+		name = "GFX_ideology_maternal_autocracy_group"
+		texturefile = "gfx/interface/ideologies/maternal_autocracy_group.tga"
+	}
+				
+	spriteType = {
+		name = "GFX_ideology_military_junta_group"
+		texturefile = "gfx/interface/ideologies/military_junta_group.tga"
+	}
 	
 }

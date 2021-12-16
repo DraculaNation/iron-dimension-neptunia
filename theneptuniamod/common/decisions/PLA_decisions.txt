@@ -6,6 +6,7 @@ PLA_unrest_category = {
 			has_country_flag = PLA_dealing_with_unrest_start
 			hidden_trigger {
 				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_ticker_disabled }
 			}
 		}
 		
@@ -677,7 +678,7 @@ PLA_unrest_category = {
 		cancel_if_not_visible = yes
 		is_good = yes
 
-		days_mission_timeout = 126
+		days_mission_timeout = 61
 
 		ai_will_do = {
 			factor = 100
@@ -749,7 +750,7 @@ PLA_unrest_category = {
 		cancel_if_not_visible = yes
 		is_good = yes
 
-		days_mission_timeout = 126
+		days_mission_timeout = 61
 
 		ai_will_do = {
 			factor = 100
@@ -1369,7 +1370,7 @@ PLA_unrest_category = {
 		cancel_if_not_visible = yes
 		is_good = yes
 
-		days_mission_timeout = 126
+		days_mission_timeout = 61
 
 		ai_will_do = {
 			factor = 100
@@ -1442,7 +1443,7 @@ PLA_unrest_category = {
 		cancel_if_not_visible = yes
 		is_good = yes
 
-		days_mission_timeout = 126
+		days_mission_timeout = 61
 
 		ai_will_do = {
 			factor = 100
@@ -1641,7 +1642,10 @@ PLA_gamindustri_graveyard_category = {
 		}
 		
 		available = {
-			always = yes
+			custom_trigger_tooltip = {
+				tooltip = PLA_talked_with_lastation_tt
+				has_country_flag = PLA_lastation_approves
+			}
 		}
 		
 		visible = {

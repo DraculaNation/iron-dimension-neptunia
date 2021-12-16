@@ -8,6 +8,21 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_idea_PLA_stagnant_birthrates"
+		textureFile = "gfx/interface/ideas/PLA_stagnant_birthrates.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PLA_rising_birthrates"
+		textureFile = "gfx/interface/ideas/PLA_rising_birthrates.tga"
+	}
+
+	spriteType = {
+		name = "GFX_idea_PLA_rapid_birthrates"
+		textureFile = "gfx/interface/ideas/PLA_rapid_birthrates.tga"
+	}
+
+	spriteType = {
 		name = "GFX_idea_PLA_technological_powerhouse"
 		textureFile = "gfx/interface/ideas/PLA_technological_powerhouse.tga"
 	}
@@ -20,6 +35,16 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_idea_PLA_histoire_discontent_idea"
 		textureFile = "gfx/interface/ideas/PLA_histoire_discontent_idea.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_PLA_eggplant_farms_appropriated_idea"
+		textureFile = "gfx/interface/ideas/PLA_eggplant_farms_appropriated_idea.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_PLA_lowee_worker_refugees_idea"
+		textureFile = "gfx/interface/ideas/PLA_lowee_worker_refugees_idea.tga"
 	}
 	
 	spriteType = {

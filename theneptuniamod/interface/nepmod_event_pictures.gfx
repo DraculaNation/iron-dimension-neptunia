@@ -1,0 +1,31 @@
+spriteTypes = {
+
+	### PLANEPTUNE ###
+
+	spriteType = {
+		name = "GFX_report_event_histoire_generic"
+		textureFile = "gfx/interface/event_pictures/report_event_histoire_generic.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_histoire_doth_protest"
+		textureFile = "gfx/interface/event_pictures/report_event_histoire_doth_protest.dds"
+	}
+
+	
+	spriteType = {
+		name = "GFX_report_event_histoire_normal"
+		textureFile = "gfx/interface/event_pictures/report_event_histoire_normal.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_histoire_scream"
+		textureFile = "gfx/interface/event_pictures/report_event_histoire_scream.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_neptune_nomming_on_pudding"
+		textureFile = "gfx/interface/event_pictures/report_event_neptune_nomming_on_pudding.dds"
+	}
+
+}

@@ -23,15 +23,31 @@ on_actions = { #Gamindustri Graveyard
 					remove_ideas = { GGR_monster_army_idea }
 					add_ideas = { GGR_neutral_zone_idea }
 					set_politics = { ruling_party = corporatocracy }
-					PLA = { transfer_state = 44 }
-					LAS = { transfer_state = 46 }
+					add_popularity = {
+						ideology = corporatocracy
+						popularity = 0.20
+					}
+					PLA = { 
+						transfer_state = 44
+						add_state_core = 44
+					}
+					LAS = { 
+						transfer_state = 46
+						add_state_core = 46
+					}
 					if = {
 						limit = {
-							PLA = { has_country_flag = PLA_lowee_dimplomatic_protest }
+							PLA = { has_country_flag = PLA_lowee_diplomatic_protest }
 						}
-						LAS = { transfer_state = 45 }
+						LAS = {
+							transfer_state = 45
+							add_state_core = 45
+						}
 						else = {
-							LOW = { transfer_state = 45 }
+							LOW = { 
+								transfer_state = 45
+								add_state_core = 45
+							}
 							add_ideas = { GGR_lowee_trade_idea }
 						}
 					}

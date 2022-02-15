@@ -1,0 +1,206 @@
+characters = {
+	PLA_neptune_CPU = {
+		name = "Neptune" 
+		portraits = {
+			civilian = {
+				large = "gfx\leaders\PLA\Portrait_Planeptune_Neptune.dds"
+			}
+		}
+		country_leader = {
+			ideology = cpu_rule_subtype
+			expire = "1960.1.1.1"
+			id = 69001
+			traits = { neptune_leader_trait }
+		}
+	}
+	
+	PLA_neptune_CPU = {
+		name = "Nepgear" 
+		portraits = {
+			civilian = {
+				large = "gfx\leaders\PLA\Portrait_Planeptune_Nepgear.dds"
+			}
+		}
+		country_leader = {
+			ideology = alternate_cpu_rule_subtype
+			expire = "1960.1.1.1"
+			id = 69002
+			traits = { nepgear_leader_trait }
+		}
+	}
+	
+	### MINISTERS ###
+	
+	PLA_histoire_character = {
+		name = "Histoire" 
+		portraits = {
+			civilian = {
+				large = "gfx\leaders\PLA\Portrait_Planeptune_Histoire.dds"
+				small = "gfx\interface\ministers\minister_oracle_histoire.tga"
+			}
+		}
+		country_leader = {
+			ideology = maternal_autocracy_subtype
+			expire = "1960.1.1.1"
+			id = 69002
+			traits = { histoire_leader_trait }
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PLA_minister_oracle_histoire
+			allowed = {
+				original_tag = PLA
+			}
+			traits = {
+				histoire_oracle_trait
+			}
+		}
+	}
+	
+	PLA_hatsumi_sega_character = {
+		name = "Hatsumi Sega" 
+		portraits = {
+			civilian = {
+				small = "gfx\interface\ministers\minister_hatsumi_sega.tga"
+			}
+		}
+		advisor = {
+			slot = minister_advisor
+			idea_token = PLA_minister_prime_hatsumi_sega
+			allowed = {
+				original_tag = PLA
+			}
+			traits = {
+				hatsumi_sega_minister_trait
+			}
+		}
+	}
+	
+	PLA_compa_character = {
+		name = "Compa" 
+		portraits = {
+			civilian = {
+				small = "gfx\interface\ministers\minister_compa.tga"
+			}
+		}
+		advisor = {
+			slot = chamberlain_advisor
+			idea_token = PLA_minister_chamberlain_compa
+			allowed = {
+				original_tag = PLA
+			}
+			traits = {
+				compa_chamberlain_trait
+			}
+		}
+	}
+	
+	PLA_iffy_character = {
+		name = "IF" 
+		portraits = {
+			civilian = {
+				small = "gfx\interface\ministers\minister_if.tga"
+			}
+		}
+		advisor = {
+			slot = intelligence_advisor
+			idea_token = PLA_minister_intelligence_if
+			allowed = {
+				original_tag = PLA
+			}
+			traits = {
+				if_intelligence_trait
+			}
+		}
+	}
+	
+	### LEADERS ###
+	
+	PLA_B-Sha_character = {
+		name = "B-Sha" 
+		portraits = {
+			civilian = {
+				large = "gfx\leaders\PLA\Portrait_Planeptune_BSha.dds"
+			}
+			military = {
+				
+			}
+		}
+		
+		country_leader = {
+			ideology = military_junta_subtype
+			expire = "1960.1.1.1"
+			id = 69003
+			traits = { bsha_leader_trait }
+		}
+
+		corps_commander = {
+			traits = { politically_connected }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 1
+			legacy_id = 6901
+			visible = { NOT = { has_country_flag = PLA_bsha_purged } }
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = PLA_replace_me
+			ledger = army
+			allowed = {
+				original_tag = PLA
+			}
+			available = {
+				if = {
+					limit = {
+						has_country_flag = PLA_bsha_purged
+					}
+					NOT = { has_country_flag = PLA_bsha_purged }
+				}
+			}
+			traits = {
+				army_armored_3
+			}
+				cost = 200
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
+	}
+	
+	PLA_CFW_Judge = {
+		name = "CFW Judge" 
+		portraits = {
+			civilian = {
+				large = "gfx\leaders\PLA\Portrait_Planeptune_CFW_Judge.dds"
+			}
+		}
+		country_leader = {
+			ideology = kleptocracy_subtype
+			expire = "1960.1.1.1"
+			id = -1
+			traits = { }
+		}
+	}
+	
+	PLA_Zolgelicoff_Tetsu = {
+		name = "Zolgelicoff Tetsu" 
+		portraits = {
+			civilian = {
+				large = "gfx\leaders\PLA\Portrait_Planeptune_zolgelicoff_tetsu.dds"
+			}
+		}
+		country_leader = {
+			ideology = corporatocracy_subtype
+			expire = "1960.1.1.1"
+			id = -1
+			traits = { }
+		}
+	}
+	
+	### CORPS COMMANDERS ###
+	
+}
+	

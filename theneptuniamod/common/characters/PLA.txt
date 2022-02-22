@@ -61,7 +61,7 @@ characters = {
 		name = "Hatsumi Sega" 
 		portraits = {
 			civilian = {
-				small = "gfx\interface\ministers\minister_hatsumi_sega.tga"
+				small = "gfx\interface\ministers\minister_prime_hatsumi_sega.tga"
 			}
 		}
 		advisor = {
@@ -80,7 +80,7 @@ characters = {
 		name = "Compa" 
 		portraits = {
 			civilian = {
-				small = "gfx\interface\ministers\minister_compa.tga"
+				small = "gfx\interface\ministers\minister_chamberlain_compa.tga"
 			}
 		}
 		advisor = {
@@ -99,7 +99,7 @@ characters = {
 		name = "IF" 
 		portraits = {
 			civilian = {
-				small = "gfx\interface\ministers\minister_if.tga"
+				small = "gfx\interface\ministers\minister_intelligence_if.tga"
 			}
 		}
 		advisor = {

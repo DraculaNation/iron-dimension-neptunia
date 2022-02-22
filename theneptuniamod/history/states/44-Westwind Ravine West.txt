@@ -6,7 +6,7 @@ state={
 	history={
 		owner = GGR
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 		}
 	}
 

@@ -6,7 +6,7 @@ state={
 		owner = LAS
 		victory_points = { 3607 21 }
 		buildings = {
-			infrastructure = 6
+			infrastructure = 3
 			arms_factory = 4
 			air_base = 2
 		}

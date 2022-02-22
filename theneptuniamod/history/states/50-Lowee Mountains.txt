@@ -4,7 +4,7 @@ state={
 	history={
 		owner = LOW
 		buildings = {
-			infrastructure = 1
+			infrastructure = 0
 		}
 	}
 	provinces={

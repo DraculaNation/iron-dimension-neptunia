@@ -6,7 +6,7 @@ state={
 		add_core_of = PLA
 		victory_points = { 503 3 }
 		buildings = {
-			infrastructure = 2
+			infrastructure = 1
 			air_base = 4
 		}
 	}

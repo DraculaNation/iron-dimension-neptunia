@@ -272,7 +272,6 @@ leader_traits = {
 		field_marshal_modifier = {
 			supply_consumption_factor = -0.15
 		}
-		enable_ability = extra_suplies
 		ai_will_do = {
 			factor = 1
 		}
@@ -978,7 +977,6 @@ leader_traits = {
 				attack = 0.15
 			}
 		}
-		enable_ability = siege_artillery
 		
 		ai_will_do = {
 			factor = 1
@@ -1065,8 +1063,6 @@ leader_traits = {
 			extra_marine_supply_grace = 240
 		}
 		
-		enable_ability = faster_naval_invasion_planning
-		
 		ai_will_do = {
 			factor = 1
 		}
@@ -1109,8 +1105,6 @@ leader_traits = {
 			factor = 1
 		}
 		
-		enable_ability = probing_attack
-		
 		trait_type = assignable_trait
 		parent = commando
 		
@@ -1126,8 +1120,6 @@ leader_traits = {
 		modifier = {
 			extra_paratrooper_supply_grace = 240
 		}
-		
-		enable_ability = glider_planes
 		
 		ai_will_do = {
 			factor = 1
@@ -1199,8 +1191,6 @@ leader_traits = {
 		ai_will_do = {
 			factor = 1
 		}
-		
-		enable_ability = makeshift_bridges
 		
 		trait_type = assignable_trait
 		parent = trickster

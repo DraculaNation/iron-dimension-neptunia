@@ -3,7 +3,7 @@ characters = {
 		name = "Neptune" 
 		portraits = {
 			civilian = {
-				large = "gfx\leaders\PLA\Portrait_Planeptune_Neptune.dds"
+				large = GFX_Portrait_Planeptune_Neptune
 			}
 		}
 		country_leader = {
@@ -18,7 +18,7 @@ characters = {
 		name = "Nepgear" 
 		portraits = {
 			civilian = {
-				large = "gfx\leaders\PLA\Portrait_Planeptune_Nepgear.dds"
+				large = GFX_Portrait_Planeptune_Nepgear
 			}
 		}
 		country_leader = {
@@ -35,8 +35,8 @@ characters = {
 		name = "Histoire" 
 		portraits = {
 			civilian = {
-				large = "gfx\leaders\PLA\Portrait_Planeptune_Histoire.dds"
-				small = "gfx\interface\ministers\minister_oracle_histoire.tga"
+				large = GFX_Portrait_Planeptune_Histoire
+				small = GFX_minister_oracle_histoire
 			}
 		}
 		country_leader = {
@@ -61,12 +61,12 @@ characters = {
 		name = "Hatsumi Sega" 
 		portraits = {
 			civilian = {
-				small = "gfx\interface\ministers\minister_prime_hatsumi_sega.tga"
+				small = GFX_minister_prime_hatsumi_sega
 			}
 		}
 		advisor = {
 			slot = minister_advisor
-			idea_token = PLA_minister_prime_hatsumi_sega
+			idea_token = GFX_PLA_minister_prime_hatsumi_sega
 			allowed = {
 				original_tag = PLA
 			}
@@ -80,7 +80,7 @@ characters = {
 		name = "Compa" 
 		portraits = {
 			civilian = {
-				small = "gfx\interface\ministers\minister_chamberlain_compa.tga"
+				small = GFX_minister_chamberlain_compa
 			}
 		}
 		advisor = {
@@ -99,7 +99,7 @@ characters = {
 		name = "IF" 
 		portraits = {
 			civilian = {
-				small = "gfx\interface\ministers\minister_intelligence_if.tga"
+				small = GFX_minister_intelligence_if
 			}
 		}
 		advisor = {
@@ -120,10 +120,10 @@ characters = {
 		name = "B-Sha" 
 		portraits = {
 			civilian = {
-				large = "gfx\leaders\PLA\Portrait_Planeptune_BSha.dds"
+				large = GFX_Portrait_Planeptune_BSha
 			}
-			military = {
-				large = "gfx\leaders\PLA\Portrait_Planeptune_BSha.dds"
+			army = {
+				large = GFX_Portrait_Planeptune_BSha
 			}
 		}
 		
@@ -174,7 +174,7 @@ characters = {
 		name = "CFW Judge" 
 		portraits = {
 			civilian = {
-				large = "gfx\leaders\PLA\Portrait_Planeptune_CFW_Judge.dds"
+				large = GFX_Portrait_Planeptune_CFW_Judge
 			}
 		}
 		country_leader = {
@@ -189,7 +189,7 @@ characters = {
 		name = "Zolgelicoff Tetsu" 
 		portraits = {
 			civilian = {
-				large = "gfx\leaders\PLA\Portrait_Planeptune_zolgelicoff_tetsu.dds"
+				large = GFX_Portrait_Planeptune_zolgelicoff_tetsu
 			}
 		}
 		country_leader = {

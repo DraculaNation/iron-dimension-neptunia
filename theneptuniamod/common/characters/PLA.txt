@@ -14,7 +14,7 @@ characters = {
 		}
 	}
 	
-	PLA_neptune_CPU = {
+	PLA_nepgear_CPU = {
 		name = "Nepgear" 
 		portraits = {
 			civilian = {

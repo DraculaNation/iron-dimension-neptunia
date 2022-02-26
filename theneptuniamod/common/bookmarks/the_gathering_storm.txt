@@ -15,8 +15,11 @@ bookmarks = {
 				PLA_stagnant_birthrates_idea
 				PLA_public_unrest_dummy_idea
 			}
-			#focuses = {
-			#}
+			focuses = {
+				PLA_land_of_the_purple_progress
+				PLA_shares_for_everyone
+				PLA_just_good_business
+			}
 		}
 		"LOW"={
 			history = "OTHER_GATHERING_STORM_DESC"

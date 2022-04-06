@@ -3,7 +3,7 @@ characters = {
 		name = "Neptune" 
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_Planeptune_Neptune
+				large ="GFX_Portrait_Planeptune_Neptune"
 			}
 		}
 		country_leader = {
@@ -18,7 +18,7 @@ characters = {
 		name = "Nepgear" 
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_Planeptune_Nepgear
+				large ="GFX_Portrait_Planeptune_Nepgear"
 			}
 		}
 		country_leader = {
@@ -35,8 +35,8 @@ characters = {
 		name = "Histoire" 
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_Planeptune_Histoire
-				small = GFX_minister_oracle_histoire
+				large ="GFX_Portrait_Planeptune_Histoire"
+				small ="GFX_minister_oracle_histoire"
 			}
 		}
 		country_leader = {
@@ -47,7 +47,7 @@ characters = {
 		}
 		advisor = {
 			slot = political_advisor
-			idea_token = PLA_minister_oracle_histoire
+			idea_token = PLA_oracle_histoire
 			allowed = {
 				original_tag = PLA
 			}
@@ -61,12 +61,12 @@ characters = {
 		name = "Hatsumi Sega" 
 		portraits = {
 			civilian = {
-				small = GFX_minister_prime_hatsumi_sega
+				small ="GFX_minister_prime_hatsumi_sega"
 			}
 		}
 		advisor = {
 			slot = minister_advisor
-			idea_token = GFX_PLA_minister_prime_hatsumi_sega
+			idea_token = PLA_prime_minister_hatsumi_sega
 			allowed = {
 				original_tag = PLA
 			}
@@ -80,12 +80,12 @@ characters = {
 		name = "Compa" 
 		portraits = {
 			civilian = {
-				small = GFX_minister_chamberlain_compa
+				small ="GFX_minister_chamberlain_compa"
 			}
 		}
 		advisor = {
 			slot = chamberlain_advisor
-			idea_token = PLA_minister_chamberlain_compa
+			idea_token = PLA_chamberlain_compa
 			allowed = {
 				original_tag = PLA
 			}
@@ -99,12 +99,12 @@ characters = {
 		name = "IF" 
 		portraits = {
 			civilian = {
-				small = GFX_minister_intelligence_if
+				small ="GFX_minister_intelligence_if"
 			}
 		}
 		advisor = {
 			slot = intelligence_advisor
-			idea_token = PLA_minister_intelligence_if
+			idea_token = PLA_intelligence_if
 			allowed = {
 				original_tag = PLA
 			}
@@ -120,10 +120,11 @@ characters = {
 		name = "B-Sha" 
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_Planeptune_BSha
+				large ="GFX_Portrait_Planeptune_BSha_Swag"
 			}
 			army = {
-				large = GFX_Portrait_Planeptune_BSha
+				large ="GFX_Portrait_Planeptune_BSha"
+				small ="GFX_advisor_bsha"
 			}
 		}
 		
@@ -134,7 +135,7 @@ characters = {
 			traits = { bsha_leader_trait }
 		}
 
-		corps_commander = {
+		field_marshal = {
 			traits = { politically_connected }
 			skill = 2
 			attack_skill = 2
@@ -146,8 +147,8 @@ characters = {
 		}
 		
 		advisor = {
-			slot = high_command
-			idea_token = PLA_replace_me
+			slot = theorist
+			idea_token = PLA_advisor_bsha_idea
 			ledger = army
 			allowed = {
 				original_tag = PLA
@@ -161,9 +162,9 @@ characters = {
 				}
 			}
 			traits = {
-				army_armored_3
+				bsha_theorist_trait
 			}
-				cost = 200
+			cost = 200
 			ai_will_do = {
 				factor = 1.000
 			}
@@ -174,7 +175,7 @@ characters = {
 		name = "CFW Judge" 
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_Planeptune_CFW_Judge
+				large ="GFX_Portrait_Planeptune_CFW_Judge"
 			}
 		}
 		country_leader = {
@@ -189,7 +190,8 @@ characters = {
 		name = "Zolgelicoff Tetsu" 
 		portraits = {
 			civilian = {
-				large = GFX_Portrait_Planeptune_zolgelicoff_tetsu
+				large ="GFX_Portrait_Planeptune_zolgelicoff_tetsu"
+				small ="GFX_minister_prime_zolgelicoff_tetsu"
 			}
 		}
 		country_leader = {
@@ -202,5 +204,115 @@ characters = {
 	
 	### CORPS COMMANDERS ###
 	
-}
+	PLA_Blossom_Aisen = {
+		name = "Blossom Aisen" 
+		portraits = {
+			army = {
+				large ="GFX_Portrait_Planeptune_Blossom_Aisen"
+				small ="GFX_advisor_blossom_aisen"
+			}
+		}
+
+		corps_commander = {
+			traits = { organizer }
+			skill = 2
+			attack_skill = 1
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 3
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = PLA_advisor_blossom_aisen_idea
+			ledger = army
+			allowed = {
+				original_tag = PLA
+			}
+			available = {
+			}
+			traits = {
+				army_chief_organizational_2
+			}
+				cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
+	}
 	
+	PLA_Ryuka = {
+		name = "Ryuka" 
+		portraits = {
+			army = {
+				large ="GFX_Portrait_Planeptune_Ryuka"
+				small ="GFX_advisor_ryuka"
+			}
+		}
+
+		corps_commander = {
+			traits = { harsh_leader }
+			skill = 3
+			attack_skill = 3
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 3
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = PLA_advisor_ryuka_idea
+			ledger = army
+			allowed = {
+				original_tag = PLA
+			}
+			available = {
+			}
+			traits = {
+				army_chief_maneuver_2
+			}
+			cost = 150
+			ai_will_do = {
+				factor = 1.000
+			}
+		}	
+	}
+
+	PLA_Tsunemi = {
+		name = "Tsunemi" 
+		portraits = {
+			army = {
+				large ="GFX_Portrait_Planeptune_Tsunemi"
+				small ="GFX_advisor_tsunemi"
+			}
+		}
+
+		corps_commander = {
+			traits = { infantry_officer }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 4
+			logistics_skill = 4
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = PLA_advisor_tsunemi_idea
+			ledger = army
+			allowed = {
+				original_tag = PLA
+			}
+			available = {
+			}
+			traits = {
+				army_infantry_1
+			}
+			cost = 125
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
+}

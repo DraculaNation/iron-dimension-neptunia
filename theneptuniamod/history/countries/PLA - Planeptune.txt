@@ -64,20 +64,7 @@ set_variable = {
 7 = { set_demilitarized_zone = yes }
 18 = { set_demilitarized_zone = yes }
 
-add_ideas = {
-		PLA_technological_powerhouse_idea
-		PLA_stagnant_birthrates_idea
-		PLA_public_unrest_idea
-		PLA_histoire_discontent_idea
-		
-		#Ministers
-		
-		PLA_minister_oracle_histoire
-		PLA_minister_prime_hatsumi_sega
-		PLA_minister_chamberlain_compa
-		PLA_minister_intelligence_if
-		
-}
+
 
 add_dynamic_modifier = {
 	modifier = PLA_histoire_discontent_dynamic_modifier
@@ -90,135 +77,30 @@ add_dynamic_modifier = {
 
 
 
-## Leaders
+## Recruit characters
 
-create_country_leader = {
-	name = "Neptune"
-	desc = "POLITICS_NEPTUNE_DESC"
-	picture = "Portrait_Planeptune_Neptune.dds"
-	expire = "1965.1.1"
-	ideology = cpu_rule_subtype
-	traits = {
-		neptune_leader_trait
-	}
-}
+recruit_character = PLA_neptune_CPU
+recruit_character = PLA_nepgear_CPU
+recruit_character = PLA_histoire_character
+recruit_character = PLA_hatsumi_sega_character
+recruit_character = PLA_compa_character
+recruit_character = PLA_iffy_character
+recruit_character = PLA_B-Sha_character
+recruit_character = PLA_CFW_Judge
+recruit_character = PLA_Zolgelicoff_Tetsu
+recruit_character = PLA_Blossom_Aisen
+recruit_character = PLA_Ryuka
+recruit_character = PLA_Tsunemi
 
-create_country_leader = {
-	name = "Nepgear"
-	desc = "POLITICS_NEPGEAR_DESC"
-	picture = "Portrait_Planeptune_Nepgear.dds"
-	expire = "1965.1.1"
-	ideology = alternate_cpu_rule_subtype
-	traits = {
-		nepgear_leader_trait
-	}
-}
-
-create_country_leader = {
-	name = "B-Sha"
-	desc = "POLITICS_BSHA_DESC"
-	picture = "Portrait_Planeptune_Bsha.dds"
-	expire = "1965.1.1"
-	ideology = military_junta_subtype
-	traits = {
-		bsha_leader_trait
-		bsha_other_leader_trait
-	}
-}
-
-create_country_leader = {
-	name = "Unknown"
-	desc = ""
-	picture = "Portrait_Planeptune_Nepgear.dds"
-	expire = "1965.1.1"
-	ideology = chauvinism_subtype
-	traits = {
-		evil_nepgear_leader_trait
-	}
-}
-
-create_country_leader = {
-	name = "Nature"
-	desc = ""
-	picture = "Portrait_Planeptune_Nepgear.dds"
-	expire = "1965.1.1"
-	ideology = anarchy_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "CFW Judge"
-	desc = ""
-	picture = "Portrait_Planeptune_CFW_Judge.dds"
-	expire = "1965.1.1"
-	ideology = kleptocracy_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Zolgelicoff Tetsu"
-	desc = ""
-	picture = "Portrait_Planeptune_Zolgelicoff_Tetsu.dds"
-	expire = "1965.1.1"
-	ideology = corporatocracy_subtype
-	traits = {
-	}
-}
-
-create_country_leader = {
-	name = "Histoire"
-	desc = "POLITICS_HISTOIRE_DESC"
-	picture = "Portrait_Planeptune_Histoire.dds"
-	expire = "1965.1.1"
-	ideology = maternal_autocracy_subtype
-	traits = {
-		histoire_leader_trait
-	}
-}
-
-create_field_marshal = { 
-	name = "B-Sha"
-	picture = "Portrait_Planeptune_Bsha.dds"
-	traits = { politically_connected }
-	id = 6901
-	skill = 2
-	attack_skill = 3
-	defense_skill = 2
-	planning_skill = 1
-	logistics_skill = 1
-}
-
-create_corps_commander = {
-		name = "Ryuka"
-		picture = "Portrait_Planeptune_Ryuka.dds"
-		traits = { harsh_leader }
-		skill = 3
-		attack_skill = 3
-		defense_skill = 2
-		planning_skill = 1
-		logistics_skill = 3
-}
-
-create_corps_commander = {
-		name = "Blossom Aisen"
-		picture = "Portrait_Planeptune_Blossom_Aisen.dds"
-		traits = { organizer }
-		skill = 2
-		attack_skill = 1
-		defense_skill = 3
-		planning_skill = 4
-		logistics_skill = 3
-}
-
-create_corps_commander = {
-		name = "Tsunemi"
-		picture = "Portrait_Planeptune_Tsunemi.dds"
-		traits = { infantry_officer }
-		skill = 2
-		attack_skill = 2
-		defense_skill = 1
-		planning_skill = 4
-		logistics_skill = 4
+add_ideas = {
+		PLA_technological_powerhouse_idea
+		PLA_stagnant_birthrates_idea
+		PLA_public_unrest_idea
+		PLA_histoire_discontent_idea
+		
+		#Ministers
+		PLA_oracle_histoire
+		PLA_chamberlain_compa
+		PLA_intelligence_if
+		
 }

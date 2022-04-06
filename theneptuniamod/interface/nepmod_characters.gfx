@@ -1,0 +1,114 @@
+spriteTypes = {
+
+	### PLANEPTUNE LEADERS AND COMMANDERS ###
+
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_Neptune"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Neptune.dds"
+	}
+
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_Nepgear"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Nepgear.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_Histoire"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Histoire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_BSha"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Bsha.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_BSha_Swag"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Bsha_Swag.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_CFW_Judge"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_CFW_Judge.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_zolgelicoff_tetsu"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Zolgelicoff_Tetsu.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_Blossom_Aisen"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Blossom_Aisen.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_Ryuka"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Ryuka.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_Tsunemi"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Tsunemi.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Planeptune_Falcom"
+		textureFile = "gfx/leaders/PLA/Portrait_Planeptune_Falcom.dds"
+	}
+	
+	### PLANEPTUNE MINISTERS ###
+	
+	spriteType = {
+		name = "GFX_minister_oracle_histoire"
+		textureFile = "gfx/interface/ministers/minister_oracle_histoire.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_prime_hatsumi_sega"
+		textureFile = "gfx/interface/ministers/minister_prime_hatsumi_sega.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_prime_zolgelicoff_tetsu"
+		textureFile = "gfx/interface/ministers/minister_prime_zolgelicoff_tetsu.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_chamberlain_compa"
+		textureFile = "gfx/interface/ministers/minister_chamberlain_compa.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_intelligence_if"
+		textureFile = "gfx/interface/ministers/minister_intelligence_if.tga"
+	}
+
+	### PLANEPTUNE MIL ADVISORS ###
+	
+	spriteType = {
+		name = "GFX_advisor_bsha"
+		textureFile = "gfx/interface/ministers/advisor_bsha.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_blossom_aisen"
+		textureFile = "gfx/interface/ministers/advisor_blossom_aisen.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_ryuka"
+		textureFile = "gfx/interface/ministers/advisor_ryuka.tga"
+	}
+
+	spriteType = {
+		name = "GFX_advisor_tsunemi"
+		textureFile = "gfx/interface/ministers/advisor_tsunemi.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_advisor_falcom"
+		textureFile = "gfx/interface/ministers/advisor_falcom.tga"
+	}
+
+}

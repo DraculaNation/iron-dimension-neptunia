@@ -18,35 +18,3 @@ set_popularities = {
 set_stability = 0.5
 
 ## Leaders
-
-create_country_leader = {
-	name = "Neptune"
-	desc = "POLITICS_NEPTUNE_DESC"
-	picture = "gfx/leaders/PLA/Portrait_Planeptune_Neptune.dds"
-	expire = "1965.1.1"
-	ideology = cpu_rule_subtype
-	traits = {
-		neptune_leader_trait
-	}
-}
-
-create_country_leader = {
-	name = "Nepgear"
-	desc = "POLITICS_NEPGEAR_DESC"
-	picture = "gfx/leaders/PLA/Portrait_Planeptune_Nepgear.dds"
-	expire = "1965.1.1"
-	ideology = alternate_cpu_rule_subtype
-	traits = {
-		nepgear_leader_trait
-	}
-}
-
-create_country_leader = {
-	name = "Nature"
-	desc = ""
-	picture = "Portrait_Planeptune_Nepgear.dds"
-	expire = "1965.1.1"
-	ideology = anarchy_subtype
-	traits = {
-	}
-}

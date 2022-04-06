@@ -26,10 +26,10 @@ idea_categories = {
 	government = {
 		slot = mobilization_laws
 		slot = economy
-		slot = political_advisor #Oracle
-		slot = minister_advisor #Prime Minister
-		slot = chamberlain_advisor #Chamberlain
-		slot = intelligence_advisor #Intelligence
+		character_slot = political_advisor #Oracle
+		character_slot = minister_advisor #Prime Minister
+		character_slot = chamberlain_advisor #Chamberlain
+		character_slot = intelligence_advisor #Intelligence
 		
 		ledger = civilian
 		

@@ -1,0 +1,85 @@
+create_country_leader = {
+	name = "Neptune"
+	desc = "POLITICS_NEPTUNE_DESC"
+	picture = "Portrait_Planeptune_Neptune.dds"
+	expire = "1965.1.1"
+	ideology = cpu_rule_subtype
+	traits = {
+		neptune_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "Nepgear"
+	desc = "POLITICS_NEPGEAR_DESC"
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = alternate_cpu_rule_subtype
+	traits = {
+		nepgear_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "B-Sha"
+	desc = "POLITICS_BSHA_DESC"
+	picture = "Portrait_Planeptune_Bsha.dds"
+	expire = "1965.1.1"
+	ideology = military_junta_subtype
+	traits = {
+		bsha_leader_trait
+		bsha_other_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "Unknown"
+	desc = ""
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = chauvinism_subtype
+	traits = {
+		evil_nepgear_leader_trait
+	}
+}
+
+create_country_leader = {
+	name = "Nature"
+	desc = ""
+	picture = "Portrait_Planeptune_Nepgear.dds"
+	expire = "1965.1.1"
+	ideology = anarchy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "CFW Judge"
+	desc = ""
+	picture = "Portrait_Planeptune_CFW_Judge.dds"
+	expire = "1965.1.1"
+	ideology = kleptocracy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Zolgelicoff Tetsu"
+	desc = ""
+	picture = "Portrait_Planeptune_Zolgelicoff_Tetsu.dds"
+	expire = "1965.1.1"
+	ideology = corporatocracy_subtype
+	traits = {
+	}
+}
+
+create_country_leader = {
+	name = "Histoire"
+	desc = "POLITICS_HISTOIRE_DESC"
+	picture = "Portrait_Planeptune_Histoire.dds"
+	expire = "1965.1.1"
+	ideology = maternal_autocracy_subtype
+	traits = {
+		histoire_leader_trait
+	}
+}

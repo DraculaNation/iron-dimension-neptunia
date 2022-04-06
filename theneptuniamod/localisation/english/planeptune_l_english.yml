@@ -58,6 +58,7 @@
  histoire_leader_trait:0 "The Lil' Dictator"
  bsha_leader_trait:0 "Afraid of Monsters"
  bsha_other_leader_trait:0 "Mercenary Cop"
+ bsha_theorist_trait:0 "Heroic Rush Doctrine"
  
  #Ministers
  PLA_minister_oracle_histoire:0 "Histoire"

@@ -18,3 +18,10 @@
  ### LEADER TRAITS ###
  
  blanc_leader_trait:0 "Short Fuse"
+ 
+ ### MINISTER TRAITS ###
+ 
+ mina_nishizawa_oracle_trait:0 "Motherly Scholar"
+ mr_badd_prime_minister_trait:0 "Compassionate Gentleman"
+ financier_chamberlain_trait:0 "Reliable Errand Girl"
+ csha_intelligence_trait:0 "Army Girl"

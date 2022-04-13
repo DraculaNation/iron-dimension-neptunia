@@ -111,4 +111,123 @@ spriteTypes = {
 		textureFile = "gfx/interface/ministers/advisor_falcom.tga"
 	}
 
+	### LEANBOX LEADERS AND COMMANDERS ###
+	
+	spriteType = {
+		name = "GFX_Portrait_Leanbox_Vert"
+		textureFile = "gfx/leaders/LEA/Portrait_Leanbox_Vert.dds"
+	}
+	
+	### LEANBOX MINISTERS ###
+	
+	spriteType = {
+		name = "GFX_minister_oracle_chika_hakozaki"
+		textureFile = "gfx/interface/ministers/minister_oracle_chika_hakozaki.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_prime_setag"
+		textureFile = "gfx/interface/ministers/minister_prime_setag.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_prime_yvoire"
+		textureFile = "gfx/interface/ministers/minister_prime_yvoire.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_chamberlain_ranran"
+		textureFile = "gfx/interface/ministers/minister_chamberlain_ranran.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_intelligence_cave"
+		textureFile = "gfx/interface/ministers/minister_intelligence_cave.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_intelligence_nitroplus"
+		textureFile = "gfx/interface/ministers/minister_intelligence_nitroplus.tga"
+	}
+	
+	### LOWEE LEADERS AND COMMANDERS ###
+	
+	spriteType = {
+		name = "GFX_Portrait_Lowee_Bland"
+		textureFile = "gfx/leaders/LOW/Portrait_Lowee_Blanc.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Lowee_Csha"
+		textureFile = "gfx/leaders/LOW/Portrait_Lowee_Csha.dds"
+	}
+	
+	### LOWEE MINISTERS ###
+	
+	spriteType = {
+		name = "GFX_minister_oracle_mina_nishizawa"
+		textureFile = "gfx/interface/ministers/minister_oracle_mina_nishizawa.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_prime_mr_badd"
+		textureFile = "gfx/interface/ministers/minister_prime_mr_badd.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_chamberlain_financier"
+		textureFile = "gfx/interface/ministers/minister_chamberlain_financier.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_intelligence_csha"
+		textureFile = "gfx/interface/ministers/minister_intelligence_csha.tga"
+	}
+	
+	### LOWEE MIL ADVISORS ###
+	
+	spriteType = {
+		name = "GFX_advisor_csha"
+		textureFile = "gfx/interface/ministers/advisor_csha.tga"
+	}
+	
+	### LASTATION LEADERS AND COMMANDERS ###
+	
+	spriteType = {
+		name = "GFX_Portrait_Lastation_Noire"
+		textureFile = "gfx/leaders/LAS/Portrait_Lastation_Noire.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Lastation_Ganache"
+		textureFile = "gfx/leaders/LAS/Portrait_Lastation_Ganache.dds"
+	}
+	
+	### LASTATION MINISTERS ###
+	
+	spriteType = {
+		name = "GFX_minister_oracle_kei_jinguji"
+		textureFile = "gfx/interface/ministers/minister_oracle_kei_jinguji.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_prime_singe"
+		textureFile = "gfx/interface/ministers/minister_prime_singe.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_prime_chian"
+		textureFile = "gfx/interface/ministers/minister_prime_chian.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_chamberlain_ganache"
+		textureFile = "gfx/interface/ministers/minister_chamberlain_ganache.tga"
+	}
+	
+	spriteType = {
+		name = "GFX_minister_intelligence_god_eater"
+		textureFile = "gfx/interface/ministers/minister_intelligence_god_eater.tga"
+	}
+
 }

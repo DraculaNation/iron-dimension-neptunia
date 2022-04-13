@@ -1,0 +1,116 @@
+characters = {
+	LOW_blanc_CPU = {
+		name = "Blanc" 
+		portraits = {
+			civilian = {
+				large ="GFX_Portrait_Lowee_Blanc"
+			}
+		}
+		country_leader = {
+			ideology = cpu_rule_subtype
+			expire = "1960.1.1.1"
+			id = 69001
+			traits = { blanc_leader_trait }
+		}
+	}
+	
+	
+	### MINISTERS ###
+	
+	LOW_mina_nishizawa_character = {
+		name = "Mina Nishizawa" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_oracle_mina_nishizawa"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LOW_oracle_mina_nishizawa
+			allowed = {
+				original_tag = LOW
+			}
+			traits = {
+				mina_nishizawa_oracle_trait
+			}
+		}
+	}
+	
+	LOW_mr_badd_character = {
+		name = "Mr. Badd" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_prime_mr_badd"
+			}
+		}
+		advisor = {
+			slot = minister_advisor
+			idea_token = LOW_prime_minister_mr_badd
+			allowed = {
+				original_tag = LOW
+			}
+			traits = {
+				mr_badd_prime_minister_trait
+			}
+		}
+	}
+	
+	LOW_financier_character = {
+		name = "Financier" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_chamberlain_financier"
+			}
+		}
+		advisor = {
+			slot = chamberlain_advisor
+			idea_token = LOW_chamberlain_financier
+			allowed = {
+				original_tag = LOW
+			}
+			traits = {
+				financier_chamberlain_trait
+			}
+		}
+	}
+	
+	LOW_cha_character = {
+		name = "C-Sha" 
+		portraits = {
+			civilian = {
+				large ="GFX_Portrait_Lowee_Csha"
+				small ="GFX_minister_intelligence_csha"
+			}
+			military = {
+				small ="GFX_advisor_csha"
+			}
+		}
+		advisor = {
+			slot = intelligence_advisor
+			idea_token = LOW_intelligence_csha
+			allowed = {
+				original_tag = LOW
+			}
+			traits = {
+				csha_intelligence_trait
+			}
+		}
+		country_leader = {
+			ideology = military_junta_subtype
+			expire = "1960.1.1.1"
+			traits = {  }
+		}
+
+		field_marshal = {
+			traits = {  }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 1
+			logistics_skill = 3
+		}
+		
+	}
+	
+	
+}

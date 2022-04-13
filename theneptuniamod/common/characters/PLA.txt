@@ -200,6 +200,17 @@ characters = {
 			id = -1
 			traits = { }
 		}
+		
+		advisor = {
+			slot = minister_advisor
+			idea_token = PLA_prime_minister_zolgelicoff_tetsu
+			allowed = {
+				original_tag = PLA
+			}
+			traits = {
+				zolgelicoff_tetsu_minister_trait
+			}
+		}
 	}
 	
 	### CORPS COMMANDERS ###

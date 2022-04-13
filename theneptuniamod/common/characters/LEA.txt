@@ -1,0 +1,134 @@
+characters = {
+	LEA_vert_CPU = {
+		name = "Vert" 
+		portraits = {
+			civilian = {
+				large ="GFX_Portrait_Leanbox_Vert"
+			}
+		}
+		country_leader = {
+			ideology = cpu_rule_subtype
+			expire = "1960.1.1.1"
+			id = 69001
+			traits = { vert_leader_trait }
+		}
+	}
+	
+	
+	### MINISTERS ###
+	
+	LEA_chika_hakozaki_character = {
+		name = "Chika Hakozaki" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_oracle_chika_hakozaki"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LEA_oracle_chika_hakozaki
+			allowed = {
+				original_tag = LEA
+			}
+			traits = {
+				chika_hakozaki_oracle_trait
+			}
+		}
+	}
+	
+	LEA_setag_character = {
+		name = "Setag" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_prime_setag"
+			}
+		}
+		advisor = {
+			slot = minister_advisor
+			idea_token = LEA_prime_minister_setag
+			allowed = {
+				original_tag = LEA
+			}
+			traits = {
+				setag_prime_minister_trait
+			}
+		}
+	}
+	
+	LEA_yvoire_character = {
+		name = "Yvoire" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_prime_yvoire"
+			}
+		}
+		advisor = {
+			slot = minister_advisor
+			idea_token = LEA_prime_minister_yvoire
+			allowed = {
+				original_tag = LEA
+			}
+			traits = {
+				yvoire_prime_minister_trait
+			}
+		}
+	}
+	
+	LEA_ranran_character = {
+		name = "Ran-Ran" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_chamberlain_ranran"
+			}
+		}
+		advisor = {
+			slot = chamberlain_advisor
+			idea_token = LEA_chamberlain_ranran
+			allowed = {
+				original_tag = LEA
+			}
+			traits = {
+				ranran_minister_trait
+			}
+		}
+	}
+	
+	LEA_cave_character = {
+		name = "Cave" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_intelligence_cave"
+			}
+		}
+		advisor = {
+			slot = intelligence_advisor
+			idea_token = LEA_intelligence_cave
+			allowed = {
+				original_tag = LEA
+			}
+			traits = {
+				cave_minister_trait
+			}
+		}
+	}
+	
+	LEA_nitroplus_character = {
+		name = "Nitroplus" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_intelligence_nitroplus"
+			}
+		}
+		advisor = {
+			slot = intelligence_advisor
+			idea_token = LEA_intelligence_nitroplus
+			allowed = {
+				original_tag = LEA
+			}
+			traits = {
+				nitroplus_minister_trait
+			}
+		}
+	}
+	
+}

@@ -1,5 +1,5 @@
 ﻿capital = 9
-set_convoys = 50
+set_convoys = 200
 
 set_politics = {
 	ruling_party = cpu_rule
@@ -12,19 +12,23 @@ set_popularities = {
 	kleptocracy = 30
 }
 
+recruit_character = LEA_vert_CPU
+recruit_character = LEA_chika_hakozaki_character
+recruit_character = LEA_setag_character
+recruit_character = LEA_yvoire_character
+recruit_character = LEA_ranran_character
+recruit_character = LEA_cave_character
+recruit_character = LEA_nitroplus_character
+
 add_ideas = {
 		LEA_succession_crisis
 		LEA_infiltrated_cabinet
 		LEA_rampant_riots
-}
-
-create_country_leader = {
-	name = "Vert"
-	desc = "POLITICS_VERT_DESC"
-	picture = "Portrait_Leanbox_Vert.dds"
-	expire = "1965.1.1"
-	ideology = cpu_rule_subtype
-	traits = {
-		vert_leader_trait
-	}
+		
+		# Ministers
+		
+		LEA_oracle_chika_hakozaki
+		LEA_prime_minister_setag
+		LEA_chamberlain_ranran
+		LEA_intelligence_cave
 }

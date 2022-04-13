@@ -60,19 +60,16 @@
  bsha_other_leader_trait:0 "Mercenary Cop"
  bsha_theorist_trait:0 "Heroic Rush Doctrine"
  
- #Ministers
- PLA_minister_oracle_histoire:0 "Histoire"
- PLA_minister_oracle_histoire_desc:0 "Histoire, Neptune's right hand and the person that bears the burden of actually administrating Planeptune. Histoire's origins are unknown, but one thing is certain - she was helping every generation of Planeptune's CPUs administrate the country. She is an incredibly old and powerful being despite what her appearance may suggest, and with her age comes wisdom - wistom that falls to Neptune and Nepgear's deaf ears. Despite her hard-working attitude, she seems to take more time than average when it comes to tasks - usually three hours for something Neptune could do in an hour. Lately, Histoire has been starting to show some cracks in her usual demeanor. She has become more demanding and assertive towards Neptune... for a reason."
- PLA_minister_prime_hatsumi_sega:0 "Hatsumi Sega"
- PLA_minister_prime_hatsumi_sega_desc:0 "Hatsumi Sega is a mysterious girl. She cannot remember her past and thus turned to Neptune for help. That is when Neptune noticed her willingness to help, and Hatsumi Sega quickly rose to the position of prime minister - winning the people's hearts and mind alike. Her friendly and easygoing nature gives her necessary charisma to be an iconic prime minister, but her inexperience and her amnesia prove to be a burden."
- PLA_minister_chamberlain_compa:0 "Compa"
- PLA_minister_chamberlain_compa_desc:0 "Compassion. Care. Gentleness. Altruism. Those are words many denizens of Planeptune associate with Compa, the gentle nurse who found herself climb onto the rank of Planeptune's chamberlain. Even when dealing with opponents, her attitude is gentle and friendly, always eager to understand even the villains' motivations. Therefore, Compa excels as a chamberlain, tending to the needs of the Nep sisters with incredible skill and talent. Some say that the pudding she makes tastes great!"
- PLA_minister_intelligence_if:0 "IF"
- PLA_minister_intelligence_if_desc:0 "A former adventurer, IF - nicknamed Iffy, has found herself at the position of Planeptune's head of intelligence. Her dedicated nature makes her excel at carrying out orders, while her loyalty to Neptune is unquestionable. She is very light on her feet and can spot the locations of potential monster attacks easily."
+ #Minister Descriptions
+ PLA_oracle_histoire_desc:0 "Histoire, Neptune's right hand and the person that bears the burden of actually administrating Planeptune. Histoire's origins are unknown, but one thing is certain - she was helping every generation of Planeptune's CPUs administrate the country. She is an incredibly old and powerful being despite what her appearance may suggest, and with her age comes wisdom - wistom that falls to Neptune and Nepgear's deaf ears. Despite her hard-working attitude, she seems to take more time than average when it comes to tasks - usually three hours for something Neptune could do in an hour. Lately, Histoire has been starting to show some cracks in her usual demeanor. She has become more demanding and assertive towards Neptune... for a reason."
+ PLA_prime_minister_hatsumi_sega_desc:0 "Hatsumi Sega is a mysterious girl. She cannot remember her past and thus turned to Neptune for help. That is when Neptune noticed her willingness to help, and Hatsumi Sega quickly rose to the position of prime minister - winning the people's hearts and mind alike. Her friendly and easygoing nature gives her necessary charisma to be an iconic prime minister, but her inexperience and her amnesia prove to be a burden."
+ PLA_chamberlain_compa_desc:0 "Compassion. Care. Gentleness. Altruism. Those are words many denizens of Planeptune associate with Compa, the gentle nurse who found herself climb onto the rank of Planeptune's chamberlain. Even when dealing with opponents, her attitude is gentle and friendly, always eager to understand even the villains' motivations. Therefore, Compa excels as a chamberlain, tending to the needs of the Nep sisters with incredible skill and talent. Some say that the pudding she makes tastes great!"
+ PLA_intelligence_if_desc:0 "A former adventurer, IF - nicknamed Iffy, has found herself at the position of Planeptune's head of intelligence. Her dedicated nature makes her excel at carrying out orders, while her loyalty to Neptune is unquestionable. She is very light on her feet and can spot the locations of potential monster attacks easily."
  
  #Minister traits
  histoire_oracle_trait:0 "The Lil' Dictator"
  hatsumi_sega_minister_trait:0 "Ambitious Amnesiac"
+ zolgelicoff_tetsu_minister_trait:0 "Uncompromising Businessman"
  compa_chamberlain_trait:0 "Compassionate but Clumsy"
  if_intelligence_trait:0 "Trusted Disciple"
  

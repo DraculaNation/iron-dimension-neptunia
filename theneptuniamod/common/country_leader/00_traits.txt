@@ -160,6 +160,16 @@ leader_traits = {
 		}
 	}
 	
+	zolgelicoff_tetsu_minister_trait = { #Uncompromising Businessman
+		random = no
+		political_power_gain = 0.05
+		consumer_goods_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
 	compa_chamberlain_trait = { #Clumsy but Gentle
 		random = no
 		army_org_regain = 0.03
@@ -189,6 +199,205 @@ leader_traits = {
 		cat_mass_assault_cost_factor = -0.10
 		army_morale_factor = 0.05
 		experience_loss_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	## LEANBOX MINISTERS ##
+	
+	chika_hakozaki_oracle_trait = { #Obsessive Protege
+		random = no
+		political_power_factor = 0.07
+		stability_factor = -0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	setag_prime_minister_trait = { #Administrative Genius
+		random = no
+
+		political_power_gain = 0.03
+		stability_factor = 0.03
+		consumer_goods_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	yvoire_prime_minister_trait = { #Strict But Fair
+		random = no
+
+		war_support_factor = 0.05
+		stability_factor = 0.05
+		political_power_cost = 0.06
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ranran_minister_trait = { #Aloof Servant
+		random = no
+
+		political_power_cost = 0.02
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	cave_minister_trait = { #Meticulous Missionary
+		random = no
+
+		war_support_factor = 0.05
+		encryption_factor = 0.2
+		army_intel_decryption_bonus = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	nitroplus_minister_trait = { #Crime Fighter
+		random = no
+		
+		stability_factor = 0.05
+		decryption_factor = 0.2
+		civilian_intel_decryption_bonus = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	## LOWEE MINISTERS ##
+	
+	mina_nishizawa_oracle_trait = { #Motherly Scholar
+		random = no
+		
+		research_speed_factor = 0.025
+		stability_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	mr_badd_prime_minister_trait = { #Compassionate Businessman
+		random = no
+
+		recruitable_population_factor = 0.02
+		political_power_gain = 0.01
+		opinion_gain_monthly_factor = 0.15
+		consumer_goods_factor = 0.03
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	financier_chamberlain_trait = { #Reliable Errand Girl
+		random = no
+		
+		political_power_gain = 0.02
+		stability_factor = 0.025
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	csha_intelligence_trait = { #Army Girl
+		random = no
+		
+		military_junta_acceptance = 50
+		war_support_factor = 0.05
+		army_org_factor = 0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### LASTATION LEADERS ###
+	
+	ganache_ggr_leader_trait = { #Corporate Administrator
+		random = no
+		
+		CPU_rule_acceptance = 100
+		trade_opinion_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	### LASTATION MINISTERS ###
+	
+	kei_jingugi_oracle_trait = { #Cutthroat Businesswoman
+		random = no
+		
+		stability_factor = -0.07
+		political_power_factor = 0.05
+		consumer_goods_factor = -0.05
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	singe_prime_minister_trait = { #Oligarch
+		random = no
+
+		consumer_goods_factor = 0.1
+		production_speed_infrastructure_factor = 0.1
+		local_resources_factor = 0.25
+		corporatocracy_acceptance = 50
+		#Bonus to manufacturing robots wheen we implement them
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	chian_prime_minister_trait = { #People First
+		random = no
+
+		#communism_acceptance = 50
+		#communism_drift = 0.01
+		political_power_cost = 0.15
+		recruitable_population_factor = 0.1
+		monthly_population = 0.2
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	ganache_chamberlain_trait = { #Administrative Genius
+		random = no
+		
+		political_power_gain = 0.02
+		stability_factor = 0.5
+		
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	
+	god_eater_intelligence_trait = { #Army Veteran
+		random = no
+		
+		war_support_factor = 0.05
+		conscription_factor = 0.05
+		high_command_cost_factor = -0.15
+		max_command_power = 20
 		
 		ai_will_do = {
 			factor = 1

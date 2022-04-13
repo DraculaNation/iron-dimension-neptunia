@@ -1,0 +1,123 @@
+characters = {
+	LAS_noire_CPU = {
+		name = "Noire" 
+		portraits = {
+			civilian = {
+				large ="GFX_Portrait_Lastation_Noire"
+			}
+		}
+		country_leader = {
+			ideology = cpu_rule_subtype
+			expire = "1960.1.1.1"
+			id = 69001
+			traits = { noire_leader_trait }
+		}
+	}
+	
+	
+	### MINISTERS ###
+	
+	LAS_kei_jinguji_character = {
+		name = "Kei Jinguji" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_oracle_kei_jinguji"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = LAS_oracle_kei_jinguji
+			allowed = {
+				original_tag = LAS
+			}
+			traits = {
+				kei_jinguji_oracle_trait
+			}
+		}
+	}
+	
+	LAS_singe_character = {
+		name = "Singe" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_prime_singe"
+			}
+		}
+		advisor = {
+			slot = minister_advisor
+			idea_token = LAS_prime_minister_singe
+			allowed = {
+				original_tag = LAS
+			}
+			traits = {
+				singe_prime_minister_trait
+			}
+		}
+	}
+	
+	LAS_chian_character = {
+		name = "Chian" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_prime_chian"
+			}
+		}
+		advisor = {
+			slot = minister_advisor
+			idea_token = LAS_prime_minister_chian
+			allowed = {
+				original_tag = LAS
+			}
+			traits = {
+				chian_prime_minister_trait
+			}
+		}
+	}
+	
+	LAS_ganache_character = {
+		name = "Ganache" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_chamberlain_ganache"
+			}
+		}
+		country_leader = {
+			ideology = corporatocracy_subtype
+			expire = "1960.1.1.1"
+			id = 69001
+			traits = { ganache_ggr_leader_trait }
+		}
+		advisor = {
+			slot = chamberlain_advisor
+			idea_token = LAS_chamberlain_ganache
+			allowed = {
+				original_tag = LAS
+			}
+			traits = {
+				ganache_chamberlain_trait
+			}
+		}
+	}
+	
+	LAS_god_eater_character = {
+		name = "God Eater" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_intelligence_god_eater"
+			}
+		}
+		advisor = {
+			slot = intelligence_advisor
+			idea_token = LAS_intelligence_god_eater
+			allowed = {
+				original_tag = LAS
+			}
+			traits = {
+				god_eater_intelligence_trait
+			}
+		}
+		
+	}
+	
+	
+}

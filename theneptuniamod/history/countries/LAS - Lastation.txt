@@ -8,25 +8,29 @@ set_politics = {
 	elections_allowed = no
 }
 set_popularities = {
-	cpu_rule = 70
-	kleptocracy = 15
-	military_junta = 15
+	cpu_rule = 60
+	corporatocracy = 20
+	kleptocracy = 10
+	military_junta = 10
 }
+
+recruit_character = LAS_noire_CPU
+recruit_character = LAS_kei_jinguji_character
+recruit_character = LAS_singe_character
+recruit_character = LAS_chian_character
+recruit_character = LAS_ganache_character
+recruit_character = LAS_god_eater_character
 
 add_ideas = {
 		LAS_overindustrialization_idea
 		LAS_widespread_pollution_idea
 		LAS_vulnerable_security_idea
 		LAS_delicate_transportation_idea
-}
-
-create_country_leader = {
-	name = "Noire"
-	desc = "POLITICS_NOIRE_DESC"
-	picture = "Portrait_Lastation_Noire.dds"
-	expire = "1965.1.1"
-	ideology = cpu_rule_subtype
-	traits = {
-		noire_leader_trait
-	}
+		
+		# Ministers
+		
+		LAS_oracle_kei_jinguji
+		LAS_prime_minister_singe
+		LAS_chamberlain_ganache
+		LAS_intelligence_god_eater
 }

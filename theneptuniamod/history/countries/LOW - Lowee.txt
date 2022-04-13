@@ -12,19 +12,21 @@ set_popularities = {
 	cpu_rule = 70
 }
 
+recruit_character = LOW_blanc_CPU
+recruit_character = LOW_mina_nishizawa_character
+recruit_character = LOW_mr_badd_character
+recruit_character = LOW_financier_character
+recruit_character = LOW_csha_character
+
 add_ideas = {
 		LOW_censored_media_idea
 		LOW_divided_industry_idea
 		LOW_unsure_loyalties_idea
-}
-
-create_country_leader = {
-	name = "Blanc"
-	desc = "POLITICS_BLANC_DESC"
-	picture = "Portrait_Lowee_Blanc.dds"
-	expire = "1965.1.1"
-	ideology = cpu_rule_subtype
-	traits = {
-		blanc_leader_trait
-	}
+		
+		# Ministers
+		
+		LOW_oracle_mina_nishizawa
+		LOW_prime_minister_mr_badd
+		LOW_chamberlain_financier
+		LOW_intelligence_csha
 }

@@ -75,8 +75,6 @@ add_dynamic_modifier = {
 	scope = PLA
 }
 
-
-
 ## Recruit characters
 
 recruit_character = PLA_neptune_CPU
@@ -92,6 +90,8 @@ recruit_character = PLA_Blossom_Aisen
 recruit_character = PLA_Ryuka
 recruit_character = PLA_Tsunemi
 
+# Ideas
+
 add_ideas = {
 		PLA_technological_powerhouse_idea
 		PLA_stagnant_birthrates_idea
@@ -106,48 +106,87 @@ add_ideas = {
 		
 }
 
+#Tech Tree
+
+set_research_slots = 4
+
 set_technology = {
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	tech_mountaineers = 1
+	motorised_infantry = 1
 	tech_support = 1		
 	tech_engineers = 1
-	tech_recon = 1
+	tech_signal_company = 1
+	basic_train = 1
 	gw_artillery = 1
-	trench_warfare = 1
+	interwar_antiair = 1
 	early_fighter = 1
+	fighter1 = 1
+	CAS1 = 1
+	CAS2 = 1
 	early_bomber = 1
+	heavy_fighter1 = 1
+	tactical_bomber1 = 1
+	scout_plane1 = 1
+	electronic_mechanical_engineering = 1
+	radio = 1
+	mechanical_computing = 1
+	radio_detection = 1
+	basic_machine_tools = 1
+	improved_machine_tools = 1
+	concentrated_industry = 1
 	fuel_silos = 1
-	synth_oil_experiments = 1
+}
+if = {
+	limit = { has_dlc = "No Step Back" }
+	set_technology = {
+		gwtank_chassis = 1
+		basic_medium_tank_chassis = 1
+		engine_tech_1 = 1
+		engine_tech_2 = 1
+		armor_tech_1 = 1
+	}
+}
+if = {
+	limit = { not = { has_dlc = "No Step Back" } }
+	set_technology = {
+		gwtank = 1
+		basic_light_tank = 1
+		improved_light_tank = 1
+	}
 }
 if = {
 	limit = { not = { has_dlc = "Man the Guns" } }
 	set_technology = {
 		early_submarine = 1
 		early_destroyer = 1
+		basic_destroyer = 1
 		early_light_cruiser = 1
 		early_heavy_cruiser = 1
-		early_battleship = 1
 		transport = 1
 	}
 }
 if = {
 	limit = { has_dlc = "Man the Guns" }
 	set_technology = {
-		basic_naval_mines = 1
-		submarine_mine_laying = 1
 		early_ship_hull_light = 1
 		basic_ship_hull_light = 1
+		sonar = 1
+		smoke_generator = 1
+		early_ship_hull_cruiser = 1
+		improved_airplane_launcher = 1
+		early_ship_hull_heavy = 1
+		basic_torpedo = 1
 		early_ship_hull_submarine = 1
 		basic_ship_hull_submarine = 1
-		early_ship_hull_cruiser = 1
-		early_ship_hull_heavy = 1
 		basic_battery = 1
+		basic_light_battery = 1
+		basic_medium_battery = 1
+		basic_light_shell = 1
 		basic_secondary_battery = 1
-		basic_cruiser_armor_scheme = 1
-		basic_torpedo = 1
-		coastal_defense_ships = 1
-		pre_dreadnoughts = 1
+		damage_control_1 = 1
+		damage_control_2 = 1
 		mtg_transport = 1
+		basic_naval_mines = 1
 	}
 }

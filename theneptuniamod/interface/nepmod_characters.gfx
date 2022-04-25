@@ -153,7 +153,7 @@ spriteTypes = {
 	### LOWEE LEADERS AND COMMANDERS ###
 	
 	spriteType = {
-		name = "GFX_Portrait_Lowee_Bland"
+		name = "GFX_Portrait_Lowee_Blanc"
 		textureFile = "gfx/leaders/LOW/Portrait_Lowee_Blanc.dds"
 	}
 	

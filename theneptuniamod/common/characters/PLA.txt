@@ -359,4 +359,47 @@ characters = {
 		}
 	}
 	
+	PLA_Falcom = {
+		name = "Falcom" 
+		portraits = {
+			army = {
+				large ="GFX_Portrait_Planeptune_Falcom"
+				small ="GFX_advisor_falcom"
+			}
+		}
+
+		corps_commander = {
+			traits = { trait_reckless }
+			skill = 4
+			attack_skill = 4
+			defense_skill = 3
+			planning_skill = 3
+			logistics_skill = 1
+		}
+		
+		country_leader = {
+			ideology = maternal_autocracy_subtype
+			expire = "1960.1.1.1"
+			traits = { }
+		}
+		
+		advisor = {
+			slot = high_command
+			idea_token = PLA_advisor_falcom_idea
+			ledger = army
+			allowed = {
+				original_tag = PLA
+			}
+			available = {
+			}
+			traits = {
+				army_chief_drill_1
+			}
+			cost = 125
+			ai_will_do = {
+				factor = 1.000
+			}
+		}
+	}
+	
 }

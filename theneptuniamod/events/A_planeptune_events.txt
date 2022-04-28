@@ -838,7 +838,8 @@ country_event = { #Histoire takes over again, makes a Military District for B-Sh
 			transfer_state = 8
 			add_state_core = 8
 		}
-		puppet = PLC
+		PLA_B-Sha_character = { set_nationality = PLC }
+		PLC = { promote_character = PLA_B-Sha_character }
 		add_political_power = 25
 		add_stability = -0.10
 		hidden_effect = {
@@ -920,6 +921,9 @@ country_event = { #Bye bye Virtua
 		ai_chance = { factor = 100 }
 		add_political_power = -100
 		add_stability = -0.05
+		PLA_neptune_CPU = { set_nationality = PLX }
+		PLA_nepgear_CPU = { set_nationality = PLX }
+		PLX = { promote_character = PLA_neptune_CPU }
 		PLX = {
 			transfer_state = 55
 			transfer_state = 28
@@ -958,6 +962,11 @@ country_event = { #Bye bye Erethisan
 		}
 		7 = { add_core_of = ERE }
 		18 = { add_core_of = ERE }
+		if = {
+			limit = { has_character = PLA_Falcom }
+			PLA_Falcom = { set_nationality = ERE }
+			ERE = { promote_character = PLA_Falcom }
+		}
 		hidden_effect = {
 			country_event = {
 				id = planeptune.32
@@ -1022,6 +1031,8 @@ country_event = { #Bye bye Zolge
 			transfer_state = 31
 		}
 		31 = { add_core_of = ZOL }
+		PLA_Zolgelicoff_Tetsu = { set_nationality = ZOL }
+		ZOL = { promote_character = PLA_Zolgelicoff_Tetsu }
 		hidden_effect = {
 			country_event = {
 				id = planeptune.34
@@ -1049,7 +1060,7 @@ country_event = { #WAR
 		name = planeptune.34.a	
 		ai_chance = { factor = 100 }
 		set_stability = 0.1
-		set_political_power = 0
+		add_political_power = 200
 		PLX = {
 			declare_war_on = {
 				target = PLA
@@ -1283,16 +1294,7 @@ country_event = { #Emergency Army Drills
 		
 		add_stability = 0.075
 		army_experience = 30
-		create_corps_commander = {
-			name = "Falcom"
-			picture = "Portrait_Planeptune_Falcom.dds"
-			traits = { trait_reckless }
-			skill = 4
-			attack_skill = 4
-			defense_skill = 3
-			planning_skill = 3
-			logistics_skill = 1
-		}
+		PLA_Falcom = { set_nationality = PLA }
 		PLA_decrease_histoire_discontent_small = yes
 	}
 }

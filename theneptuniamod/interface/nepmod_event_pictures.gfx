@@ -2,6 +2,8 @@ spriteTypes = {
 
 	### PLANEPTUNE ###
 
+	# Histoire
+
 	spriteType = {
 		name = "GFX_report_event_histoire_generic"
 		textureFile = "gfx/interface/event_pictures/report_event_histoire_generic.dds"
@@ -12,7 +14,6 @@ spriteTypes = {
 		textureFile = "gfx/interface/event_pictures/report_event_histoire_doth_protest.dds"
 	}
 
-	
 	spriteType = {
 		name = "GFX_report_event_histoire_normal"
 		textureFile = "gfx/interface/event_pictures/report_event_histoire_normal.dds"
@@ -23,9 +24,69 @@ spriteTypes = {
 		textureFile = "gfx/interface/event_pictures/report_event_histoire_scream.dds"
 	}
 	
+	# Neptune
+	
 	spriteType = {
 		name = "GFX_report_event_neptune_nomming_on_pudding"
 		textureFile = "gfx/interface/event_pictures/report_event_neptune_nomming_on_pudding.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_neptune_cheers"
+		textureFile = "gfx/interface/event_pictures/report_event_neptune_cheers.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_neptune_forest"
+		textureFile = "gfx/interface/event_pictures/report_event_neptune_forest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_neptune_is_a_serb"
+		textureFile = "gfx/interface/event_pictures/report_event_neptune_is_a_serb.dds"
+	}
+
+	# Nepgear
+
+	spriteType = {
+		name = "GFX_report_event_nepgear_breakdown"
+		textureFile = "gfx/interface/event_pictures/report_event_nepgear_breakdown.dds"
+	}
+	
+	# Rei Ryghts
+	
+	spriteType = {
+		name = "GFX_report_event_rei_ryghts_imprisoned"
+		textureFile = "gfx/interface/event_pictures/report_event_rei_ryghts_imprisoned.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_rei_ryghts_insane"
+		textureFile = "gfx/interface/event_pictures/report_event_rei_ryghts_insane.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_rei_ryghts_protest"
+		textureFile = "gfx/interface/event_pictures/report_event_rei_ryghts_protest.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_rei_ryghts_sad"
+		textureFile = "gfx/interface/event_pictures/report_event_rei_ryghts_sad.dds"
+	}
+	
+	# B-Sha
+	
+	spriteType = {
+		name = "GFX_report_event_bsha_presto_mask"
+		textureFile = "gfx/interface/event_pictures/report_event_bsha_presto_mask.dds"
+	}
+	
+	# Other
+
+	spriteType = {
+		name = "GFX_report_event_neptune_nepgear_fighting_dogoos"
+		textureFile = "gfx/interface/event_pictures/report_event_neptune_nepgear_fighting_dogoos.dds"
 	}
 
 }

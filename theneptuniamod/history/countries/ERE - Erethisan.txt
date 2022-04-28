@@ -1,6 +1,8 @@
 ﻿capital = 7
 set_convoys = 50
 
+recruit_character = PLA_Falcom
+
 set_politics = {
 	ruling_party = maternal_autocracy
 	last_election = "1933.7.1"
@@ -18,12 +20,3 @@ set_stability = 0.5
 
 ## Leaders
 
-create_country_leader = {
-	name = "Falcom"
-	desc = "POLITICS_FALCOM_DESC"
-	picture = "gfx/leaders/PLA/Portrait_Planeptune_Falcom.dds"
-	expire = "1965.1.1"
-	ideology = maternal_autocracy_subtype
-	traits = {
-	}
-}

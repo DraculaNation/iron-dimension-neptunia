@@ -25,11 +25,11 @@ idea_categories = {
 	
 	government = {
 		slot = mobilization_laws
-		slot = economy
 		character_slot = political_advisor #Oracle
 		character_slot = minister_advisor #Prime Minister
 		character_slot = chamberlain_advisor #Chamberlain
 		character_slot = intelligence_advisor #Intelligence
+		character_slot = theorist #Theorist
 		
 		ledger = civilian
 		
@@ -38,12 +38,12 @@ idea_categories = {
 	}
 	
 	research_production = {
-		slot = tank_manufacturer
+		slot = economy
+		slot = trade_laws
+		slot = industrial_concern
+		slot = materiel_manufacturer
 		slot = naval_manufacturer
 		slot = aircraft_manufacturer
-		slot = materiel_manufacturer
-		slot = industrial_concern
-		character_slot = theorist
 
 		ledger = civilian
 		

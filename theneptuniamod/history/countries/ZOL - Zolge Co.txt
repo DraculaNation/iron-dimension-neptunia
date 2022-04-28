@@ -27,13 +27,3 @@ create_country_leader = {
 	traits = {
 	}
 }
-
-create_country_leader = {
-	name = "Nature"
-	desc = ""
-	picture = "Portrait_Planeptune_Nepgear.dds"
-	expire = "1965.1.1"
-	ideology = anarchy_subtype
-	traits = {
-	}
-}

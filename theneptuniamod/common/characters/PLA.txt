@@ -114,6 +114,25 @@ characters = {
 		}
 	}
 	
+	PLA_croire_character = {
+		name = "Croire" 
+		portraits = {
+			civilian = {
+				small ="GFX_minister_oracle_croire"
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			idea_token = PLA_oracle_croire
+			allowed = {
+				original_tag = PLA
+			}
+			traits = {
+				croire_oracle_trait
+			}
+		}
+	}
+	
 	### LEADERS ###
 	
 	PLA_B-Sha_character = {
@@ -210,6 +229,20 @@ characters = {
 			traits = {
 				zolgelicoff_tetsu_minister_trait
 			}
+		}
+	}
+	
+	PLA_Rei_Ryghts_character = {
+		name = "Rei Ryghts" 
+		portraits = {
+			civilian = {
+				large ="GFX_Portrait_Planeptune_Rei_Ryghts"
+			}
+		}
+		country_leader = {
+			ideology = maternal_autocracy_subtype
+			expire = "1960.1.1.1"
+			traits = { rei_ryghts_leader_trait }
 		}
 	}
 	

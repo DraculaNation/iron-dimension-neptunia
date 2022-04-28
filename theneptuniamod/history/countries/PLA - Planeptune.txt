@@ -1,23 +1,6 @@
 ﻿capital = 51
 set_convoys = 50
-
-set_politics = {
-	ruling_party = cpu_rule
-	last_election = "1933.7.1"
-	election_frequency = 48
-	elections_allowed = no
-}
-
-set_popularities = {
-	alternate_cpu_rule = 10
-	cpu_rule = 25
-	maternal_autocracy = 50
-	military_junta = 15
-}
-
 set_stability = 0.25
-
-load_oob = "PLA_1936"
 
 ### Setting variables for public unrest
 set_variable = {
@@ -75,7 +58,7 @@ add_dynamic_modifier = {
 	scope = PLA
 }
 
-## Recruit characters
+## Recruit characters and Politics
 
 recruit_character = PLA_neptune_CPU
 recruit_character = PLA_nepgear_CPU
@@ -89,6 +72,20 @@ recruit_character = PLA_Zolgelicoff_Tetsu
 recruit_character = PLA_Blossom_Aisen
 recruit_character = PLA_Ryuka
 recruit_character = PLA_Tsunemi
+
+set_politics = {
+	ruling_party = cpu_rule
+	last_election = "1933.7.1"
+	election_frequency = 48
+	elections_allowed = no
+}
+
+set_popularities = {
+	alternate_cpu_rule = 10
+	cpu_rule = 25
+	maternal_autocracy = 50
+	military_junta = 15
+}
 
 # Ideas
 
@@ -190,3 +187,27 @@ if = {
 		basic_naval_mines = 1
 	}
 }
+
+### Variants
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "MSB (Medium Shooty Boi)"
+		type = medium_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_medium_cannon
+			turret_type_slot = tank_medium_two_man_tank_turret
+			suspension_type_slot = tank_torsion_bar_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+		}
+		upgrades = {
+		}
+	}
+}
+
+set_oob = "PLA_1936"

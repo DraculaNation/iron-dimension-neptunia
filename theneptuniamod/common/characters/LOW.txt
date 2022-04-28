@@ -74,14 +74,14 @@ characters = {
 		}
 	}
 	
-	LOW_cha_character = {
+	LOW_csha_character = {
 		name = "C-Sha" 
 		portraits = {
 			civilian = {
 				large ="GFX_Portrait_Lowee_Csha"
 				small ="GFX_minister_intelligence_csha"
 			}
-			military = {
+			army = {
 				small ="GFX_advisor_csha"
 			}
 		}

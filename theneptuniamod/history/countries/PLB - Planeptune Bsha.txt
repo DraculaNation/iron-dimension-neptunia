@@ -1,17 +1,23 @@
 ﻿capital = 41
 set_convoys = 50
 
+recruit_character = PLA_rei_ryghts_character
+recruit_character = PLA_croire_character
+
+add_ideas = {
+	PLA_oracle_croire
+}
+
 set_politics = {
-	ruling_party = military_junta
+	ruling_party = maternal_autocracy
 	last_election = "1933.7.1"
 	election_frequency = 48
 	elections_allowed = no
 }
 
 set_popularities = {
-	alternate_cpu_rule = 10
-	maternal_autocracy = 20
-	military_junta = 70
+	maternal_autocracy = 90
+	military_junta = 10
 }
 
 set_stability = 0.5

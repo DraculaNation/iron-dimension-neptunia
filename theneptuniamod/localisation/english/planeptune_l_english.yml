@@ -19,9 +19,13 @@
  PLA_emergency_DEF:0 "the Planeptune Emergency Authority"
  PLA_emergency_ADJ:0 "Histoire's Planeptune"
  
- PLB:0 "People's Front of Planeptune"
- PLB_DEF:0 "the People's Front of Planeptune"
- PLB_ADJ:0 "B-Sha's Planeptune"
+ PLB:0 "Citizens's Front"
+ PLB_DEF:0 "the Citizens' Front"
+ PLB_ADJ:0 "Rebel"
+ 
+ PLC:0 "Ziztem Military District"
+ PLC_DEF:0 "the Ziztem Military District"
+ PLC_ADJ:0 "Ziztem"
  
  PGA:0 "Planeptune Monsters"
  PGA_DEF:0 "the Planeptune Monsters"
@@ -36,7 +40,7 @@
  ZOL_ADJ:0 "Zolge"
  
  #Menu Description
- PLANEPTUNE_GATHERING_STORM_DESC:0 "Planeptune is in chaos and their CPU is fooling around. No one was prepared for the devastation caused by a war with a rebellious nation - Eden. Eventually, the rebellion was crushed but at a great price. Not learning anything from the rebellion, Neptune does nothing but being content with her status as a CPU, feasting on huge supplies of pudding and Nep Bull, and browsing N-chan; she sits in her Basilicom and plays the ruler, giving ear to people's worries and then dismissing them, as if on her own volition instead of being forced by the oracle. Rising discontent from the citizens as well as well as Histoire's own doubts cast a shadow over Neptune's future as a CPU. Will Planeptune be ready for the next console war, or will it collapse under the weight of its own problems?"
+ PLANEPTUNE_GATHERING_STORM_DESC:0 "Planeptune is in chaos and its CPU is fooling around. No one was prepared for the devastation caused by a war with a rebellious nation - Eden. Eventually, the rebellion was crushed but at a great price. Not learning anything from the rebellion, Neptune does nothing but being content with her status as a CPU, feasting on huge supplies of pudding and Nep Bull, and browsing N-chan; she sits in her Basilicom and plays the ruler, giving ear to people's worries and then dismissing them, as if on her own volition instead of being forced by the oracle. Rising discontent from the citizens as well as well as Histoire's own doubts cast a shadow over Neptune's future as a CPU. Will Planeptune be ready for the next console war, or will it collapse under the weight of its own problems?"
  
  #Character Descriptions
  POLITICS_NEPTUNE_DESC:0 "Neptune is the charismatic and friendly CPU of Planeptune. Along with being a CPU, she is famous for her love of video games and pudding... as well as a hatred for eggplants. When it comes to her rule over Planeptune, she is constantly lazying around - playing video games, eating snacks, and browsing N-chan. She is so removed from political affairs that the citizens rarely recognize her in her regular form. However, she does have a say in the politics of Planeptune, though only when Histoire forces her - usually met with quite a lot of resistance from Neptune herself. As such, Neptune is a very negligent leader, at least for now."
@@ -46,7 +50,7 @@
  POLITICS_HISTOIRE_DESC:0 "Histoire has had enough. No more forcing the Neps to do their bare minimum. No more controlling Planeptune from the shadows, bearing all the burden but reaping none of the rewards. No more straining her vocal chords by reprimanding Neptune in the only way that would make her heard. A new age has come, and Planeptune has outgrown its need for a do-nothing CPU. This is the age of Histoire's rule over Planeptune. Seizing total control and working hard, Histoire will usher Planeptune into an age of prosperity and peace."
  POLITICS_PURPLE_HEART_DESC:0 "Unlike in her regular form, Purple Heart is serious, calm, and collected. A perfect leader... for the duration of her transformation. Purple Heart is gifted with prowess and skill in combat, usually hunting monsters or fighting in the frontlines. However, if the unfortunate happens and Purple Heart is defeated during a battle, a huge amount of shares will be lost."
  POLITICS_PURPLE_SISTER_DESC:0 "Just like Purple Heart, Purple Sister is skilled in combat and is often seen at the frontlines or exterminating monsters. Unlike Neptune, however, Purple Sister's personality doesn't change drastically - instead, it pretty much remains the same."
- POLITICS_BSHA_DESC:0 "It is a public secret that B-Sha is actually Presto Mask, the hero of Planeptune. After catching the most successful criminal ever - the neglectful Neptune - Presto Mask made way for B-Sha's rule. Much like Neptune, B-Sha is childish and can often  be found slacking away and being pushed by Histoire... with the added troubles of being very reluctant to fight monsters. It seems that a revolution brought little change to Planeptune in terms of its administration, except for B-Sha's promises of peace no matter the cost."
+ POLITICS_BSHA_DESC:0 "It is a public secret that B-Sha is actually Presto Mask, the hero of Planeptune. After catching the worse criminal ever - the perfidious Rei Ryghts - Presto Mask seized the whole nation of Planeptune until Neptune can pay her debt. Much like Neptune, B-Sha is childish and can often  be found slacking away and being pushed by Histoire... with the added troubles of being very reluctant to fight monsters. It seems that there's little change to Planeptune in terms of its administration, except for B-Sha's promises of peace no matter the cost."
  
  #Traits
  neptune_leader_trait:0 "Unfelt Presence"
@@ -59,6 +63,8 @@
  bsha_leader_trait:0 "Afraid of Monsters"
  bsha_other_leader_trait:0 "Mercenary Cop"
  bsha_theorist_trait:0 "Heroic Rush Doctrine"
+ rei_ryghts_leader_trait:0 "The Skittish Populist"
+ croire_oracle_trait:0 "Thrill Seeker"
  
  #Minister Descriptions
  PLA_oracle_histoire_desc:0 "Histoire, Neptune's right hand and the person that bears the burden of actually administrating Planeptune. Histoire's origins are unknown, but one thing is certain - she was helping every generation of Planeptune's CPUs administrate the country. She is an incredibly old and powerful being despite what her appearance may suggest, and with her age comes wisdom - wistom that falls to Neptune and Nepgear's deaf ears. Despite her hard-working attitude, she seems to take more time than average when it comes to tasks - usually three hours for something Neptune could do in an hour. Lately, Histoire has been starting to show some cracks in her usual demeanor. She has become more demanding and assertive towards Neptune... for a reason."
@@ -221,8 +227,8 @@
  PLA_the_haneda_speech:0 "Make the §PHaneda§! Speech"
  PLA_win_the_publics_hearts:0 "Win the Public's Hearts"
  PLA_win_the_publics_hearts_mission:0 "Win the Public's Hearts"
- PLA_purge_bsha:0 "Purge B-Sha"
- PLA_purge_bsha_mission:0 "Purge B-Sha"
+ PLA_purge_bsha:0 "Bust the Citizens Group"
+ PLA_purge_bsha_mission:0 "Bust the Citizens Group"
  
  PLA_histoire_discontent_effigy:0 "Show/Hide Histoire Discontent Decisions"
  PLA_do_administration_tasks:0 "Do Administration Tasks"

@@ -1,0 +1,197 @@
+﻿# Division template historical names system. Is a new method of naming the divisions based on the names-group assigned to it's template.
+# If we run out of all historical names, the names will be assigned in the old way.
+#
+# Each group has a made up tag. Use it if you want to append more, or replace existing names with the extra txt files (modding).
+#
+# for_countries - lists all countries that can use it. If empty, or entire tag is missing, all countries in the world can use it.
+#
+# can_use - is a trigger that locks/unlocks the group under specific circumstances. The trigger is in a country scope.
+#
+# division_types - is a list of tokens to corresponding unit types. A player can in fact use any group of names for a div.template
+#                  however this tag is a helper for an automated choice (for AI, or if the group must switch on it's own, because
+#                  for example the current one is no longer available due to the can_use trigger saying so).
+#                  In automated choice, the division template must have at least 1 of the following types for it to be chosen.
+#
+# fallback_name - Is going to be used if we run out of the scripted historical names. If you want to use the old division naming
+#                 mechanics to be used for fallbacks, then just skip this option.
+#
+# unordered - It's a list of historical division names that did not have a number. Regardless if such names happened in history or not
+#             this option is available here mainly for a mods.
+#
+# ordered - Is a list of all historical names. 
+#           Numbers must start from 1 and up. 
+#           Numbers can't repeat in one scope.
+#           If you script the name for this group, at the same number (for example in a mod in another file), the name will be override.
+#           All arguments between the brackets must be separated by spaces. Each argument is wrapped in "quotas".
+#           1st argument = The name. It must contain either: 
+#                          %d (for decimal number placement)
+#                          %s (for string number placement - ROMAN numbers like XIV).
+#           2nd argument is optional = A localizable text describing this historical division. The text will be visible in the tooltip
+#                                      where you choose the historical division name.
+#           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
+#                                      the current game version.
+NEP_INF_01 = 
+{
+	name = "Reserve Detachment"
+
+	for_countries = { PLA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%dth Reserve Detachment"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst 'Mess Around And Find Out' Reserve Detachment" }
+		2 = { "%dnd Reserve Detachment" }
+		3 = { "%drd Reserve Detachment" }
+		21 = { "%dst Reserve Detachment" }
+		22 = { "%dnd Reserve Detachment" }
+		23 = { "%drd Reserve Detachment" }
+		31 = { "%dst Reserve Detachment" }
+		32 = { "%dnd Reserve Detachment" }
+		33 = { "%drd Reserve Detachment" }
+		41 = { "%dst Reserve Detachment" }
+		42 = { "%dnd Reserve Detachment" }
+		43 = { "%drd Reserve Detachment" }
+		51 = { "%dst Reserve Detachment" }
+		52 = { "%dnd Reserve Detachment" }
+		53 = { "%drd Reserve Detachment" }	
+	}
+}
+
+NEP_INF_02 = 
+{
+	name = "Infantry Division"
+
+	for_countries = { PLA }
+
+	can_use = { always = yes }
+
+	division_types = { "infantry" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%dth Volunteer Group"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Volunteer Group" }
+		2 = { "%dnd Volunteer Group" }
+		3 = { "%drd Volunteer Group" }
+		21 = { "%dst Volunteer Group" }
+		22 = { "%dnd Volunteer Group" }
+		23 = { "%drd Volunteer Group" }
+		31 = { "%dst Volunteer Group" }
+		32 = { "%dnd Volunteer Group" }
+		33 = { "%drd Volunteer Group" }
+		41 = { "%dst Volunteer Group" }
+		42 = { "%dnd Volunteer Group" }
+		43 = { "%drd Volunteer Group" }
+		51 = { "%dst Volunteer Group" }
+		52 = { "%dnd Volunteer Group" }
+		53 = { "%drd Volunteer Group" }	
+	}
+}
+
+NEP_MOT_01 = 
+{
+	name = "Motorized Division"
+
+	for_countries = { PLA }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%dth Motorized Volunteer Group"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Motorized Volunteer Group" }
+		2 = { "%dnd Motorized Volunteer Group" }
+		3 = { "%drd Motorized Volunteer Group" }
+		21 = { "%dst Motorized Volunteer Group" }
+		22 = { "%dnd Motorized Volunteer Group" }
+		23 = { "%drd Motorized Volunteer Group" }
+		31 = { "%dst Motorized Volunteer Group" }
+		32 = { "%dnd Motorized Volunteer Group" }
+		33 = { "%drd Motorized Volunteer Group" }
+		41 = { "%dst Motorized Volunteer Group" }
+		42 = { "%dnd Motorized Volunteer Group" }
+		43 = { "%drd Motorized Volunteer Group" }
+		51 = { "%dst Motorized Volunteer Group" }
+		52 = { "%dnd Motorized Volunteer Group" }
+		53 = { "%drd Motorized Volunteer Group" }	
+	}
+}
+
+NEP_TNK_01 = 
+{
+	name = "Armored Tank Division"
+
+	for_countries = { PLA }
+
+	can_use = { always = yes }
+
+	division_types = { "medium_armor" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%dth Armored Tank Division"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst 'Blast 'em to the past' Armored Tank Division" }
+		2 = { "%dnd Armored Tank Division" }
+		3 = { "%drd Armored Tank Division" }
+		21 = { "%dst Armored Tank Division" }
+		22 = { "%dnd Armored Tank Division" }
+		23 = { "%drd Armored Tank Division" }
+		31 = { "%dst Armored Tank Division" }
+		32 = { "%dnd Armored Tank Division" }
+		33 = { "%drd Armored Tank Division" }
+		41 = { "%dst Armored Tank Division" }
+		42 = { "%dnd Armored Tank Division" }
+		43 = { "%drd Armored Tank Division" }
+		51 = { "%dst Armored Tank Division" }
+		52 = { "%dnd Armored Tank Division" }
+		53 = { "%drd Armored Tank Division" }	
+	}
+}
+
+NEP_SPC_01 = 
+{
+	name = "Strike Group"
+
+	for_countries = { PLA }
+
+	can_use = { always = yes }
+
+	division_types = { "motorized" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "Strike Group %d"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "Strike Group %d" }
+	}
+}

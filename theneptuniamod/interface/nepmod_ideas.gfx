@@ -9,17 +9,17 @@ spriteTypes = {
 
 	spriteType = {
 		name = "GFX_idea_PLA_stagnant_birthrates"
-		textureFile = "gfx/interface/ideas/PLA_stagnant_birthrates.tga"
+		textureFile = "gfx/interface/ideas/PLA_birthrates_stagnant.tga"
 	}
 
 	spriteType = {
 		name = "GFX_idea_PLA_rising_birthrates"
-		textureFile = "gfx/interface/ideas/PLA_rising_birthrates.tga"
+		textureFile = "gfx/interface/ideas/PLA_birthrates_steady.tga"
 	}
 
 	spriteType = {
 		name = "GFX_idea_PLA_rapid_birthrates"
-		textureFile = "gfx/interface/ideas/PLA_rapid_birthrates.tga"
+		textureFile = "gfx/interface/ideas/PLA_birthrates_stagnant.tga"
 	}
 
 	spriteType = {

@@ -786,7 +786,7 @@ country_event = { #Histoire suddenly takes over
 	}
 }
 
-country_event = { #B-Sha takes over, kicks the neps out and forces Histoire to work for her
+country_event = { #B-Sha takes over, goes down hard on Rei and her followers
 	id = planeptune.26
 	title = planeptune.26.t
 	desc = planeptune.26.d
@@ -818,7 +818,7 @@ country_event = { #B-Sha takes over, kicks the neps out and forces Histoire to w
 	}
 }
 
-country_event = { #Histoire coups B-Sha again and banishes her
+country_event = { #Histoire takes over again, makes a Military District for B-Sha
 	id = planeptune.27
 	title = planeptune.27.t
 	desc = planeptune.27.d
@@ -827,13 +827,18 @@ country_event = { #Histoire coups B-Sha again and banishes her
 	is_triggered_only = yes
 	
 	option = {
-		name = planeptune.27.a #Cincinnatus
+		name = planeptune.27.a
 		ai_chance = { factor = 100 }
 		set_politics = { ruling_party = maternal_autocracy }
 		add_popularity = {
 			ideology = maternal_autocracy
 			popularity = -0.05
 		}
+		PLC = {
+			transfer_state = 8
+			add_state_core = 8
+		}
+		puppet = PLC
 		add_political_power = 25
 		add_stability = -0.10
 		hidden_effect = {
@@ -858,7 +863,7 @@ country_event = { #Haneda Riots
 		name = planeptune.28.a #Cincinnatus
 		ai_chance = { factor = 100 }
 		add_political_power = -50
-		add_stability = -0.10
+		add_stability = -0.25
 		41 = { set_demilitarized_zone = yes }
 		hidden_effect = {
 			country_event = {
@@ -984,7 +989,6 @@ country_event = { #Monsters take control
 			transfer_state = 53
 			transfer_state = 36
 			transfer_state = 11
-			transfer_state = 8
 		}
 		if = {
 			limit = { owns_state = 44 }
@@ -1044,7 +1048,7 @@ country_event = { #WAR
 	option = {
 		name = planeptune.34.a	
 		ai_chance = { factor = 100 }
-		set_stability = 0.5
+		set_stability = 0.1
 		set_political_power = 0
 		PLX = {
 			declare_war_on = {

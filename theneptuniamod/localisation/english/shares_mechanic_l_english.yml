@@ -1,5 +1,12 @@
 ﻿l_english:
  
+ #Equipment
+ hdd_form:0 "CPU in HDD form"
+ monster_unit:0 "Monster"
+ shares_equipment:0 "Share Energy"
+ shares_equipment_0:0 "Share Energy"
+ shares_equipment_0_desc:0 "Share Energy"
+ 
  #Tooltips
  
  shares_increase_planeptune_small_tt:0 "§PPlaneptune's§! §gshares will§! §Grise§! §ga little!§!"

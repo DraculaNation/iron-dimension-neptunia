@@ -1,0 +1,353 @@
+﻿### TEMPLATES ###
+
+division_template = {
+	name = "White Heart"
+	is_locked = yes
+	division_names_group = "LOW_HDD_01"
+	regiments = {
+		hdd_form = { x = 0 y = 0 }
+	}
+}
+
+division_template = {
+	name = "Line Infantry"	
+	division_names_group = LOW_INF_01
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		artillery_brigade = { x = 2 y = 0 }
+	}
+	support = {
+		recon = { x = 0 y = 0 }
+		engineer = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Anti Tank Brigade"	
+	division_names_group = LOW_MAT_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		motorized = { x = 1 y = 0 }
+		mot_anti_tank_brigade  = { x = 1 y = 1 }
+		mot_anti_tank_brigade  = { x = 1 y = 2 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		anti_tank = { x = 0 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Armored Cavalry"	
+	division_names_group = LOW_LTK_01
+
+	regiments = {
+		motorized = { x = 0 y = 0 }
+		motorized = { x = 0 y = 1 }
+		motorized = { x = 0 y = 2 }
+		light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		light_armor = { x = 1 y = 2 }
+	}
+	support = {
+		light_tank_recon = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Royal Tank Brigade"	
+	division_names_group = LOW_MTK_01
+
+	regiments = {
+		medium_armor = { x = 0 y = 0 }
+		medium_armor = { x = 0 y = 1 }
+		medium_armor = { x = 0 y = 2 }
+		heavy_armor = { x = 0 y = 3 }
+		motorized = { x = 1 y = 0 }
+		motorized = { x = 1 y = 1 }
+		motorized = { x = 1 y = 2 }
+		mot_artillery_brigade  = { x = 1 y = 3 }
+	}
+	support = {
+		mot_recon = { x = 0 y = 0 }
+		logistics_company = { x = 0 y = 1 }
+		engineer = { x = 0 y = 2 }
+		artillery = { x = 0 y = 3 }
+	}
+}
+
+division_template = {
+	name = "Border Guard Division"	
+	division_names_group = LOW_INF_02
+
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+	}
+	support = {
+		engineer = { x = 0 y = 0 }
+	}
+}
+
+### UNITS ###
+
+units = {
+	#Line Infantry
+	division = { # One
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2662
+		division_template = "Line Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Two
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 281
+		division_template = "Line Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Three
+		division_name = {
+			is_name_ordered = yes
+			name_order = 3
+		}
+		location = 3228
+		division_template = "Line Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Four
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 310
+		division_template = "Line Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Five
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		}
+		location = 3310
+		division_template = "Line Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Six
+		division_name = {
+			is_name_ordered = yes
+			name_order = 6
+		}
+		location = 1567
+		division_template = "Line Infantry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	#Border Guards
+	division = { # One
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3355
+		division_template = "Border Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Two
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3328
+		division_template = "Border Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Three
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 1952
+		division_template = "Border Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Four
+		division_name = {
+			is_name_ordered = yes
+			name_order = 4
+		}
+		location = 433
+		division_template = "Border Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Five
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 431
+		division_template = "Border Guard Division"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	#Anti Tank Brigade
+	division = { # One
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 3310
+		division_template = "Anti Tank Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Two
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 2470
+		division_template = "Anti Tank Brigade"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	#Armored Cavalry
+	division = { # One
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 310
+		division_template = "Armored Cavalry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	division = { # Two
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		}
+		location = 3259
+		division_template = "Armored Cavalry"
+		start_experience_factor = 0.2
+		start_equipment_factor = 1.0
+	}
+	#Royal Tank Brigade
+	division = { # One
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		}
+		location = 2662
+		division_template = "Royal Tank Brigade"
+		start_experience_factor = 1.0
+		start_equipment_factor = 1.0
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "LOW"
+		}
+		requested_factories = 2	
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = motorized_equipment_1
+			creator = "LOW"
+		}
+		requested_factories = 2	
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = support_equipment_1
+			creator = "LOW"
+		}
+		requested_factories = 1	
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = artillery_equipment_1
+			creator = "LOW"
+		}
+		requested_factories = 1	
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = anti_tank_equipment_1
+			creator = "LOW"
+		}
+		requested_factories = 1	
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = light_tank_chassis_0
+			creator = "LOW"
+			version_name = "IGVM-81 'AV'"
+		}
+		requested_factories = 1	
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = medium_tank_chassis_1
+			creator = "LOW"
+			version_name = "VGA-118 'Nunchuck'"
+		}
+		requested_factories = 1	
+		progress = 0.5
+		efficiency = 100
+	}
+	add_equipment_production = {
+		equipment = {
+			type = heavy_tank_chassis_1
+			creator = "LOW"
+			version_name = "GLA-08 'Miitank'"
+		}
+		requested_factories = 1	
+		progress = 0.5
+		efficiency = 100
+	}
+}	

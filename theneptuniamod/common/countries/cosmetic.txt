@@ -17,3 +17,8 @@ PLA_emergency = {
     color = rgb { 75 38 221 }
     color_ui = rgb { 55 18 201 }
 }
+
+PLA_rei_success = {
+    color = rgb { 158 178 245 }
+    color_ui = rgb { 138 158 225 }
+}

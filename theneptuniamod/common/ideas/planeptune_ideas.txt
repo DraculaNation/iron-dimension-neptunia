@@ -59,6 +59,10 @@ ideas = {
 			picture = PLA_public_unrest_idea
 			
 			modifier = {
+				custom_modifier_tooltip = PLA_war_support_unrest_tt
+				custom_modifier_tooltip = PLA_organization_unrest_tt
+				custom_modifier_tooltip = PLA_construction_unrest_tt
+				custom_modifier_tooltip = PLA_weekly_war_support_unrest_tt
 			}
 		}
 		
@@ -72,6 +76,8 @@ ideas = {
 			picture = PLA_histoire_discontent_idea
 			
 			modifier = {
+				custom_modifier_tooltip = PLA_stability_histoire_tt
+				custom_modifier_tooltip = PLA_daily_pp_gain_histoire_tt
 			}
 		}
 
@@ -85,9 +91,10 @@ ideas = {
 			picture = PLA_public_unrest_idea
 			
 			modifier = {
-				war_support_factor = 0.08
-				army_org_factor = 0.08
-				breakthrough_factor = 0.08
+				war_support_factor = -0.08
+				army_org_factor = -0.08
+				production_speed_buildings_factor = -0.08
+				war_support_weekly = 0.00
 			}
 		}
 

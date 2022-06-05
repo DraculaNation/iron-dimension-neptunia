@@ -8,7 +8,7 @@ division_template = {
 		infantry = { x = 0 y = 0 }
 		infantry = { x = 0 y = 1 }
 		infantry = { x = 0 y = 2 }
-		artillery_brigade = { x = 0 y = 1 }
+		artillery_brigade = { x = 0 y = 3 }
 	}
 	support = {
 		#recon = { x = 0 y = 0 }
@@ -79,6 +79,15 @@ division_template = {
 	support = {
 		artillery = { x = 0 y = 0 }
 		signal_company = { x = 0 y = 1 }
+	}
+}
+
+division_template = {
+	name = "Purple Heart"
+	is_locked = yes
+	division_names_group = "PLA_HDD_01"
+	regiments = {
+		hdd_form = { x = 0 y = 0 }
 	}
 }
 

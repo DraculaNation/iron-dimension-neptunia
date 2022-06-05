@@ -46,6 +46,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/event_pictures/report_event_neptune_is_a_serb.dds"
 	}
 
+	spriteType = {
+		name = "GFX_report_event_neptune_napping"
+		textureFile = "gfx/interface/event_pictures/report_event_neptune_napping.dds"
+	}
+
 	# Nepgear
 
 	spriteType = {
@@ -87,6 +92,27 @@ spriteTypes = {
 	spriteType = {
 		name = "GFX_report_event_neptune_nepgear_fighting_dogoos"
 		textureFile = "gfx/interface/event_pictures/report_event_neptune_nepgear_fighting_dogoos.dds"
+	}
+
+	### LASTATION ###
+	
+	spriteType = {
+		name = "GFX_report_event_noire_angry"
+		textureFile = "gfx/interface/event_pictures/report_event_noire_angry.dds"
+	}
+	
+	### LEANBOX ###
+
+	spriteType = {
+		name = "GFX_report_event_vert_steals_nepgear"
+		textureFile = "gfx/interface/event_pictures/report_event_vert_steals_nepgear.dds"
+	}
+
+	### LOWEE ###
+	
+	spriteType = {
+		name = "GFX_report_event_blanc_angry"
+		textureFile = "gfx/interface/event_pictures/report_event_blanc_angry.dds"
 	}
 
 }

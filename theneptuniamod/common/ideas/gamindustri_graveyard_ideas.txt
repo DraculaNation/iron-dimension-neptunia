@@ -15,9 +15,8 @@ ideas = {
 				research_speed_factor = -1.00
 				production_speed_buildings_factor = -1.00
 				repair_speed_factor = -0.8
-				conscription = 0.15
-				pocket_penalty = 0.8
-				army_speed_factor = 0.5
+				required_garrison_factor = 1.0
+				custom_modifier_tooltip = GGR_monster_unit_tt
 			}
 		}
 		

@@ -35,7 +35,7 @@ country_event = { #Invitation to the Friendship Treaty
 	id = planeptune.2
 	title = planeptune.2.t
 	desc = planeptune.2.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_neptune_cheers
 	
 	is_triggered_only = yes
 	
@@ -78,7 +78,7 @@ country_event = { #Friendship Treaty Commences
 	id = planeptune.3
 	title = planeptune.3.t
 	desc = planeptune.3.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_neptune_cheers
 	
 	is_triggered_only = yes
 	
@@ -217,7 +217,7 @@ country_event = { #Blanc gets called flat
 	id = planeptune.4
 	title = planeptune.4.t
 	desc = planeptune.4.d
-	
+	picture = GFX_report_event_blanc_angry
 	is_triggered_only = yes
 	
 	option = {
@@ -247,7 +247,7 @@ country_event = { #Neptune not present
 	id = planeptune.5
 	title = planeptune.5.t
 	desc = planeptune.5.d
-	
+	picture = GFX_report_event_neptune_napping
 	is_triggered_only = yes
 	
 	option = {
@@ -277,7 +277,7 @@ country_event = { #Vert tries to kidnap Nepgear
 	id = planeptune.6
 	title = planeptune.6.t
 	desc = planeptune.6.d
-	
+	picture = GFX_report_event_vert_steals_nepgear
 	is_triggered_only = yes
 	
 	option = {
@@ -307,7 +307,7 @@ country_event = { #Noire gets calling out for having no friends
 	id = planeptune.7
 	title = planeptune.7.t
 	desc = planeptune.7.d
-	
+	picture = GFX_report_event_noire_angry
 	is_triggered_only = yes
 	
 	option = {
@@ -352,11 +352,11 @@ country_event = { #Neptune realizes that stuff is fucked up
 	}
 }
 
-country_event = { #People are angry and don't want to enlist
+country_event = { #Rei Ryghts Event
 	id = planeptune.9
 	title = planeptune.9.t
 	desc = planeptune.9.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_rei_ryghts_protest
 	
 	is_triggered_only = yes
 	
@@ -386,7 +386,7 @@ country_event = { #Nep remilitarizes Erethisan
 	id = planeptune.11
 	title = planeptune.11.t
 	desc = planeptune.11.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_histoire_normal
 	
 	is_triggered_only = yes
 	
@@ -488,7 +488,7 @@ country_event = { #Collapse Start - Public
 	id = planeptune.15
 	title = planeptune.15.t
 	desc = planeptune.15.d
-	picture = GFX_report_event_histoire_generic
+	picture = GFX_report_event_rei_ryghts_protest
 	is_triggered_only = yes
 	
 	option = {
@@ -561,7 +561,7 @@ country_event = { #Neps kicked out
 	id = planeptune.18
 	title = planeptune.18.t
 	desc = planeptune.18.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_neptune_forest
 	
 	is_triggered_only = yes
 	
@@ -608,7 +608,7 @@ country_event = { #Planeptune Riots
 	id = planeptune.20
 	title = planeptune.20.t
 	desc = planeptune.20.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_rei_ryghts_insane
 	
 	is_triggered_only = yes
 	
@@ -630,6 +630,8 @@ country_event = { #Planeptune Riots
 		add_stability = -0.15
 		add_war_support = -0.15
 		add_political_power = -25
+		PLA_Rei_Ryghts_character = { set_nationality = PLA }
+		promote_character = PLA_Rei_Ryghts_character
 		hidden_effect = {
 			country_event = {
 				id = planeptune.21
@@ -639,11 +641,11 @@ country_event = { #Planeptune Riots
 	}
 }
 
-country_event = { #B-Sha betrays you
+country_event = { #B-Sha Mobilization
 	id = planeptune.21
 	title = planeptune.21.t
 	desc = planeptune.21.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_bsha_presto_mask
 	
 	is_triggered_only = yes
 	
@@ -656,24 +658,59 @@ country_event = { #B-Sha betrays you
 			popularity = 0.10
 		}
 		hidden_effect = {
+			if = {
+				limit = { check_variable = { PLA_radicalization_level > 1 } }
+					country_event = {
+						id = planeptune.50
+						days = 15
+					}
+				else = {
+					country_event = {
+						id = planeptune.22
+						days = 15
+					}
+				}
+			}
+		}
+	}
+}
+
+country_event = { #B-Sha Restores Order
+	id = planeptune.22
+	title = planeptune.22.t
+	desc = planeptune.22.d
+	picture = GFX_report_event_rei_ryghts_imprisoned
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.22.a #Cincinnatus
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = military_junta
+			popularity = 0.1
+		}
+		add_stability = 0.1
+		add_war_support = -0.05
+		hidden_effect = {
 			country_event = {
-				id = planeptune.22
+				id = planeptune.23
 				days = 15
 			}
 		}
 	}
 }
 
-country_event = { #Bye bye Neps! Love, B-Sha
-	id = planeptune.22
-	title = planeptune.22.t
-	desc = planeptune.22.d
-	picture = GFX_report_event_physics_lab_01
+country_event = { #B-Sha takes planeptune
+	id = planeptune.23
+	title = planeptune.23.t
+	desc = planeptune.23.d
+	picture = GFX_report_event_bsha_presto_mask
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = planeptune.22.a #Cincinnatus
+		name = planeptune.23.a #Buh-bye
 		ai_chance = { factor = 100 }
 		set_politics = { ruling_party = military_junta }
 		add_popularity = {
@@ -684,32 +721,6 @@ country_event = { #Bye bye Neps! Love, B-Sha
 		add_stability = -0.1
 		add_war_support = -0.20
 		set_cosmetic_tag = PLA_military_junta
-		hidden_effect = {
-			country_event = {
-				id = planeptune.23
-				days = 15
-			}
-		}
-	}
-}
-
-country_event = { #B-Sha solidifies control
-	id = planeptune.23
-	title = planeptune.23.t
-	desc = planeptune.23.d
-	picture = GFX_report_event_physics_lab_01
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = planeptune.23.a #Buh-bye
-		ai_chance = { factor = 100 }
-		add_popularity = {
-			ideology = military_junta
-			popularity = 0.1
-		}
-		add_stability = 0.05
-		add_war_support = 0.05
 		## INSERT NEW FOCUS TREE
 		mark_focus_tree_layout_dirty = yes
 	}
@@ -856,7 +867,7 @@ country_event = { #Haneda Riots
 	id = planeptune.28
 	title = planeptune.28.t
 	desc = planeptune.28.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_rei_ryghts_protest
 	
 	is_triggered_only = yes
 	
@@ -879,7 +890,7 @@ country_event = { #Bye bye Haneda
 	id = planeptune.29
 	title = planeptune.29.t
 	desc = planeptune.29.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_rei_ryghts_insane
 	
 	is_triggered_only = yes
 	
@@ -912,7 +923,7 @@ country_event = { #Bye bye Virtua
 	id = planeptune.30
 	title = planeptune.30.t
 	desc = planeptune.30.d
-	picture = GFX_report_event_physics_lab_01
+	picture = GFX_report_event_neptune_forest
 	
 	is_triggered_only = yes
 	
@@ -1430,5 +1441,54 @@ country_event = { #Neptune pays Lip Service - 'All bark, no bite'
 		ai_chance = { factor = 100 }
 		PLA_decrease_histoire_discontent_small = yes
 		PLA_decrease_public_unrest_small = yes
+	}
+}
+
+### Rei Route
+
+country_event = { #Rei Success
+	id = planeptune.50
+	title = planeptune.50.t
+	desc = planeptune.50.d
+	picture = GFX_report_event_neptune_forest
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.50.a #Buh-bye
+		ai_chance = { factor = 100 }
+		set_politics = { ruling_party = maternal_autocracy }
+		add_political_power = -150
+		add_stability = -0.1
+		add_war_support = -0.25
+		hidden_effect = {
+			country_event = {
+				id = planeptune.51
+				days = 15
+			}
+		}
+		set_cosmetic_tag = PLA_rei_success
+	}
+}
+
+country_event = { #Histy solidifies control
+	id = planeptune.51
+	title = planeptune.51.t
+	desc = planeptune.51.d
+	picture = GFX_report_event_histoire_normal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.51.a #Buh-bye
+		ai_chance = { factor = 100 }
+		add_popularity = {
+			ideology = maternal_autocracy
+			popularity = 0.05
+		}
+		add_political_power = 30
+		add_stability = 0.05
+		## INSERT NEW FOCUS TREE
+		mark_focus_tree_layout_dirty = yes
 	}
 }

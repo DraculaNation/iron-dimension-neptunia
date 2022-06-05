@@ -1,0 +1,52 @@
+spriteTypes = {	
+
+	##################################
+	### Large images for Groups ###
+
+	spriteType = { name = "GFX_group_CPU_icon"								textureFile = "gfx/interface/counters/divisions_large/unit_CPU_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_group_monsters_icon"							textureFile = "gfx/interface/counters/divisions_large/unit_monsters_icon.dds" noOfFrames = 2 }
+	
+	##################################
+	### Large images for DIVISIONS ###
+
+	spriteType = { name = "GFX_unit_CPU_icon_medium" 						textureFile = "gfx/interface/counters/divisions_large/unit_CPU_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_hdd_form_icon_medium" 						textureFile = "gfx/interface/counters/divisions_large/unit_CPU_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_monsters_icon_medium" 					textureFile = "gfx/interface/counters/divisions_large/unit_monsters_icon.dds" noOfFrames = 2 }
+	spriteType = { name = "GFX_unit_monster_unit_icon_medium" 					textureFile = "gfx/interface/counters/divisions_large/unit_monsters_icon.dds" noOfFrames = 2 }
+
+	
+	####################################################
+	### Small images for DIVISIONS (On-map-counters) ###
+
+	spriteType = { name = "GFX_unit_CPU_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_CPU_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_hdd_form_icon_medium_white"					textureFile = "gfx/interface/counters/divisions_small/onmap_unit_CPU_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_monsters_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_monsters_icon.dds" noOfFrames = 2}
+	spriteType = { name = "GFX_unit_monster_unit_icon_medium_white"				textureFile = "gfx/interface/counters/divisions_small/onmap_unit_monsters_icon.dds" noOfFrames = 2}
+	
+	### Text Icons ###
+	
+	spriteType = {
+		name = "GFX_unit_hdd_form_icon_small"
+		texturefile = "gfx/texticons/unit_CPU_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_unit_monster_unit_icon_small"
+		texturefile = "gfx/texticons/unit_CPU_icon_small.dds"
+		legacy_lazy_load = no
+		noOfFrames = 2		
+	}
+	spriteType = {
+		name = "GFX_nato_unit_hdd_form_icon_small"
+		texturefile = "gfx/texticons/nato_unit_CPU_icon_small.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_nato_unit_monster_unit_icon_small"
+		texturefile = "gfx/texticons/nato_unit_CPU_icon_small.dds"
+		legacy_lazy_load = no
+	}	
+
+	
+}

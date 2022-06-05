@@ -19,6 +19,12 @@ add_ideas = {
 
 set_stability = 0.5
 
+add_offsite_building = { type = arms_factory level = 1 }
+add_offsite_building = { type = arms_factory level = 1 }
+add_offsite_building = { type = arms_factory level = 1 }
+add_offsite_building = { type = arms_factory level = 1 }
+add_offsite_building = { type = arms_factory level = 1 }
+
 ## Leaders
 
 create_country_leader = {
@@ -30,3 +36,15 @@ create_country_leader = {
 	traits = {
 	}
 }
+
+set_technology = {
+	infantry_weapons = 1
+	monster_infantry = 1
+}
+
+recruit_character = GGR_dogoo_field_marshal
+recruit_character = GGR_dogoo_general_one
+recruit_character = GGR_dogoo_general_two
+recruit_character = GGR_dogoo_general_three
+
+set_oob = GGR_1936

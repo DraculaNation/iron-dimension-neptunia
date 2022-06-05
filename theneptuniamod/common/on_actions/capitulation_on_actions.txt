@@ -13,6 +13,7 @@ on_actions = { #Gamindustri Graveyard
 				GGR = {
 					white_peace = PLA
 					white_peace = LAS
+					set_technology = { monster_infantry = 0 }
 					create_country_leader = {
 						name = "Ganache"
 						desc = ""

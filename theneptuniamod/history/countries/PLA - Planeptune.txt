@@ -15,6 +15,18 @@ multiply_variable = {
 	var = PLA_public_unrest_effect
 	value = -0.004
 }
+set_variable = {
+	var = PLA_radicalization_level
+	value = 0
+}
+set_variable = {
+	var = PLA_radicalization_effect
+	value = PLA_radicalization_level
+}
+multiply_variable = {
+	var = PLA_radicalization_effect
+	value = -0.01
+}
 
 ## Setting variables for Histoire's discontent
 set_variable = {

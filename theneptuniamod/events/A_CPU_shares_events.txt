@@ -1,0 +1,20 @@
+﻿add_namespace = eventshares
+
+country_event = { #Planeptune - Neptune
+	id = eventshares.1
+	title = eventshares.1.t
+	desc = eventshares.1.d
+	
+	is_triggered_only = yes
+	
+	option = { #Get Purple Heart
+		name = eventshares.1.a	
+		ai_chance = { factor = 100 }
+		load_oob = PLA_PurpleHeart
+		add_equipment_to_stockpile = {
+			type = shares_equipment_0
+			amount = 5000
+			producer = PLA
+		}
+	}
+}

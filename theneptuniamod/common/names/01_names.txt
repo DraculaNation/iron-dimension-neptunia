@@ -28,3 +28,33 @@ PLA = {
 	surnames = { "" }
 	callsigns = { }
 }
+
+LAS = {
+	names = { "Gourdin" "Tarte" "Macaron" "Casque" "Calisson" "Savarin" "Canele" }
+	surnames = { "" }
+	callsigns = { }
+}
+
+LEA = {
+	names = { "Gourdin" "Tarte" "Macaron" "Casque" "Calisson" "Savarin" "Canele" }
+	surnames = { "" }
+	callsigns = { }
+}
+
+LOW = {
+	names = { "Gourdin" "Tarte" "Macaron" "Casque" "Calisson" "Savarin" "Canele" }
+	surnames = { "" }
+	callsigns = { }
+}
+
+GGR = {
+	names = { "Harsh" "Decisive" "Keen" "Ruthless" "Commanding" "Savage" "Demonic" "Zealous" "Deadly" "Dire" "Nasty" "Large" "Giant Enemy" "Dangerous" "Viral" "Contemplating" "Magical" }
+	surnames = { "Dogoo" }
+	callsigns = { }
+}
+
+PGA = {
+	names = { "Harsh" "Decisive" "Keen" "Ruthless" "Commanding" "Savage" "Demonic" "Zealous" "Deadly" "Dire" "Nasty" "Large" "Giant Enemy" "Dangerous" "Viral" "Contemplating" "Magical" }
+	surnames = { "Dogoo" }
+	callsigns = { }
+}

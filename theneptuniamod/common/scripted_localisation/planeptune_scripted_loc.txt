@@ -51,6 +51,34 @@ defined_text = {
 }
 
 defined_text = {
+	name = PLA_public_unrest_radicalization_loc
+	text = {
+		trigger = {
+			check_variable = { PLA_radicalization_level = 0 }
+		}
+		localization_key = PLA_public_unrest_rad_1
+	}
+	text = {
+		trigger = {
+			check_variable = { PLA_radicalization_level = 1 }
+		}
+		localization_key = PLA_public_unrest_rad_2
+	}
+	text = {
+		trigger = {
+			check_variable = { PLA_radicalization_level = 2 }
+		}
+		localization_key = PLA_public_unrest_rad_3
+	}
+	text = {
+		trigger = {
+			check_variable = { PLA_radicalization_level > 2 }
+		}
+		localization_key = PLA_public_unrest_rad_4
+	}
+}
+
+defined_text = {
 	name = PLA_histoire_discontent_status_loc
 	text = {
 		trigger = {

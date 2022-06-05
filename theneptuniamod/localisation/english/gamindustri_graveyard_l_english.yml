@@ -4,3 +4,11 @@
  GGR:0 "Gamindustri Graveyard"
  GGR_DEF:0 "the Gamindustri Graveyard"
  GGR_ADJ:0 "Gamindustri Graveyard's"
+ 
+ GGR_captured:0 "Graveyard Free Zone"
+ GGR_captured_DEF:0 "the Graveyard Free Zone"
+ GGR_captured_ADJ:0 "Graveyard Free Zone's"
+ 
+ #Idea Tooltips
+ 
+ GGR_monster_unit_tt:0 "§GCan make Monster units§!"

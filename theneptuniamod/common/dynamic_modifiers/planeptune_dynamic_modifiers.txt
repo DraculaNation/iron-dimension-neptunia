@@ -5,8 +5,8 @@ PLA_public_unrest_dynamic_modifier = {
 
     war_support_factor = PLA_public_unrest_effect
 	army_org_factor = PLA_public_unrest_effect
-	breakthrough_factor = PLA_public_unrest_effect
-	
+	production_speed_buildings_factor = PLA_public_unrest_effect
+	war_support_weekly = PLA_radicalization_effect
 }
 
 PLA_histoire_discontent_dynamic_modifier = {

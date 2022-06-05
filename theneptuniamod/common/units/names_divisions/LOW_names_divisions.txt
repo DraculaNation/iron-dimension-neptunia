@@ -30,11 +30,11 @@
 #                                      where you choose the historical division name.
 #           3rd argument is optional = An URL preferably pointing to the WIKI. It's a future feature that is not currently working in
 #                                      the current game version.
-PLA_HDD_01 = {
+LOW_HDD_01 = {
 
-	name = "CPU Purple Heart"
+	name = "CPU White Heart"
 
-	for_countries = { PLA }
+	for_countries = { LOW }
 
 	can_use = { always = no }
 
@@ -42,54 +42,18 @@ PLA_HDD_01 = {
 
 	# Number reservation system will tie to another group.
 
-	fallback_name = "CPU Purple Heart"
+	fallback_name = "CPU White Heart"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered = {	}
 }
 
-NEP_INF_01 = 
-{
-	name = "Reserve Detachment"
+LOW_INF_01 = {
 
-	for_countries = { PLA }
+	name = "Line Infantry"
 
-	can_use = { always = yes }
-
-	division_types = { "infantry" }
-
-	# Number reservation system will tie to another group.
-
-	fallback_name = "%dth Reserve Detachment"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%dst 'Mess Around And Find Out' Reserve Detachment" }
-		2 = { "%dnd Reserve Detachment" }
-		3 = { "%drd Reserve Detachment" }
-		21 = { "%dst Reserve Detachment" }
-		22 = { "%dnd Reserve Detachment" }
-		23 = { "%drd Reserve Detachment" }
-		31 = { "%dst Reserve Detachment" }
-		32 = { "%dnd Reserve Detachment" }
-		33 = { "%drd Reserve Detachment" }
-		41 = { "%dst Reserve Detachment" }
-		42 = { "%dnd Reserve Detachment" }
-		43 = { "%drd Reserve Detachment" }
-		51 = { "%dst Reserve Detachment" }
-		52 = { "%dnd Reserve Detachment" }
-		53 = { "%drd Reserve Detachment" }	
-	}
-}
-
-NEP_INF_02 = 
-{
-	name = "Infantry Division"
-
-	for_countries = { PLA }
+	for_countries = { LOW }
 
 	can_use = { always = yes }
 
@@ -97,71 +61,142 @@ NEP_INF_02 =
 
 	# Number reservation system will tie to another group.
 
-	fallback_name = "%dth Volunteer Group"
+	fallback_name = "%dth Line Infantry"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Volunteer Group" }
-		2 = { "%dnd Volunteer Group" }
-		3 = { "%drd Volunteer Group" }
-		21 = { "%dst Volunteer Group" }
-		22 = { "%dnd Volunteer Group" }
-		23 = { "%drd Volunteer Group" }
-		31 = { "%dst Volunteer Group" }
-		32 = { "%dnd Volunteer Group" }
-		33 = { "%drd Volunteer Group" }
-		41 = { "%dst Volunteer Group" }
-		42 = { "%dnd Volunteer Group" }
-		43 = { "%drd Volunteer Group" }
-		51 = { "%dst Volunteer Group" }
-		52 = { "%dnd Volunteer Group" }
-		53 = { "%drd Volunteer Group" }	
+		1 = { "%dst Line Infantry" }
+		2 = { "%dnd Line Infantry" }
+		3 = { "%drd Line Infantry" }
+		21 = { "%dst Line Infantry" }
+		22 = { "%dnd Line Infantry" }
+		23 = { "%drd Line Infantry" }
+		31 = { "%dst Line Infantry" }
+		32 = { "%dnd Line Infantry" }
+		33 = { "%drd Line Infantry" }
+		41 = { "%dst Line Infantry" }
+		42 = { "%dnd Line Infantry" }
+		43 = { "%drd Line Infantry" }
+		51 = { "%dst Line Infantry" }
+		52 = { "%dnd Line Infantry" }
+		53 = { "%drd Line Infantry" }	
 	}
 }
 
-NEP_MOT_01 = 
-{
-	name = "Motorized Division"
+LOW_INF_02 = {
 
-	for_countries = { PLA }
+	name = "Border Guards"
+
+	for_countries = { LOW }
 
 	can_use = { always = yes }
 
-	division_types = { "motorized" }
+	division_types = { "infantry" }
 
 	# Number reservation system will tie to another group.
 
-	fallback_name = "%dth Motorized Volunteer Group"
+	fallback_name = "%dth Border Guard Division"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
 	ordered =
 	{
-		1 = { "%dst Motorized Volunteer Group" }
-		2 = { "%dnd Motorized Volunteer Group" }
-		3 = { "%drd Motorized Volunteer Group" }
-		21 = { "%dst Motorized Volunteer Group" }
-		22 = { "%dnd Motorized Volunteer Group" }
-		23 = { "%drd Motorized Volunteer Group" }
-		31 = { "%dst Motorized Volunteer Group" }
-		32 = { "%dnd Motorized Volunteer Group" }
-		33 = { "%drd Motorized Volunteer Group" }
-		41 = { "%dst Motorized Volunteer Group" }
-		42 = { "%dnd Motorized Volunteer Group" }
-		43 = { "%drd Motorized Volunteer Group" }
-		51 = { "%dst Motorized Volunteer Group" }
-		52 = { "%dnd Motorized Volunteer Group" }
-		53 = { "%drd Motorized Volunteer Group" }	
+		1 = { "%dst Border Guard Division" }
+		2 = { "%dnd Border Guard Division" }
+		3 = { "%drd Border Guard Division" }
+		21 = { "%dst Border Guard Division" }
+		22 = { "%dnd Border Guard Division" }
+		23 = { "%drd Border Guard Division" }
+		31 = { "%dst Border Guard Division" }
+		32 = { "%dnd Border Guard Division" }
+		33 = { "%drd Border Guard Division" }
+		41 = { "%dst Border Guard Division" }
+		42 = { "%dnd Border Guard Division" }
+		43 = { "%drd Border Guard Division" }
+		51 = { "%dst Border Guard Division" }
+		52 = { "%dnd Border Guard Division" }
+		53 = { "%drd Border Guard Division" }
 	}
 }
 
-NEP_TNK_01 = 
-{
-	name = "Armored Tank Division"
+LOW_MAT_01 = {
 
-	for_countries = { PLA }
+	name = "Anti-Tank"
+
+	for_countries = { LOW }
+
+	can_use = { always = yes }
+
+	division_types = { "anti_tank_brigade" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%dth Anti Tank Brigade"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered =
+	{
+		1 = { "%dst Anti Tank Brigade" }
+		2 = { "%dnd Anti Tank Brigade" }
+		3 = { "%drd Anti Tank Brigade" }
+		21 = { "%dst Anti Tank Brigade" }
+		22 = { "%dnd Anti Tank Brigade" }
+		23 = { "%drd Anti Tank Brigade" }
+		31 = { "%dst Anti Tank Brigade" }
+		32 = { "%dnd Anti Tank Brigade" }
+		33 = { "%drd Anti Tank Brigade" }
+		41 = { "%dst Anti Tank Brigade" }
+		42 = { "%dnd Anti Tank Brigade" }
+		43 = { "%drd Anti Tank Brigade" }
+		51 = { "%dst Anti Tank Brigade" }
+		52 = { "%dnd Anti Tank Brigade" }
+		53 = { "%drd Anti Tank Brigade" }
+	}
+}
+
+LOW_LTK_01 = {
+
+	name = "Rapid Strike Squad"
+
+	for_countries = { LOW }
+
+	can_use = { always = yes }
+
+	division_types = { "light_armor" }
+
+	# Number reservation system will tie to another group.
+
+	fallback_name = "%dth Armored Cavalry"
+
+	# Names with numbers (only one number per entry). 
+	# It's okay to have gaps in numbering.
+	ordered = {
+		1 = { "%dst Armored Cavalry" }
+		2 = { "%dnd Armored Cavalry" }
+		3 = { "%drd Armored Cavalry" }
+		21 = { "%dst Armored Cavalry" }
+		22 = { "%dnd Armored Cavalry" }
+		23 = { "%drd Armored Cavalry" }
+		31 = { "%dst Armored Cavalry" }
+		32 = { "%dnd Armored Cavalry" }
+		33 = { "%drd Armored Cavalry" }
+		41 = { "%dst Armored Cavalry" }
+		42 = { "%dnd Armored Cavalry" }
+		43 = { "%drd Armored Cavalry" }
+		51 = { "%dst Armored Cavalry" }
+		52 = { "%dnd Armored Cavalry" }
+		53 = { "%drd Armored Cavalry" }
+	}
+}
+
+LOW_MTK_01 = {
+
+	name = "Royal Tank Brigade"
+
+	for_countries = { LOW }
 
 	can_use = { always = yes }
 
@@ -169,48 +204,25 @@ NEP_TNK_01 =
 
 	# Number reservation system will tie to another group.
 
-	fallback_name = "%dth Armored Tank Division"
+	fallback_name = "%dth Royal Tank Brigade"
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "%dst 'Blast 'em to the past' Armored Tank Division" }
-		2 = { "%dnd Armored Tank Division" }
-		3 = { "%drd Armored Tank Division" }
-		21 = { "%dst Armored Tank Division" }
-		22 = { "%dnd Armored Tank Division" }
-		23 = { "%drd Armored Tank Division" }
-		31 = { "%dst Armored Tank Division" }
-		32 = { "%dnd Armored Tank Division" }
-		33 = { "%drd Armored Tank Division" }
-		41 = { "%dst Armored Tank Division" }
-		42 = { "%dnd Armored Tank Division" }
-		43 = { "%drd Armored Tank Division" }
-		51 = { "%dst Armored Tank Division" }
-		52 = { "%dnd Armored Tank Division" }
-		53 = { "%drd Armored Tank Division" }	
-	}
-}
-
-NEP_SPC_01 = 
-{
-	name = "Strike Group"
-
-	for_countries = { PLA }
-
-	can_use = { always = yes }
-
-	division_types = { "motorized" }
-
-	# Number reservation system will tie to another group.
-
-	fallback_name = "Strike Group %d"
-
-	# Names with numbers (only one number per entry). 
-	# It's okay to have gaps in numbering.
-	ordered =
-	{
-		1 = { "Strike Group %d" }
+	ordered = {
+		1 = { "%dst Royal Tank Brigade" }
+		2 = { "%dnd Royal Tank Brigade" }
+		3 = { "%drd Royal Tank Brigade" }
+		21 = { "%dst Royal Tank Brigade" }
+		22 = { "%dnd Royal Tank Brigade" }
+		23 = { "%drd Royal Tank Brigade" }
+		31 = { "%dst Royal Tank Brigade" }
+		32 = { "%dnd Royal Tank Brigade" }
+		33 = { "%drd Royal Tank Brigade" }
+		41 = { "%dst Royal Tank Brigade" }
+		42 = { "%dnd Royal Tank Brigade" }
+		43 = { "%drd Royal Tank Brigade" }
+		51 = { "%dst Royal Tank Brigade" }
+		52 = { "%dnd Royal Tank Brigade" }
+		53 = { "%drd Royal Tank Brigade" }
 	}
 }

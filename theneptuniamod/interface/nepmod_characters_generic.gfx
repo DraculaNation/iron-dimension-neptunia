@@ -1,0 +1,45 @@
+spriteTypes = {
+
+	### MONSTERS ###
+
+	spriteType = {
+		name = "GFX_Portrait_Monster_Generic_land_1"
+		textureFile = "gfx/leaders/GGR/Portrait_Gamindustri_Graveyard_Dogoo1.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Monster_Generic_land_2"
+		textureFile = "gfx/leaders/GGR/Portrait_Gamindustri_Graveyard_Dogoo2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Monster_Generic_land_3"
+		textureFile = "gfx/leaders/GGR/Portrait_Gamindustri_Graveyard_Dogoo3.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Monster_Generic_land_4"
+		textureFile = "gfx/leaders/GGR/Portrait_Gamindustri_Graveyard_Dogoo4.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Monster_Generic_land_5"
+		textureFile = "gfx/leaders/GGR/Portrait_Gamindustri_Graveyard_Dogoo5.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Monster_Generic_land_6"
+		textureFile = "gfx/leaders/GGR/Portrait_Gamindustri_Graveyard_Dogoo6.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Monster_Generic_land_7"
+		textureFile = "gfx/leaders/GGR/Portrait_Gamindustri_Graveyard_Dogoo7.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_Portrait_Monster_Generic_land_8"
+		textureFile = "gfx/leaders/GGR/Portrait_Gamindustri_Graveyard_Dogoo8.dds"
+	}
+	
+}

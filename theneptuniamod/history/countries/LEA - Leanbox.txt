@@ -1,6 +1,14 @@
 ﻿capital = 9
 set_convoys = 200
 
+recruit_character = LEA_vert_CPU
+recruit_character = LEA_chika_hakozaki_character
+recruit_character = LEA_setag_character
+recruit_character = LEA_yvoire_character
+recruit_character = LEA_ranran_character
+recruit_character = LEA_cave_character
+recruit_character = LEA_nitroplus_character
+
 set_politics = {
 	ruling_party = cpu_rule
 	last_election = "1933.7.1"
@@ -11,14 +19,6 @@ set_popularities = {
 	cpu_rule = 70
 	kleptocracy = 30
 }
-
-recruit_character = LEA_vert_CPU
-recruit_character = LEA_chika_hakozaki_character
-recruit_character = LEA_setag_character
-recruit_character = LEA_yvoire_character
-recruit_character = LEA_ranran_character
-recruit_character = LEA_cave_character
-recruit_character = LEA_nitroplus_character
 
 add_ideas = {
 		LEA_succession_crisis
@@ -41,7 +41,7 @@ set_technology = {
 	support_weapons = 1
 	infantry_weapons = 1
 	infantry_weapons1 = 1
-	improved_infantry_weapons = 1
+	infantry_weapons2 = 1
 	motorised_infantry = 1
 	marines = 1
 	tech_special_forces = 1
@@ -132,3 +132,60 @@ if = {
 		mtg_transport = 1
 	}
 }
+
+if = {
+	limit = {
+		has_dlc = "No Step Back"
+	}
+	create_equipment_variant = {
+		name = "Xenos Light Tank"
+		type = light_tank_chassis_2
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_light_two_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_cast_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = tank_radio_1
+			special_type_slot_2 = extra_ammo_storage
+		}
+		upgrades = {
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "Xenon Medium Tank"
+		type = medium_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_medium_three_man_tank_turret
+			suspension_type_slot = tank_christie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = sloped_armor
+		}
+		upgrades = {
+		}
+	}
+	
+	create_equipment_variant = {
+		name = "SATA Heavy Tank"
+		type = heavy_tank_chassis_1
+		parent_version = 0
+		modules = {
+			main_armament_slot = tank_small_cannon_2
+			turret_type_slot = tank_heavy_two_man_tank_turret
+			suspension_type_slot = tank_bogie_suspension
+			armor_type_slot = tank_riveted_armor
+			engine_type_slot = tank_gasoline_engine
+			special_type_slot_1 = secondary_turret_hmg
+			special_type_slot_2 = extra_ammo_storage
+		}
+		upgrades = {
+		}
+	}
+}
+
+set_oob = "LEA_1936"

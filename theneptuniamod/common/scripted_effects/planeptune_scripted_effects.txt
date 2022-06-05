@@ -6,6 +6,11 @@ PLA_reload_public_unrest = {
 		min = 0
 		max = 100
 	}
+	clamp_variable = {
+		var = PLA_radicalization_level
+		min = 0
+		max = 3
+	}
 	set_variable = {
 		var = PLA_public_unrest_effect
 		value = PLA_public_unrest_percent
@@ -14,7 +19,14 @@ PLA_reload_public_unrest = {
 		var = PLA_public_unrest_effect
 		value = -0.004
 	}
-	
+	set_variable = {
+		var = PLA_radicalization_effect
+		value = PLA_radicalization_level
+	}
+	multiply_variable = {
+		var = PLA_radicalization_effect
+		value = -0.01
+	}
 }
 
 ###HOW FLEXIBLE OR RIGID SHOULD THIS BE?
@@ -75,9 +87,14 @@ PLA_increase_public_unrest_big = {
 	}
 	else = {
 		custom_effect_tooltip = PLA_public_unrest_increase_big_tt
+		custom_effect_tooltip = PLA_public_unrest_radicalization_tt
 		add_to_variable = {
 			var = PLA_public_unrest_percent
 			value = 15
+		}
+		add_to_variable = {
+			var = PLA_radicalization_level
+			value = 1
 		}
 		if = {
 			limit = {
@@ -99,9 +116,33 @@ PLA_decrease_public_unrest_small = {
 	}
 	else = {
 		custom_effect_tooltip = PLA_public_unrest_decrease_small_tt
-		add_to_variable = {
-			var = PLA_public_unrest_percent
-			value = -5
+		if = {
+			limit = { check_variable = { PLA_radicalization_level = 0 } }
+			add_to_variable = {
+				var = PLA_public_unrest_percent
+				value = -5
+			}
+			else_if = {
+				limit = { check_variable = { PLA_radicalization_level = 1 } }
+				add_to_variable = {
+					var = PLA_public_unrest_percent
+					value = -4.5
+				}
+			}
+			else_if = {
+				limit = { check_variable = { PLA_radicalization_level = 2 } }
+				add_to_variable = {
+					var = PLA_public_unrest_percent
+					value = -3
+				}
+			}
+			else_if = {
+				limit = { check_variable = { PLA_radicalization_level > 2 } }
+				add_to_variable = {
+					var = PLA_public_unrest_percent
+					value = -2.5
+				}
+			}
 		}
 		PLA_reload_public_unrest = yes
 	}
@@ -114,9 +155,33 @@ PLA_decrease_public_unrest_medium = {
 	}
 	else = {
 		custom_effect_tooltip = PLA_public_unrest_decrease_medium_tt
-		add_to_variable = {
-			var = PLA_public_unrest_percent
-			value = -10
+		if = {
+			limit = { check_variable = { PLA_radicalization_level = 0 } }
+			add_to_variable = {
+				var = PLA_public_unrest_percent
+				value = -10
+			}
+			else_if = { 
+				limit = { check_variable = { PLA_radicalization_level = 1 } }
+				add_to_variable = {
+					var = PLA_public_unrest_percent
+					value = -9
+				}
+			}
+			else_if = { 
+				limit = { check_variable = { PLA_radicalization_level = 2 } }
+				add_to_variable = {
+					var = PLA_public_unrest_percent
+					value = -7.5
+				}
+			}
+			else_if = {
+				limit = { check_variable = { PLA_radicalization_level > 2 } }
+				add_to_variable = {
+					var = PLA_public_unrest_percent
+					value = -6
+				}
+			}
 		}
 		PLA_reload_public_unrest = yes
 	}
@@ -130,9 +195,33 @@ PLA_decrease_public_unrest_big = {
 	}
 	else = {
 		custom_effect_tooltip = PLA_public_unrest_decrease_big_tt
-		add_to_variable = {
-			var = PLA_public_unrest_percent
-			value = -15
+		if = {
+			limit = { check_variable = { PLA_radicalization_level = 0 } }
+			add_to_variable = {
+				var = PLA_public_unrest_percent
+				value = -15
+			}
+			else_if = {
+				limit = { check_variable = { PLA_radicalization_level = 1 } }
+				add_to_variable = {
+					var = PLA_public_unrest_percent
+					value = -13.5
+				}
+			}
+			else_if = {
+				limit = { check_variable = { PLA_radicalization_level = 2 } }
+				add_to_variable = {
+					var = PLA_public_unrest_percent
+					value = -11
+				}
+			}
+			else_if = {
+				limit = { check_variable = { PLA_radicalization_level > 2 } }
+				add_to_variable = {
+					var = PLA_public_unrest_percent
+					value = -8.5
+				}
+			}
 		}
 		PLA_reload_public_unrest = yes
 	}

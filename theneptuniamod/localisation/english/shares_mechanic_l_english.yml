@@ -42,3 +42,6 @@
  shares_increase_lastation_max_tt:0 "§bLastation's§! §gshares are already at the maximum!§!"
  
  shares_modifier:0 "Shares"
+ shares_modifier_desc:0 ""
+ 
+ shares_info_tt:0 "Shares represent the amount of faith a CPU's people have in her, and by extension her own\ninfluence over her nation. Higher shares lead to bonuses, while lower shares lead to debuffs.\nShares are vital to your nation, as they influence your army's morale. Even more so, shares\nstrongly affect your goddess' power in her HDD form. The bars on the left represent a percentage\nof the shares each country has, while the 'history' section on the right lists three most recent\nactions that resulted in a change of shares."

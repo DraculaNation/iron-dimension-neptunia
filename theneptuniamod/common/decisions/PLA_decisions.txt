@@ -31,7 +31,7 @@ PLA_unrest_category = {
 		
 		cancel_if_not_visible = yes
 		is_good = yes
-		days_mission_timeout = 31
+		days_mission_timeout = 61
 		
 		timeout_effect = {
 			country_event = { id = planeptune.12 }
@@ -115,6 +115,75 @@ PLA_unrest_category = {
 		complete_effect = {
 			PLA_decrease_public_unrest_small = yes
 			add_war_support = -0.05
+		}
+	}
+	
+	PLA_demilitarize_the_nation = {
+		icon = GFX_decision_generic_nationalism
+	
+		allowed = {
+			tag = PLA
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		visible = {
+			hidden_trigger = {
+				has_country_flag = PLA_dealing_with_unrest_start
+				NOT = { has_country_flag = PLA_not_lazy_anymore }
+				NOT = { has_country_flag = PLA_public_unrest_dealt_with }
+			}
+			any_owned_state = {
+				arms_factory > 2
+			}
+		}
+		
+		ai_will_do = {
+			factor = 5
+			modifier = {
+				factor = 20
+				check_variable = {
+					var = PLA_public_unrest_percent
+					value = 40
+					compare = greater_than_or_equals
+				}
+			}
+			modifier = {
+				factor = 0
+				check_variable = {
+					var = PLA_public_unrest_percent
+					value = 20
+					compare = less_than_or_equals
+				}
+			}
+		}
+		
+		cost = 30
+		fire_only_once = no
+		days_re_enable = 63
+		
+		complete_effect = {
+			PLA_decrease_public_unrest_medium = yes
+			PLA_increase_histoire_discontent_small = yes
+			random_owned_state = {
+				limit = {
+					non_damaged_building_level = {
+						building = arms_factory
+						level > 2
+					}
+				}
+				remove_building = {
+					type = arms_factory
+					level = 2
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
 		}
 	}
 

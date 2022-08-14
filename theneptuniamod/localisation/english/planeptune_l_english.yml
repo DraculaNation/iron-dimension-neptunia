@@ -111,7 +111,7 @@
  PLA_resurging_birthrates_6_idea:0 "Skyrocketing Birth Rates"
  PLA_resurging_birthrates_7_idea:0 "Skyrocketing Birth Rates"
 
- #Hidden ideas
+ #Hidden Ideas
  PLA_using_extra_political_resources_idea:0 "Analyzing Data"
  
  #Dynamic Modifiers
@@ -150,6 +150,7 @@
  PLA_friendship_treaty_failed:0 "The Friendship Treaty has failed!"
  PLA_public_mission_in_progress:0 "Currently dealing with public discontent."
  PLA_histoire_mission_in_progress:0 "Currently dealing with administration issues."
+ PLA_gggambit_success:0 "The Gamindustri Graveyard Gambit has concluded!"
  
  #Tooltips
  
@@ -235,6 +236,7 @@
  
  PLA_public_unrest_effigy:0 "Show/Hide Public Unrest Decisions"
  PLA_appeal_to_the_public:0 "Appeal to the Public"
+ PLA_demilitarize_the_nation:0 "Demilitarize the Nation"
  PLA_organize_monster_raids:0 "Scout Monster Dens"
  PLA_form_monster_hunter_militias:0 "Organize Monster Raids"
  PLA_fortify_a_city:0 "Fortify A Settlement"

@@ -1,6 +1,6 @@
 
 ### THE SHARES SYSTEM
-# It might be a bit clunky but please forgive me, at this point I'm working on this mod alone
+# It might be a bit clunky but please forgive me, at this point I'm working on this mod basically alone
 
 #CLAMP SHARES
 clamp_shares_effect = {
@@ -263,30 +263,27 @@ LOW_refresh_shares_effect = {
 
 ### SHARE TRANSFERS ###
 ### In the future, make each effect give out a message in the GUI.
-### If the target country has less than needed, the cycle would go like this
-### PLA -> LOW -> LAS -> -> LEA -> PLA [...]
-### Obviously skipping the country that takes the shares
 ### You can search for the effects by typing: [Country taking the shares] [Country losing the shares] [Size]
 ### For example MEDIUM LAS LEA; where Lastation takes 10% of shares from Leanbox
 ###Status:
 ### PLA LOW SMALL
 ### PLA LOW MEDIUM
 ### PLA LOW HUGE
-### PLA LAS SMALL - Complete
+### PLA LAS SMALL
 ### PLA LAS MEDIUM
 ### PLA LAS HUGE
-### PLA LEA SMALL - Complete
-### PLA LEA MEDIUM 
+### PLA LEA SMALL
+### PLA LEA MEDIUM
 ### PLA LEA HUGE
+### LOW PLA SMALL
+### LOW PLA MEDIUM 
+### LOW PLA HUGE
 ### LOW LAS SMALL
 ### LOW LAS MEDIUM
-### LOW LAS HUGE
+### LOW LAS HUGE 
 ### LOW LEA SMALL
 ### LOW LEA MEDIUM
 ### LOW LEA HUGE
-### LOW PLA SMALL
-### LOW PLA MEDIUM
-### LOW PLA HUGE
 ### LAS LEA SMALL
 ### LAS LEA MEDIUM
 ### LAS LEA HUGE
@@ -306,13 +303,206 @@ LOW_refresh_shares_effect = {
 ### LEA LAS MEDIUM
 ### LEA LAS HUGE
 
+###
+### PLANEPTUNE
+###
+
+### PLA LOW SMALL
+
+PLA_kill_LOW_shares_small_effect = {
+
+	#If Lowee has more than 5 shares - valid trigger
+	if = {
+	
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+}
+
+### PLA LOW MEDIUM
+
+PLA_kill_LOW_shares_medium_effect = {
+
+	#If Lowee has more than 5 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_medium_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_medium_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+}
+
+### PLA LOW HUGE
+
+PLA_kill_LOW_shares_huge_effect = {
+
+	#If Lowee has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_high_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_high_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_medium_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_medium_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+}
+
 ### PLA LAS SMALL
 
 PLA_kill_LAS_shares_small_effect = {
 
 	#If Lastation has more than 5 shares - valid trigger
 	if = {
-	
 		limit = {
 			check_variable = {
 				var = LAS.shares_factor
@@ -341,93 +531,61 @@ PLA_kill_LAS_shares_small_effect = {
 		LAS_refresh_shares_effect = yes
 	}
 	
-	#If Lastation has less than 5 shares and Leanbox has more than 5 shares
-	else_if = {
-	
+}
+
+### PLA LAS MEDIUM
+
+PLA_kill_LAS_shares_medium_effect = {
+
+	#If Lastation has more than 10 shares - valid trigger
+	if = {
 		limit = {
 			check_variable = {
 				var = LAS.shares_factor
-				value = 5
-				compare = less_than
-			}
-			check_variable = {
-				var = LEA.shares_factor
-				value = 5
+				value = 10
 				compare = greater_than_or_equals
 			}
 		}
 			
 		#Increase Planeptune's shares
-		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		custom_effect_tooltip = shares_increase_planeptune_medium_tt
 		add_to_variable = {
 			var = PLA.shares_factor
-			value = 5
-		}
-		
-		#Set Lastation's shares to 0
-		set_variable = {
-			var = LAS.shares_factor
-			value = 0
-		}
-		
-		#Decrease Leanbox's shares
-		custom_effect_tooltip = shares_decrease_leanbox_small_tt
-		subtract_from_variable = {
-			var = LEA.shares_factor
-			value = 5
-		}
-		
-		#Reload Variables
-		clamp_shares_effect = yes
-		PLA_refresh_shares_effect = yes
-		LAS_refresh_shares_effect = yes
-		LEA_refresh_shares_effect = yes
-	}
-	
-	#If Lastation has less than 5 shares and Lowee has more than 5 shares
-	else_if = {
-	
-		limit = {
-			check_variable = {
-				var = LAS.shares_factor
-				value = 5
-				compare = less_than
-			}
-			check_variable = {
-				var = LEA.shares_factor
-				value = 5
-				compare = less_than
-			}
-			check_variable = {
-				var = LOW.shares_factor
-				value = 5
-				compare = greater_than_or_equals
-			}
-		}
-			
-		#Increase Planeptune's shares
-		custom_effect_tooltip = shares_increase_planeptune_small_tt
-		add_to_variable = {
-			var = PLA.shares_factor
-			value = 5
-		}
-		
-		#Set Lastation's shares to 0
-		set_variable = {
-			var = LAS.shares_factor
-			value = 0
-		}
-		
-		#Set Leanbox's shares to 0
-		set_variable = {
-			var = LEA.shares_factor
-			value = 0
+			value = 10
 		}
 		
 		#Decrease Lowee's shares
-		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		custom_effect_tooltip = shares_decrease_lastation_medium_tt
 		subtract_from_variable = {
-			var = LOW.shares_factor
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_lastation_small_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
 			value = 5
 		}
 		
@@ -435,46 +593,97 @@ PLA_kill_LAS_shares_small_effect = {
 		clamp_shares_effect = yes
 		PLA_refresh_shares_effect = yes
 		LAS_refresh_shares_effect = yes
-		LEA_refresh_shares_effect = yes
-		LOW_refresh_shares_effect = yes
 	}
-		
-	#Else...
-	else = {
-	
-		#Set Planeptune's shares to 100
-		custom_effect_tooltip = shares_increase_planeptune_max_tt
-		set_variable = {
+}
+
+### PLA LAS HUGE
+
+PLA_kill_LAS_shares_huge_effect = {
+	#If Lastation has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_high_tt
+		add_to_variable = {
 			var = PLA.shares_factor
-			value = 100
+			value = 15
 		}
-	
-		#Set Lastation's shares to 0
-		set_variable = {
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lastation_high_tt
+		subtract_from_variable = {
 			var = LAS.shares_factor
-			value = 0
-		}
-		
-		#Set Leanbox's shares to 0
-		set_variable = {
-			var = LEA.shares_factor
-			value = 0
-		}
-		
-		#Set Lowee's shares to 0
-		set_variable = {
-			var = LOW.shares_factor
-			value = 0
+			value = 15
 		}
 		
 		#Reload Variables
 		clamp_shares_effect = yes
 		PLA_refresh_shares_effect = yes
 		LAS_refresh_shares_effect = yes
-		LEA_refresh_shares_effect = yes
-		LOW_refresh_shares_effect = yes
 	}
-	
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_medium_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lastation_medium_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_lastation_small_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
 }
 
 ### PLANEPTUNE INREASE LEANBOX DECREASE
@@ -485,7 +694,6 @@ PLA_kill_LEA_shares_small_effect = {
 
 	#If Leanbox has more than 5 shares - valid trigger
 	if = {
-	
 		limit = {
 			check_variable = {
 				var = LEA.shares_factor
@@ -513,18 +721,44 @@ PLA_kill_LEA_shares_small_effect = {
 		PLA_refresh_shares_effect = yes
 		LEA_refresh_shares_effect = yes
 	}
-	
-	#If Leanbox has less than 5 shares and Leanbox has more than 5 shares
-	else_if = {
-	
+}
+
+### PLA LEA MEDIUM
+
+PLA_kill_LEA_shares_medium_effect = {
+	#If Leanbox has more than 10 shares - valid trigger
+	if = {
 		limit = {
 			check_variable = {
 				var = LEA.shares_factor
-				value = 5
-				compare = less_than
+				value = 10
+				compare = greater_than_or_equals
 			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_medium_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_leanbox_medium_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
 			check_variable = {
-				var = LOW.shares_factor
+				var = LEA.shares_factor
 				value = 5
 				compare = greater_than_or_equals
 			}
@@ -537,16 +771,10 @@ PLA_kill_LEA_shares_small_effect = {
 			value = 5
 		}
 		
-		#Set Leanbox's shares to 0
-		set_variable = {
-			var = LEA.shares_factor
-			value = 0
-		}
-		
-		#Decrease Lowee's shares
-		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
 		subtract_from_variable = {
-			var = LOW.shares_factor
+			var = LEA.shares_factor
 			value = 5
 		}
 		
@@ -554,23 +782,300 @@ PLA_kill_LEA_shares_small_effect = {
 		clamp_shares_effect = yes
 		PLA_refresh_shares_effect = yes
 		LEA_refresh_shares_effect = yes
-		LOW_refresh_shares_effect = yes
 	}
-	
-	#If Leanbox has less than 5 shares and Lastation has more than 5 shares
+}
+
+### PLA LEA HUGE
+
+PLA_kill_LEA_shares_huge_effect = {
+	#If Leanbox has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_high_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_leanbox_high_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
 	else_if = {
-	
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_medium_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_leanbox_medium_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	else_if = {
 		limit = {
 			check_variable = {
 				var = LEA.shares_factor
 				value = 5
-				compare = less_than
+				compare = greater_than_or_equals
 			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		add_to_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+}
+
+### 
+###   LOWEE
+###
+
+### LOW PLA SMALL
+
+LOW_kill_PLA_shares_small_effect = {
+
+	#If Lowee has more than 5 shares - valid trigger
+	if = {
+	
+		limit = {
 			check_variable = {
-				var = LOW.shares_factor
+				var = PLA.shares_factor
 				value = 5
-				compare = less_than
+				compare = greater_than_or_equals
 			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_small_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_small_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+}
+
+### LOW PLA MEDIUM
+
+LOW_kill_PLA_shares_medium_effect = {
+
+	#If Lowee has more than 5 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_medium_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_medium_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_small_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_small_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+}
+
+### LOW PLA HUGE
+
+LOW_kill_PLA_shares_huge_effect = {
+
+	#If Lowee has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_high_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_high_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_medium_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_medium_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_small_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_small_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+}
+
+### LOW LAS SMALL
+
+LOW_kill_LAS_shares_small_effect = {
+
+	#If Lastation has more than 5 shares - valid trigger
+	if = {
+		limit = {
 			check_variable = {
 				var = LAS.shares_factor
 				value = 5
@@ -579,22 +1084,10 @@ PLA_kill_LEA_shares_small_effect = {
 		}
 			
 		#Increase Planeptune's shares
-		custom_effect_tooltip = shares_increase_planeptune_small_tt
+		custom_effect_tooltip = shares_increase_lowee_small_tt
 		add_to_variable = {
-			var = PLA.shares_factor
-			value = 5
-		}
-		
-		#Set Leanbox's shares to 0
-		set_variable = {
-			var = LEA.shares_factor
-			value = 0
-		}
-		
-		#Set Lowee's shares to 0
-		set_variable = {
 			var = LOW.shares_factor
-			value = 0
+			value = 5
 		}
 		
 		#Decrease Lastation's shares
@@ -606,48 +1099,1494 @@ PLA_kill_LEA_shares_small_effect = {
 		
 		#Reload Variables
 		clamp_shares_effect = yes
-		PLA_refresh_shares_effect = yes
-		LAS_refresh_shares_effect = yes
-		LEA_refresh_shares_effect = yes
 		LOW_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
 	}
-		
-	#Else...
-	else = {
 	
-		#Set Planeptune's shares to 100
-		custom_effect_tooltip = shares_increase_planeptune_max_tt
-		set_variable = {
-			var = PLA.shares_factor
-			value = 100
+}
+
+### LOW LAS MEDIUM
+
+LOW_kill_LAS_shares_medium_effect = {
+
+	#If Lastation has more than 10 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
 		}
-	
-		#Set Lastation's shares to 0
-		set_variable = {
-			var = LAS.shares_factor
-			value = 0
-		}
-		
-		#Set Leanbox's shares to 0
-		set_variable = {
-			var = LEA.shares_factor
-			value = 0
-		}
-		
-		#Set Lowee's shares to 0
-		set_variable = {
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_medium_tt
+		add_to_variable = {
 			var = LOW.shares_factor
-			value = 0
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lastation_medium_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 10
 		}
 		
 		#Reload Variables
 		clamp_shares_effect = yes
-		PLA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
 		LAS_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_small_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_lastation_small_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+}
+
+### LOW LAS HUGE
+
+LOW_kill_LAS_shares_huge_effect = {
+	#If Lastation has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_high_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lastation_high_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_medium_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lastation_medium_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_small_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_lastation_small_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+}
+
+### LOWNEPTUNE INREASE LEANBOX DECREASE
+
+### LOW LEA SMALL
+
+LOW_kill_LEA_shares_small_effect = {
+
+	#If Leanbox has more than 5 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_small_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+}
+
+### LOW LEA MEDIUM
+
+LOW_kill_LEA_shares_medium_effect = {
+	#If Leanbox has more than 10 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_medium_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_leanbox_medium_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_small_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+}
+
+### LOW LEA HUGE
+
+LOW_kill_LEA_shares_huge_effect = {
+	#If Leanbox has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_high_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_leanbox_high_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_medium_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_leanbox_medium_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lowee_small_tt
+		add_to_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+}
+
+###
+### LASTATION
+###
+
+### LAS LOW SMALL
+
+LAS_kill_LOW_shares_small_effect = {
+
+	#If Lowee has more than 5 shares - valid trigger
+	if = {
+	
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_small_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+}
+
+### LAS LOW MEDIUM
+
+LAS_kill_LOW_shares_medium_effect = {
+
+	#If Lowee has more than 5 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_medium_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_medium_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_small_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+}
+
+### LAS LOW HUGE
+
+LAS_kill_LOW_shares_huge_effect = {
+
+	#If Lowee has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_high_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_high_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_medium_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_medium_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_small_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+}
+
+### LAS PLA SMALL
+
+LAS_kill_PLA_shares_small_effect = {
+
+	#If Lastation has more than 5 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_small_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_planeptune_small_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	
+}
+
+### LAS PLA MEDIUM
+
+LAS_kill_PLA_shares_medium_effect = {
+
+	#If Lastation has more than 10 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_medium_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_medium_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_small_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_planeptune_small_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+}
+
+### LAS PLA HUGE
+
+LAS_kill_PLA_shares_huge_effect = {
+	#If Lastation has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_high_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_high_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_medium_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_medium_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_small_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_planeptune_small_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+}
+
+### LASNEPTUNE INREASE LEANBOX DECREASE
+
+### LAS LEA SMALL
+
+LAS_kill_LEA_shares_small_effect = {
+
+	#If Leanbox has more than 5 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_small_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+}
+
+### LAS LEA MEDIUM
+
+LAS_kill_LEA_shares_medium_effect = {
+	#If Leanbox has more than 10 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_medium_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_leanbox_medium_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_small_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+}
+
+### LAS LEA HUGE
+
+LAS_kill_LEA_shares_huge_effect = {
+	#If Leanbox has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_high_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_leanbox_high_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_medium_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_leanbox_medium_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LEA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_lastation_small_tt
+		add_to_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_leanbox_small_tt
+		subtract_from_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+	}
+}
+
+###
+### LEANBOX
+###
+
+### LEA LOW SMALL
+
+LEA_kill_LOW_shares_small_effect = {
+
+	#If Lowee has more than 5 shares - valid trigger
+	if = {
+	
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_small_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
 		LEA_refresh_shares_effect = yes
 		LOW_refresh_shares_effect = yes
 	}
-		
 }
 
+### LEA LOW MEDIUM
 
+LEA_kill_LOW_shares_medium_effect = {
+
+	#If Lowee has more than 5 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_medium_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_medium_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_small_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+}
+
+### LEA LOW HUGE
+
+LEA_kill_LOW_shares_huge_effect = {
+
+	#If Lowee has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_high_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_high_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_medium_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_medium_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LOW.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_small_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lowee_small_tt
+		subtract_from_variable = {
+			var = LOW.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LOW_refresh_shares_effect = yes
+	}
+}
+
+### LEA PLA SMALL
+
+LEA_kill_PLA_shares_small_effect = {
+
+	#If Lastation has more than 5 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_small_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_planeptune_small_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	
+}
+
+### LEA PLA MEDIUM
+
+LEA_kill_PLA_shares_medium_effect = {
+
+	#If Lastation has more than 10 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_medium_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_medium_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_small_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_planeptune_small_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+}
+
+### LEA PLA HUGE
+
+LEA_kill_PLA_shares_huge_effect = {
+	#If Lastation has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_high_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_high_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_medium_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_planeptune_medium_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = PLA.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_small_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Lastation's shares
+		custom_effect_tooltip = shares_decrease_planeptune_small_tt
+		subtract_from_variable = {
+			var = PLA.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		PLA_refresh_shares_effect = yes
+	}
+}
+
+### LEANEPTUNE INREASE LASNBOX DECREASE
+
+### LEA LAS SMALL
+
+LEA_kill_LAS_shares_small_effect = {
+
+	#If Leanbox has more than 5 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_small_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_lastation_small_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+}
+
+### LEA LAS MEDIUM
+
+LEA_kill_LAS_shares_medium_effect = {
+	#If Leanbox has more than 10 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_medium_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lastation_medium_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_small_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_lastation_small_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+}
+
+### LEA LAS HUGE
+
+LEA_kill_LAS_shares_huge_effect = {
+	#If Leanbox has more than 15 shares - valid trigger
+	if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 15
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_high_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 15
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lastation_high_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 15
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 10
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_medium_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 10
+		}
+		
+		#Decrease Lowee's shares
+		custom_effect_tooltip = shares_decrease_lastation_medium_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 10
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+	else_if = {
+		limit = {
+			check_variable = {
+				var = LAS.shares_factor
+				value = 5
+				compare = greater_than_or_equals
+			}
+		}
+			
+		#Increase Planeptune's shares
+		custom_effect_tooltip = shares_increase_leanbox_small_tt
+		add_to_variable = {
+			var = LEA.shares_factor
+			value = 5
+		}
+		
+		#Decrease Leanbox's shares
+		custom_effect_tooltip = shares_decrease_lastation_small_tt
+		subtract_from_variable = {
+			var = LAS.shares_factor
+			value = 5
+		}
+		
+		#Reload Variables
+		clamp_shares_effect = yes
+		LEA_refresh_shares_effect = yes
+		LAS_refresh_shares_effect = yes
+	}
+}

@@ -2,8 +2,6 @@ scripted_gui = {
   shares_gui = {
     window_name = "shares_gui_window"
     context_type = player_context
-
-    parent_window_token = top_bar
 	
     visible = {
 		has_country_flag = view_shares
@@ -11,10 +9,16 @@ scripted_gui = {
     }
 
     effects = {
-		close_button_click = {
-		clr_country_flag = view_shares
-		}
+		close_button_click = { clr_country_flag = view_shares }
     }
+	
+	properties = {
+		planeptune_progress_bar = { frame = var:PLA.shares_factor }
+		lastation_progress_bar = { frame = var:LAS.shares_factor }
+		leanbox_progress_bar = { frame = var:LEA.shares_factor }
+		lowee_progress_bar = { frame = var:LOW.shares_factor }
+	}
+	
   }
   open_button_gui = {
 	window_name = "open_button_window"
@@ -27,60 +31,64 @@ scripted_gui = {
 	
 	effects = {
 		open_button_click = {
-		set_country_flag = view_shares
+			if = {
+				limit = { has_country_flag = view_shares }
+				clr_country_flag = view_shares
+			}
+			else = { set_country_flag = view_shares }
 		}
 	}
   }
-  planeptune_gui = {
-	window_name = "planeptune_gui_window"
-	context_type = player_context
-	
-	visible = {
-		has_country_flag = view_shares
-	}
-	properties = {
-		planeptune_progress_bar = {
-			frame = var:PLA.shares_factor
-		}
-	}
-  }
-  lastation_gui = {
-	window_name = "lastation_gui_window"
-	context_type = player_context
-	
-	visible = {
-		has_country_flag = view_shares
-	}
-	properties = {
-		lastation_progress_bar = {
-			frame = var:LAS.shares_factor
-		}
-	}
-  }
-   leanbox_gui = {
-	window_name = "leanbox_gui_window"
-	context_type = player_context
-	
-	visible = {
-		has_country_flag = view_shares
-	}
-	properties = {
-		leanbox_progress_bar = {
-			frame = var:LEA.shares_factor
-		}
-	}
-  }
-   lowee_gui = {
-	window_name = "lowee_gui_window"
-	context_type = player_context
-	
-	visible = {
-		has_country_flag = view_shares
-	}
-	properties = {
-		lowee_progress_bar = {
-			frame = var:LOW.shares_factor
-		}
-	}
-  }
+#  planeptune_gui = {
+#	window_name = "planeptune_gui_window"
+#	context_type = player_context
+#	
+#	visible = {
+#		has_country_flag = view_shares
+#	}
+#	properties = {
+#		planeptune_progress_bar = {
+#			frame = var:PLA.shares_factor
+#		}
+#	}
+# }
+#  lastation_gui = {
+#	window_name = "lastation_gui_window"
+#	context_type = player_context
+#	
+#	visible = {
+#		has_country_flag = view_shares
+#	}
+#	properties = {
+#		lastation_progress_bar = {
+#			frame = var:LAS.shares_factor
+#		}
+#	}
+# }
+#   leanbox_gui = {
+#	window_name = "leanbox_gui_window"
+#	context_type = player_context
+#	
+#	visible = {
+#		has_country_flag = view_shares
+#	}
+#	properties = {
+#		leanbox_progress_bar = {
+#			frame = var:LEA.shares_factor
+#		}
+#	}
+# }
+#   lowee_gui = {
+#	window_name = "lowee_gui_window"
+#	context_type = player_context
+#	
+#	visible = {
+#		has_country_flag = view_shares
+#	}
+#	properties = {
+#		lowee_progress_bar = {
+#			frame = var:LOW.shares_factor
+#		}
+#	}
+#  }
 }

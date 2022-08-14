@@ -18,73 +18,208 @@ guiTypes = {
 		orientation = center
 		origo = center
 		fade_time = 100
-		moveable = no
+		moveable = yes
 		fade_type = linear
-		click_to_front = no
+		click_to_front = yes
 		clipping = no
 		
 		background = {
 			name = "Background"		
 			quadTextureSprite ="GFX_scripted_gui_window_background"
 		}
-
-		buttonType ={
+		
+		# Top bar
+		
+		instantTextboxType = {
+			name = "shares_title_text"
+			position = { x = 148 y = 25 }
+			font = "hoi_36header"
+			borderSize = { x = 0 y = 0 }
+			text = "SHARES"
+			maxWidth = 120
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		buttonType = {
 			name ="close_button"
 			spriteType = "GFX_close_button"
-			position = { x= 40 y = 45 }
+			position = { x= 340 y = 20 }
 			Orientation = "UPPER_LEFT"
-		}	
-	}
-	containerWindowType = {
-		name = "planeptune_gui_window"
-		position = { x = 40 y = 65 }
-		Orientation = center
-		#frame = 100
-			
+		}
+		iconType = {
+			name ="info_button"
+			spriteType = "GFX_question_button"
+			position = { x= 12 y = 22 }
+			Orientation = "UPPER_LEFT"
+			pdx_tooltip = "shares_info_tt"
+		}
+		
+		# Progress bars and text
+		
+		instantTextboxType = {
+			name = "planeptune_title_text"
+			position = { x = 40 y = 87 }
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "Planeptune"
+			maxWidth = 175
+			maxHeight = 20
+			fixedsize = yes
+		}
 		iconType = {
 			name = "planeptune_progress_bar"
 			spriteType = "GFX_planeptune_shares"
-			position = { x = 5 y = 10 }
-			
+			position = { x = 15 y = 109 } #22 pixels lower
+			alwaystransparent = yes
 		}
-	}
-	containerWindowType = {
-		name = "lastation_gui_window"
-		position = { x = 40 y = 45 }
-		Orientation = center
-		#frame = 100
-			
-		iconType = {
-			name = "lastation_progress_bar"
-			spriteType = "GFX_lastation_shares"
-			position = { x = 5 y = 10 }
-			
+		
+		instantTextboxType = {
+			name = "lowee_title_text"
+			position = { x = 40 y = 134 } #25 pixels lower
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "Lowee"
+			maxWidth = 175
+			maxHeight = 20
+			fixedsize = yes
 		}
-	}
-	containerWindowType = {
-		name = "lowee_gui_window"
-		position = { x = 40 y = 35 }
-		Orientation = center
-		#frame = 100
-			
 		iconType = {
 			name = "lowee_progress_bar"
 			spriteType = "GFX_lowee_shares"
-			position = { x = 5 y = 10 }
-			
+			position = { x = 15 y = 156 }
+			alwaystransparent = yes
 		}
-	}
-	containerWindowType = {
-		name = "leanbox_gui_window"
-		position = { x = 40 y = 85 }
-		Orientation = center
-		#frame = 100
-			
+		
+		instantTextboxType = {
+			name = "lastation_title_text"
+			position = { x = 40 y = 181 } #25 pixels lower
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "Lastation"
+			maxWidth = 175
+			maxHeight = 20
+			fixedsize = yes
+		}
+		iconType = {
+			name = "lastation_progress_bar"
+			spriteType = "GFX_lastation_shares"
+			position = { x = 15 y = 204 }
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "leanbox_title_text"
+			position = { x = 40 y = 228 } #25 pixels lower
+			font = "hoi_18mbs"
+			borderSize = { x = 0 y = 0 }
+			text = "Leanbox"
+			maxWidth = 175
+			maxHeight = 20
+			fixedsize = yes
+		}
 		iconType = {
 			name = "leanbox_progress_bar"
 			spriteType = "GFX_leanbox_shares"
-			position = { x = 5 y = 10 }
-			
+			position = { x = 15 y = 250}
+			alwaystransparent = yes
 		}
+		
+		# History
+		
+		instantTextboxType = {
+			name = "history_title_text"
+			position = { x = 278 y = 80 }
+			font = "hoi_18mbs"
+			borderSize = { x = 2 y = 2 }
+			text = "History"
+			maxWidth = 150
+			maxHeight = 24
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "first_history_text"
+			position = { x = 240 y = 110 }
+			font = "hoi_16mbs"
+			borderSize = { x = 2 y = 2 }
+			text = "1. Lowee took 5 shares from Planeptune"
+			maxWidth = 150
+			maxHeight = 60
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "second_history_text"
+			position = { x = 240 y = 170 } 
+			font = "hoi_16mbs"
+			borderSize = { x = 2 y = 2 }
+			text = "2. Lastation took 5 shares from Leanbox"
+			maxWidth = 150
+			maxHeight = 60
+			fixedsize = yes
+		}
+		instantTextboxType = {
+			name = "third_history_text"
+			position = { x = 240 y = 230 }
+			font = "hoi_16mbs"
+			borderSize = { x = 2 y = 2 }
+			text = "3. Leanbox took 15 shares from Planeptune"
+			maxWidth = 150
+			maxHeight = 60
+			fixedsize = yes
+		}
+		
 	}
+}
+#	containerWindowType = {
+#		name = "planeptune_gui_window"
+#		position = { x = 4 y = 6 }
+#		Orientation = center
+#		#frame = 100
+#			
+#		iconType = {
+#			name = "planeptune_progress_bar"
+#			spriteType = "GFX_planeptune_shares"
+#			position = { x = 5 y = 10 }
+#			
+#		}
+#	}
+#	containerWindowType = {
+#		name = "lastation_gui_window"
+#		position = { x = 40 y = 45 }
+#		Orientation = center
+#		#frame = 100
+#			
+#		iconType = {
+#			name = "lastation_progress_bar"
+#			spriteType = "GFX_lastation_shares"
+#			position = { x = 5 y = 10 }
+#			
+#		}
+#	}
+#	containerWindowType = {
+#		name = "lowee_gui_window"
+#		position = { x = 40 y = 35 }
+#		Orientation = center
+#		#frame = 100
+#			
+#		iconType = {
+#			name = "lowee_progress_bar"
+#			spriteType = "GFX_lowee_shares"
+#			position = { x = 5 y = 10 }
+#			
+#		}
+#	}
+#	containerWindowType = {
+#		name = "leanbox_gui_window"
+#		position = { x = 40 y = 85 }
+#		Orientation = center
+#		#frame = 100
+#			
+#		iconType = {
+#			name = "leanbox_progress_bar"
+#			spriteType = "GFX_leanbox_shares"
+#			position = { x = 5 y = 10 }
+#			
+#		}
+#	}
 }

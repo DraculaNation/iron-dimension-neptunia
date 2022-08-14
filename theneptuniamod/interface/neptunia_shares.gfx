@@ -6,15 +6,20 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_close_button"
-		textureFile = "/gfx/interface/close_button.dds"
+		textureFile = "/gfx/interface/closebutton_bigger.dds"
 	}
 	spriteType = {
 		name = "GFX_open_button"
 		textureFile = "/gfx/interface/open_ui.dds"
 	}
+	spriteType = {
+		name = "GFX_question_button"
+		textureFile = "/gfx/interface/questionbutton.dds"
+	}
 	progressbartype = {
 		name = "GFX_planeptune_shares"
-		textureFile1 = "/gfx/interface/planeptune_progress_bar_long.dds"
+		#textureFile1 = "/gfx/interface/planeptune_progress_bar_long.dds"
+		textureFile1 = "/gfx/interface/planeptune_progress_bar_pla.dds"
 		textureFile2 = "/gfx/interface/planeptune_progress_bar_long_bg.dds"
 		color = { 128 128 128 }
 		colortwo = { 153 0 153 }
@@ -26,7 +31,7 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_lastation_shares"
-		textureFile1 = "/gfx/interface/planeptune_progress_bar_long.dds"
+		textureFile1 = "/gfx/interface/planeptune_progress_bar_las.dds"
 		textureFile2 = "/gfx/interface/planeptune_progress_bar_long_bg.dds"
 		color = { 128 128 128 }
 		colortwo = { 153 0 153 }
@@ -38,7 +43,7 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_lowee_shares"
-		textureFile1 = "/gfx/interface/planeptune_progress_bar_long.dds"
+		textureFile1 = "/gfx/interface/planeptune_progress_bar_low.dds"
 		textureFile2 = "/gfx/interface/planeptune_progress_bar_long_bg.dds"
 		color = { 128 128 128 }
 		colortwo = { 153 0 153 }
@@ -50,7 +55,7 @@ spriteTypes = {
 	}
 	progressbartype = {
 		name = "GFX_leanbox_shares"
-		textureFile1 = "/gfx/interface/planeptune_progress_bar_long.dds"
+		textureFile1 = "/gfx/interface/planeptune_progress_bar_lea.dds"
 		textureFile2 = "/gfx/interface/planeptune_progress_bar_long_bg.dds"
 		color = { 128 128 128 }
 		colortwo = { 153 0 153 }

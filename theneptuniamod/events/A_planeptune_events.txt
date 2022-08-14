@@ -1492,3 +1492,21 @@ country_event = { #Histy solidifies control
 		mark_focus_tree_layout_dirty = yes
 	}
 }
+
+country_event = { #Gamindustri Graveyard Gambit - conclusion!
+	id = planeptune.52
+	title = planeptune.52.t
+	desc = planeptune.52.d
+	picture = GFX_report_event_histoire_normal
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = planeptune.52.a #Awww yisss
+		ai_chance = { factor = 100 }
+		set_country_flag = PLA_gggambit_success
+		add_political_power = 100
+		PLA_decrease_histoire_discontent_medium = yes
+		PLA_decrease_public_unrest_medium = yes
+	}
+}
